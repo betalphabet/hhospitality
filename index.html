@@ -69,7 +69,10 @@
                         company setting benchmarks in El Nido, Palawan. Amid a region witnessing a staggering 700% rise
                         in tourism over the past seven years, the group not only influences this growth but also proudly
                         owns shuttle services, a tour agency, and multiple hotels, further solidifying its footprint in
-                        the industry.</p>
+                        the industry. In addition to its core hospitality services, H Hospitality Group operates several
+                        restaurants and cafés, offering diverse dining experiences that showcase the rich flavors of the
+                        region. The group is also expanding its portfolio with the development of a cutting-edge condo
+                        hotel, poised to redefine luxury living in El Nido.</p>
                 </div>
             </div>
             <div class="row gx-0 align-items-top">
@@ -119,6 +122,95 @@
             </div>
         </div>
     </section>
+
+
+    <!-- Location -->
+    <section class="bg-light m-0 p-0" id="location">
+            <!-- Featured Project Row-->
+            <div class="row gx-0  align-items-top mb-5">
+                <div class="col-12 p-2 text-center">
+                <h2 class="mb-4">Our Locations</h2>
+                <div id="map" style="width: 100%; height: 600px;"></div>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa2zHGo4o_4Fg82SO_i-7UhBABzYxhu6c"></script>
+                <script>
+                    function initMap() {
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                            zoom: 11,
+                            center: {lat: 11.1784, lng: 119.4185}  // Centered on El Nido
+                        });
+
+                        var locations = [
+                            {name: 'H Hotel', position: {lat: 11.1799526, lng: 119.3893385}, link: 'https://maps.app.goo.gl/B8oMDLuffgasoJQo9'},
+                            {name: 'Piece Lio', position: {lat: 11.206496, lng: 119.4173195}, link: 'https://maps.app.goo.gl/nDdKXWncbHfWShW26'},
+                            {name: 'Nacpan Beach Glamping', position: {lat: 11.3128738, lng: 119.4222488}, link: 'https://maps.app.goo.gl/6rdq32t6N9dEyf3a9'},
+                            {name: 'Nacpan Beach Resort', position: {lat: 11.3136336, lng: 119.4233164}, link: 'https://maps.app.goo.gl/ccC6x7hUqNxRB9ZaA'},
+                            {name: 'J Boutique Hotel', position: {lat: 11.1763085, lng: 119.3912799}, link: 'https://maps.app.goo.gl/qgscfAdUuh9fRiyB8'},
+                            {name: 'Nacpan Beach Villa', position: {lat: 11.3136336, lng: 119.4233164}, link: 'https://maps.app.goo.gl/ccC6x7hUqNxRB9ZaA'},
+                            {name: 'Nacpan Beach Shuttle Service', position: {lat: 11.178455, lng: 119.390972}, link: 'https://maps.app.goo.gl/4Boa6JuNdwoxRFmM8'},
+                            {name: 'S Resort', position: {lat: 11.180012, lng: 119.3892078}, link: 'https://maps.app.goo.gl/NRbnFBDahQJPzs386'}
+                        ];
+
+                        locations.forEach(function(loc) {
+                            var marker = new google.maps.Marker({
+                                position: loc.position,
+                                map: map,
+                                title: loc.name
+                            });
+                            var infoWindow = new google.maps.InfoWindow({
+                                content: '<div style="font-size: 12px;"><strong>' + loc.name + '</strong><br>' +
+                                         '<a href="' + loc.link + '" target="_blank">View on Maps</a></div>',
+                            });
+
+                            marker.addListener('click', function() {
+                                infoWindow.open(map, marker);
+                            });
+
+                            // Add pulsating circle effect
+                            var circle = new google.maps.Circle({
+                                strokeColor: '#FF0000',
+                                strokeOpacity: 0,
+                                strokeWeight: 0,
+                                fillColor: '#FF0000',
+                                fillOpacity: 0,
+                                map: map,
+                                center: loc.position,
+                                radius: 0,
+                                visible: true
+                            });
+
+                            function animateCircle() {
+                                var radius = 0;
+                                var opacity = 0.5;
+
+                                function frame() {
+                                    radius += 10; // Increased from 2 to 4 for larger circle
+                                    opacity -= 0.005; // Decreased from 0.01 to 0.005 for slower fade
+
+                                    if (radius >= 1000 || opacity <= 0) { // Increased from 200 to 400
+                                        radius = 0;
+                                        opacity = 0.5;
+                                    }
+
+                                    circle.setRadius(radius);
+                                    circle.setOptions({fillOpacity: opacity});
+
+                                    requestAnimationFrame(frame);
+                                }
+
+                                requestAnimationFrame(frame);
+                            }
+
+                            animateCircle();
+                        });
+                    }
+
+                    google.maps.event.addDomListener(window, 'load', initMap);
+                </script>
+                </div>
+            </div>
+
+    </section>
+
     <!-- timeline-->
     <section class="projects-section bg-light" id="timeline"
         style="background: linear-gradient(to bottom, rgb(255 255 255 / 82%) 0%, rgb(255 255 255 / 89%) 0%),url(assets/img/wave.jpg);">
@@ -130,6 +222,21 @@
                 </div>
             </div>
             <div class="main-timeline">
+                <div class="timeline left">
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <h3>2026</h3>
+                            <div class="row gx-0  align-items-top">
+                                <div class="col-6 p-1">
+                                    <p class="text">Private Island Resort</p>
+                                </div>
+                                <div class="col-6 p-1">
+                                    <p class="text">Grounded Nacpan Beach</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="timeline right">
                     <div class="card">
                         <div class="card-body p-4">
@@ -139,7 +246,7 @@
                                     <p class="text">Private Island Resort</p>
                                 </div>
                                 <div class="col-6 p-1">
-                                    <p class="text">Beach Front Condos Office Complex</p>
+                                    <p class="text">Hotel #9</p>
                                 </div>
                             </div>
                         </div>
@@ -164,9 +271,6 @@
                                 </div>
                                 <div class="col-6 p-1">
                                     <p class="text">Sunset Market</p>
-                                </div>
-                                <div class="col-6 p-1">
-                                    <p class="text">Grounded Nacpan Beach</p>
                                 </div>
                             </div>
                         </div>
@@ -728,10 +832,11 @@
                                             9.3)</span></p>
                                 </div>
                                 <div class="col-xl-4 col-lg-4 col-6 p-1">
-	                             <!-- Image trigger modal -->
+                                    <!-- Image trigger modal -->
                                     <a href="#" data-bs-toggle="modal" data-bs-target="#myModal10">
-                                        <img class="img-fluid mb-lg-2 mb-2" src="assets/img/time-Grounded-100-arabica.jpg"
-                                        alt="Grounded 100% Arabica" />
+                                        <img class="img-fluid mb-lg-2 mb-2"
+                                            src="assets/img/time-Grounded-100-arabica.jpg"
+                                            alt="Grounded 100% Arabica" />
                                     </a>
                                     <!-- Modal -->
                                     <div class="modal fade" id="myModal10" tabindex="-1"
@@ -785,15 +890,15 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>    	                                	                             
+                                    </div>
                                     <p class="card-text">Grounded 100% Arabica</p>
                                 </div>
                                 <div class="col-xl-4 col-lg-4 col-6 p-1">
-	                                
-	                                 <!-- Image trigger modal -->
+
+                                    <!-- Image trigger modal -->
                                     <a href="#" data-bs-toggle="modal" data-bs-target="#myModal11">
                                         <img class="img-fluid mb-lg-2 mb-2" src="assets/img/time-J-Hostel.jpg"
-                                        alt="J Boutique Hotel" />
+                                            alt="J Boutique Hotel" />
                                     </a>
                                     <!-- Modal -->
                                     <div class="modal fade" id="myModal11" tabindex="-1"
@@ -847,14 +952,15 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>    	        
+                                    </div>
                                     <p class="card-text">J Boutique Hotel</p>
                                 </div>
-                                <div class="col-xl-4 col-lg-4 col-6 p-1">   
-	                             <!-- Image trigger modal -->
+                                <div class="col-xl-4 col-lg-4 col-6 p-1">
+                                    <!-- Image trigger modal -->
                                     <a href="#" data-bs-toggle="modal" data-bs-target="#myModal12">
-                                    <img class="img-fluid mb-lg-2 mb-2" src="assets/img/time-Discover-El-Nido-Tours.jpg"
-                                        alt="Discover El Nido Tours" />                                    </a>
+                                        <img class="img-fluid mb-lg-2 mb-2"
+                                            src="assets/img/time-Discover-El-Nido-Tours.jpg"
+                                            alt="Discover El Nido Tours" /> </a>
                                     <!-- Modal -->
                                     <div class="modal fade" id="myModal12" tabindex="-1"
                                         aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -902,7 +1008,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>    
+                                    </div>
                                     <p class="card-text">El Nido GO</p>
                                 </div>
                             </div>
@@ -915,10 +1021,10 @@
                             <h3>2022</h3>
                             <div class="row gx-0  align-items-top">
                                 <div class="col-6 p-1">
-	                            <!-- Image trigger modal -->
+                                    <!-- Image trigger modal -->
                                     <a href="#" data-bs-toggle="modal" data-bs-target="#myModal13">
-                                    <img class="img-fluid mb-lg-2 mb-2" src="assets/img/time-S-Resort-El-Nido.jpg"
-                                        alt="S Resort El Nido" />                                  </a>
+                                        <img class="img-fluid mb-lg-2 mb-2" src="assets/img/time-S-Resort-El-Nido.jpg"
+                                            alt="S Resort El Nido" /> </a>
                                     <!-- Modal -->
                                     <div class="modal fade" id="myModal13" tabindex="-1"
                                         aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -971,16 +1077,16 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>      
+                                    </div>
                                     <p class="card-text">S Resort El Nido <span style="color:#c3b39a;">(Agoda
                                             8.8/10)</span></p>
                                 </div>
                                 <div class="col-6 p-1">
-                                  <!-- Image trigger modal -->
+                                    <!-- Image trigger modal -->
                                     <a href="#" data-bs-toggle="modal" data-bs-target="#myModal14">
-									<img class="img-fluid mb-lg-2 mb-2" src="assets/img/time-3-Bros-Falafel.jpg"
-                                        alt="3 Bros Falafel" />
-                                     </a>
+                                        <img class="img-fluid mb-lg-2 mb-2" src="assets/img/time-3-Bros-Falafel.jpg"
+                                            alt="3 Bros Falafel" />
+                                    </a>
                                     <!-- Modal -->
                                     <div class="modal fade" id="myModal14" tabindex="-1"
                                         aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1033,7 +1139,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>  
+                                    </div>
                                     <p class="card-text">3 Bros Falafel</p>
                                 </div>
                             </div>
@@ -1057,6 +1163,64 @@
             </div>
         </div>
     </section>
+
+
+    <!-- CSR -->
+    <section class="projects-section bg-light" id="csr">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-0 align-items-top mb-5">
+                <div class="col-12 p-2 text-center">
+                    <img class="img-fluid mb-3 mb-lg-5" src="assets/img/hhospitality.group-logo.png" width="180px"
+                        alt="hhospitality.group" />
+                    <h2 class="mb-4">CORPORATE SOCIAL RESPONSIBILITY BREAKTHROUGHS</h2>
+                    <p>At H Hospitality Group, our commitment goes beyond providing exceptional hospitality; it extends to making a meaningful impact on both our community and the environment. Since our founding in El Nido, Palawan, we have been steadfast in our commitment to creating a positive change through a variety of initiatives that support people and protect the planet.</p>
+                </div>
+            </div>
+            <div class="row gx-0 align-items-top mb-5">
+                <div class="col-lg-6 p-2">
+                    <h3>Community Support Network</h3>
+                    <p>With around 300 employees, H Hospitality Group is proud to contribute to the livelihood of around 300 families. More than 70% of our workforce are locals from El Nido, showcasing our genuine passion for supporting the community by providing decent jobs with competitive pay and benefits. We believe that offering stable job opportunities and a nurturing work environment is essential to building a thriving community. Our employees are the backbone of our success, and their well-being is our top priority.</p>
+                    <div class="row">
+                        <div class="col-4"><img class="img-fluid" src="images/csr/community1.webp" alt="Community Support 1"></div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/community2.webp" alt="Community Support 2"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 p-2">
+                    <h3>Turtle Conservation Legacy</h3>
+                    <p>Since 2016, H Hospitality Group has been a proud supporter of the Nacpan Turtle Hatchery. Through our contributions, over 45,000 sea turtles have been successfully rehabilitated and released into the ocean, safeguarding the lives of these incredible creatures and preserving the delicate marine ecosystem. Our efforts to protect and conserve wildlife reflect our deep respect for the natural beauty of Palawan.</p>
+                    <div class="row">
+                        <div class="col-4"><img class="img-fluid" src="images/csr/turtle1.webp" alt="Turtle Conservation 1"></div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/turtle2.webp" alt="Turtle Conservation 2"></div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/turtle3.webp" alt="Turtle Conservation 3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-0 align-items-top mb-5">
+                <div class="col-lg-6 p-2">
+                    <h3>Empowerment Through Brigada Eskwela</h3>
+                    <p>We recognize the importance of education in building a brighter future for our community. H Hospitality Group actively participates in the "Brigada Eskwela" program by donating essential materials such as cement, hollow blocks, and paint, as well as providing employee manpower to assist with cleaning, painting, and repairing school buildings. This year's beneficiaries include Bucana National High School and Calitang Elementary School. Additionally, we plan to adopt a school to ensure sustainability and continuous development.</p>
+                    <p>H Hospitality Group also supports various schools by offering on-the-job training opportunities for students. Trainees are assigned to different properties within HHG, including roles in Food & Beverage, housekeeping, front office, and even head office departments such as HR, Accounting, and Purchasing.</p>
+                    <div class="row">
+                        <div class="col-4"><img class="img-fluid" src="images/csr/brigada1.webp" alt="Brigada Eskwela 1"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 p-2">
+                    <h3>Excellence Through Community Engagement</h3>
+                    <p>H Hospitality Group proudly supports local sports as a way to strengthen teamwork, discipline, and community spirit. Our basketball team, a symbol of our commitment to these values, achieved a major milestone by winning the championship in 2023. This victory not only brought pride to our organization but also inspired our community to strive for excellence both on and off the court.</p>
+                    <p>This year, HHG will launch its own Glee Club to showcase singing talents and a Dance Club to highlight creativity through dances. These initiatives demonstrate that we excel not only in hospitality but also in honing diverse talents. They promote work-life balance within the community by offering our team members opportunities for artistic expression and personal growth. Additionally, these clubs aim to engage with and give back to the community through performances and events that bring people together and celebrate local talent.</p>
+                    <div class="row">
+                        <div class="col-4"><img class="img-fluid" src="images/csr/engagement1.webp" alt="Community Engagement 1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-0 align-items-top">
+                <div class="col-12 p-2 text-center">
+                    <p>At H Hospitality Group, we are dedicated to forging a sustainable future for our people, community, and the environment. Our CSR initiatives are a testament to our unwavering commitment to making a positive difference in El Nido and beyond, one step at a time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact-->
     <section class="contact-section bg-black" id="contact">
         <div class="container px-4 px-lg-5">
