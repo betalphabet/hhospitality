@@ -37,6 +37,26 @@
 
     </style>
 
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const langSelect = document.getElementById('langSelect');
+    const langSelectDesktop = document.getElementById('langSelectDesktop');
+
+    function handleLanguageChange(event) {
+        const selectedLang = event.target.value;
+        if (selectedLang === 'en') {
+            window.location.href = 'index.html';
+        } else if (selectedLang === 'zh') {
+            window.location.href = 'zh-tw.html';
+        }
+    }
+
+    langSelect.addEventListener('change', handleLanguageChange);
+    langSelectDesktop.addEventListener('change', handleLanguageChange);
+});
+</script>
+
 </head>
 
 <body id="page-top">
@@ -49,7 +69,7 @@
                 <div class="d-lg-none me-2">
                     <select id="langSelect" class="form-select bg-dark text-white" style="width: auto; padding-right: 20px;"
                         aria-label="語言選擇">
-                        <option value="en">🇺🇸 英文</option>
+                        <option value="en">🇺🇸 English</option>
                         <option value="zh" selected>🇹🇼 中文</option>
                     </select>
                 </div>
@@ -67,7 +87,7 @@
                     <li class="nav-item d-none d-lg-block">
                         <select id="langSelectDesktop" class="langSelectDesktop form-select bg-dark text-white"
                             aria-label="語言選擇">
-                            <option value="en">🇺🇸 英文</option>
+                            <option value="en">🇺🇸 English</option>
                             <option value="zh" selected>🇹🇼 中文</option>
                         </select>
                     </li>
@@ -95,7 +115,7 @@
                 <div class="col-12 p-2 text-center">
                     <img class="img-fluid mb-3 mb-lg-5" src="assets/img/hhospitality.group-logo.png" width="180px"
                         alt="hhospitality.group" />
-                    <p>H Hospitality Group是由有遠見的企業家亨利創立的新興管理公司，在愛妮島（El Nido）, 巴拉望（Palawan）樹立了標竿。在過去七年中，該地區的旅遊業增長了驚人的 700%，集團不僅影響了這一增長，還自豪地擁有接駁服務、旅行社和多家酒店，進一步鞏固了其在行業中的地位。除了核心的酒店服務外，H Hospitality Group還經營多家餐廳和咖啡館，提供展示該地區豐富風味的多樣化用餐體驗。該集團還在擴展其投資組合，正在開發一家尖端的公寓式酒店，旨在重新定義愛妮島的豪華生活。</p>
+                    <p>H Hospitality Group是由有遠見的企業家亨利創立的新興管理公司，在愛妮島（El Nido）, 巴拉望（Palawan）樹立了標竿。在過去七年中，該地區的旅遊業增長了驚人的 700%，集團不僅影響了這一增長，還擁有接駁服務、旅行社和多家酒店，進一步鞏固了其在行業中的地位。除了核心的酒店服務外，H Hospitality Group還經營多家餐廳和咖啡館，提供展示該地區豐富風味的多樣化用餐體驗。該集團還在擴展其投資組合，正在開發一家尖端的公寓式酒店，旨在重新定義愛妮島的豪華生活。</p>
                 </div>
             </div>
             <div class="row gx-0 align-items-top">
@@ -1491,7 +1511,7 @@
             <div class="row gx-0 align-items-top mb-5">
                 <div class="col-lg-6 p-2">
                     <h3>社會支持</h3>
-                    <p>H Hospitality Group擁有約300名員工，我們很自豪能為約300個家庭的生計做出貢獻。我們超過70%的員工是愛妮島的當地人，展示了我們通過提供體面的工作和具有競爭力的薪酬福利來真誠支持社區的熱情。我們相信，提供穩定的工作機會和培養性的工作環境對於建立一個繁榮的社區至關重要。我們的員工是我們成功的基石，他們的福祉是我們的首要任務。</p>
+                    <p>H Hospitality Group擁有約300名員工，我們很開心能為約300個家庭的生計做出貢獻。我們超過70%的員工是愛妮島的當地人，展示了我們通過提供體面的工作和具有競爭力的薪酬福利來真誠支持社區的熱情。我們相信，提供穩定的工作機會和培養性的工作環境對於建立一個繁榮的社區至關重要。我們的員工是我們成功的基石，他們的福祉是我們的首要任務。</p>
                     <div class="row">
                         <div class="col-4"><img class="img-fluid" src="images/csr/community1.webp"
                                 alt="社區支持 1"></div>

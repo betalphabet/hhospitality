@@ -23,6 +23,38 @@
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css?v=202408291428" rel="stylesheet" />
+    <style>
+
+
+        #mainNav.navbar-shrink .langSelectDesktop{
+            margin-top: 15px;
+        }
+
+        #mainNav .langSelectDesktop{
+            margin-top: 25px;
+        }
+
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const langSelect = document.getElementById('langSelect');
+            const langSelectDesktop = document.getElementById('langSelectDesktop');
+
+            function handleLanguageChange(event) {
+                const selectedLang = event.target.value;
+                if (selectedLang === 'en') {
+                    window.location.href = 'index.html';
+                } else if (selectedLang === 'zh') {
+                    window.location.href = 'zh-tw.html';
+                }
+            }
+
+            langSelect.addEventListener('change', handleLanguageChange);
+            langSelectDesktop.addEventListener('change', handleLanguageChange);
+        });
+    </script>
+
 </head>
 
 <body id="page-top">
@@ -31,16 +63,32 @@
         <div class="container px-4 px-lg-5">
             <a class="navbar-brand" href="#page-top"> <img class="img-fluid mb-lg-0"
                     src="assets/img/h_hotel_group_logo.svg" width="120px" alt="h_hotel_group" /></a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
+            <div class="d-flex align-items-center">
+                <div class="d-lg-none me-2">
+                    <select id="langSelect" class="form-select bg-dark text-white"
+                        style="width: auto; padding-right: 20px;" aria-label="語言選擇">
+                        <option value="en" selected>🇺🇸 English</option>
+                        <option value="zh">🇹🇼 中文</option>
+                    </select>
+                </div>
+                <button class="navbar-toggler navbar-toggler-right ms-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="切換導航">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#timeline">Timeline</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item d-none d-lg-block">
+                        <select id="langSelectDesktop" class="langSelectDesktop form-select bg-dark text-white"
+                            aria-label="語言選擇">
+                            <option value="en" selected>🇺🇸 English</option>
+                            <option value="zh">🇹🇼 中文</option>
+                        </select>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -126,31 +174,32 @@
 
     <!-- Location -->
     <section class="bg-light m-0 p-0" id="location">
-            <!-- Featured Project Row-->
-            <div class="row gx-0  align-items-top mb-5">
-                <div class="col-12 p-2 text-center">
+        <!-- Featured Project Row-->
+        <div class="row gx-0  align-items-top mb-5">
+            <div class="col-12 p-2 text-center">
                 <h2 class="mb-4">Our Locations</h2>
                 <div id="map" style="width: 100%; height: 600px;"></div>
-                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa2zHGo4o_4Fg82SO_i-7UhBABzYxhu6c"></script>
+                <script
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa2zHGo4o_4Fg82SO_i-7UhBABzYxhu6c"></script>
                 <script>
                     function initMap() {
                         var map = new google.maps.Map(document.getElementById('map'), {
                             zoom: 11,
-                            center: {lat: 11.1784, lng: 119.4185}  // Centered on El Nido
+                            center: { lat: 11.1784, lng: 119.4185 }  // Centered on El Nido
                         });
 
                         var locations = [
-                            {name: 'H Hotel', position: {lat: 11.1799526, lng: 119.3893385}, link: 'https://maps.app.goo.gl/B8oMDLuffgasoJQo9'},
-                            {name: 'Piece Lio', position: {lat: 11.206496, lng: 119.4173195}, link: 'https://maps.app.goo.gl/nDdKXWncbHfWShW26'},
-                            {name: 'Nacpan Beach Glamping', position: {lat: 11.3128738, lng: 119.4222488}, link: 'https://maps.app.goo.gl/6rdq32t6N9dEyf3a9'},
-                            {name: 'Nacpan Beach Resort', position: {lat: 11.3136336, lng: 119.4233164}, link: 'https://maps.app.goo.gl/ccC6x7hUqNxRB9ZaA'},
-                            {name: 'J Boutique Hotel', position: {lat: 11.1763085, lng: 119.3912799}, link: 'https://maps.app.goo.gl/qgscfAdUuh9fRiyB8'},
-                            {name: 'Nacpan Beach Villa', position: {lat: 11.3136336, lng: 119.4233164}, link: 'https://maps.app.goo.gl/ccC6x7hUqNxRB9ZaA'},
-                            {name: 'Nacpan Beach Shuttle Service', position: {lat: 11.178455, lng: 119.390972}, link: 'https://maps.app.goo.gl/4Boa6JuNdwoxRFmM8'},
-                            {name: 'S Resort', position: {lat: 11.180012, lng: 119.3892078}, link: 'https://maps.app.goo.gl/NRbnFBDahQJPzs386'}
+                            { name: 'H Hotel', position: { lat: 11.1799526, lng: 119.3893385 }, link: 'https://maps.app.goo.gl/B8oMDLuffgasoJQo9' },
+                            { name: 'Piece Lio', position: { lat: 11.206496, lng: 119.4173195 }, link: 'https://maps.app.goo.gl/nDdKXWncbHfWShW26' },
+                            { name: 'Nacpan Beach Glamping', position: { lat: 11.3128738, lng: 119.4222488 }, link: 'https://maps.app.goo.gl/6rdq32t6N9dEyf3a9' },
+                            { name: 'Nacpan Beach Resort', position: { lat: 11.3136336, lng: 119.4233164 }, link: 'https://maps.app.goo.gl/ccC6x7hUqNxRB9ZaA' },
+                            { name: 'J Boutique Hotel', position: { lat: 11.1763085, lng: 119.3912799 }, link: 'https://maps.app.goo.gl/qgscfAdUuh9fRiyB8' },
+                            { name: 'Nacpan Beach Villa', position: { lat: 11.3136336, lng: 119.4233164 }, link: 'https://maps.app.goo.gl/ccC6x7hUqNxRB9ZaA' },
+                            { name: 'Nacpan Beach Shuttle Service', position: { lat: 11.178455, lng: 119.390972 }, link: 'https://maps.app.goo.gl/4Boa6JuNdwoxRFmM8' },
+                            { name: 'S Resort', position: { lat: 11.180012, lng: 119.3892078 }, link: 'https://maps.app.goo.gl/NRbnFBDahQJPzs386' }
                         ];
 
-                        locations.forEach(function(loc) {
+                        locations.forEach(function (loc) {
                             var marker = new google.maps.Marker({
                                 position: loc.position,
                                 map: map,
@@ -158,10 +207,10 @@
                             });
                             var infoWindow = new google.maps.InfoWindow({
                                 content: '<div style="font-size: 12px;"><strong>' + loc.name + '</strong><br>' +
-                                         '<a href="' + loc.link + '" target="_blank">View on Maps</a></div>',
+                                    '<a href="' + loc.link + '" target="_blank">View on Maps</a></div>',
                             });
 
-                            marker.addListener('click', function() {
+                            marker.addListener('click', function () {
                                 infoWindow.open(map, marker);
                             });
 
@@ -192,7 +241,7 @@
                                     }
 
                                     circle.setRadius(radius);
-                                    circle.setOptions({fillOpacity: opacity});
+                                    circle.setOptions({ fillOpacity: opacity });
 
                                     requestAnimationFrame(frame);
                                 }
@@ -206,8 +255,8 @@
 
                     google.maps.event.addDomListener(window, 'load', initMap);
                 </script>
-                </div>
             </div>
+        </div>
 
     </section>
 
@@ -280,38 +329,31 @@
                                                         <div class="row">
                                                             <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-1">
                                                                 <img class="img-fluid mb-lg-2 mb-2"
-                                                                    src="images/piecelio/1.webp"
-                                                                    alt="Piece Lio 1" />
+                                                                    src="images/piecelio/1.webp" alt="Piece Lio 1" />
                                                             </div>
                                                             <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-1">
                                                                 <img class="img-fluid mb-lg-2 mb-2"
-                                                                    src="images/piecelio/2.webp"
-                                                                    alt="Piece Lio 2" />
+                                                                    src="images/piecelio/2.webp" alt="Piece Lio 2" />
                                                             </div>
                                                             <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-1">
                                                                 <img class="img-fluid mb-lg-2 mb-2"
-                                                                    src="images/piecelio/3.webp"
-                                                                    alt="Piece Lio 3" />
+                                                                    src="images/piecelio/3.webp" alt="Piece Lio 3" />
                                                             </div>
                                                             <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-1">
                                                                 <img class="img-fluid mb-lg-2 mb-2"
-                                                                    src="images/piecelio/4.webp"
-                                                                    alt="Piece Lio 4" />
+                                                                    src="images/piecelio/4.webp" alt="Piece Lio 4" />
                                                             </div>
                                                             <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-1">
                                                                 <img class="img-fluid mb-lg-2 mb-2"
-                                                                    src="images/piecelio/5.webp"
-                                                                    alt="Piece Lio 5" />
+                                                                    src="images/piecelio/5.webp" alt="Piece Lio 5" />
                                                             </div>
                                                             <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-1">
                                                                 <img class="img-fluid mb-lg-2 mb-2"
-                                                                    src="images/piecelio/6.webp"
-                                                                    alt="Piece Lio 6" />
+                                                                    src="images/piecelio/6.webp" alt="Piece Lio 6" />
                                                             </div>
                                                             <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-1">
                                                                 <img class="img-fluid mb-lg-2 mb-2"
-                                                                    src="images/piecelio/7.webp"
-                                                                    alt="Piece Lio 7" />
+                                                                    src="images/piecelio/7.webp" alt="Piece Lio 7" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -324,8 +366,8 @@
                                 <div class="col-6 p-1">
                                     <!-- Image trigger modal -->
                                     <a href="#" data-bs-toggle="modal" data-bs-target="#nacpanBeachVillaModal">
-                                        <img class="img-fluid mb-lg-2 mb-2 cover" src="images/nacpan_beach_villa/cover.webp"
-                                            alt="Nacpan Beach Villa" />
+                                        <img class="img-fluid mb-lg-2 mb-2 cover"
+                                            src="images/nacpan_beach_villa/cover.webp" alt="Nacpan Beach Villa" />
                                     </a>
                                     <!-- Modal -->
                                     <div class="modal fade" id="nacpanBeachVillaModal" tabindex="-1"
@@ -334,7 +376,8 @@
                                             class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl modal-xxl">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h6 class="modal-title" id="nacpanBeachVillaModalLabel">Nacpan Beach Villa</h6>
+                                                    <h6 class="modal-title" id="nacpanBeachVillaModalLabel">Nacpan Beach
+                                                        Villa</h6>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                         aria-label="Close"></button>
                                                 </div>
@@ -383,8 +426,8 @@
                                 <div class="col-6 p-1">
                                     <!-- Image trigger modal -->
                                     <a href="#" data-bs-toggle="modal" data-bs-target="#nacpanWeddingModal">
-                                        <img class="img-fluid mb-lg-2 mb-2 cover" src="images/nacpan_beach_wedding/cover.webp"
-                                            alt="Nacpan Beach Wedding" />
+                                        <img class="img-fluid mb-lg-2 mb-2 cover"
+                                            src="images/nacpan_beach_wedding/cover.webp" alt="Nacpan Beach Wedding" />
                                     </a>
                                     <!-- Modal -->
                                     <div class="modal fade" id="nacpanWeddingModal" tabindex="-1"
@@ -393,7 +436,8 @@
                                             class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl modal-xxl">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h6 class="modal-title" id="nacpanWeddingModalLabel">Nacpan Beach Wedding</h6>
+                                                    <h6 class="modal-title" id="nacpanWeddingModalLabel">Nacpan Beach
+                                                        Wedding</h6>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                         aria-label="Close"></button>
                                                 </div>
@@ -472,43 +516,35 @@
                                                         <div class="row">
                                                             <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-1">
                                                                 <img class="img-fluid mb-lg-2 mb-2"
-                                                                    src="images/unocha/1.webp"
-                                                                    alt="Unocha 1" />
+                                                                    src="images/unocha/1.webp" alt="Unocha 1" />
                                                             </div>
                                                             <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-1">
                                                                 <img class="img-fluid mb-lg-2 mb-2"
-                                                                    src="images/unocha/2.webp"
-                                                                    alt="Unocha 2" />
+                                                                    src="images/unocha/2.webp" alt="Unocha 2" />
                                                             </div>
                                                             <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-1">
                                                                 <img class="img-fluid mb-lg-2 mb-2"
-                                                                    src="images/unocha/3.webp"
-                                                                    alt="Unocha 3" />
+                                                                    src="images/unocha/3.webp" alt="Unocha 3" />
                                                             </div>
                                                             <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-1">
                                                                 <img class="img-fluid mb-lg-2 mb-2"
-                                                                    src="images/unocha/4.webp"
-                                                                    alt="Unocha 4" />
+                                                                    src="images/unocha/4.webp" alt="Unocha 4" />
                                                             </div>
                                                             <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-1">
                                                                 <img class="img-fluid mb-lg-2 mb-2"
-                                                                    src="images/unocha/5.webp"
-                                                                    alt="Unocha 5" />
+                                                                    src="images/unocha/5.webp" alt="Unocha 5" />
                                                             </div>
                                                             <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-1">
                                                                 <img class="img-fluid mb-lg-2 mb-2"
-                                                                    src="images/unocha/6.webp"
-                                                                    alt="Unocha 6" />
+                                                                    src="images/unocha/6.webp" alt="Unocha 6" />
                                                             </div>
                                                             <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-1">
                                                                 <img class="img-fluid mb-lg-2 mb-2"
-                                                                    src="images/unocha/7.webp"
-                                                                    alt="Unocha 7" />
+                                                                    src="images/unocha/7.webp" alt="Unocha 7" />
                                                             </div>
                                                             <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-1">
                                                                 <img class="img-fluid mb-lg-2 mb-2"
-                                                                    src="images/unocha/8.webp"
-                                                                    alt="Unocha 8" />
+                                                                    src="images/unocha/8.webp" alt="Unocha 8" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -531,7 +567,8 @@
                                             class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl modal-xxl">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h6 class="modal-title" id="sunsetMarketModalLabel">Sunset Market</h6>
+                                                    <h6 class="modal-title" id="sunsetMarketModalLabel">Sunset Market
+                                                    </h6>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                         aria-label="Close"></button>
                                                 </div>
@@ -1473,54 +1510,96 @@
                     <img class="img-fluid mb-3 mb-lg-5" src="assets/img/hhospitality.group-logo.png" width="180px"
                         alt="hhospitality.group" />
                     <h2 class="mb-4">CORPORATE SOCIAL RESPONSIBILITY BREAKTHROUGHS</h2>
-                    <p>At H Hospitality Group, our commitment goes beyond providing exceptional hospitality; it extends to making a meaningful impact on both our community and the environment. Since our founding in El Nido, Palawan, we have been steadfast in our commitment to creating a positive change through a variety of initiatives that support people and protect the planet.</p>
+                    <p>At H Hospitality Group, our commitment goes beyond providing exceptional hospitality; it extends
+                        to making a meaningful impact on both our community and the environment. Since our founding in
+                        El Nido, Palawan, we have been steadfast in our commitment to creating a positive change through
+                        a variety of initiatives that support people and protect the planet.</p>
                 </div>
             </div>
             <div class="row gx-0 align-items-top mb-5">
                 <div class="col-lg-6 p-2">
                     <h3>Community Support Network</h3>
-                    <p>With around 300 employees, H Hospitality Group is proud to contribute to the livelihood of around 300 families. More than 70% of our workforce are locals from El Nido, showcasing our genuine passion for supporting the community by providing decent jobs with competitive pay and benefits. We believe that offering stable job opportunities and a nurturing work environment is essential to building a thriving community. Our employees are the backbone of our success, and their well-being is our top priority.</p>
+                    <p>With around 300 employees, H Hospitality Group is proud to contribute to the livelihood of around
+                        300 families. More than 70% of our workforce are locals from El Nido, showcasing our genuine
+                        passion for supporting the community by providing decent jobs with competitive pay and benefits.
+                        We believe that offering stable job opportunities and a nurturing work environment is essential
+                        to building a thriving community. Our employees are the backbone of our success, and their
+                        well-being is our top priority.</p>
                     <div class="row">
-                        <div class="col-4"><img class="img-fluid" src="images/csr/community1.webp" alt="Community Support 1"></div>
-                        <div class="col-4"><img class="img-fluid" src="images/csr/community2.webp" alt="Community Support 2"></div>
-                        <div class="col-4"><img class="img-fluid" src="images/csr/community3.webp" alt="Community Support 3"></div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/community1.webp"
+                                alt="Community Support 1"></div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/community2.webp"
+                                alt="Community Support 2"></div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/community3.webp"
+                                alt="Community Support 3"></div>
                     </div>
                 </div>
                 <div class="col-lg-6 p-2">
                     <h3>Turtle Conservation Legacy</h3>
-                    <p>Since 2016, H Hospitality Group has been a proud supporter of the Nacpan Turtle Hatchery. Through our contributions, over 45,000 sea turtles have been successfully rehabilitated and released into the ocean, safeguarding the lives of these incredible creatures and preserving the delicate marine ecosystem. Our efforts to protect and conserve wildlife reflect our deep respect for the natural beauty of Palawan.</p>
+                    <p>Since 2016, H Hospitality Group has been a proud supporter of the Nacpan Turtle Hatchery. Through
+                        our contributions, over 45,000 sea turtles have been successfully rehabilitated and released
+                        into the ocean, safeguarding the lives of these incredible creatures and preserving the delicate
+                        marine ecosystem. Our efforts to protect and conserve wildlife reflect our deep respect for the
+                        natural beauty of Palawan.</p>
                     <div class="row">
-                        <div class="col-4"><img class="img-fluid" src="images/csr/turtle1.webp" alt="Turtle Conservation 1"></div>
-                        <div class="col-4"><img class="img-fluid" src="images/csr/turtle2.webp" alt="Turtle Conservation 2"></div>
-                        <div class="col-4"><img class="img-fluid" src="images/csr/turtle3.webp" alt="Turtle Conservation 3"></div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/turtle1.webp"
+                                alt="Turtle Conservation 1"></div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/turtle2.webp"
+                                alt="Turtle Conservation 2"></div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/turtle3.webp"
+                                alt="Turtle Conservation 3"></div>
                     </div>
                 </div>
             </div>
             <div class="row gx-0 align-items-top mb-5">
                 <div class="col-lg-6 p-2">
                     <h3>Empowerment Through Brigada Eskwela</h3>
-                    <p>We recognize the importance of education in building a brighter future for our community. H Hospitality Group actively participates in the "Brigada Eskwela" program by donating essential materials such as cement, hollow blocks, and paint, as well as providing employee manpower to assist with cleaning, painting, and repairing school buildings. This year's beneficiaries include Bucana National High School and Calitang Elementary School. Additionally, we plan to adopt a school to ensure sustainability and continuous development.</p>
-                    <p>H Hospitality Group also supports various schools by offering on-the-job training opportunities for students. Trainees are assigned to different properties within HHG, including roles in Food & Beverage, housekeeping, front office, and even head office departments such as HR, Accounting, and Purchasing.</p>
+                    <p>We recognize the importance of education in building a brighter future for our community. H
+                        Hospitality Group actively participates in the "Brigada Eskwela" program by donating essential
+                        materials such as cement, hollow blocks, and paint, as well as providing employee manpower to
+                        assist with cleaning, painting, and repairing school buildings. This year's beneficiaries
+                        include Bucana National High School and Calitang Elementary School. Additionally, we plan to
+                        adopt a school to ensure sustainability and continuous development.</p>
+                    <p>H Hospitality Group also supports various schools by offering on-the-job training opportunities
+                        for students. Trainees are assigned to different properties within HHG, including roles in Food
+                        & Beverage, housekeeping, front office, and even head office departments such as HR, Accounting,
+                        and Purchasing.</p>
                     <div class="row">
-                        <div class="col-4"><img class="img-fluid" src="images/csr/brigada1.webp" alt="Brigada Eskwela 1"></div>
-                        <div class="col-4"><img class="img-fluid" src="images/csr/brigada2.webp" alt="Brigada Eskwela 2"></div>
-                        <div class="col-4"><img class="img-fluid" src="images/csr/brigada3.webp" alt="Brigada Eskwela 3"></div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/brigada1.webp"
+                                alt="Brigada Eskwela 1"></div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/brigada2.webp"
+                                alt="Brigada Eskwela 2"></div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/brigada3.webp"
+                                alt="Brigada Eskwela 3"></div>
                     </div>
                 </div>
                 <div class="col-lg-6 p-2">
                     <h3>Excellence Through Community Engagement</h3>
-                    <p>H Hospitality Group proudly supports local sports as a way to strengthen teamwork, discipline, and community spirit. Our basketball team, a symbol of our commitment to these values, achieved a major milestone by winning the championship in 2023. This victory not only brought pride to our organization but also inspired our community to strive for excellence both on and off the court.</p>
-                    <p>This year, HHG will launch its own Glee Club to showcase singing talents and a Dance Club to highlight creativity through dances. These initiatives demonstrate that we excel not only in hospitality but also in honing diverse talents. They promote work-life balance within the community by offering our team members opportunities for artistic expression and personal growth. Additionally, these clubs aim to engage with and give back to the community through performances and events that bring people together and celebrate local talent.</p>
+                    <p>H Hospitality Group proudly supports local sports as a way to strengthen teamwork, discipline,
+                        and community spirit. Our basketball team, a symbol of our commitment to these values, achieved
+                        a major milestone by winning the championship in 2023. This victory not only brought pride to
+                        our organization but also inspired our community to strive for excellence both on and off the
+                        court.</p>
+                    <p>This year, HHG will launch its own Glee Club to showcase singing talents and a Dance Club to
+                        highlight creativity through dances. These initiatives demonstrate that we excel not only in
+                        hospitality but also in honing diverse talents. They promote work-life balance within the
+                        community by offering our team members opportunities for artistic expression and personal
+                        growth. Additionally, these clubs aim to engage with and give back to the community through
+                        performances and events that bring people together and celebrate local talent.</p>
                     <div class="row">
-                        <div class="col-4"><img class="img-fluid" src="images/csr/engagement1.webp" alt="Community Engagement 1"></div>
-                        <div class="col-4"><img class="img-fluid" src="images/csr/engagement2.webp" alt="Community Engagement 2"></div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/engagement1.webp"
+                                alt="Community Engagement 1"></div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/engagement2.webp"
+                                alt="Community Engagement 2"></div>
 
                     </div>
                 </div>
             </div>
             <div class="row gx-0 align-items-top">
                 <div class="col-12 p-2 text-center">
-                    <p>At H Hospitality Group, we are dedicated to forging a sustainable future for our people, community, and the environment. Our CSR initiatives are a testament to our unwavering commitment to making a positive difference in El Nido and beyond, one step at a time.</p>
+                    <p>At H Hospitality Group, we are dedicated to forging a sustainable future for our people,
+                        community, and the environment. Our CSR initiatives are a testament to our unwavering commitment
+                        to making a positive difference in El Nido and beyond, one step at a time.</p>
                 </div>
             </div>
         </div>
