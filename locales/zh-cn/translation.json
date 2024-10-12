@@ -1,0 +1,206 @@
+{
+  "nav": {
+    "about": "关于我们",
+    "hotel": "酒店",
+    "timeline": "时间轴",
+    "contact": "联系我们"
+  },
+  "masthead": {
+    "title": "H Hospitality Group",
+    "subtitle": "您下次天堂度假不容错过的住宿选择！"
+  },
+  "about": {
+    "description": "H Hospitality Group是由有远见的企业家Henry创立的新兴管理公司，在爱妮岛（El Nido）巴拉望（Palawan）树立了行业标杆。在过去七年中，该地区的旅游业增长了惊人的 700%，集团不仅影响了这一增长，还自豪地拥有班车服务、旅行社和多家酒店，进一步巩固了其在行业中的地位。除了核心的酒店服务外，H Hospitality Group还经营多家餐厅和咖啡厅，提供多样化的用餐体验，展示了该地区丰富的风味。该集团还在扩大其投资组合，正在开发一家尖端的公寓式酒店，旨在重新定义爱妮岛的奢华生活。",
+    "beachfrontHotels": "海滨酒店",
+    "beachfrontRestaurants": "海滨餐厅",
+    "hotel": "酒店",
+    "travelAndTour": "旅游和观光",
+    "condominium": "公寓",
+    "cafe": "咖啡厅",
+    "spaAndMassage": "水疗和按摩",
+    "nacpanBeachShuttle": "纳克潘海滩班车",
+    "bar": "酒吧",
+    "plantBasedRestaurant": "植物性餐厅"
+  },
+  "location": {
+    "title": "我们的位置"
+  },
+  "timeline": {
+    "title": "H Hospitality Group时间线",
+    "2024": {
+      "pieceLio": {
+        "name": "Piece Lio"
+      },
+      "nacpanBeachVilla": {
+        "name": "纳克潘海滩别墅"
+      }
+    }
+  },
+  "csr": {
+    "title": "企业社会责任",
+    "description": "在 H Hospitality Group，我们的承诺不仅仅是提供卓越的酒店服务；它还延伸到对我们的社区和环境产生有意义的影响。自我们在爱妮岛巴拉望成立以来，我们一直坚定不移地致力于通过各种支持人民和保护地球的倡议来创造积极的变化。",
+    "communitySupport": {
+      "title": "社会支持",
+      "description": "H Hospitality Group拥有约300名员工，我们很开心能为约300个家庭的生计做出贡献。我们超过70%的员工是爱妮岛的当地人，展示了我们通过提供体面的工作和具有竞争力的薪酬福利来真诚支持社区的热情。我们相信，提供稳定的工作机会和培养性的工作环境对于建立一个繁荣的社区至关重要。我们的员工是我们成功的基石，他们的福祉是我们的首要任务。"
+    },
+    "turtleConservation": {
+      "title": "海龟保护",
+      "description": "自2016年以来，H Hospitality Group一直是纳克潘海龟孵化场的骄傲支持者。通过我们的贡献，超过45,000只海龟已成功康复并被释放回海洋，保护了这些令人难以置信的生物的生命，并保护了脆弱的海洋生态系统。我们保护和保育野生动物的努力反映了我们对巴拉望岛自然美景的深深敬意。"
+    },
+    "brigadaEskwela": {
+      "title": "Brigada Eskwela 计划",
+      "description1": "我们认识到教育在为我们的社区建设更光明未来方面的重要性。H Hospitality Group积极参与 Brigada Eskwela 计划，捐赠水泥、空心砖和油漆等必需材料，并提供员工人力协助清洁、粉刷和修理学校建筑。今年的受益者包括布卡纳国立高中和卡利唐小学。此外，我们计划认养一所学校以确保可持续性和持续发展。",
+      "description2": "H Hospitality Group还通过为学生提供在职培训机会来支持各种学校。实习生被分配到HHG内的不同物业，包括食品和饮料、客房服务、前台，甚至总部部门如人力资源、会计和采购等角色。"
+    },
+    "communityEngagement": {
+      "title": "通过社区参与追求卓越",
+      "description1": "H Hospitality Group支持当地运动项目，以此来加强团队合作、纪律和社区精神。我们的篮球队是我们对这些价值观承诺的象征，在2023年取得了重大里程碑，赢得了冠军。这一胜利不仅为我们的组织带来了骄傲，还激励了我们的社区在场内外都追求卓越。",
+      "description2": "今年，HHG 将成立自己的合唱团以展示歌唱才能，以及舞蹈俱乐部以突出舞蹈创意。这些倡议表明我们不仅在酒店业卓越，还在培养多样化才能方面出色。它们通过为我们的团队成员提供艺术表达和个人成长的机会，促进了社区内的工作生活平衡。此外，这些俱乐部旨在通过表演和活动与社区互动并回馈社区，将人们聚集在一起，庆祝当地才能。"
+    },
+    "conclusion": "在H Hospitality Group，我们致力于为我们的人民、社区和环境打造可持续的未来。我们的企业社会责任倡议是我们坚定不移地致力于在爱妮岛及其他地方一步一步地产生积极影响的见证。"
+  },
+  "contact": {
+    "title": "联系我们",
+    "location": "地点",
+    "locationValue": "菲律宾,爱妮岛",
+    "phone": "电话",
+    "whatsapp": "WhatsApp"
+  },
+  "hotel": {
+    "title": "我们的酒店",
+    "subtitle": "探索我们在爱妮岛的卓越物业系列",
+    "info": "酒店信息",
+    "rating": "评分：",
+    "location": "位置：",
+    "pricing": "价格：",
+    "bookNow": "立即预订",
+    "phone": "电话：",
+    "website": "网站：",
+    "highlights": "亮点：",
+    "coupleRating": "情侣评分：",
+    "distanceFromBeach": "距离海滩：",
+    "valueForMoney": "性价比：",
+    "locationScore": "位置评分：",
+    "nearestAirport": "最近的机场：",
+    "pieceLio": {
+      "name": "Piece Lio",
+      "description": "豪华的海滨度假村，提供令人惊叹的海景和世界级设施。",
+      "location": "Lio Beach, El Nido, Palawan",
+      "phone": "+63 917 123 4567",
+      "website": "www.piecelio.com"
+    },
+    "nacpanBeachResort": {
+      "name": "Nacpan Beach Resort",
+      "description": "在这个生态友好的度假村体验纳克潘海滩的美丽，非常适合自然爱好者。",
+      "location": "Nacpan Beach, El Nido, Palawan",
+      "phone": "+63 917 234 5678",
+      "website": "www.nacpanbeachresort.com"
+    },
+    "nacpanBeachGlamping": {
+      "name": "Nacpan Beach Glamping",
+      "description": "享受独特的豪华露营体验，拥有酒店的所有舒适，就在海滩上。",
+      "location": "Nacpan Beach, El Nido, Palawan",
+      "phone": "+63 917 345 6789",
+      "website": "www.nacpanbeachglamping.com"
+    },
+    "hHotelVeganHotel": {
+      "name": "H Hotel Vegan Hotel",
+      "description": "一家素食友好的酒店，提供植物性美食和环保意识的客房。",
+      "location": "El Nido Town Proper, Palawan",
+      "phone": "+63 917 456 7890",
+      "website": "www.hhotelveganhotel.com"
+    },
+    "jBoutiqueHotel": {
+      "name": "J Boutique Hotel",
+      "description": "位于爱妮岛中心的时尚精品酒店，非常适合城市探险者。",
+      "location": "El Nido Town Center, Palawan",
+      "phone": "+63 917 567 8901",
+      "website": "www.jboutiquehotel.com"
+    },
+    "sResortElNido": {
+      "name": "S Resort El Nido",
+      "description": "为休闲和商务旅客提供舒适和便利的现代度假村。",
+      "location": "Corong Corong, El Nido, Palawan",
+      "phone": "+63 917 678 9012",
+      "website": "www.sresortelnido.com"
+    },
+    "casaCecilia": {
+      "name": "Casa Cecilia",
+      "description": "位于爱妮岛中心的三星级住宿，提供舒适和便利。",
+      "location": "El Nido, Palawan",
+      "phone": "+63 917 345 6789",
+      "website": "www.casacecilia.com"
+    },
+    "nacpanBeachVillas": {
+      "name": "Nacpan Beach Villas",
+      "description": "提供免费WiFi的豪华别墅，非常适合寻求浪漫度假的情侣。",
+      "location": "Near Nacpan Beach, El Nido, Palawan",
+      "highlights": "免费WiFi、花园、露台、酒吧"
+    },
+    "milanGraceInn": {
+      "name": "MilanGrace Inn El Nido Palawan",
+      "description": "提供免费停车的三星级住宿，探索爱妮岛的完美位置。",
+      "location": "菲律宾，巴拉望，爱妮岛，Barangay Buena Suerte Cabigsing，5113",
+      "highlights": "免费停车、餐厅、24小时前台、机场接送",
+      "nearestAirport": "El Nido Airport (ENI) - 4.1 km"
+    }
+  },
+  "common": {
+    "previous": "上一页",
+    "next": "下一页"
+  },
+  "investing": {
+    "title": "我们的投资",
+    "subtitle": "探索我们多元化的战略投资组合"
+  },
+  "restaurant": {
+    "3BrosFalafel": {
+      "name": "3 Bros Falafel",
+      "description": "一家充满活力的餐厅，专门提供墨西哥风格的卷饼，在爱妮岛提供独特的风味融合。"
+    },
+    "verDeElNido": {
+      "name": "Ver De El Nido",
+      "description": "一家迷人的素食餐厅，在爱妮岛中心提供多样化的植物性菜单。"
+    }
+  },
+  "travel": {
+    "elNidoGO": {
+      "name": "El Nido GO",
+      "description": "一个令人兴奋的海滩游戏体验，为爱妮岛的游客提供有趣的活动和冒险。"
+    },
+    "sunsetMarket": {
+      "name": "日落市集",
+      "description": "一个热闹的海滨市集，提供购物和用餐体验，伴随着令人惊叹的日落美景。"
+    },
+    "nacpanBeachWedding": {
+      "name": "纳克潘海滩婚礼",
+      "description": "提供海滩婚礼服务，包括场地信息、餐饮和装饰协助，为您打造完美的海滩婚礼。"
+    },
+    "nacpanBeachShuttle": {
+      "name": "纳克潘海滩接驳车",
+      "description": "这是一辆9座小巴，可以带您游览菲律宾爱妮岛的海岸风光和城市景点。这是探索岛上美丽海滩和地标的完美方式，同时享受舒适的交通。"
+    }
+  },
+  "cafe": {
+    "grounded100Arabica": {
+      "name": "Grounded 100% 阿拉比卡",
+      "description": "一家舒适的咖啡馆，提供优质的100%阿拉比卡咖啡，源自世界各地最优质的咖啡豆。享受完美的一杯咖啡，搭配新鲜烘焙的糕点，欣赏爱妮岛的迷人景色。"
+    },
+    "unocha": {
+      "name": "Unocha",
+      "description": "Unocha：爱妮岛的正宗台湾珍珠奶茶。经典和创新口味，使用优质茶叶和新鲜珍珠。在天堂中品尝台湾风味。"
+    }
+  },
+  "spa": {
+    "orientalSpa": {
+      "name": "东方水疗",
+      "description": "东方水疗为您提供一个宁静的放松和恢复活力的绿洲，位于爱妮岛的中心。我们的专业治疗师提供一系列传统和现代的疗程，从舒缓按摩到焕肤面部护理，使用天然的当地原料。体验极致的宁静，焕然一新，准备继续您的热带天堂冒险。"
+    }
+  },
+  "bar": {
+    "sunmaiNacpanBeach": {
+      "name": "金色三麦纳克潘海滩",
+      "description": "金色三麦纳克潘海滩是爱妮岛上唯一的金色三麦酒吧，提供独特的台湾精酿啤酒和令人惊叹的海滩景色。在这个热带天堂享受日落饮品，体验东亚酿酒与菲律宾海岸美景的完美结合。"
+    }
+  }
+}

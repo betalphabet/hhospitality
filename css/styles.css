@@ -12796,10 +12796,6 @@ body {
   background-color: #000;
 }
 
-#mainNav :active {
-  background-color: #000;
-}
-
 #mainNav .navbar-toggler {
   font-size: 16px;
   padding: 0.75rem;
@@ -12959,6 +12955,95 @@ body {
     max-width: 30rem;
     font-size: 1.25rem;
   }
+}
+
+.hotel-list-banner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  padding: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/hotels-banner.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hotel-list-banner .banner-content {
+  width: 100%;
+  padding: 2rem;
+}
+
+.hotel-list-banner h1,
+.hotel-list-banner .h1 {
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #fff;
+  margin-top: 3em;
+}
+
+.hotel-list-banner p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .hotel-list-banner h1,
+  .hotel-list-banner .h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .hotel-list-banner {
+    height: 300px;
+  }
+
+  .hotel-list-banner h1,
+  .hotel-list-banner .h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+
+  .hotel-list-banner p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .hotel-list-banner {
+    height: 200px;
+    margin-top: 58px;
+  }
+
+  .hotel-list-banner .banner-content {
+    padding: 1rem;
+  }
+
+  .hotel-list-banner h1,
+  .hotel-list-banner .h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .hotel-list-banner p {
+    font-size: 0.875rem;
+  }
+}
+
+#hotels img{
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+#hotels .featured-text {
+  min-height: 150px;
 }
 
 .about-section {
@@ -13218,4 +13303,41 @@ body {
   height: 138px;
   width: 100%;
   object-fit: cover;
+}
+
+#investmentTabs{
+  border-bottom: none;
+
+}
+
+#investmentTabs .nav-link {
+  color: #495057;
+  border: none;
+  margin-right: 2px;
+  border-radius: 5px;
+}
+
+#investmentTabs .nav-link:hover {
+  background-color: none;
+  border: none;
+  box-shadow: none;
+}
+
+#investmentTabs .nav-link.active {
+  color: #495057;
+  background-color: #ccc;
+}
+
+/* For better visibility on smaller screens */
+@media (max-width: 768px) {
+  #investmentTabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  #investmentTabs .nav-item {
+    display: inline-block;
+    float: none;
+  }
 }

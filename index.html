@@ -24,36 +24,24 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css?v=202408291428" rel="stylesheet" />
     <style>
-
-
-        #mainNav.navbar-shrink .langSelectDesktop{
+        #mainNav.navbar-shrink .langSelectDesktop {
             margin-top: 15px;
         }
 
-        #mainNav .langSelectDesktop{
+        #mainNav .langSelectDesktop {
             margin-top: 25px;
         }
-
     </style>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const langSelect = document.getElementById('langSelect');
-            const langSelectDesktop = document.getElementById('langSelectDesktop');
+    <!-- i18next libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.6.10/i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/2.1.0/jquery-i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-xhr-backend/3.2.2/i18nextXHRBackend.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
 
-            function handleLanguageChange(event) {
-                const selectedLang = event.target.value;
-                if (selectedLang === 'en') {
-                    window.location.href = 'index.html';
-                } else if (selectedLang === 'zh') {
-                    window.location.href = 'zh-tw.html';
-                }
-            }
-
-            langSelect.addEventListener('change', handleLanguageChange);
-            langSelectDesktop.addEventListener('change', handleLanguageChange);
-        });
-    </script>
+    <!-- Load custom scripts -->
+    <script src="js/scripts.js"></script>
 
 </head>
 
@@ -66,27 +54,33 @@
             <div class="d-flex align-items-center">
                 <div class="d-lg-none me-2">
                     <select id="langSelect" class="form-select bg-dark text-white"
-                        style="width: auto; padding-right: 20px;" aria-label="語言選擇">
-                        <option value="en" selected>🇺🇸 English</option>
-                        <option value="zh">🇹🇼 中文</option>
+                        style="width: auto; padding-right: 20px;" aria-label="Language selection">
+                        <option value="en">🇺🇸 English</option>
+                        <option value="zh">🇹🇼 繁中</option>
+                        <option value="zh-cn">🇨🇳 簡中</option>
                     </select>
                 </div>
                 <button class="navbar-toggler navbar-toggler-right ms-2" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                    aria-label="切換導航">
+                    aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#timeline">Timeline</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about" data-i18n="nav.about">About</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="hotel.html" data-i18n="nav.hotel">Our Hotels</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#timeline"
+                            data-i18n="nav.timeline">Timeline</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact"
+                            data-i18n="nav.contact">Contact</a></li>
                     <li class="nav-item d-none d-lg-block">
                         <select id="langSelectDesktop" class="langSelectDesktop form-select bg-dark text-white"
-                            aria-label="語言選擇">
-                            <option value="en" selected>🇺🇸 English</option>
-                            <option value="zh">🇹🇼 中文</option>
+                            aria-label="Language selection">
+                            <option value="en">🇺🇸 English</option>
+                            <option value="zh">🇹🇼 繁中</option>
+                            <option value="zh-cn">🇨🇳 簡中</option>
                         </select>
                     </li>
                 </ul>
@@ -98,9 +92,9 @@
         <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
             <div class="d-flex justify-content-center">
                 <div class="text-center">
-                    <h1 class="mx-auto my-0 text-uppercase">H Hospitality Group</h1>
-                    <p class="text-white-50 mx-auto mt-2 mb-5">An unmissable stay for your next vacation in paradise!
-                    </p>
+                    <h1 class="mx-auto my-0 text-uppercase" data-i18n="masthead.title">H Hospitality Group</h1>
+                    <p class="text-white-50 mx-auto mt-2 mb-5" data-i18n="masthead.subtitle">An unmissable stay for your
+                        next vacation in paradise!</p>
                 </div>
             </div>
         </div>
@@ -113,7 +107,8 @@
                 <div class="col-12 p-2 text-center">
                     <img class="img-fluid mb-3 mb-lg-5" src="assets/img/hhospitality.group-logo.png" width="180px"
                         alt="hhospitality.group" />
-                    <p>H Hospitality Group, the brainchild of visionary entrepreneur Henry, is a burgeoning management
+                    <p data-i18n="about.description">H Hospitality Group, the brainchild of visionary entrepreneur
+                        Henry, is a burgeoning management
                         company setting benchmarks in El Nido, Palawan. Amid a region witnessing a staggering 700% rise
                         in tourism over the past seven years, the group not only influences this growth but also proudly
                         owns shuttle services, a tour agency, and multiple hotels, further solidifying its footprint in
@@ -126,58 +121,57 @@
             <div class="row gx-0 align-items-top">
                 <div class="col-xl-25 col-6 p-1">
                     <img class="img-fluid mb-lg-0" src="assets/img/Beachfront-Hotels.jpg" alt="Beachfront Hotels" />
-                    <p class="p-title">Beachfront Hotels</p>
+                    <p class="p-title" data-i18n="about.beachfrontHotels">Beachfront Hotels</p>
                 </div>
                 <div class="col-xl-25 col-6 p-1">
                     <img class="img-fluid mb-lg-0" src="assets/img/Beachfront-Restaurants.jpg"
                         alt="Beachfront Restaurants" />
-                    <p class="p-title">Beachfront Restaurants</p>
+                    <p class="p-title" data-i18n="about.beachfrontRestaurants">Beachfront Restaurants</p>
                 </div>
                 <div class="col-xl-25 col-6 p-1">
                     <img class="img-fluid mb-lg-0" src="assets/img/Hotel.jpg" alt="Hotel" />
-                    <p class="p-title">Hotel</p>
+                    <p class="p-title" data-i18n="about.hotel">Hotel</p>
                 </div>
                 <div class="col-xl-25 col-6 p-1">
                     <img class="img-fluid mb-lg-0" src="assets/img/Travel-and-Tour.jpg" alt="Travel and Tour" />
-                    <p class="p-title">Travel and Tour</p>
+                    <p class="p-title" data-i18n="about.travelAndTour">Travel and Tour</p>
                 </div>
                 <div class="col-xl-25 col-6 p-1">
                     <img class="img-fluid mb-lg-0" src="assets/img/Condominium.jpg" alt="Condominium" />
-                    <p class="p-title">Condominium</p>
+                    <p class="p-title" data-i18n="about.condominium">Condominium</p>
                 </div>
                 <div class="col-xl-25 col-6 p-1">
                     <img class="img-fluid mb-lg-0" src="assets/img/Cafe.jpg" alt="Cafe" />
-                    <p class="p-title">Cafe</p>
+                    <p class="p-title" data-i18n="about.cafe">Cafe</p>
                 </div>
                 <div class="col-xl-25 col-6 p-1">
                     <img class="img-fluid mb-lg-0" src="assets/img/spa_massage.jpg" alt="Spa & Massage" />
-                    <p class="p-title">Spa & Massage</p>
+                    <p class="p-title" data-i18n="about.spaAndMassage">Spa & Massage</p>
                 </div>
                 <div class="col-xl-25 col-6 p-1">
                     <img class="img-fluid mb-lg-0" src="assets/img/time-Nacpan-Beach-Shuttle.jpg"
                         alt="Shuttle Van(Nacpan Beach Shuttle)" />
-                    <p class="p-title">Nacpan Beach Shuttle</p>
+                    <p class="p-title" data-i18n="about.nacpanBeachShuttle">Nacpan Beach Shuttle</p>
                 </div>
                 <div class="col-xl-25 col-6 p-1">
                     <img class="img-fluid mb-lg-0" src="assets/img/Bar.jpg" alt="Bar" />
-                    <p class="p-title">Bar</p>
+                    <p class="p-title" data-i18n="about.bar">Bar</p>
                 </div>
                 <div class="col-xl-25 col-6 p-1">
                     <img class="img-fluid mb-lg-0" src="assets/img/Plant-Based-Restaurant.jpg"
                         alt="Plant Based Restaurant" />
-                    <p class="p-title">Plant Based Restaurant</p>
+                    <p class="p-title" data-i18n="about.plantBasedRestaurant">Plant Based Restaurant</p>
                 </div>
             </div>
         </div>
     </section>
-
 
     <!-- Location -->
     <section class="bg-light m-0 p-0" id="location">
         <!-- Featured Project Row-->
         <div class="row gx-0  align-items-top mb-5">
             <div class="col-12 p-2 text-center">
-                <h2 class="mb-4">Our Locations</h2>
+                <h2 class="mb-4" data-i18n="location.title"></h2>
                 <div id="map" style="width: 100%; height: 600px;"></div>
                 <script
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa2zHGo4o_4Fg82SO_i-7UhBABzYxhu6c"></script>
@@ -207,7 +201,7 @@
                             });
                             var infoWindow = new google.maps.InfoWindow({
                                 content: '<div style="font-size: 12px;"><strong>' + loc.name + '</strong><br>' +
-                                    '<a href="' + loc.link + '" target="_blank">View on Maps</a></div>',
+                                    '<a href="' + loc.link + '" target="_blank"></a></div>',
                             });
 
                             marker.addListener('click', function () {
@@ -255,6 +249,32 @@
 
                     google.maps.event.addDomListener(window, 'load', initMap);
                 </script>
+
+                <script>
+
+                    document.addEventListener('DOMContentLoaded', function () {
+                        let lastScrollTop = 0;
+                        const navbar = document.getElementById('mainNav');
+                        const scrollThreshold = 100; // Adjust this value to change when the navbar starts hiding
+
+                        window.addEventListener('scroll', function () {
+                            let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                            if (currentScrollTop > lastScrollTop && currentScrollTop > scrollThreshold) {
+                                // Scrolling down
+                                navbar.style.transform = 'translateY(-100%)';
+                                navbar.style.transition = 'transform 0.3s ease-out';
+                            } else {
+                                // Scrolling up or at the top
+                                navbar.style.transform = 'translateY(0)';
+                                navbar.style.transition = 'transform 0.3s ease-out';
+                            }
+
+                            lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+                        }, false);
+                    });
+
+                </script>
             </div>
         </div>
 
@@ -262,12 +282,12 @@
 
     <!-- timeline-->
     <section class="projects-section bg-light" id="timeline"
-        style="background: linear-gradient(to bottom, rgb(255 255 255 / 82%) 0%, rgb(255 255 255 / 89%) 0%),url(assets/img/wave.jpg);">
+        style="background: linear-gradient(to bottom, rgb(255 255 255 / 82%) 0%, rgb(255 255 255 / 89%) 0%),url(assets/img/wave.jpg); background-size: cover;">
         <div class="container px-4 px-lg-5 ">
             <!-- Featured timeline Row-->
             <div class="row gx-4 gx-lg-5 justify-content-center mb-4">
                 <div class="col-lg-8 text-center">
-                    <h2 class="mb-4">H Hospitality Group Timeline</h2>
+                    <h2 class="mb-4" data-i18n="timeline.title">H Hospitality Group Timeline</h2>
                 </div>
             </div>
             <div class="main-timeline">
@@ -361,7 +381,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="card-text">Piece Lio</p>
+                                    <p class="card-text" data-i18n="timeline.2024.pieceLio.name">Piece Lio</p>
                                 </div>
                                 <div class="col-6 p-1">
                                     <!-- Image trigger modal -->
@@ -421,7 +441,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="card-text">Nacpan Beach Villa</p>
+                                    <p class="card-text" data-i18n="timeline.2024.nacpanBeachVilla.name">Nacpan Beach
+                                        Villa</p>
                                 </div>
                                 <div class="col-6 p-1">
                                     <!-- Image trigger modal -->
@@ -1509,8 +1530,9 @@
                 <div class="col-12 p-2 text-center">
                     <img class="img-fluid mb-3 mb-lg-5" src="assets/img/hhospitality.group-logo.png" width="180px"
                         alt="hhospitality.group" />
-                    <h2 class="mb-4">CORPORATE SOCIAL RESPONSIBILITY BREAKTHROUGHS</h2>
-                    <p>At H Hospitality Group, our commitment goes beyond providing exceptional hospitality; it extends
+                    <h2 class="mb-4" data-i18n="csr.title">CORPORATE SOCIAL RESPONSIBILITY BREAKTHROUGHS</h2>
+                    <p data-i18n="csr.description">At H Hospitality Group, our commitment goes beyond providing
+                        exceptional hospitality; it extends
                         to making a meaningful impact on both our community and the environment. Since our founding in
                         El Nido, Palawan, we have been steadfast in our commitment to creating a positive change through
                         a variety of initiatives that support people and protect the planet.</p>
@@ -1518,8 +1540,9 @@
             </div>
             <div class="row gx-0 align-items-top mb-5">
                 <div class="col-lg-6 p-2">
-                    <h3>Community Support Network</h3>
-                    <p>With around 300 employees, H Hospitality Group is proud to contribute to the livelihood of around
+                    <h3 data-i18n="csr.communitySupport.title">Community Support Network</h3>
+                    <p data-i18n="csr.communitySupport.description">With around 300 employees, H Hospitality Group is
+                        proud to contribute to the livelihood of around
                         300 families. More than 70% of our workforce are locals from El Nido, showcasing our genuine
                         passion for supporting the community by providing decent jobs with competitive pay and benefits.
                         We believe that offering stable job opportunities and a nurturing work environment is essential
@@ -1535,8 +1558,9 @@
                     </div>
                 </div>
                 <div class="col-lg-6 p-2">
-                    <h3>Turtle Conservation Legacy</h3>
-                    <p>Since 2016, H Hospitality Group has been a proud supporter of the Nacpan Turtle Hatchery. Through
+                    <h3 data-i18n="csr.turtleConservation.title">Turtle Conservation Legacy</h3>
+                    <p data-i18n="csr.turtleConservation.description">Since 2016, H Hospitality Group has been a proud
+                        supporter of the Nacpan Turtle Hatchery. Through
                         our contributions, over 45,000 sea turtles have been successfully rehabilitated and released
                         into the ocean, safeguarding the lives of these incredible creatures and preserving the delicate
                         marine ecosystem. Our efforts to protect and conserve wildlife reflect our deep respect for the
@@ -1553,14 +1577,16 @@
             </div>
             <div class="row gx-0 align-items-top mb-5">
                 <div class="col-lg-6 p-2">
-                    <h3>Empowerment Through Brigada Eskwela</h3>
-                    <p>We recognize the importance of education in building a brighter future for our community. H
+                    <h3 data-i18n="csr.brigadaEskwela.title">Empowerment Through Brigada Eskwela</h3>
+                    <p data-i18n="csr.brigadaEskwela.description1">We recognize the importance of education in building
+                        a brighter future for our community. H
                         Hospitality Group actively participates in the "Brigada Eskwela" program by donating essential
                         materials such as cement, hollow blocks, and paint, as well as providing employee manpower to
                         assist with cleaning, painting, and repairing school buildings. This year's beneficiaries
                         include Bucana National High School and Calitang Elementary School. Additionally, we plan to
                         adopt a school to ensure sustainability and continuous development.</p>
-                    <p>H Hospitality Group also supports various schools by offering on-the-job training opportunities
+                    <p data-i18n="csr.brigadaEskwela.description2">H Hospitality Group also supports various schools by
+                        offering on-the-job training opportunities
                         for students. Trainees are assigned to different properties within HHG, including roles in Food
                         & Beverage, housekeeping, front office, and even head office departments such as HR, Accounting,
                         and Purchasing.</p>
@@ -1574,13 +1600,15 @@
                     </div>
                 </div>
                 <div class="col-lg-6 p-2">
-                    <h3>Excellence Through Community Engagement</h3>
-                    <p>H Hospitality Group proudly supports local sports as a way to strengthen teamwork, discipline,
+                    <h3 data-i18n="csr.communityEngagement.title">Excellence Through Community Engagement</h3>
+                    <p data-i18n="csr.communityEngagement.description1">H Hospitality Group proudly supports local
+                        sports as a way to strengthen teamwork, discipline,
                         and community spirit. Our basketball team, a symbol of our commitment to these values, achieved
                         a major milestone by winning the championship in 2023. This victory not only brought pride to
                         our organization but also inspired our community to strive for excellence both on and off the
                         court.</p>
-                    <p>This year, HHG will launch its own Glee Club to showcase singing talents and a Dance Club to
+                    <p data-i18n="csr.communityEngagement.description2">This year, HHG will launch its own Glee Club to
+                        showcase singing talents and a Dance Club to
                         highlight creativity through dances. These initiatives demonstrate that we excel not only in
                         hospitality but also in honing diverse talents. They promote work-life balance within the
                         community by offering our team members opportunities for artistic expression and personal
@@ -1597,7 +1625,8 @@
             </div>
             <div class="row gx-0 align-items-top">
                 <div class="col-12 p-2 text-center">
-                    <p>At H Hospitality Group, we are dedicated to forging a sustainable future for our people,
+                    <p data-i18n="csr.conclusion">At H Hospitality Group, we are dedicated to forging a sustainable
+                        future for our people,
                         community, and the environment. Our CSR initiatives are a testament to our unwavering commitment
                         to making a positive difference in El Nido and beyond, one step at a time.</p>
                 </div>
@@ -1611,7 +1640,7 @@
             <div class="row gx-4 gx-lg-5">
                 <div class="col-md-10 col-lg-8 mx-auto text-center">
                     <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                    <h2 class="text-white mb-5">Contact Us</h2>
+                    <h2 class="text-white mb-5" data-i18n="contact.title">Contact Us</h2>
                 </div>
             </div>
             <div class="row gx-4 gx-lg-5">
@@ -1619,9 +1648,9 @@
                     <div class="card py-4 h-100">
                         <div class="card-body text-center">
                             <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Location</h4>
+                            <h4 class="text-uppercase m-0" data-i18n="contact.location">Location</h4>
                             <hr class="my-4 mx-auto" />
-                            <div class="small text-black-50">PH,El Nido</div>
+                            <div class="small text-black-50" data-i18n="contact.locationValue">PH,El Nido</div>
                         </div>
                     </div>
                 </div>
@@ -1629,7 +1658,7 @@
                     <div class="card py-4 h-100">
                         <div class="card-body text-center">
                             <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Phone</h4>
+                            <h4 class="text-uppercase m-0" data-i18n="contact.phone">Phone</h4>
                             <hr class="my-4 mx-auto" />
                             <div class="small text-black-50">+639176364861</div>
                         </div>
@@ -1639,7 +1668,7 @@
                     <div class="card py-4 h-100">
                         <div class="card-body text-center">
                             <i class="fab fa-whatsapp text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">What’s app</h4>
+                            <h4 class="text-uppercase m-0" data-i18n="contact.whatsapp">What's app</h4>
                             <hr class="my-4 mx-auto" />
                             <div class="small text-black-50">+886915666911</div>
                         </div>
@@ -1650,7 +1679,7 @@
     </section>
     <!-- Footer-->
     <footer class="footer bg-black small text-center text-white-50">
-        <div class="container px-4 px-lg-5">Copyright &copy; H Hospitality Group 2023</div>
+        <div class="container px-4 px-lg-5">Copyright &copy; H Hospitality Group 2024</div>
     </footer>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

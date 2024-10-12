@@ -1,0 +1,207 @@
+
+{
+  "nav": {
+    "about": "About",
+    "hotel": "Hotel",
+    "timeline": "Timeline",
+    "contact": "Contact"
+  },
+  "masthead": {
+    "title": "H Hospitality Group",
+    "subtitle": "An unmissable stay for your next vacation in paradise!"
+  },
+  "about": {
+    "description": "H Hospitality Group, the brainchild of visionary entrepreneur Henry, is a burgeoning management company setting benchmarks in El Nido, Palawan. Amid a region witnessing a staggering 700% rise in tourism over the past seven years, the group not only influences this growth but also proudly owns shuttle services, a tour agency, and multiple hotels, further solidifying its footprint in the industry. In addition to its core hospitality services, H Hospitality Group operates several restaurants and cafés, offering diverse dining experiences that showcase the rich flavors of the region. The group is also expanding its portfolio with the development of a cutting-edge condo hotel, poised to redefine luxury living in El Nido.",
+    "beachfrontHotels": "Beachfront Hotels",
+    "beachfrontRestaurants": "Beachfront Restaurants",
+    "hotel": "Hotel",
+    "travelAndTour": "Travel and Tour",
+    "condominium": "Condominium",
+    "cafe": "Cafe",
+    "spaAndMassage": "Spa & Massage",
+    "nacpanBeachShuttle": "Nacpan Beach Shuttle",
+    "bar": "Bar",
+    "plantBasedRestaurant": "Plant Based Restaurant"
+  },
+  "location": {
+    "title": "Location"
+  },
+  "timeline": {
+    "title": "H Hospitality Group Timeline",
+    "2024": {
+      "pieceLio": {
+        "name": "Piece Lio"
+      },
+      "nacpanBeachVilla": {
+        "name": "Nacpan Beach Villa"
+      }
+    }
+  },
+  "csr": {
+    "title": "CORPORATE SOCIAL RESPONSIBILITY BREAKTHROUGHS",
+    "description": "At H Hospitality Group, our commitment goes beyond providing exceptional hospitality; it extends to making a meaningful impact on both our community and the environment. Since our founding in El Nido, Palawan, we have been steadfast in our commitment to creating a positive change through a variety of initiatives that support people and protect the planet.",
+    "communitySupport": {
+      "title": "Community Support Network",
+      "description": "With around 300 employees, H Hospitality Group is proud to contribute to the livelihood of around 300 families. More than 70% of our workforce are locals from El Nido, showcasing our genuine passion for supporting the community by providing decent jobs with competitive pay and benefits. We believe that offering stable job opportunities and a nurturing work environment is essential to building a thriving community. Our employees are the backbone of our success, and their well-being is our top priority."
+    },
+    "turtleConservation": {
+      "title": "Turtle Conservation Legacy",
+      "description": "Since 2016, H Hospitality Group has been a proud supporter of the Nacpan Turtle Hatchery. Through our contributions, over 45,000 sea turtles have been successfully rehabilitated and released into the ocean, safeguarding the lives of these incredible creatures and preserving the delicate marine ecosystem. Our efforts to protect and conserve wildlife reflect our deep respect for the natural beauty of Palawan."
+    },
+    "brigadaEskwela": {
+      "title": "Empowerment Through Brigada Eskwela",
+      "description1": "We recognize the importance of education in building a brighter future for our community. H Hospitality Group actively participates in the \"Brigada Eskwela\" program by donating essential materials such as cement, hollow blocks, and paint, as well as providing employee manpower to assist with cleaning, painting, and repairing school buildings. This year's beneficiaries include Bucana National High School and Calitang Elementary School. Additionally, we plan to adopt a school to ensure sustainability and continuous development.",
+      "description2": "H Hospitality Group also supports various schools by offering on-the-job training opportunities for students. Trainees are assigned to different properties within HHG, including roles in Food & Beverage, housekeeping, front office, and even head office departments such as HR, Accounting, and Purchasing."
+    },
+    "communityEngagement": {
+      "title": "Excellence Through Community Engagement",
+      "description1": "H Hospitality Group proudly supports local sports as a way to strengthen teamwork, discipline, and community spirit. Our basketball team, a symbol of our commitment to these values, achieved a major milestone by winning the championship in 2023. This victory not only brought pride to our organization but also inspired our community to strive for excellence both on and off the court.",
+      "description2": "This year, HHG will launch its own Glee Club to showcase singing talents and a Dance Club to highlight creativity through dances. These initiatives demonstrate that we excel not only in hospitality but also in honing diverse talents. They promote work-life balance within the community by offering our team members opportunities for artistic expression and personal growth. Additionally, these clubs aim to engage with and give back to the community through performances and events that bring people together and celebrate local talent."
+    },
+    "conclusion": "At H Hospitality Group, we are dedicated to forging a sustainable future for our people, community, and the environment. Our CSR initiatives are a testament to our unwavering commitment to making a positive difference in El Nido and beyond, one step at a time."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "location": "Location",
+    "locationValue": "PH,El Nido",
+    "phone": "Phone",
+    "whatsapp": "What's app"
+  },
+  "hotel": {
+    "title": "Our Hotels",
+    "subtitle": "Discover our collection of exceptional properties in El Nido",
+    "info": "Hotel Info",
+    "rating": "Rating:",
+    "location": "Location:",
+    "phone": "Phone:",
+    "pricing": "Pricing:",
+    "bookNow": "Book Now",
+    "website": "Website:",
+    "highlights": "Highlights:",
+    "coupleRating": "Couple rating:",
+    "distanceFromBeach": "Distance from beach:",
+    "valueForMoney": "Value for money:",
+    "locationScore": "Location score:",
+    "nearestAirport": "Nearest airport:",
+    "pieceLio": {
+      "name": "Piece Lio",
+      "description": "A luxurious beachfront resort offering stunning views of the ocean and world-class amenities.",
+      "location": "Lio Beach, El Nido, Palawan",
+      "phone": "+63 917 123 4567",
+      "website": "www.piecelio.com"
+    },
+    "nacpanBeachResort": {
+      "name": "Nacpan Beach Resort",
+      "description": "Experience the beauty of Nacpan Beach at this eco-friendly resort, perfect for nature lovers.",
+      "location": "Nacpan Beach, El Nido, Palawan",
+      "phone": "+63 917 234 5678",
+      "website": "www.nacpanbeachresort.com"
+    },
+    "nacpanBeachGlamping": {
+      "name": "Nacpan Beach Glamping",
+      "description": "Enjoy a unique glamping experience with all the comforts of a hotel, right on the beach.",
+      "location": "Nacpan Beach, El Nido, Palawan",
+      "phone": "+63 917 345 6789",
+      "website": "www.nacpanbeachglamping.com"
+    },
+    "hHotelVeganHotel": {
+      "name": "H Hotel Vegan Hotel",
+      "description": "A vegan-friendly hotel with plant-based cuisine and eco-conscious rooms.",
+      "location": "El Nido Town Proper, Palawan",
+      "phone": "+63 917 456 7890",
+      "website": "www.hhotelveganhotel.com"
+    },
+    "jBoutiqueHotel": {
+      "name": "J Boutique Hotel",
+      "description": "A stylish boutique hotel in the heart of El Nido, perfect for urban explorers.",
+      "location": "El Nido Town Center, Palawan",
+      "phone": "+63 917 567 8901",
+      "website": "www.jboutiquehotel.com"
+    },
+    "sResortElNido": {
+      "name": "S Resort El Nido",
+      "description": "A modern resort offering comfort and convenience for leisure and business travelers.",
+      "location": "Corong Corong, El Nido, Palawan",
+      "phone": "+63 917 678 9012",
+      "website": "www.sresortelnido.com"
+    },
+    "casaCecilia": {
+      "name": "Casa Cecilia",
+      "description": "A 3-star accommodation located in the heart of El Nido, offering comfort and convenience.",
+      "location": "El Nido, Palawan",
+      "phone": "+63 917 345 6789",
+      "website": "www.casacecilia.com"
+    },
+    "nacpanBeachVillas": {
+      "name": "Nacpan Beach Villas",
+      "description": "Luxurious villas with free WiFi, perfect for couples seeking a romantic getaway.",
+      "location": "Near Nacpan Beach, El Nido, Palawan",
+      "highlights": "Free WiFi, Garden, Terrace, Bar"
+    },
+    "milanGraceInn": {
+      "name": "MilanGrace Inn El Nido Palawan",
+      "description": "3-star accommodation with free parking, perfect location for exploring El Nido.",
+      "location": "Barangay Buena Suerte Cabigsing El Nido, Palawan, Philippines, 5113",
+      "highlights": "Free parking, Restaurant, 24-hour front desk, Airport transfer",
+      "nearestAirport": "El Nido Airport (ENI) - 4.1 km"
+    }
+  },
+  "common": {
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "investing": {
+    "title": "Our Investments",
+    "subtitle": "Explore our diverse strategic portfolio"
+  },
+  "restaurant": {
+    "3BrosFalafel": {
+      "name": "3 Bros Falafel",
+      "description": "A vibrant restaurant specializing in Mexican-style burritos, offering a unique fusion of flavors in El Nido."
+    },
+    "verDeElNido": {
+      "name": "Ver De El Nido",
+      "description": "A charming vegetarian restaurant offering a diverse plant-based menu in the heart of El Nido."
+    }
+  },
+  "travel": {
+    "elNidoGO": {
+      "name": "El Nido GO",
+      "description": "An exciting beach game experience offering fun activities and adventures for visitors to El Nido."
+    },
+    "sunsetMarket": {
+      "name": "Sunset Market",
+      "description": "A lively beachfront market offering shopping and dining experiences accompanied by stunning sunset views."
+    },
+    "nacpanBeachWedding": {
+      "name": "Nacpan Beach Wedding",
+      "description": "Offering beach wedding services including venue information, catering, and decoration assistance to create your perfect beach wedding."
+    },
+    "nacpanBeachShuttle": {
+      "name": "Nacpan Beach Shuttle",
+      "description": "This is a 9-seater minibus that can take you on a tour of the coastal scenery and city attractions of El Nido, Philippines. It's a perfect way to explore the beautiful beaches and landmarks of the island while enjoying comfortable transportation."
+    }
+  },
+  "cafe": {
+    "grounded100Arabica": {
+      "name": "Grounded 100% Arabica",
+      "description": "A cozy cafe offering premium 100% Arabica coffee sourced from the world's finest coffee beans. Enjoy the perfect cup paired with freshly baked pastries while taking in the captivating views of El Nido."
+    },
+    "unocha": {
+      "name": "Unocha",
+      "description": "Unocha: Authentic Taiwanese bubble tea in El Nido. Classic and innovative flavors using premium tea leaves and fresh pearls. Taste Taiwan in paradise."
+    }
+  },
+  "spa": {
+    "orientalSpa": {
+      "name": "Oriental Spa",
+      "description": "Oriental Spa offers a serene oasis of relaxation and rejuvenation in the heart of El Nido. Our expert therapists provide a range of traditional and modern treatments, from soothing massages to revitalizing facials, using natural, locally-sourced ingredients. Experience ultimate tranquility and emerge refreshed, ready to continue your tropical paradise adventure."
+    }
+  },
+  "bar": {
+    "sunmaiNacpanBeach": {
+      "name": "Sunmai Nacpan Beach",
+      "description": "Sunmai Nacpan Beach, the only Sunmai bar on El Nido island, offers a unique blend of Taiwanese craft beers and stunning beach views. Enjoy sunset drinks in this tropical paradise, where East Asian brewing meets Philippine coastal beauty."
+    }
+  }
+}
