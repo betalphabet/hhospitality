@@ -12957,6 +12957,20 @@ body {
   }
 }
 
+.investing-list-banner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  padding: 0;
+  background: url("../assets/img/hhospitality_investing_banner.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
 .hotel-list-banner {
   position: relative;
   width: 100%;
@@ -12971,13 +12985,15 @@ body {
   align-items: flex-end;
 }
 
-.hotel-list-banner .banner-content {
+.hotel-list-banner .banner-content, .investing-list-banner .banner-content {
   width: 100%;
   padding: 2rem;
 }
 
 .hotel-list-banner h1,
-.hotel-list-banner .h1 {
+.hotel-list-banner .h1,
+.investing-list-banner h1,
+.investing-list-banner .h1 {
   font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2rem;
   line-height: 2.5rem;
@@ -12985,7 +13001,7 @@ body {
   margin-top: 3em;
 }
 
-.hotel-list-banner p {
+.hotel-list-banner p, .investing-list-banner p {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 0;
@@ -12993,50 +13009,60 @@ body {
 
 @media (min-width: 768px) {
   .hotel-list-banner h1,
-  .hotel-list-banner .h1 {
+  .hotel-list-banner .h1,
+  .investing-list-banner h1,
+  .investing-list-banner .h1 {
     font-size: 3rem;
     line-height: 3.5rem;
   }
 }
 
 @media (min-width: 992px) {
-  .hotel-list-banner {
+  .hotel-list-banner,
+  .investing-list-banner {
     height: 300px;
   }
 
   .hotel-list-banner h1,
-  .hotel-list-banner .h1 {
+  .hotel-list-banner .h1,
+  .investing-list-banner h1,
+  .investing-list-banner .h1 {
     font-size: 3.5rem;
     line-height: 4rem;
   }
 
-  .hotel-list-banner p {
+  .hotel-list-banner p,
+  .investing-list-banner p {
     font-size: 1.25rem;
   }
 }
 
 @media (max-width: 767px) {
-  .hotel-list-banner {
+  .hotel-list-banner,
+  .investing-list-banner {
     height: 200px;
     margin-top: 58px;
   }
 
-  .hotel-list-banner .banner-content {
+  .hotel-list-banner .banner-content, .investing-list-banner .banner-content {
     padding: 1rem;
   }
 
   .hotel-list-banner h1,
-  .hotel-list-banner .h1 {
+  .hotel-list-banner .h1,
+  .investing-list-banner h1,
+  .investing-list-banner .h1 {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 
-  .hotel-list-banner p {
+  .hotel-list-banner p,
+  .investing-list-banner p {
     font-size: 0.875rem;
   }
 }
 
-#hotels img{
+#hotels img, #travel-tour img{
   height: 250px;
   width: 100%;
   object-fit: cover;
@@ -13305,9 +13331,27 @@ body {
   object-fit: cover;
 }
 
+.hotel-description{
+  display: inline-block;
+  height: 60px;
+}
+
+.restaurant-description{
+  display: inline-block;
+  height: 60px;
+}
+
+#restaurants-cafe-bars .featured-text, #hotels .featured-text{
+  height: 200px;
+}
+
+.tour-description{
+  display: inline-block;
+  height: 150px;
+}
+
 #investmentTabs{
   border-bottom: none;
-
 }
 
 #investmentTabs .nav-link {

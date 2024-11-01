@@ -22,7 +22,7 @@
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css?v=202408291428" rel="stylesheet" />
+    <link href="css/styles.css?v=202411012130" rel="stylesheet" />
     <style>
         #mainNav.navbar-shrink .langSelectDesktop {
             margin-top: 15px;
@@ -70,6 +70,8 @@
                     <li class="nav-item"><a class="nav-link" href="index.html#about" data-i18n="nav.about">About</a>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="hotel.html" data-i18n="nav.hotel">Our Hotels</a></li>
+                    <li class="nav-item"><a class="nav-link" href="investing.html"
+                            data-i18n="nav.investing">Investing</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#timeline"
                             data-i18n="nav.timeline">Timeline</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#contact"
@@ -87,7 +89,7 @@
         </div>
     </nav>
     <!-- Masthead-->
-    <header class="hotel-list-banner ">
+    <header class="investing-list-banner">
         <div class="container px-4 px-lg-5 ">
             <div class="text-left">
                 <h1 class="text-uppercase" data-i18n="investing.title">Our Investments</h1>
@@ -101,200 +103,525 @@
         <div class="container px-4 px-lg-5">
             <ul class="nav nav-tabs" id="investmentTabs" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="beachfront-hotels-tab" data-bs-toggle="tab"
-                        data-bs-target="#beachfront-hotels" type="button" role="tab" aria-controls="beachfront-hotels"
-                        aria-selected="true">Beachfront Hotels</button>
+                    <button class="nav-link active" id="hotels-tab" data-bs-toggle="tab" data-bs-target="#hotels"
+                        type="button" role="tab" aria-controls="hotels" aria-selected="true"
+                        data-i18n="investing.tabs.hotels">Hotels</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="restaurants-tab" data-bs-toggle="tab" data-bs-target="#restaurants"
-                        type="button" role="tab" aria-controls="restaurants" aria-selected="false">Restaurants</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="travel-tour-tab" data-bs-toggle="tab" data-bs-target="#travel-tour"
-                        type="button" role="tab" aria-controls="travel-tour" aria-selected="false">Travel and
-                        Tour</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="cafe-tab" data-bs-toggle="tab" data-bs-target="#cafe" type="button"
-                        role="tab" aria-controls="cafe" aria-selected="false">Cafe</button>
+                    <button class="nav-link" id="restaurants-cafe-bars-tab" data-bs-toggle="tab"
+                        data-bs-target="#restaurants-cafe-bars" type="button" role="tab"
+                        aria-controls="restaurants-cafe-bars" aria-selected="false"
+                        data-i18n="investing.tabs.restaurantsCafeBars">Restaurant, Cafe & Bars</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="spa-massage-tab" data-bs-toggle="tab" data-bs-target="#spa-massage"
-                        type="button" role="tab" aria-controls="spa-massage" aria-selected="false">Spa &
+                        type="button" role="tab" aria-controls="spa-massage" aria-selected="false"
+                        data-i18n="investing.tabs.spaMassage">Spa &
                         Massage</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="nacpan-beach-shuttle-tab" data-bs-toggle="tab"
-                        data-bs-target="#nacpan-beach-shuttle" type="button" role="tab"
-                        aria-controls="nacpan-beach-shuttle" aria-selected="false">Nacpan Beach Shuttle</button>
+                    <button class="nav-link" id="travel-tours-tab" data-bs-toggle="tab" data-bs-target="#travel-tours"
+                        type="button" role="tab" aria-controls="travel-tours" aria-selected="false"
+                        data-i18n="investing.tabs.travelTours">Travel & Tours</button>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="bar-tab" data-bs-toggle="tab" data-bs-target="#bar" type="button"
-                        role="tab" aria-controls="bar" aria-selected="false">Bar</button>
-                </li>
+
             </ul>
             <div class="tab-content mt-4" id="investmentTabsContent">
-                <div class="tab-pane fade show active" id="beachfront-hotels" role="tabpanel"
-                    aria-labelledby="beachfront-hotels-tab">
+                <div class="tab-pane fade show active" id="hotels" role="tabpanel" aria-labelledby="hotels-tab">
                     <!-- Hotel List -->
-                    <section class="projects-section bg-light pt-5" id="hotels">
-                        <div class="container px-4 px-lg-5">
+                    <section class="projects-section bg-light pt-3" id="hotels">
+                        <div class="container px-3">
                             <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                                <p class="text-black-50" data-i18n="investing.hotels.introduction">
+                                    H Hospitality Group is dedicated to providing unique and comfortable accommodation
+                                    experiences through its diverse hotel portfolio. Our hotels are strategically
+                                    located in El Nido's prime locations, catering to various types of travelers while
+                                    promoting environmental protection and sustainable development. We offer luxurious
+                                    experiences while emphasizing harmony with local culture and the natural
+                                    environment, creating unforgettable memories for every guest.
+                                </p>
                                 <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
-                                    <a href="#">
+                                    <a href="piece-lio.html">
                                         <img class="img-fluid mb-3 mb-lg-0" src="images/piecelio/cover.webp"
                                             alt="Piece Lio" />
                                     </a>
                                     <div class="featured-text text-center text-lg-left pt-3">
-                                        <h4 data-i18n="hotel.pieceLio.name">Piece Lio</h4>
+                                        <h4 data-i18n="investing.hotels.pieceLio.name">Piece Lio</h4>
                                         <p class="text-black-50 mb-0">
-                                            <span data-i18n="hotel.pieceLio.description">A luxurious beachfront resort
-                                                offering stunning views of the ocean and world-class amenities.</span>
+                                            <span data-i18n="investing.hotels.pieceLio.shortDescription"
+                                                class="hotel-description">One of the most comfortable hotels on El Nido,
+                                                developed in collaboration with Japan's renowned Piece Group. Offering
+                                                spacious rooms of 50 to 150 square meters, providing a more comfortable
+                                                stay compared to local hotels' typical 18 to 22 square meter
+                                                rooms.</span>
                                         </p>
+                                        <ul class="list-unstyled text-muted">
+                                            <li data-i18n="investing.hotels.pieceLio.rooms">Rooms: 36</li>
+                                            <li data-i18n="investing.hotels.pieceLio.openingYear">Opening Year: 2024
+                                            </li>
+                                            <li data-i18n="investing.hotels.pieceLio.location">Location: Lio Airport
+                                                Area (Ayala Lio)</li>
+                                        </ul>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
-                                    <a href="#">
+                                    <a href="hhotel-vegan.html">
                                         <img class="img-fluid mb-3 mb-lg-0"
-                                            src="assets/img/time-Nacpan-Beach-Resort.jpg" alt="Nacpan Beach Resort" />
+                                            src="assets/img/time-H-Hotel-Vegan-Hotel.jpg"
+                                            alt="H Hotel - Vegan Friendly Hotel" />
                                     </a>
                                     <div class="featured-text text-center text-lg-left pt-3">
-                                        <h4 data-i18n="hotel.nacpanBeachResort.name">Nacpan Beach Resort</h4>
+                                        <h4 data-i18n="investing.hotels.hHotelVeganHotel.name">H Hotel - Vegan Friendly
+                                            Hotel</h4>
                                         <p class="text-black-50 mb-0">
-                                            <span data-i18n="hotel.nacpanBeachResort.description">Experience the beauty
-                                                of Nacpan Beach at this eco-friendly resort, perfect for nature
-                                                lovers.</span>
+                                            <span data-i18n="investing.hotels.hHotelVeganHotel.shortDescription"
+                                                class="hotel-description">Located in the center of El Nido town with an
+                                                excellent location. Offers Ver De's vegan breakfast and sea view dinners
+                                                at the rooftop Piece of Sky restaurant. Two of TripAdvisor's top 3
+                                                ranked restaurants are located in H Hotel.</span>
                                         </p>
+                                        <ul class="list-unstyled text-muted">
+                                            <li data-i18n="investing.hotels.hHotelVeganHotel.rooms">Rooms: 41</li>
+                                            <li data-i18n="investing.hotels.hHotelVeganHotel.openingYear">Opening Year:
+                                                2023</li>
+                                            <li data-i18n="investing.hotels.hHotelVeganHotel.location">Location: El Nido
+                                                Town Center</li>
+                                        </ul>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
-                                    <a href="#">
+                                    <a href="nacpan-beach-glamping.html">
                                         <img class="img-fluid mb-3 mb-lg-0"
                                             src="assets/img/time-Nacpan-Beach-Glamping.jpg"
                                             alt="Nacpan Beach Glamping" />
                                     </a>
                                     <div class="featured-text text-center text-lg-left pt-3">
-                                        <h4 data-i18n="hotel.nacpanBeachGlamping.name">Nacpan Beach Glamping</h4>
+                                        <h4 data-i18n="investing.hotels.nacpanBeachGlamping.name">Nacpan Beach Glamping
+                                        </h4>
                                         <p class="text-black-50 mb-0">
-                                            <span data-i18n="hotel.nacpanBeachGlamping.description">Enjoy a unique
-                                                glamping experience with all the comforts of a hotel, right on the
-                                                beach.</span>
+                                            <span data-i18n="investing.hotels.nacpanBeachGlamping.shortDescription"
+                                                class="hotel-description">Located on Nacpan Beach, a must-visit spot
+                                                after Big Lagoon and Small Lagoon. We've planted 300 trees and 4000
+                                                shrubs, focusing on environmental conservation and establishing a sea
+                                                turtle conservation project.</span>
                                         </p>
+                                        <ul class="list-unstyled text-muted">
+                                            <li data-i18n="investing.hotels.nacpanBeachGlamping.rooms">Rooms: 18</li>
+                                            <li data-i18n="investing.hotels.nacpanBeachGlamping.openingYear">Opening
+                                                Year: 2023</li>
+                                            <li data-i18n="investing.hotels.nacpanBeachGlamping.location">Location:
+                                                Nacpan Beach</li>
+                                        </ul>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
-                                    <a href="#">
-                                        <img class="img-fluid mb-3 mb-lg-0" src="assets/img/time-S-Resort-El-Nido.jpg"
-                                            alt="S Resort El Nido" />
+                                    <a href="nacpan-beach-resort.html">
+                                        <img class="img-fluid mb-3 mb-lg-0"
+                                            src="assets/img/time-Nacpan-Beach-Resort.jpg" alt="Nacpan Beach Resort" />
                                     </a>
                                     <div class="featured-text text-center text-lg-left pt-3">
-                                        <h4 data-i18n="hotel.sResortElNido.name">S Resort El Nido</h4>
+                                        <h4 data-i18n="investing.hotels.nacpanBeachResort.name">Nacpan Beach Resort</h4>
                                         <p class="text-black-50 mb-0">
-                                            <span data-i18n="hotel.sResortElNido.description">A modern resort offering
-                                                comfort and convenience for leisure and business travelers.</span>
+                                            <span data-i18n="investing.hotels.nacpanBeachResort.shortDescription"
+                                                class="hotel-description">Offering a more comfortable beach
+                                                accommodation experience for travelers who prefer not to stay in tents.
+                                                Guests can enjoy private bathroom facilities, avoiding the inconvenience
+                                                of separate toilets in tents.</span>
                                         </p>
+                                        <ul class="list-unstyled text-muted">
+                                            <li data-i18n="investing.hotels.nacpanBeachResort.rooms">Rooms: 26</li>
+                                            <li data-i18n="investing.hotels.nacpanBeachResort.openingYear">Opening Year:
+                                                2023</li>
+                                            <li data-i18n="investing.hotels.nacpanBeachResort.location">Location: Nacpan
+                                                Beach</li>
+                                        </ul>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
-                                    <a href="#">
+                                    <a href="nacpan-beach-villas.html">
                                         <img class="img-fluid mb-3 mb-lg-0" src="images/nacpan_beach_villa/1.webp"
                                             alt="Nacpan Beach Villas" />
                                     </a>
                                     <div class="featured-text text-center text-lg-left pt-3">
-                                        <h4 data-i18n="hotel.nacpanBeachVillas.name">Nacpan Beach Villas</h4>
+                                        <h4 data-i18n="investing.hotels.nacpanBeachVillas.name">Nacpan Beach Villas</h4>
                                         <p class="text-black-50 mb-0">
-                                            <span data-i18n="hotel.nacpanBeachVillas.description">Luxurious villas with
-                                                free WiFi, perfect for couples seeking a romantic getaway.</span>
+                                            <span data-i18n="investing.hotels.nacpanBeachVillas.shortDescription"
+                                                class="hotel-description">Our newest hotel investment on Nacpan Beach,
+                                                featuring single villa designs. While it doesn't have a gym or pool,
+                                                it's located right above the beach, offering a natural ocean swimming
+                                                pool. Room designs by renowned designer Justin provide a comfortable and
+                                                luxurious experience.</span>
                                         </p>
+                                        <ul class="list-unstyled text-muted">
+                                            <li data-i18n="investing.hotels.nacpanBeachVillas.rooms">Rooms: 14</li>
+                                            <li data-i18n="investing.hotels.nacpanBeachVillas.openingYear">Opening Year:
+                                                2024</li>
+                                            <li data-i18n="investing.hotels.nacpanBeachVillas.location">Location: Nacpan
+                                                Beach</li>
+                                        </ul>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
-                                    <a href="#">
-                                        <img class="img-fluid mb-3 mb-lg-0" src="assets/img/milangrace/milangrace_1.jpg"
-                                            alt="MilanGrace Inn El Nido Palawan" />
+                                    <a href="s-resort.html">
+                                        <img class="img-fluid mb-3 mb-lg-0" src="assets/img/time-S-Resort-El-Nido.jpg"
+                                            alt="S Resort El Nido" />
                                     </a>
                                     <div class="featured-text text-center text-lg-left pt-3">
-                                        <h4 data-i18n="hotel.milanGraceInn.name">MilanGrace Inn El Nido Palawan</h4>
+                                        <h4 data-i18n="investing.hotels.sResortElNido.name">S Resort El Nido</h4>
                                         <p class="text-black-50 mb-0">
-                                            <span data-i18n="hotel.milanGraceInn.description">Perfect location for
-                                                exploring El Nido.</span>
+                                            <span data-i18n="investing.hotels.sResortElNido.shortDescription"
+                                                class="hotel-description">Located in El Nido town, near H Hotel, with 44
+                                                rooms. Over 100 restaurants and bars within 200 meters, perfect for
+                                                group travel or couples' getaways. Features H&C Chinese restaurant on
+                                                the rooftop and Grounded café on the first floor for delicious morning
+                                                coffee.</span>
                                         </p>
+                                        <ul class="list-unstyled text-muted">
+                                            <li data-i18n="investing.hotels.sResortElNido.rooms">Rooms: 44</li>
+                                            <li data-i18n="investing.hotels.sResortElNido.openingYear">Opening Year:
+                                                2023</li>
+                                            <li data-i18n="investing.hotels.sResortElNido.location">Location: El Nido
+                                                Town Center</li>
+                                        </ul>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
-                                    <a href="#">
-                                        <img class="img-fluid mb-3 mb-lg-0"
-                                            src="assets/img/time-H-Hotel-Vegan-Hotel.jpg" alt="H Hotel Vegan Hotel" />
-                                    </a>
-                                    <div class="featured-text text-center text-lg-left pt-3">
-                                        <h4 data-i18n="hotel.hHotelVeganHotel.name">H Hotel Vegan Hotel</h4>
-                                        <p class="text-black-50 mb-0">
-                                            <span data-i18n="hotel.hHotelVeganHotel.description">A vegan-friendly hotel
-                                                with plant-based cuisine and eco-conscious rooms.</span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
-                                    <a href="#">
+                                    <a href="jboutique-hotel.html">
                                         <img class="img-fluid mb-3 mb-lg-0" src="assets/img/time-J-Hostel.jpg"
                                             alt="J Boutique Hotel" />
                                     </a>
                                     <div class="featured-text text-center text-lg-left pt-3">
-                                        <h4 data-i18n="hotel.jBoutiqueHotel.name">J Boutique Hotel</h4>
+                                        <h4 data-i18n="investing.hotels.jBoutiqueHotel.name">J Boutique Hotel</h4>
                                         <p class="text-black-50 mb-0">
-                                            <span data-i18n="hotel.jBoutiqueHotel.description">A stylish boutique hotel
-                                                in the heart of El Nido, perfect for urban explorers.</span>
+                                            <span data-i18n="investing.hotels.jBoutiqueHotel.shortDescription"
+                                                class="hotel-description">Located on the edge of El Nido town, an
+                                                8-minute walk from the beach. Suitable for backpackers and small groups,
+                                                offering affordable prices while maintaining comfortable and stylish
+                                                decor.</span>
                                         </p>
+                                        <ul class="list-unstyled text-muted">
+                                            <li data-i18n="investing.hotels.jBoutiqueHotel.rooms">Rooms: 14</li>
+                                            <li data-i18n="investing.hotels.jBoutiqueHotel.openingYear">Opening Year:
+                                                2023</li>
+                                            <li data-i18n="investing.hotels.jBoutiqueHotel.location">Location: El Nido
+                                                Town Center</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
+                                    <a href="casa-celica.html">
+                                        <img class="img-fluid mb-3 mb-lg-0" src="assets/img/casa/casa_1.jpg"
+                                            alt="C Hotel (Casa Cecilia)" />
+                                    </a>
+                                    <div class="featured-text text-center text-lg-left pt-3">
+                                        <h4 data-i18n="investing.hotels.cHotel.name">C Hotel (Casa Cecilia)</h4>
+                                        <p class="text-black-50 mb-0">
+                                            <span data-i18n="investing.hotels.cHotel.shortDescription"
+                                                class="hotel-description">Decorated in a simple local style, designed
+                                                for budget-conscious travelers. Offers a prime location and simple,
+                                                comfortable accommodation. Only a 2-minute walk from the beach.</span>
+                                        </p>
+                                        <ul class="list-unstyled text-muted">
+                                            <li data-i18n="investing.hotels.cHotel.rooms">Rooms: 20</li>
+                                            <li data-i18n="investing.hotels.cHotel.openingYear">Opening Year: 2023</li>
+                                            <li data-i18n="investing.hotels.cHotel.location">Location: El Nido Town
+                                                Center</li>
+                                        </ul>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
                                     <a href="#">
-                                        <img class="img-fluid mb-3 mb-lg-0" src="assets/img/casa/casa_1.jpg"
-                                            alt="Casa Cecilia" />
+                                        <img class="img-fluid mb-3 mb-lg-0" src="assets/img/placeholder.webp"
+                                            alt="Z Garden Hotel" />
                                     </a>
                                     <div class="featured-text text-center text-lg-left pt-3">
-                                        <h4 data-i18n="hotel.casaCecilia.name">Casa Cecilia</h4>
+                                        <h4 data-i18n="investing.hotels.zGardenHotel.name">Z Garden Hotel</h4>
                                         <p class="text-black-50 mb-0">
-                                            <span data-i18n="hotel.casaCecilia.description">A 3-star accommodation
-                                                located in the heart of El Nido, offering comfort and
-                                                convenience.</span>
+                                            <span data-i18n="investing.hotels.zGardenHotel.shortDescription"
+                                                class="hotel-description">Our newest hotel development, set to open in
+                                                2025, located next to El Nido port. Hotel rooms are divided into sea
+                                                view and garden view, offering diverse accommodation options for
+                                                travelers.</span>
                                         </p>
+                                        <ul class="list-unstyled text-muted">
+                                            <li data-i18n="investing.hotels.zGardenHotel.rooms">Rooms: 30</li>
+                                            <li data-i18n="investing.hotels.zGardenHotel.openingYear">Opening Year: 2025
+                                            </li>
+                                            <li data-i18n="investing.hotels.zGardenHotel.location">Location: El Nido
+                                                Town Center</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
                 </div>
-                <div class="tab-pane fade" id="restaurants" role="tabpanel" aria-labelledby="restaurants-tab">
+                <div class="tab-pane fade" id="restaurants-cafe-bars" role="tabpanel"
+                    aria-labelledby="restaurants-cafe-bars-tab">
                     <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                        <!-- Hotel List -->
-                        <section class="projects-section bg-light pt-5" id="hotels">
+                        <!-- Restaurant, Cafe & Bars List -->
+                        <section class="projects-section bg-light pt-5" id="restaurants-cafe-bars">
                             <div class="container px-4 px-lg-5">
                                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                                    
+                                    <p class="text-black-50 mb-4"
+                                        data-i18n="investing.restaurantsCafeBars.introduction">
+                                        H Hospitality Group's dining brands offer a diverse culinary experience, from
+                                        international flavors to local specialties, catering to various tastes. Our
+                                        restaurants and cafes are located in the most popular areas of El Nido and
+                                        Nacpan Beach, providing unique dining experiences for every visitor. Whether
+                                        you're savoring authentic Chinese cuisine, enjoying classic Filipino lechon, or
+                                        experiencing globally popular bubble tea, our restaurants are committed to
+                                        delivering top-quality service and cuisine. We not only offer delicious food but
+                                        also emphasize restaurant design and dining atmosphere, ensuring each guest
+                                        experiences our carefully crafted unique charm.
+                                    </p>
+
                                     <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
                                         <a href="#">
-                                            <img class="img-fluid mb-3 mb-lg-0" src="assets/img/time-3-Bros-Falafel.jpg"
-                                                alt="3 Bros Falafel" />
+                                            <img class="img-fluid mb-3 mb-lg-0" src="assets/img/snb/snb_1.jpg"
+                                                alt="Sunmai Nacpan Beach"
+                                                style="max-height: 230px; height: 230px; object-fit: cover; width: 100%;" />
                                         </a>
                                         <div class="featured-text text-center text-lg-left pt-3">
-                                            <h4 data-i18n="restaurant.3BrosFalafel.name">3 Bros Falafel</h4>
+                                            <h4 data-i18n="investing.restaurantsCafeBars.sunmaiNacpanBeach.name">Sunmai
+                                                Nacpan Beach</h4>
                                             <p class="text-black-50 mb-0">
-                                                <span data-i18n="restaurant.3BrosFalafel.description">A vibrant restaurant specializing in Mexican-style burritos, offering a unique blend of flavors in El Nido.</span>
+                                                <span
+                                                    data-i18n="investing.restaurantsCafeBars.sunmaiNacpanBeach.shortDescription"
+                                                    class="restaurant-description">Located at the heart of the famous
+                                                    Nacpan Beach in Palawan, offering delicious pizza, Korean, and
+                                                    Filipino cuisine. Highly recommended for both beach residents and
+                                                    day-trip visitors.</span>
                                             </p>
+                                            <ul class="list-unstyled text-muted">
+                                                <li data-i18n="investing.restaurantsCafeBars.sunmaiNacpanBeach.seats">
+                                                    Seats: 120</li>
+                                                <li
+                                                    data-i18n="investing.restaurantsCafeBars.sunmaiNacpanBeach.openingYear">
+                                                    Opening Year: 2017</li>
+                                                <li
+                                                    data-i18n="investing.restaurantsCafeBars.sunmaiNacpanBeach.location">
+                                                    Location: Nacpan Beach</li>
+                                            </ul>
                                         </div>
                                     </div>
 
                                     <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
                                         <a href="#">
-                                            <img class="img-fluid mb-3 mb-lg-0" src="assets/img/Ver-De-El-Nido/Ver-De-El-Nido_1.jpg"
-                                                alt="Ver De El Nido" />
+                                            <img class="img-fluid mb-3 mb-lg-0" src="assets/img/piece_sky/logo.jpg"
+                                                alt="Piece of Sky"
+                                                style="max-height: 230px; height: 230px; object-fit: cover; width: 100%;" />
                                         </a>
                                         <div class="featured-text text-center text-lg-left pt-3">
-                                            <h4 data-i18n="restaurant.verDeElNido.name">Ver De El Nido</h4>
+                                            <h4 data-i18n="investing.restaurantsCafeBars.pieceOfSky.name">Piece of Sky
+                                            </h4>
                                             <p class="text-black-50 mb-0">
-                                                <span data-i18n="restaurant.verDeElNido.description">A charming vegetarian restaurant offering a diverse menu of plant-based dishes in the heart of El Nido.</span>
+                                                <span
+                                                    data-i18n="investing.restaurantsCafeBars.pieceOfSky.shortDescription"
+                                                    class="restaurant-description">TripAdvisor's top-rated restaurant
+                                                    with breathtaking views. From November 2024, a renowned Dubai chef
+                                                    joins to offer a double impact of taste and visual delight.</span>
                                             </p>
+                                            <ul class="list-unstyled text-muted">
+                                                <li data-i18n="investing.restaurantsCafeBars.pieceOfSky.seats">Seats: 60
+                                                </li>
+                                                <li data-i18n="investing.restaurantsCafeBars.pieceOfSky.openingYear">
+                                                    Opening Year: 2024</li>
+                                                <li data-i18n="investing.restaurantsCafeBars.pieceOfSky.location">
+                                                    Location: H Hotel, El Nido Town Center</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
+                                        <a href="#">
+                                            <img class="img-fluid mb-3 mb-lg-0" src="assets/img/h_c/logo.jpg"
+                                                alt="H&C Chinese Restaurant"
+                                                style="max-height: 230px; height: 230px; object-fit: cover; width: 100%;" />
+                                        </a>
+                                        <div class="featured-text text-center text-lg-left pt-3">
+                                            <h4 data-i18n="investing.restaurantsCafeBars.hAndCChinese.name">H&C Chinese
+                                                Restaurant</h4>
+                                            <p class="text-black-50 mb-0">
+                                                <span
+                                                    data-i18n="investing.restaurantsCafeBars.hAndCChinese.shortDescription"
+                                                    class="restaurant-description">The only Chinese restaurant in El
+                                                    Nido town, offering authentic Chinese cuisine. Specialties include
+                                                    live crab, live lobster, and steamed fish. Undergoing renovation in
+                                                    late 2024.</span>
+                                            </p>
+                                            <ul class="list-unstyled text-muted">
+                                                <li data-i18n="investing.restaurantsCafeBars.hAndCChinese.seats">Seats:
+                                                    100</li>
+                                                <li data-i18n="investing.restaurantsCafeBars.hAndCChinese.openingYear">
+                                                    Opening Year: 2024</li>
+                                                <li data-i18n="investing.restaurantsCafeBars.hAndCChinese.location">
+                                                    Location: H Hotel, El Nido Town Center</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
+                                        <a href="#">
+                                            <img class="img-fluid mb-3 mb-lg-0" src="images/unocha/1.webp"
+                                                style="max-height: 230px; height: 230px; object-fit: cover; width: 100%;"
+                                                alt="Unocha" />
+                                        </a>
+                                        <div class="featured-text text-center text-lg-left pt-3">
+                                            <h4 data-i18n="investing.restaurantsCafeBars.unocha.name">Unocha</h4>
+                                            <p class="text-black-50 mb-0">
+                                                <span data-i18n="investing.restaurantsCafeBars.unocha.shortDescription"
+                                                    class="restaurant-description">Famous Taiwanese bubble tea brand
+                                                    from Kaohsiung, now in El Nido. Enjoy a refreshing bubble tea after
+                                                    island hopping for the perfect tropical treat.</span>
+                                            </p>
+                                            <br>
+                                            <ul class="list-unstyled text-muted">
+                                                <li data-i18n="investing.restaurantsCafeBars.unocha.openingYear">Opening
+                                                    Year: 2024</li>
+                                                <li data-i18n="investing.restaurantsCafeBars.unocha.location">Location:
+                                                    H Hotel, El Nido Town Center</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
+                                        <a href="#">
+                                            <img class="img-fluid mb-3 mb-lg-0" src="assets/img/time-3-Bros-Falafel.jpg"
+                                                alt="3 Bros Falafel"
+                                                style="max-height: 230px; height: 230px; object-fit: cover; width: 100%;" />
+                                        </a>
+                                        <div class="featured-text text-center text-lg-left pt-3">
+                                            <h4 data-i18n="investing.restaurantsCafeBars.3BrosFalafel.name">3 Bros
+                                                Falafel</h4>
+                                            <p class="text-black-50 mb-0">
+                                                <span
+                                                    data-i18n="investing.restaurantsCafeBars.3BrosFalafel.shortDescription"
+                                                    class="restaurant-description">Middle Eastern cuisine featuring
+                                                    freshly made chickpea patties. Open until 1 AM, perfect for
+                                                    late-night snack lovers.</span>
+                                            </p>
+                                            <ul class="list-unstyled text-muted">
+                                                <li data-i18n="investing.restaurantsCafeBars.3BrosFalafel.seats">Seats:
+                                                    10</li>
+                                                <li data-i18n="investing.restaurantsCafeBars.3BrosFalafel.openingYear">
+                                                    Opening Year: 2024</li>
+                                                <li data-i18n="investing.restaurantsCafeBars.3BrosFalafel.location">
+                                                    Location: H Hotel, El Nido Town Center</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
+                                        <a href="#">
+                                            <img class="img-fluid mb-3 mb-lg-0" src="assets/img/g100a/g100a_3.jpg"
+                                                alt="Grounded Coffee"
+                                                style="max-height: 230px; height: 230px; object-fit: cover; width: 100%;" />
+                                        </a>
+                                        <div class="featured-text text-center text-lg-left pt-3">
+                                            <h4 data-i18n="investing.restaurantsCafeBars.groundedCoffee.name">Grounded
+                                                Coffee</h4>
+                                            <p class="text-black-50 mb-0">
+                                                <span
+                                                    data-i18n="investing.restaurantsCafeBars.groundedCoffee.shortDescription"
+                                                    class="restaurant-description">Located on the first floor of S
+                                                    Resort, designed by renowned architect Justin. Unique style in
+                                                    bathroom design and shared tables. Don't miss the Oat Milk
+                                                    Latte.</span>
+                                            </p>
+                                            <ul class="list-unstyled text-muted">
+                                                <li data-i18n="investing.restaurantsCafeBars.groundedCoffee.seats">
+                                                    Seats: 18</li>
+                                                <li
+                                                    data-i18n="investing.restaurantsCafeBars.groundedCoffee.openingYear">
+                                                    Opening Year: 2023</li>
+                                                <li data-i18n="investing.restaurantsCafeBars.groundedCoffee.location">
+                                                    Location: El Nido Town Center</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
+                                        <a href="#">
+                                            <img class="img-fluid mb-3 mb-lg-0" src="assets/img/placeholder.webp"
+                                                alt="Jane Coffee"
+                                                style="max-height: 230px; height: 230px; object-fit: cover; width: 100%;" />
+                                        </a>
+                                        <div class="featured-text text-center text-lg-left pt-3">
+                                            <h4 data-i18n="investing.restaurantsCafeBars.janeCoffee.name">Jane Coffee
+                                            </h4>
+                                            <p class="text-black-50 mb-0">
+                                                <span
+                                                    data-i18n="investing.restaurantsCafeBars.janeCoffee.shortDescription"
+                                                    class="restaurant-description">H Hospitality Group's latest
+                                                    investment, focusing on high-end hand-drip coffee experiences.
+                                                    Professional baristas offer 1-2 hour refined coffee experiences for
+                                                    discerning coffee enthusiasts.</span>
+                                            </p>
+                                            <ul class="list-unstyled text-muted">
+                                                <li data-i18n="investing.restaurantsCafeBars.janeCoffee.seats">Seats: 15
+                                                </li>
+                                                <li data-i18n="investing.restaurantsCafeBars.janeCoffee.openingYear">
+                                                    Opening Year: 2025</li>
+                                                <li data-i18n="investing.restaurantsCafeBars.janeCoffee.location">
+                                                    Location: El Nido Town Center</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
+                                        <a href="#">
+                                            <img class="img-fluid mb-3 mb-lg-0" src="assets/img/placeholder.webp"
+                                                alt="Lechon Co by H Hospitality Group"
+                                                style="max-height: 230px; height: 230px; object-fit: cover; width: 100%;" />
+                                        </a>
+                                        <div class="featured-text text-center text-lg-left pt-3">
+                                            <h4 data-i18n="investing.restaurantsCafeBars.lechonCo.name">Lechon Co by H
+                                                Hospitality Group</h4>
+                                            <p class="text-black-50 mb-0">
+                                                <span
+                                                    data-i18n="investing.restaurantsCafeBars.lechonCo.shortDescription"
+                                                    class="restaurant-description">Collaboration with a culinary master
+                                                    from Cebu, offering the famous Lechon roast pig. A must-try
+                                                    traditional Filipino dish, located opposite H Hotel.</span>
+                                            </p>
+                                            <ul class="list-unstyled text-muted">
+                                                <li data-i18n="investing.restaurantsCafeBars.lechonCo.seats">Seats: 65
+                                                </li>
+                                                <li data-i18n="investing.restaurantsCafeBars.lechonCo.openingYear">
+                                                    Opening Year: 2025</li>
+                                                <li data-i18n="investing.restaurantsCafeBars.lechonCo.location">
+                                                    Location: El Nido Town Center</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
+                                        <a href="#">
+                                            <img class="img-fluid mb-3 mb-lg-0"
+                                                src="assets/img/Ver-De-El-Nido/Ver-De-El-Nido_1.jpg"
+                                                alt="Ver De El Nido"
+                                                style="max-height: 230px; height: 230px; object-fit: cover; width: 100%;" />
+                                        </a>
+                                        <div class="featured-text text-center text-lg-left pt-3">
+                                            <h4 data-i18n="investing.restaurantsCafeBars.verDeElNido.name">Ver De El
+                                                Nido</h4>
+                                            <p class="text-black-50 mb-0">
+                                                <span
+                                                    data-i18n="investing.restaurantsCafeBars.verDeElNido.shortDescription"
+                                                    class="restaurant-description">El Nido's first all-vegan restaurant,
+                                                    co-founded by renowned chefs from the US and Philippines. Features
+                                                    6-meter high glass windows, air conditioning, and Beyond Meat
+                                                    products. Ranked in TripAdvisor's top 3.</span>
+                                            </p>
+                                            <ul class="list-unstyled text-muted">
+                                                <li data-i18n="investing.restaurantsCafeBars.verDeElNido.seats">Seats:
+                                                    35</li>
+                                                <li data-i18n="investing.restaurantsCafeBars.verDeElNido.openingYear">
+                                                    Opening Year: 2023</li>
+                                                <li data-i18n="investing.restaurantsCafeBars.verDeElNido.location">
+                                                    Location: El Nido Town Center</li>
+                                            </ul>
                                         </div>
                                     </div>
 
@@ -303,136 +630,172 @@
                         </section>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="travel-tour" role="tabpanel" aria-labelledby="travel-tour-tab">
-                    <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                        <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
-                            <a href="#">
-                                <img class="img-fluid mb-3 mb-lg-0" src="assets/img/time-Discover-El-Nido-Tours.jpg"
-                                    alt="El Nido GO" />
-                            </a>
-                            <div class="featured-text text-center text-lg-left pt-3">
-                                <h4 data-i18n="travel.elNidoGO.name">El Nido GO</h4>
-                                <p class="text-black-50 mb-0">
-                                    <span data-i18n="travel.elNidoGO.description">An exciting beach game experience offering fun activities and adventures for tourists in El Nido.</span>
-                                </p>
-                            </div>
-                        </div>
 
-                        <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
-                            <a href="#">
-                                <img class="img-fluid mb-3 mb-lg-0" src="images/sunset_market/1.webp"
-                                    alt="Sunset Market" style="max-height: 346px; object-fit: cover; width: 100%;"/>
-                            </a>
-                            <div class="featured-text text-center text-lg-left pt-3">
-                                <h4 data-i18n="travel.sunsetMarket.name">Sunset Market</h4>
-                                <p class="text-black-50 mb-0">
-                                    <span data-i18n="travel.sunsetMarket.description">A lively beachside market offering shopping and dining with stunning sunset views.</span>
-                                </p>
-                            </div>
-                        </div>
-
-
-                        <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
-                            <a href="#">
-                                <img class="img-fluid mb-3 mb-lg-0" src="images/nacpan_beach_wedding/1.webp"
-                                    alt="Nacpan Beach Wedding" style="max-height: 346px; object-fit: cover; width: 100%;"/>
-                            </a>
-                            <div class="featured-text text-center text-lg-left pt-3">
-                                <h4 data-i18n="travel.nacpanBeachWedding.name">Nacpan Beach Wedding</h4>
-                                <p class="text-black-50 mb-0">
-                                    <span data-i18n="travel.nacpanBeachWedding.description">Offering beach wedding services, including venue information, catering, and decoration assistance, to create your perfect beach wedding.</span>
-                                </p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="cafe" role="tabpanel" aria-labelledby="cafe-tab">
-                    <!-- Hotel List -->
-                    <section class="projects-section bg-light pt-5" id="hotels">
-                        <div class="container px-4 px-lg-5">
-                            <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-
-                                <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
-                                    <a href="#">
-                                        <img class="img-fluid mb-3 mb-lg-0" src="assets/img/g100a/g100a_3.jpg"
-                                            alt="Piece Lio" />
-                                    </a>
-                                    <div class="featured-text text-center text-lg-left pt-3">
-                                        <h4 data-i18n="hotel.pieceLio.name">Grounded 100% Arabica</h4>
-                                        <p class="text-black-50 mb-0">
-                                            <span data-i18n="cafe.grounded100Arabica.description">A cozy café offering premium 100% Arabica coffee, sourced from the finest beans around the world. Enjoy a perfect cup with freshly baked pastries and stunning El Nido views.</span>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
-                                    <a href="#">
-                                        <img class="img-fluid mb-3 mb-lg-0" src="images/unocha/1.webp"  style="max-height: 346px; object-fit: cover; width: 100%;"
-                                            alt="Piece Lio" />
-                                    </a>
-                                    <div class="featured-text text-center text-lg-left pt-3">
-                                        <h4 data-i18n="hotel.pieceLio.name">Unocha</h4>
-                                        <p class="text-black-50 mb-0">
-                                            <span data-i18n="cafe.unocha.description">Unocha: Authentic Taiwanese bubble tea in El Nido. Classic and innovative flavors with quality tea and fresh tapioca. Taste Taiwan in paradise.</span>
-                                        </p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </section>
-                </div>
                 <div class="tab-pane fade" id="spa-massage" role="tabpanel" aria-labelledby="spa-massage-tab">
-                    <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                        <div class="col-xl-8 col-lg-7">
-                            <img class="img-fluid mb-3 mb-lg-0" src="assets/img/time-Oriental-Spa.jpg" alt="Oriental Spa" />
-                        </div>
-                        <div class="col-xl-4 col-lg-5">
-                            <div class="featured-text text-center text-lg-left">
-                                <h4 data-i18n="spa.orientalSpa.name">Oriental Spa</h4>
-                                <p class="text-black-50 mb-0">
-                                    <span data-i18n="spa.orientalSpa.description">Oriental Spa offers a serene oasis of relaxation and rejuvenation in the heart of El Nido. Our expert therapists provide a range of traditional and modern treatments, from soothing massages to revitalizing facials, using natural, locally-sourced ingredients. Experience ultimate tranquility and emerge refreshed, ready to continue your tropical paradise adventure.</span>
+                    <div class="container">
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <h2 class="text-center mb-4" data-i18n="investing.spa.title">Spa</h2>
+                                <p class="text-black-50" data-i18n="investing.spa.introduction">
+                                    H Hospitality Group's Oriental Spa series offers travelers an ultimate relaxation
+                                    and rejuvenation experience. Our spa venues are beautifully designed, combining
+                                    modern aesthetics with Eastern therapies. Whether you visit Oriental Spa 1 at H
+                                    Hotel or the newly opened Oriental Spa 2, you'll find comfortable environments and
+                                    professional therapeutic services. After exploring El Nido's beautiful scenery or
+                                    seeking a quiet moment of relaxation, our spa facilities are your ideal healing
+                                    destination.
                                 </p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="nacpan-beach-shuttle" role="tabpanel"
-                    aria-labelledby="nacpan-beach-shuttle-tab">
-                    <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                        <div class="col-xl-8 col-lg-7">
-                            <img class="img-fluid mb-3 mb-lg-0"
-                                src="assets/img/Nacpan-Beach-Shuttle/Nacpan-Beach-Shuttle_1.jpg" alt="Nacpan Beach Shuttle" />
-                        </div>
-                        <div class="col-xl-4 col-lg-5">
-                            <div class="featured-text text-center text-lg-left">
-                                <h4 data-i18n="travel.nacpanBeachShuttle.name">Nacpan Beach Shuttle</h4>
-                                <p class="text-black-50 mb-0">
-                                    <span data-i18n="travel.nacpanBeachShuttle.description">This is a 9-seater minibus that can take you on a tour of the coastal scenery and city attractions of El Nido, Philippines. It's a perfect way to explore the beautiful beaches and landmarks of the island while enjoying comfortable transportation.</span>
+                        <div class="row mb-5">
+                            <div class="col-lg-6">
+                                <img class="img-fluid mb-3" src="assets/img/Oriental-Spa/Oriental-Spa_1.jpg"
+                                    alt="Oriental Spa 1" />
+                                <h4 data-i18n="investing.spa.orientalSpa1.name">Oriental Spa 1</h4>
+                                <p class="text-black-50 mb-3" data-i18n="investing.spa.orientalSpa1.description">
+                                    Located on the first floor of H Hotel, Oriental Spa 1 is the most popular massage
+                                    parlor in El Nido, boasting the highest number of positive reviews on Google Maps.
+                                    This spa is renowned for its high-quality service and comfortable environment,
+                                    making it a must-visit relaxation spot for travelers in El Nido. Due to high demand,
+                                    it's recommended that guests book in advance to ensure they can enjoy a premium
+                                    massage experience.
                                 </p>
+                                <ul class="text-black-50">
+                                    <li data-i18n="investing.spa.orientalSpa1.seats">Seats: 13</li>
+                                    <li data-i18n="investing.spa.orientalSpa1.openingYear">Opening Year: 2023</li>
+                                    <li data-i18n="investing.spa.orientalSpa1.location">Location: H Hotel, El Nido</li>
+                                </ul>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="bar" role="tabpanel" aria-labelledby="bar-tab">
-                    <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                        <div class="col-xl-8 col-lg-7">
-                            <img class="img-fluid mb-3 mb-lg-0" src="assets/img/snb/snb_1.jpg" alt="Sunmai Nacpan Beach" />
-                        </div>
-                        <div class="col-xl-4 col-lg-5">
-                            <div class="featured-text text-center text-lg-left">
-                                <h4 data-i18n="bar.sunmaiNacpanBeach.name">Sunmai Nacpan Beach</h4>
-                                <p class="text-black-50 mb-0">
-                                    <span data-i18n="bar.sunmaiNacpanBeach.description">Sunmai Nacpan Beach, the only Sunmai bar on El Nido island, offers a unique blend of Taiwanese craft beers and stunning beach views. Enjoy sunset drinks in this tropical paradise, where East Asian brewing meets Philippine coastal beauty.</span>
+                            <div class="col-lg-6">
+                                <img class="img-fluid mb-3" src="assets/img/Oriental-Spa/Oriental-Spa_2.jpg"
+                                    alt="Oriental Spa 2" />
+                                <h4 data-i18n="investing.spa.orientalSpa2.name">Oriental Spa 2</h4>
+                                <p class="text-black-50 mb-3" data-i18n="investing.spa.orientalSpa2.description">
+                                    Oriental Spa 2 is El Nido's newest luxury wellness spa, featuring 40 massage
+                                    stations that offer spacious and private comfort for travelers. This standalone
+                                    building, meticulously designed by renowned designer Justin, combines modern design
+                                    with traditional Eastern therapies, providing guests with the ultimate relaxation
+                                    experience for body and mind. When visiting El Nido, this newly opened spa is an
+                                    unmissable health indulgence.
                                 </p>
+                                <ul class="text-black-50">
+                                    <li data-i18n="investing.spa.orientalSpa2.seats">Seats: 40</li>
+                                    <li data-i18n="investing.spa.orientalSpa2.openingYear">Opening Year: 2025</li>
+                                    <li data-i18n="investing.spa.orientalSpa2.location">Location: Next to J Boutique
+                                        Hotel, El Nido</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="tab-pane fade" id="travel-tours" role="tabpanel" aria-labelledby="travel-tours-tab">
+                    <div class="container px-3">
+                        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                            <div class="col-12">
+                                <h2 class="text-center mb-4" data-i18n="investing.travel.title">Travel & Tours</h2>
+                                <p class="text-black-50 mb-5" data-i18n="investing.travel.introduction">
+                                    H Hospitality Group offers comprehensive travel and activity services through
+                                    partnerships with top local tour companies like Discover El Nido. Our services range
+                                    from professional guided tours, comfortable transportation, wedding planning, to
+                                    unique market experiences, catering to diverse traveler needs. Whether you're
+                                    exploring El Nido's beauty or planning a romantic wedding on Nacpan Beach, H
+                                    Hospitality Group is committed to providing unparalleled experiences. We understand
+                                    that each journey is unique and strive to create wonderful memories for every
+                                    traveler.
+                                </p>
+                            </div>
+
+                            <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
+                                <a href="#">
+                                    <img class="img-fluid mb-3 mb-lg-0" src="assets/img/time-Discover-El-Nido-Tours.jpg"
+                                        alt="El Nido GO"
+                                        style="max-height: 230px; height: 230px; object-fit: cover; width: 100%;" />
+                                </a>
+                                <div class="featured-text text-center text-lg-left pt-3">
+                                    <h4 data-i18n="investing.travel.discoverElNido.name">Discover El Nido</h4>
+                                    <p class="text-black-50 mb-0">
+                                        <span data-i18n="investing.travel.discoverElNido.description"
+                                            class="tour-description">The highest-rated tour company in El Nido,
+                                            TripAdvisor certified, and closely partnered with H Hospitality Group. With
+                                            9 boats and professional guide services, it's the top choice for exploring
+                                            El Nido's natural beauty.</span>
+                                    </p>
+                                </div>
+                            </div>
 
 
+                            <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
+                                <a href="#">
+                                    <img class="img-fluid mb-3 mb-lg-0" src="assets/img/discover/discover_1.jpg"
+                                        alt="Lechon Co by H Hospitality Group"
+                                        style="max-height: 230px; height: 230px; object-fit: cover; width: 100%;" />
+                                </a>
+                                <div class="featured-text text-center text-lg-left pt-3">
+                                    <h4 data-i18n="investing.travel.elNidoGO.name">El Nido GO</h4>
+                                    <p class="text-black-50 mb-0">
+                                        <span data-i18n="investing.travel.elNidoGO.description"
+                                            class="tour-description">A one-stop service travel agency for Chinese
+                                            tourists, handling everything from flights to itineraries. Ideal for those
+                                            less familiar with English or trip planning.</span>
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
+                                <a href="#">
+                                    <img class="img-fluid mb-3 mb-lg-0"
+                                        src="assets/img/Nacpan-Beach-Shuttle/Nacpan-Beach-Shuttle_1.jpg"
+                                        alt="Nacpan Beach Shuttle"
+                                        style="max-height: 230px; height: 230px; object-fit: cover; width: 100%;" />
+                                </a>
+                                <div class="featured-text text-center text-lg-left pt-3">
+                                    <h4 data-i18n="investing.travel.nacpanBeachShuttle.name">Nacpan Beach Shuttle</h4>
+                                    <p class="text-black-50 mb-0">
+                                        <span data-i18n="investing.travel.nacpanBeachShuttle.description"
+                                            class="tour-description">Affordable shuttle service to Nacpan Beach.
+                                            Air-conditioned vehicles, $15 round trip.</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
+                                <a href="#">
+                                    <img class="img-fluid mb-3 mb-lg-0" src="images/nacpan_beach_wedding/1.webp"
+                                        alt="Nacpan Beach Wedding"
+                                        style="max-height: 230px; height: 230px; object-fit: cover; width: 100%;" />
+                                </a>
+                                <div class="featured-text text-center text-lg-left pt-3">
+                                    <h4 data-i18n="investing.travel.nacpanBeachWedding.name">Nacpan Beach Wedding</h4>
+                                    <p class="text-black-50 mb-0">
+                                        <span data-i18n="investing.travel.nacpanBeachWedding.description"
+                                            class="tour-description">Specialized in arranging dream beach weddings on
+                                            Nacpan Beach. Offers comprehensive services from venue setup to event
+                                            planning, ensuring every detail is perfect.</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4 col-md-6 col-12 p-2 mb-5">
+                                <a href="#">
+                                    <img class="img-fluid mb-3 mb-lg-0" src="images/sunset_market/1.webp"
+                                        alt="Nacpan Sunset Market"
+                                        style="max-height: 230px; height: 230px; object-fit: cover; width: 100%;" />
+                                </a>
+                                <div class="featured-text text-center text-lg-left pt-3">
+                                    <h4 data-i18n="investing.travel.nacpanSunsetMarket.name">Nacpan Sunset Market</h4>
+                                    <p class="text-black-50 mb-0">
+                                        <span data-i18n="investing.travel.nacpanSunsetMarket.description"
+                                            class="tour-description">Inspired by Taiwan's famous night markets, this
+                                            beachside market offers a variety of food and crafts, allowing visitors to
+                                            enjoy sunset views while experiencing local culture.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- Add similar structures for other tab panes (hotel, travel-tour, condominium, etc.) -->
             </div>
         </div>

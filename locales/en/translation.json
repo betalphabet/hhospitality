@@ -2,9 +2,10 @@
 {
   "nav": {
     "about": "About",
-    "hotel": "Hotel",
+    "hotel": "Our Hotels",
     "timeline": "Timeline",
-    "contact": "Contact"
+    "contact": "Contact",
+    "investing": "Investing"
   },
   "masthead": {
     "title": "H Hospitality Group",
@@ -14,7 +15,7 @@
     "description": "H Hospitality Group, the brainchild of visionary entrepreneur Henry, is a burgeoning management company setting benchmarks in El Nido, Palawan. Amid a region witnessing a staggering 700% rise in tourism over the past seven years, the group not only influences this growth but also proudly owns shuttle services, a tour agency, and multiple hotels, further solidifying its footprint in the industry. In addition to its core hospitality services, H Hospitality Group operates several restaurants and cafés, offering diverse dining experiences that showcase the rich flavors of the region. The group is also expanding its portfolio with the development of a cutting-edge condo hotel, poised to redefine luxury living in El Nido.",
     "beachfrontHotels": "Beachfront Hotels",
     "beachfrontRestaurants": "Beachfront Restaurants",
-    "hotel": "Hotel",
+    "hotel": "Our Hotels",
     "travelAndTour": "Travel and Tour",
     "condominium": "Condominium",
     "cafe": "Cafe",
@@ -42,7 +43,7 @@
     "description": "At H Hospitality Group, our commitment goes beyond providing exceptional hospitality; it extends to making a meaningful impact on both our community and the environment. Since our founding in El Nido, Palawan, we have been steadfast in our commitment to creating a positive change through a variety of initiatives that support people and protect the planet.",
     "communitySupport": {
       "title": "Community Support Network",
-      "description": "With around 300 employees, H Hospitality Group is proud to contribute to the livelihood of around 300 families. More than 70% of our workforce are locals from El Nido, showcasing our genuine passion for supporting the community by providing decent jobs with competitive pay and benefits. We believe that offering stable job opportunities and a nurturing work environment is essential to building a thriving community. Our employees are the backbone of our success, and their well-being is our top priority."
+      "description": "With around 300 employees, H Hospitality Group is proud to contribute to the livelihood of around 300 families. As the largest hospitality group in El Nido, we are delighted to make this impact. More than 70% of our workforce are locals from El Nido, showcasing our genuine passion for supporting the community by providing decent jobs with competitive pay and benefits. We believe that offering stable job opportunities and a nurturing work environment is essential to building a thriving community. Our employees are the backbone of our success, and their well-being is our top priority."
     },
     "turtleConservation": {
       "title": "Turtle Conservation Legacy",
@@ -65,7 +66,10 @@
     "location": "Location",
     "locationValue": "PH,El Nido",
     "phone": "Phone",
-    "whatsapp": "What's app"
+    "whatsapp": "What's app",
+    "bussiness": "Business Opportunities",
+    "office": "Office",
+    "reservation": "Reservation"
   },
   "hotel": {
     "title": "Our Hotels",
@@ -85,65 +89,90 @@
     "nearestAirport": "Nearest airport:",
     "pieceLio": {
       "name": "Piece Lio",
-      "description": "A luxurious beachfront resort offering stunning views of the ocean and world-class amenities.",
-      "location": "Lio Beach, El Nido, Palawan",
+      "description": "One of the most comfortable hotels on El Nido, developed in collaboration with Japan's renowned Piece Group. Offering spacious rooms of 50 to 150 square meters, providing a more comfortable stay compared to local hotels' typical 18 to 22 square meter rooms.",
+      "shortDescription": "A luxurious beachfront resort offering stunning views of the ocean and world-class amenities.",
+      "rooms": "Rooms: 36",
+      "openingYear": "Opening Year: 2024",
+      "location": "Location: Lio Airport Area (Ayala Lio)",
       "phone": "+63 917 123 4567",
       "website": "www.piecelio.com"
     },
     "nacpanBeachResort": {
       "name": "Nacpan Beach Resort",
-      "description": "Experience the beauty of Nacpan Beach at this eco-friendly resort, perfect for nature lovers.",
-      "location": "Nacpan Beach, El Nido, Palawan",
+      "description": "Offering a more comfortable beach accommodation experience for travelers who prefer not to stay in tents. Guests can enjoy private bathroom facilities, avoiding the inconvenience of separate toilets in tents.",
+      "shortDescription": "Experience the beauty of Nacpan Beach at this eco-friendly resort, perfect for nature lovers.",
+      "rooms": "Rooms: 26",
+      "openingYear": "Opening Year: 2023",
+      "location": "Location: Nacpan Beach",
       "phone": "+63 917 234 5678",
       "website": "www.nacpanbeachresort.com"
     },
     "nacpanBeachGlamping": {
       "name": "Nacpan Beach Glamping",
-      "description": "Enjoy a unique glamping experience with all the comforts of a hotel, right on the beach.",
-      "location": "Nacpan Beach, El Nido, Palawan",
+      "description": "Nacpan Beach is one of the must-visit spots for travelers after Big Lagoon and Small Lagoon. We've established Nacpan Beach Glamping on this beach and planted 300 trees and 4000 shrubs. We are committed to environmental conservation, not only preserving the natural environment but also establishing a sea turtle conservation project.",
+      "shortDescription": "Enjoy a unique glamping experience with all the comforts of a hotel, right on the beach.",
+      "rooms": "Rooms: 18",
+      "openingYear": "Opening Year: 2023",
+      "location": "Location: Nacpan Beach",
       "phone": "+63 917 345 6789",
       "website": "www.nacpanbeachglamping.com"
     },
     "hHotelVeganHotel": {
-      "name": "H Hotel Vegan Hotel",
-      "description": "A vegan-friendly hotel with plant-based cuisine and eco-conscious rooms.",
-      "location": "El Nido Town Proper, Palawan",
+      "name": "H Hotel - Vegan Friendly Hotel",
+      "description": "H Hotel is located in the center of El Nido town with an excellent location. The hotel offers Ver De's vegan breakfast and sea view dinners at the rooftop Piece of Sky restaurant. Currently, 2 of the top 3 ranked restaurants on TripAdvisor are located in H Hotel.",
+      "shortDescription": "A vegan-friendly hotel with plant-based cuisine and eco-conscious rooms.",
+      "rooms": "Rooms: 41",
+      "openingYear": "Opening Year: 2023",
+      "location": "Location: El Nido Town Center",
       "phone": "+63 917 456 7890",
       "website": "www.hhotelveganhotel.com"
     },
     "jBoutiqueHotel": {
       "name": "J Boutique Hotel",
-      "description": "A stylish boutique hotel in the heart of El Nido, perfect for urban explorers.",
-      "location": "El Nido Town Center, Palawan",
+      "description": "J Boutique Hotel is located on the edge of El Nido town, an 8-minute walk from the beach. This hotel is suitable for backpackers and small groups, offering affordable prices while maintaining comfortable and stylish decor.",
+      "shortDescription": "A stylish boutique hotel in the heart of El Nido, perfect for urban explorers.",
+      "rooms": "Rooms: 14",
+      "openingYear": "Opening Year: 2023",
+      "location": "Location: El Nido Town Center",
       "phone": "+63 917 567 8901",
       "website": "www.jboutiquehotel.com"
     },
     "sResortElNido": {
       "name": "S Resort El Nido",
-      "description": "A modern resort offering comfort and convenience for leisure and business travelers.",
-      "location": "Corong Corong, El Nido, Palawan",
+      "description": "Located in El Nido town, near H Hotel, with 44 rooms. Over 100 restaurants and bars within 200 meters, perfect for group travel or couples' getaways. Features H&C Chinese restaurant on the rooftop and Grounded café on the first floor for delicious morning coffee.",
+      "shortDescription": "A modern resort offering comfort and convenience for leisure and business travelers.",
+      "rooms": "Rooms: 44",
+      "openingYear": "Opening Year: 2023",
+      "location": "Location: El Nido Town Center",
       "phone": "+63 917 678 9012",
       "website": "www.sresortelnido.com"
     },
     "casaCecilia": {
-      "name": "Casa Cecilia",
-      "description": "A 3-star accommodation located in the heart of El Nido, offering comfort and convenience.",
-      "location": "El Nido, Palawan",
+      "name": "C Hotel (Casa Cecilia)",
+      "description": "C Hotel is decorated in a simple local style, designed for budget-conscious travelers. It offers a prime location and simple, comfortable accommodation. The hotel is only a 2-minute walk from the beach.",
+      "shortDescription": "A 3-star accommodation located in the heart of El Nido, offering comfort and convenience.",
+      "rooms": "Rooms: 20",
+      "openingYear": "Opening Year: 2023",
+      "location": "Location: El Nido Town Center",
       "phone": "+63 917 345 6789",
       "website": "www.casacecilia.com"
     },
     "nacpanBeachVillas": {
       "name": "Nacpan Beach Villas",
-      "description": "Luxurious villas with free WiFi, perfect for couples seeking a romantic getaway.",
-      "location": "Near Nacpan Beach, El Nido, Palawan",
+      "description": "This is our newest hotel investment on Nacpan Beach, featuring single villa designs. While it doesn't have a gym or pool, it's located right above the beach, offering a natural ocean swimming pool. Room designs by renowned designer Justin provide a comfortable and luxurious experience.",
+      "shortDescription": "Luxurious villas with free WiFi, perfect for couples seeking a romantic getaway.",
+      "rooms": "Rooms: 14",
+      "openingYear": "Opening Year: 2024",
+      "location": "Location: Nacpan Beach",
       "highlights": "Free WiFi, Garden, Terrace, Bar"
     },
-    "milanGraceInn": {
-      "name": "MilanGrace Inn El Nido Palawan",
-      "description": "3-star accommodation with free parking, perfect location for exploring El Nido.",
-      "location": "Barangay Buena Suerte Cabigsing El Nido, Palawan, Philippines, 5113",
-      "highlights": "Free parking, Restaurant, 24-hour front desk, Airport transfer",
-      "nearestAirport": "El Nido Airport (ENI) - 4.1 km"
+    "zGardenHotel": {
+      "name": "Z Garden Hotel",
+      "description": "Z Garden Hotel is our latest hotel development, scheduled to open in 2025, located next to El Nido port. The hotel rooms are divided into sea view rooms and courtyard view rooms, offering travelers a variety of accommodation options.",
+      "shortDescription": "New hotel development with sea view and courtyard view options.",
+      "rooms": "Rooms: 30",
+      "openingYear": "Opening Year: 2025",
+      "location": "Location: El Nido Town Center"
     }
   },
   "common": {
@@ -152,16 +181,221 @@
   },
   "investing": {
     "title": "Our Investments",
-    "subtitle": "Explore our diverse strategic portfolio"
-  },
-  "restaurant": {
-    "3BrosFalafel": {
-      "name": "3 Bros Falafel",
-      "description": "A vibrant restaurant specializing in Mexican-style burritos, offering a unique fusion of flavors in El Nido."
+    "subtitle": "Explore our diverse strategic portfolio",
+
+    "tabs": {
+      "hotels": "Hotels",
+      "restaurantsCafeBars": "Restaurant, Cafe & Bars",
+      "spaMassage": "Spa & Massage",
+      "travelTours": "Travel & Tours"
     },
-    "verDeElNido": {
-      "name": "Ver De El Nido",
-      "description": "A charming vegetarian restaurant offering a diverse plant-based menu in the heart of El Nido."
+    "hotels": {
+      "introduction": "H Hospitality Group is dedicated to providing unique and comfortable accommodation experiences through its diverse hotel portfolio. Our hotels are strategically located in El Nido's prime locations, catering to various types of travelers while promoting environmental protection and sustainable development. We offer luxurious experiences while emphasizing harmony with local culture and the natural environment, creating unforgettable memories for every guest.",
+      "pieceLio": {
+        "name": "Piece Lio",
+        "description": "One of the most comfortable hotels on El Nido, developed in collaboration with Japan's renowned Piece Group. Offering spacious rooms of 50 to 150 square meters, providing a more comfortable stay compared to local hotels' typical 18 to 22 square meter rooms.",
+        "shortDescription": "Spacious and comfortable hotel in collaboration with Japan's Piece Group.",
+        "rooms": "Rooms: 36",
+        "openingYear": "Opening Year: 2024",
+        "location": "Location: Lio Airport Area (Ayala Lio)"
+      },
+      "hHotelVeganHotel": {
+        "name": "H Hotel - Vegan Friendly Hotel",
+        "description": "Located in the center of El Nido town with an excellent location. Offers Ver De's vegan breakfast and sea view dinners at the rooftop Piece of Sky restaurant. Two of TripAdvisor's top 3 ranked restaurants are located in H Hotel.",
+        "shortDescription": "Centrally located vegan-friendly hotel with top-rated restaurants.",
+        "rooms": "Rooms: 41",
+        "openingYear": "Opening Year: 2023",
+        "location": "Location: El Nido Town Center"
+      },
+      "nacpanBeachGlamping": {
+        "name": "Nacpan Beach Glamping",
+        "description": "Located on Nacpan Beach, a must-visit spot after Big Lagoon and Small Lagoon. We've planted 300 trees and 4000 shrubs, focusing on environmental conservation and establishing a sea turtle conservation project.",
+        "shortDescription": "Eco-friendly glamping experience on Nacpan Beach with conservation focus.",
+        "rooms": "Rooms: 18",
+        "openingYear": "Opening Year: 2023",
+        "location": "Location: Nacpan Beach"
+      },
+      "nacpanBeachResort": {
+        "name": "Nacpan Beach Resort",
+        "description": "Offering a more comfortable beach accommodation experience for travelers who prefer not to stay in tents. Guests can enjoy private bathroom facilities, avoiding the inconvenience of separate toilets in tents.",
+        "shortDescription": "Comfortable beach resort with private bathrooms on Nacpan Beach.",
+        "rooms": "Rooms: 26",
+        "openingYear": "Opening Year: 2023",
+        "location": "Location: Nacpan Beach"
+      },
+      "nacpanBeachVillas": {
+        "name": "Nacpan Beach Villas",
+        "description": "Our newest hotel investment on Nacpan Beach, featuring single villa designs. While it doesn't have a gym or pool, it's located right above the beach, offering a natural ocean swimming pool. Room designs by renowned designer Justin provide a comfortable and luxurious experience.",
+        "shortDescription": "Luxurious beachfront villas with designer interiors on Nacpan Beach.",
+        "rooms": "Rooms: 14",
+        "openingYear": "Opening Year: 2024",
+        "location": "Location: Nacpan Beach"
+      },
+      "sResortElNido": {
+        "name": "S Resort El Nido",
+        "description": "Located in El Nido town, near H Hotel, with 44 rooms. Over 100 restaurants and bars within 200 meters, perfect for group travel or couples' getaways. Features H&C Chinese restaurant on the rooftop and Grounded café on the first floor for delicious morning coffee.",
+        "shortDescription": "Centrally located resort with rooftop restaurant and nearby attractions.",
+        "rooms": "Rooms: 44",
+        "openingYear": "Opening Year: 2023",
+        "location": "Location: El Nido Town Center"
+      },
+      "jBoutiqueHotel": {
+        "name": "J Boutique Hotel",
+        "description": "Located on the edge of El Nido town, an 8-minute walk from the beach. Suitable for backpackers and small groups, offering affordable prices while maintaining comfortable and stylish decor.",
+        "shortDescription": "Affordable boutique hotel near the beach, ideal for backpackers.",
+        "rooms": "Rooms: 14",
+        "openingYear": "Opening Year: 2023",
+        "location": "Location: El Nido Town Center"
+      },
+      "cHotel": {
+        "name": "C Hotel (Casa Cecilia)",
+        "description": "Decorated in a simple local style, designed for budget-conscious travelers. Offers a prime location and simple, comfortable accommodation. Only a 2-minute walk from the beach.",
+        "shortDescription": "Budget-friendly hotel with local charm, close to the beach.",
+        "rooms": "Rooms: 20",
+        "openingYear": "Opening Year: 2023",
+        "location": "Location: El Nido Town Center"
+      },
+      "zGardenHotel": {
+        "name": "Z Garden Hotel",
+        "description": "Our newest hotel development, set to open in 2025, located next to El Nido port. Hotel rooms are divided into sea view and garden view, offering diverse accommodation options for travelers.",
+        "shortDescription": "New hotel near El Nido port with sea and garden view rooms.",
+        "rooms": "Rooms: 30",
+        "openingYear": "Opening Year: 2025",
+        "location": "Location: El Nido Town Center"
+      }
+    },
+    "restaurantsCafeBars": {
+      "introduction": "H Hospitality Group's food and beverage portfolio offers a diverse range of culinary experiences in El Nido. From vegan delights to authentic Asian cuisines, our establishments cater to various tastes and preferences. We pride ourselves on using fresh, locally-sourced ingredients and creating unique dining atmospheres that complement the natural beauty of El Nido.",
+      "pieceOfSky": {
+        "name": "Piece of Sky",
+        "description": "A rooftop restaurant offering breathtaking sea views and a fusion of Asian and Western cuisines. Perfect for romantic dinners or sunset cocktails.",
+        "shortDescription": "Rooftop fusion restaurant with sea views.",
+        "seats": "Seats: 65",
+        "openingYear": "Opening Year: 2023",
+        "location": "Location: H Hotel Rooftop, El Nido Town Center"
+      },
+      "hAndC": {
+        "name": "H&C",
+        "description": "Authentic Chinese cuisine restaurant specializing in Cantonese and Sichuan dishes. Popular among Chinese tourists and locals alike.",
+        "shortDescription": "Authentic Chinese restaurant popular with tourists and locals.",
+        "seats": "Seats: 50",
+        "openingYear": "Opening Year: 2023",
+        "location": "Location: S Resort Rooftop, El Nido Town Center"
+      },
+      "threeBrosFalafel": {
+        "name": "3 Bros Falafel",
+        "description": "Middle Eastern-inspired restaurant known for its delicious falafel and shawarma. A favorite spot for quick, flavorful meals.",
+        "shortDescription": "Middle Eastern fast food spot known for falafel and shawarma.",
+        "seats": "Seats: 30",
+        "openingYear": "Opening Year: 2023",
+        "location": "Location: El Nido Town Center"
+      },
+      "groundedCoffee": {
+        "name": "Grounded Coffee",
+        "description": "Specialty coffee shop serving high-quality, sustainably sourced coffee. A perfect spot for coffee enthusiasts and digital nomads.",
+        "shortDescription": "Specialty coffee shop with sustainable sourcing.",
+        "seats": "Seats: 18",
+        "openingYear": "Opening Year: 2023",
+        "location": "Location: El Nido Town Center"
+      },
+      "janeCoffee": {
+        "name": "Jane Coffee",
+        "description": "H Hospitality Group's latest investment, focusing on high-end hand-drip coffee experiences. Professional baristas offer 1-2 hour refined coffee experiences for discerning coffee enthusiasts.",
+        "shortDescription": "High-end hand-drip coffee experience with professional baristas.",
+        "seats": "Seats: 15",
+        "openingYear": "Opening Year: 2025",
+        "location": "Location: El Nido Town Center"
+      },
+      "lechonCo": {
+        "name": "Lechon Co by H Hospitality Group",
+        "description": "Collaboration with a culinary master from Cebu, offering the famous Lechon roast pig. A must-try traditional Filipino dish, located opposite H Hotel.",
+        "shortDescription": "Famous Cebu-style Lechon roast pig restaurant.",
+        "seats": "Seats: 8",
+        "openingYear": "Opening Year: 2025",
+        "location": "Location: El Nido Town Center"
+      },
+      "verDeElNido": {
+        "name": "Ver De El Nido",
+        "description": "El Nido's first all-vegan restaurant, co-founded by renowned chefs from the US and Philippines. Features 6-meter high glass windows, air conditioning, and Beyond Meat products. Ranked in TripAdvisor's top 3.",
+        "shortDescription": "Top-ranked all-vegan restaurant with international chef collaboration.",
+        "seats": "Seats: 65",
+        "openingYear": "Opening Year: 2025",
+        "location": "Location: El Nido Town Center"
+      },
+      "sunmaiNacpanBeach": {
+        "name": "Sunmai",
+        "description": "A Taiwanese craft beer bar offering a wide selection of unique brews. Perfect for beer enthusiasts looking to explore new flavors.",
+        "shortDescription": "Taiwanese craft beer bar with unique brews.",
+        "seats": "Seats: 40",
+        "openingYear": "Opening Year: 2024",
+        "location": "Location: El Nido Town Center"
+      },
+      "hAndCChinese": {
+        "name": "H&C Chinese",
+        "description": "An authentic Chinese restaurant specializing in traditional dishes from various regions of China. Popular among both locals and tourists.",
+        "shortDescription": "Authentic multi-regional Chinese restaurant.",
+        "seats": "Seats: 60",
+        "openingYear": "Opening Year: 2024",
+        "location": "Location: El Nido Town Center"
+      },
+      "unocha": {
+        "name": "Unocha",
+        "description": "A Japanese-inspired tea house offering a serene atmosphere and a wide variety of high-quality teas and light snacks.",
+        "shortDescription": "Japanese-inspired tea house with serene atmosphere.",
+        "seats": "Seats: 25",
+        "openingYear": "Opening Year: 2024",
+        "location": "Location: El Nido Town Center"
+      },
+      "3BrosFalafel": {
+        "name": "3 Bros Falafel",
+        "description": "A vibrant restaurant specializing in Mexican-style burritos, offering a unique fusion of flavors in El Nido.",
+        "shortDescription": "Vibrant Mexican-style burrito restaurant.",
+        "seats": "Seats: 35",
+        "openingYear": "Opening Year: 2023",
+        "location": "Location: El Nido Town Center"
+      }
+    },
+    "spa": {
+      "title": "Spa",
+      "introduction": "H Hospitality Group's Oriental Spa series offers travelers an ultimate relaxation and rejuvenation experience. Our spa venues are beautifully designed, combining modern aesthetics with Eastern therapies. Whether you visit Oriental Spa 1 at H Hotel or the newly opened Oriental Spa 2, you'll find comfortable environments and professional therapeutic services. After exploring El Nido's beautiful scenery or seeking a quiet moment of relaxation, our spa facilities are your ideal healing destination.",
+      "orientalSpa1": {
+        "name": "Oriental Spa 1",
+        "description": "Located on the first floor of H Hotel, Oriental Spa 1 is the most popular massage parlor in El Nido, boasting the highest number of positive reviews on Google Maps. This spa is renowned for its high-quality service and comfortable environment, making it a must-visit relaxation spot for travelers in El Nido. Due to high demand, it's recommended that guests book in advance to ensure they can enjoy a premium massage experience.",
+        "seats": "Seats: 13",
+        "openingYear": "Opening Year: 2023",
+        "location": "Location: H Hotel, El Nido"
+      },
+      "orientalSpa2": {
+        "name": "Oriental Spa 2",
+        "description": "Oriental Spa 2 is El Nido's newest luxury wellness spa, featuring 40 massage stations that offer spacious and private comfort for travelers. This standalone building, meticulously designed by renowned designer Justin, combines modern design with traditional Eastern therapies, providing guests with the ultimate relaxation experience for body and mind. When visiting El Nido, this newly opened spa is an unmissable health indulgence.",
+        "seats": "Seats: 40",
+        "openingYear": "Opening Year: 2025",
+        "location": "Location: Next to J Boutique Hotel, El Nido"
+      }
+    },
+    "travel": {
+      "title": "Travel & Tours",
+      "introduction": "H Hospitality Group offers comprehensive travel and activity services through partnerships with top local tour companies like Discover El Nido. Our services range from professional guided tours, comfortable transportation, wedding planning, to unique market experiences, catering to diverse traveler needs. Whether you're exploring El Nido's beauty or planning a romantic wedding on Nacpan Beach, H Hospitality Group is committed to providing unparalleled experiences. We understand that each journey is unique and strive to create wonderful memories for every traveler.",
+      "discoverElNido": {
+        "name": "Discover El Nido",
+        "description": "The highest-rated tour company in El Nido, TripAdvisor certified, and closely partnered with H Hospitality Group. With 9 boats and professional guide services, it's the top choice for exploring El Nido's natural beauty."
+      },
+      "elNidoGO": {
+        "name": "El Nido GO",
+        "description": "A one-stop service travel agency for Chinese tourists, handling everything from flights to itineraries. Ideal for those less familiar with English or trip planning."
+      },
+      "nacpanBeachShuttle": {
+        "name": "Nacpan Beach Shuttle",
+        "description": "Affordable shuttle service to Nacpan Beach. Air-conditioned vehicles, $15 round trip."
+      },
+      "nacpanBeachWedding": {
+        "name": "Nacpan Beach Wedding",
+        "description": "Specialized in arranging dream beach weddings on Nacpan Beach. Offers comprehensive services from venue setup to event planning, ensuring every detail is perfect."
+      },
+      "nacpanSunsetMarket": {
+        "name": "Nacpan Sunset Market",
+        "description": "Inspired by Taiwan's famous night markets, this beachside market offers a variety of food and crafts, allowing visitors to enjoy sunset views while experiencing local culture."
+      }
     }
   },
   "travel": {

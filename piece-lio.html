@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta property="og:title" content="Piece Lio - H Hospitality Group" />
+    <meta property="og:description"
+        content="Experience luxury and tranquility at Piece Lio, a world-class beachfront resort in El Nido, Palawan." />
+    <meta property="og:url" content="https://hhospitality.group/piece-lio.html" />
+    <meta property="og:site_name" content="H Hospitality Group" />
+    <meta property="og:image" content="https://hhospitality.group/assets/img/piece-lio-og-image.jpg" />
+    <meta name="format-detection" content="telephone=no">
+    <title>Piece Lio - H Hospitality Group</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon_io/favicon.ico" />
+    <link rel="apple-touch-icon" href="assets/favicon_io/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" href="assets/favicon_io/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="assets/favicon_io/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="mask-icon" href="assets/favicon_io/android-chrome-512x512.png" color="#ffffff">
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css?v=202411012130" rel="stylesheet" />
+    <style>
+        #mainNav.navbar-shrink .langSelectDesktop {
+            margin-top: 15px;
+        }
+
+        #mainNav .langSelectDesktop {
+            margin-top: 25px;
+        }
+
+        .piece-lio-banner {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("images/piecelio/cover.webp");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+            padding: 10rem 0;
+        }
+
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            color: #64a19d;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .piece-lio-banner {
+                padding: 5rem 0;
+            }
+
+            .carousel-item img {
+                height: 300px;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+
+    <!-- i18next libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.6.10/i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/2.1.0/jquery-i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-xhr-backend/3.2.2/i18nextXHRBackend.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
+
+    <!-- Load custom scripts -->
+    <script src="js/scripts.js"></script>
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html"> <img class="img-fluid mb-lg-0"
+                    src="assets/img/h_hotel_group_logo.svg" width="120px" alt="h_hotel_group" /></a>
+            <div class="d-flex align-items-center">
+                <div class="d-lg-none me-2">
+                    <select id="langSelect" class="form-select bg-dark text-white"
+                        style="width: auto; padding-right: 20px;" aria-label="Language selection">
+                        <option value="en">🇺🇸 English</option>
+                        <option value="zh">🇹🇼 繁中</option>
+                        <option value="zh-cn">🇨🇳 簡中</option>
+                    </select>
+                </div>
+                <button class="navbar-toggler navbar-toggler-right ms-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#about" data-i18n="nav.about">About</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="hotel.html" data-i18n="nav.hotel">Our Hotels</a></li>
+                    <li class="nav-item"><a class="nav-link" href="investing.html" data-i18n="nav.investing">Investing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#timeline"
+                            data-i18n="nav.timeline">Timeline</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact"
+                            data-i18n="nav.contact">Contact</a></li>
+                    <li class="nav-item d-none d-lg-block">
+                        <select id="langSelectDesktop" class="langSelectDesktop form-select bg-dark text-white"
+                            aria-label="Language selection">
+                            <option value="en">🇺🇸 English</option>
+                            <option value="zh">🇹🇼 繁中</option>
+                            <option value="zh-cn">🇨🇳 簡中</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <section class="banner-section">
+        <div class="container-fluid p-0">
+            <div class="banner-image" style="background-image: url('images/piecelio/1.webp'); height: 60vh; background-size: cover; background-position: center;">
+                <div class="banner-overlay d-flex align-items-center justify-content-center" style="background-color: rgba(0, 0, 0, 0.4); height: 100%;">
+                    <div class="text-center text-white">
+                        <h1 class="display-3 fw-bold" data-i18n="hotel.pieceLio.name">Piece Lio</h1>
+                        <p class="lead" data-i18n="hotel.pieceLio.location">Lio Beach, El Nido, Palawan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Hotel Introduction Section -->
+    <section class="hotel-intro py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="mb-4" data-i18n="hotel.pieceLio.name">Piece Lio</h1>
+                    <p class="lead mb-4" data-i18n="hotel.pieceLio.description">Piece Lio is a luxurious beachfront resort offering stunning views of the ocean and world-class amenities. Experience the ultimate in comfort and relaxation at this paradise getaway.</p>
+                    <div class="hotel-info mb-4">
+                        <h5 data-i18n="hotel.info">Hotel Info</h5>
+                        <p><strong data-i18n="hotel.rating">Rating:</strong> <span class="text-warning">★★★★★ 4.9</span></p>
+                        <p><strong data-i18n="hotel.location">Location:</strong> <span data-i18n="hotel.pieceLio.location">Lio Beach, El Nido, Palawan</span></p>
+                        <p><strong data-i18n="hotel.phone">Phone:</strong> <span data-i18n="hotel.pieceLio.phone">+63 917 123 4567</span></p>
+                        <p><strong data-i18n="hotel.website">Website:</strong> <a href="https://www.piecelio.com" target="_blank" data-i18n="hotel.pieceLio.website">www.piecelio.com</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div id="pieceLioCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/piecelio/1.webp" class="d-block w-100" alt="Piece Lio">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/piecelio/2.webp" class="d-block w-100" alt="Piece Lio">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/piecelio/3.webp" class="d-block w-100" alt="Piece Lio">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/piecelio/4.webp" class="d-block w-100" alt="Piece Lio">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/piecelio/5.webp" class="d-block w-100" alt="Piece Lio">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/piecelio/6.webp" class="d-block w-100" alt="Piece Lio">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/piecelio/7.webp" class="d-block w-100" alt="Piece Lio">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#pieceLioCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#pieceLioCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-3 mb-2">
+                            <img src="images/piecelio/1.webp" class="img-fluid thumbnail" data-bs-target="#pieceLioCarousel" data-bs-slide-to="0">
+                        </div>
+                        <div class="col-3 mb-2">
+                            <img src="images/piecelio/2.webp" class="img-fluid thumbnail" data-bs-target="#pieceLioCarousel" data-bs-slide-to="1">
+                        </div>
+                        <div class="col-3 mb-2">
+                            <img src="images/piecelio/3.webp" class="img-fluid thumbnail" data-bs-target="#pieceLioCarousel" data-bs-slide-to="2">
+                        </div>
+                        <div class="col-3 mb-2">
+                            <img src="images/piecelio/4.webp" class="img-fluid thumbnail" data-bs-target="#pieceLioCarousel" data-bs-slide-to="3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="footer bg-black small text-center text-white-50">
+        <div class="container px-4 px-lg-5">Copyright &copy; H Hospitality Group 2024</div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

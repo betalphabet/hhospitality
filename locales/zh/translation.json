@@ -3,7 +3,8 @@
     "about": "關於我們",
     "hotel": "我們的酒店",
     "timeline": "時間軸",
-    "contact": "聯繫我們"
+    "contact": "聯繫我們",
+    "investing": "我們的投資"
   },
   "masthead": {
     "title": "H Hospitality Group",
@@ -41,7 +42,7 @@
     "description": "在 H Hospitality Group，我們的承諾不僅僅是提供卓越的酒店服務；它還延伸到對我們的社區和環境產生有意義的影響。自我們在愛妮島巴拉望成立以來，我們一直堅定不移地致力於通過各種支持人民和保護地球的倡議來創造積極的變化。",
     "communitySupport": {
       "title": "社會支持",
-      "description": "H Hospitality Group擁有約300名員工，我們很開心能為約300個家庭的生計做出貢獻。我們超過70%的員工是愛妮島的當地人，展示了我們通過提供體面的工作和具有競爭力的薪酬福利來真誠支持社區的熱情。我們相信，提供穩定的工作機會和培養性的工作環境對於建立一個繁榮的社區至關重要。我們的員工是我們成功的基石，他們的福祉是我們的首要任務。"
+      "description": "H Hospitality Group擁有300名員工，目前是愛妮島最大的旅館集團，我們很開心能為約300個家庭的生計做出貢獻。我們超過70%的員工是愛妮島的當地人，展示了我們通過提供體面的工作和具有競爭力的薪酬福利來真誠支持社區的熱情。我們相信，提供穩定的工作機會和培養性的工作環境對於建立一個繁榮的社區至關重要。我們的員工是我們成功的基石，他們的福祉是我們的首要任務。"
     },
     "turtleConservation": {
       "title": "海龜保護",
@@ -64,7 +65,10 @@
     "location": "地點",
     "locationValue": "PH,El Nido",
     "phone": "電話",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "bussiness": "商業機會",
+    "office": "辦公室",
+    "reservation": "預約電話"
   },
   "hotel": {
     "title": "我們的酒店",
@@ -84,62 +88,89 @@
     "nearestAirport": "最近的機場：",
     "pieceLio": {
       "name": "Piece Lio",
-      "description": "豪華的海濱度假村，提供令人驚嘆的海景和世界級設施。",
+      "shortDescription": "與日本知名Piece集團合作開發的豪華酒店，提供50至150平方米的寬敞客房，遠超當地標準的住宿體驗。",
+      "description": "Piece Lio 是愛妮島上最舒適的酒店之一，與日本知名的 Piece 集團合作開發。Piece 集團在日本經營 10 家酒店，而 Piece Lio 提供 50 至 150 平方米的房間，相較於當地一般酒店 18 至 22 平方米的房型，為旅客帶來更寬敞舒適的住宿體驗。",
+      "rooms": "房間數：36",
+      "openingYear": "開幕年：2024",
       "location": "Lio Beach, El Nido, Palawan",
       "phone": "+63 917 123 4567",
       "website": "www.piecelio.com"
     },
     "nacpanBeachResort": {
       "name": "Nacpan Beach Resort",
-      "description": "在這個生態友好的度假村體驗納克潘海灘的美麗，非常適合自然愛好者。",
+      "shortDescription": "位於納克潘海灘的舒適度假村，提供私人衛浴設施和完善的住宿體驗，是不喜歡帳篷露營旅客的理想選擇。",
+      "description": "為了給不想住在帳篷旅館的旅客更多選擇，Nacpan Beach Resort 提供了更舒適的沙灘住宿體驗，讓客人享受私人衛浴設施，避免住在帳篷中廁所分離的不便。",
+      "rooms": "房間數：26",
+      "openingYear": "開幕年：2023",
       "location": "Nacpan Beach, El Nido, Palawan",
       "phone": "+63 917 234 5678",
       "website": "www.nacpanbeachresort.com"
     },
     "nacpanBeachGlamping": {
       "name": "Nacpan Beach Glamping",
-      "description": "享受獨特的豪華露營體驗，擁有酒店的所有舒適，就在海灘上。",
+      "shortDescription": "環保意識豪華露營地，擁有300棵樹和4000株灌木的自然環境，並設有海龜保育項目，為遊客提供獨特的海灘住宿體驗。",
+      "description": "Nacpan Beach 是旅客認為在 Big Lagoon 和 Small Lagoon 之外必訪的景點之一。我們在這片沙灘上開設了 Nacpan Beach Glamping，並種植了 300 棵樹和 4000 株灌木。我們致力於環境保育，不僅沒有破壞自然環境，還建立了海龜保育項目。",
+      "rooms": "房間數：18",
+      "openingYear": "開幕年：2023",
       "location": "Nacpan Beach, El Nido, Palawan",
       "phone": "+63 917 345 6789",
       "website": "www.nacpanbeachglamping.com"
     },
     "hHotelVeganHotel": {
-      "name": "H Hotel Vegan Hotel",
-      "description": "一家素食友好的酒店，提供植物性美食和環保意識的客房。",
+      "name": "H Hotel - Vegan Friendly Hotel",
+      "shortDescription": "位於愛妮島鎮中心的素食友好酒店，擁有兩家TripAdvisor排名前三的餐廳，提供純素早餐和海景屋頂餐廳。",
+      "description": "H Hotel 是位於 El Nido 鎮中心的酒店，擁有極佳的地理位置。酒店提供 Ver De 的純素早餐，並在屋頂的 Piece of Sky 餐廳享受海景晚餐。目前，TripAdvisor 上排名前 3 的餐廳中有 2 家位於 H Hotel。",
+      "rooms": "房間數：41",
+      "openingYear": "開幕年：2023",
       "location": "El Nido Town Proper, Palawan",
       "phone": "+63 917 456 7890",
       "website": "www.hhotelveganhotel.com"
     },
     "jBoutiqueHotel": {
       "name": "J Boutique Hotel",
-      "description": "位於愛妮島中心的時尚精品酒店，非常適合城市探險者。",
+      "shortDescription": "位於愛妮島鎮邊緣的時尚精品酒店，步行8分鐘可達海灘，為背包客和小團體提供經濟實惠且舒適的住宿選擇。",
+      "description": "J Boutique Hotel 位於 El Nido 鎮的邊緣，步行 8 分鐘即可到達沙灘。這間酒店適合背包客和小團體入住，提供經濟實惠的價格，同時保有舒適與時尚的裝修風格。",
+      "rooms": "房間數：14",
+      "openingYear": "開幕年：2023",
       "location": "El Nido Town Center, Palawan",
       "phone": "+63 917 567 8901",
       "website": "www.jboutiquehotel.com"
     },
     "sResortElNido": {
       "name": "S Resort El Nido",
-      "description": "為休閒和商務旅客提供舒適和便利的現代度假村。",
+      "shortDescription": "鄰近H Hotel的現代度假村，周邊200公尺內有超過100家餐廳與酒吧，設有頂樓中餐廳和一樓咖啡廳。",
+      "description": "位於 El Nido 鎮上，鄰近 H Hotel，擁有 44 間房間，周圍 200 公尺內有超過 100 家餐廳與酒吧，非常適合團體旅行或情侶度假。酒店的頂樓設有 H&C 中餐廳，而一樓的 Grounded 咖啡廳則為您提供美味的早晨咖啡。",
+      "rooms": "房間數：44",
+      "openingYear": "開幕年：2023",
       "location": "Corong Corong, El Nido, Palawan",
       "phone": "+63 917 678 9012",
       "website": "www.sresortelnido.com"
     },
     "casaCecilia": {
-      "name": "Casa Cecilia",
-      "description": "位於愛妮島中心的三星級住宿，提供舒適和便利。",
+      "name": "C Hotel (Casa Cecilia)",
+      "shortDescription": "距離海灘僅2分鐘步行路程的三星級酒店，以當地風格簡約裝修，為預算有限的旅客提供優越位置和舒適住宿。",
+      "description": "C Hotel 以當地風格簡約裝修，專為預算有限的旅客設計，提供優越的地理位置和簡單舒適的住宿環境。酒店距離沙灘僅 2 分鐘步行路程。",
+      "rooms": "房間數：20",
+      "openingYear": "開幕年：2023",
       "location": "El Nido, Palawan",
       "phone": "+63 917 345 6789",
       "website": "www.casacecilia.com"
     },
     "nacpanBeachVillas": {
       "name": "Nacpan Beach Villas",
-      "description": "提供免費WiFi的豪華別墅，非常適合尋求浪漫度假的情侶。",
+      "shortDescription": "位於納克潘海灘正上方的豪華單棟別墅，由知名設計師Justin設計，雖無健身房和游泳池，但擁有天然海洋游泳池。",
+      "description": "這是 Nacpan Beach 上我們最新的酒店投資，採用單棟別墅設計，雖然沒有健身房或游泳池，但其位於沙灘正上方，提供天然海洋游泳池。房間設計由知名設計師 Justin 操刀，提供旅客一個舒適、奢華的住宿體驗。",
+      "rooms": "房間數：14",
+      "openingYear": "開幕年：2024",
       "location": "Near Nacpan Beach, El Nido, Palawan",
       "highlights": "免費WiFi、花園、露台、酒吧"
     },
     "milanGraceInn": {
-      "name": "MilanGrace Inn El Nido Palawan",
-      "description": "提供免費停車的三星級住宿，探索愛妮島的完美位置。",
+      "name": "Z Garden Hotel",
+      "shortDescription": "預計2025年開幕的全新酒店項目，位於愛妮島港口旁，提供海景房和庭院景觀房等多樣化住宿選擇。",
+      "description": "Z Garden Hotel 是我們最新開發的酒店，預計於 2025 年開幕，位於 El Nido 港口旁。酒店房間分為海景房和庭院景觀房，為旅客提供多樣的住宿選擇。",
+      "rooms": "房間數：30",
+      "openingYear": "開幕年：2025",
       "location": "菲律賓，巴拉望，愛妮島，Barangay Buena Suerte Cabigsing，5113",
       "highlights": "免費停車、餐廳、24小時前台、機場接送",
       "nearestAirport": "El Nido Airport (ENI) - 4.1 km"
@@ -151,16 +182,221 @@
   },
   "investing": {
     "title": "我們的投資",
-    "subtitle": "探索我們多元化的策略投資組合"
-  },
-  "restaurant": {
-    "3BrosFalafel": {
-      "name": "3 Bros Falafel",
-      "description": "一家充滿活力的餐廳，專門提供墨西哥風格的捲餅，在愛妮島提供獨特的風味融合。"
+    "subtitle": "探索我們多元化的策略投資組合",
+
+    "tabs": {
+      "hotels": "酒店",
+      "restaurantsCafeBars": "餐廳、咖啡廳和酒吧",
+      "spaMassage": "水療和按摩",
+      "travelTours": "旅遊和觀光"
     },
-    "verDeElNido": {
-      "name": "Ver De El Nido",
-      "description": "一家迷人的素食餐廳，在愛妮島中心提供多樣化的植物性菜單。"
+    "hotels": {
+      "introduction": "H Hospitality Group 致力於通過其多元化的酒店組合提供獨特而舒適的住宿體驗。我們的酒店戰略性地位於愛妮島的黃金地段，滿足各類旅客的需求，同時促進環境保護和可持續發展。我們提供豪華體驗，同時強調與當地文化和自然環境的和諧，為每位客人創造難忘的回憶。",
+      "pieceLio": {
+        "name": "Piece Lio",
+        "description": "愛妮島最舒適的酒店之一，與日本知名的 Piece Group 合作開發。提供 50 到 150 平方米的寬敞客房，相比當地酒店典型的 18 到 22 平方米客房提供更舒適的住宿。",
+        "shortDescription": "與日本 Piece Group 合作開發的高端酒店，提供 50-150 平方米寬敞客房，遠超當地標準的舒適住宿體驗。",
+        "rooms": "客房數：36",
+        "openingYear": "開業年份：2024",
+        "location": "位置：Lio 機場區域（Ayala Lio）"
+      },
+      "hHotelVeganHotel": {
+        "name": "H Hotel - 素食友好酒店",
+        "description": "位於愛妮島鎮中心，地理位置優越。提供 Ver De 的素食早餐和屋頂 Piece of Sky 餐廳的海景晚餐。TripAdvisor 排名前三的兩家餐廳都位於 H Hotel。",
+        "shortDescription": "位於鎮中心的素食友好酒店，擁有兩家 TripAdvisor 排名前三的餐廳，提供素食早餐和海景晚餐。",
+        "rooms": "客房數：41",
+        "openingYear": "開業年份：2023",
+        "location": "位置：愛妮島鎮中心"
+      },
+      "nacpanBeachGlamping": {
+        "name": "納克潘海灘豪華露營",
+        "description": "位於納克潘海灘，是繼大小瀉湖後必訪之地。我們種植了 300 棵樹和 4000 株灌木，專注於環境保護並建立了海龜保護項目。",
+        "shortDescription": "位於必訪的納克潘海灘，致力於環境保護，種植大量植物並設立海龜保護項目的豪華露營地。",
+        "rooms": "客房數：18",
+        "openingYear": "開業年份：2023",
+        "location": "位置：納克潘海灘"
+      },
+      "nacpanBeachResort": {
+        "name": "納克潘海灘度假村",
+        "description": "為不喜歡住帳篷的旅客提供更舒適的海灘住宿體驗。客人可以享受私人浴室設施，避免帳篷中獨立廁所的不便。",
+        "shortDescription": "為追求舒適的旅客提供海灘度假體驗，配備私人浴室設施，是帳篷住宿的完美替代選擇。",
+        "rooms": "客房數：26",
+        "openingYear": "開業年份：2023",
+        "location": "位置：納克潘海灘"
+      },
+      "nacpanBeachVillas": {
+        "name": "納克潘海灘別墅",
+        "description": "我們在納克潘海灘的最新酒店投資，採用獨立別墅設計。雖然沒有健身房或游泳池，但位於海灘正上方，提供天然的海洋游泳池。由知名設計師 Justin 設計的房間提供舒適豪華的體驗。",
+        "shortDescription": "由知名設計師 Justin 打造的豪華海濱別墅，位於海灘正上方，擁有天然海洋游泳池的獨特住宿體驗。",
+        "rooms": "客房數：14",
+        "openingYear": "開業年份：2024",
+        "location": "位置：納克潘海灘"
+      },
+      "sResortElNido": {
+        "name": "S Resort 愛妮島",
+        "description": "位於愛妮島鎮，靠近 H Hotel，擁有 44 間客房。200 米範圍內有超過 100 家餐廳和酒吧，非常適合團體旅行或情侶度假。屋頂設有 H&C 中餐廳，一樓設有 Grounded 咖啡廳，提供美味的早晨咖啡。",
+        "shortDescription": "位於愛妮島鎮中心，周邊餐飲豐富，設有屋頂中餐廳和一樓咖啡廳，適合團體和情侶入住的現代度假村。",
+        "rooms": "客房數：44",
+        "openingYear": "開業年份：2023",
+        "location": "位置：愛妮島鎮中心"
+      },
+      "jBoutiqueHotel": {
+        "name": "J 精品酒店",
+        "description": "位於愛妮島鎮邊緣，步行 8 分鐘即可到達海灘。適合背包客和小型團體，提供實惠的價格，同時保持舒適時尚的裝飾。",
+        "shortDescription": "位於鎮邊緣的時尚精品酒店，步行可達海灘，為背包客和小團體提供實惠舒適的住宿選擇。",
+        "rooms": "客房數：14",
+        "openingYear": "開業年份：2023",
+        "location": "位置：愛妮島鎮中心"
+      },
+      "cHotel": {
+        "name": "C Hotel（Casa Cecilia）",
+        "description": "以簡單的當地風格裝飾，為預算有限的旅客設計。提供優越的位置和簡單舒適的住宿。距離海灘僅 2 分鐘步行路程。",
+        "shortDescription": "距離海灘僅 2 分鐘步行路程的經濟型酒店，以當地風格簡約裝修，為預算旅客提供舒適住宿。",
+        "rooms": "客房數：20",
+        "openingYear": "開業年份：2023",
+        "location": "位置：愛妮島鎮中心"
+      },
+      "zGardenHotel": {
+        "name": "Z Garden Hotel",
+        "description": "我們最新的酒店開發項目，計劃於 2025 年開業，位於愛妮島港口旁。酒店客房分為海景和花園景觀，為旅客提供多樣化的住宿選擇。",
+        "shortDescription": "2025年開業的全新港口酒店項目，提供海景和花園景觀房，為旅客帶來多樣化的住宿體驗。",
+        "rooms": "客房數：30",
+        "openingYear": "開業年份：2025",
+        "location": "位置：愛妮島鎮中心"
+      }
+    },
+    "restaurantsCafeBars": {
+      "introduction": "H Hospitality Group 的餐飲組合在愛妮島提供多樣化的美食體驗。從素食美食到正宗的亞洲料理，我們的餐廳滿足各種口味和偏好。我們以使用新鮮的當地食材為榮，並創造獨特的用餐氛圍，與愛妮島的自然美景相得益彰。",
+      "pieceOfSky": {
+        "name": "Piece of Sky",
+        "description": "一家屋頂餐廳，提供令人驚嘆的海景和亞洲與西方融合料理。非常適合浪漫晚餐或欣賞日落時品嚐雞尾酒。",
+        "shortDescription": "位於屋頂的浪漫餐廳，提供亞西融合料理，伴隨壯麗海景和日落，是享用晚餐和雞尾酒的理想場所。",
+        "seats": "座位數：65",
+        "openingYear": "開業年份：2023",
+        "location": "位置：H Hotel 屋頂，愛妮島鎮中心"
+      },
+      "hAndC": {
+        "name": "H&C",
+        "description": "正宗的中國料理餐廳，專門提供粵菜和川菜。深受中國遊客和當地人喜愛。",
+        "shortDescription": "專注於正宗粵菜和川菜的中式餐廳，以地道風味贏得中國遊客和當地人的喜愛。",
+        "seats": "座位數：50",
+        "openingYear": "開業年份：2023",
+        "location": "位置：S Resort 屋頂，愛妮島鎮中心"
+      },
+      "threeBrosFalafel": {
+        "name": "3 Bros Falafel",
+        "description": "受中東啟發的餐廳，以美味的沙威瑪和炸豆丸聞名。快速美味餐點的熱門地點。",
+        "shortDescription": "深受歡迎的中東風味餐廳，以道地的沙威瑪和炸豆丸聞名，是享用快速美味餐點的理想選擇。",
+        "seats": "座位數：30",
+        "openingYear": "開業年份：2023",
+        "location": "位置：愛妮島鎮中心"
+      },
+      "groundedCoffee": {
+        "name": "Grounded Coffee",
+        "description": "專業咖啡店，提供高品質、可持續採購的咖啡。咖啡愛好者和數位遊牧族的完美去處。",
+        "shortDescription": "專業咖啡店，提供可持續採購的優質咖啡，是咖啡愛好者和數位遊牧工作者的理想場所。",
+        "seats": "座位數：18",
+        "openingYear": "開業年份：2023",
+        "location": "位置：愛妮島鎮中心"
+      },
+      "janeCoffee": {
+        "name": "Jane Coffee",
+        "description": "H Hospitality Group 最新投資，專注於高端手沖咖啡體驗。專業咖啡師為品味獨特的咖啡愛好者提供 1-2 小時的精緻咖啡體驗。",
+        "shortDescription": "高端精品咖啡店，由專業咖啡師提供 1-2 小時的精緻手沖咖啡體驗，為追求品質的咖啡愛好者打造。",
+        "seats": "座位數：15",
+        "openingYear": "開業年份：2025",
+        "location": "位置：愛妮島鎮中心"
+      },
+      "lechonCo": {
+        "name": "Lechon Co by H Hospitality Group",
+        "description": "與宿霧的烹飪大師合作，提供著名的烤乳豬。必嚐的傳統菲律賓菜餚，位於 H Hotel 對面。",
+        "shortDescription": "與宿霧烹飪大師合作的特色餐廳，提供正宗烤乳豬，為您帶來傳統菲律賓美食體驗。",
+        "seats": "座位數：8",
+        "openingYear": "開業年份：2025",
+        "location": "位置：愛妮島鎮中心"
+      },
+      "verDeElNido": {
+        "name": "Ver De El Nido",
+        "description": "愛妮島首家全素食餐廳，由美國和菲律賓知名廚師共同創立。特色包括 6 米高的玻璃窗、空調和 Beyond Meat 產品。在 TripAdvisor 排名前三。",
+        "shortDescription": "愛妮島首家全素食餐廳，由知名廚師打造，擁有寬敞優雅的用餐環境，提供 Beyond Meat 等創新素食料理。",
+        "seats": "座位數：65",
+        "openingYear": "開業年份：2025",
+        "location": "位置：愛妮島鎮中心"
+      },
+      "sunmaiNacpanBeach": {
+        "name": "金色三麥",
+        "description": "一家台灣精釀啤酒吧，提供多種獨特的啤酒。適合想要探索新口味的啤酒愛好者。",
+        "shortDescription": "正宗台灣精釀啤酒吧，為啤酒愛好者提供多種獨特風味，是品嚐精釀啤酒的絕佳去處。",
+        "seats": "座位數：40",
+        "openingYear": "開業年份：2024",
+        "location": "位置：愛妮島鎮中心"
+      },
+      "hAndCChinese": {
+        "name": "H&C 中餐廳",
+        "description": "一家正宗的中國餐廳，專門提供來自中國各地的傳統菜餚。深受當地人和遊客歡迎。",
+        "shortDescription": "提供來自中國各地傳統美食的正宗中餐廳，以地道風味贏得當地人和遊客的青睞。",
+        "seats": "座位數：60",
+        "openingYear": "開業年份：2024",
+        "location": "位置：愛妮島鎮中心"
+      },
+      "unocha": {
+        "name": "Unocha",
+        "description": "一家受日本啟發的茶館，提供寧靜的氛圍和各種高品質茶飲和輕食。",
+        "shortDescription": "充滿日式風情的精緻茶館，在寧靜優雅的氛圍中提供多種高品質茶飲和精緻輕食。",
+        "seats": "座位數：25",
+        "openingYear": "開業年份：2024",
+        "location": "位置：愛妮島鎮中心"
+      },
+      "3BrosFalafel": {
+        "name": "3 Bros Falafel",
+        "description": "一家充滿活力的餐廳，專門提供墨西哥風格的捲餅，在愛妮島提供獨特的風味融合。",
+        "shortDescription": "充滿活力的特色餐廳，將墨西哥風味與當地特色完美融合，為愛妮島帶來獨特的美食體驗。",
+        "seats": "座位數：35",
+        "openingYear": "開業年份：2023",
+        "location": "位置：愛妮島鎮中心"
+      }
+    },
+    "spa": {
+      "title": "水療",
+      "introduction": "H Hospitality Group 的東方水療系列為旅客提供極致的放鬆和恢復體驗。我們的水療場所設計精美，結合現代美學與東方療法。無論您是造訪 H Hotel 的東方水療 1 還是新開業的東方水療 2，您都會發現舒適的環境和專業的治療服務。在探索愛妮島美麗風景後或尋求寧靜放鬆時刻，我們的水療設施是您理想的療癒目的地。",
+      "orientalSpa1": {
+        "name": "東方水療 1",
+        "description": "位於 H Hotel 一樓的東方水療 1 是愛妮島最受歡迎的按摩店，在 Google Maps 上擁有最多正面評價。這家水療以高品質服務和舒適環境聞名，是愛妮島旅客必訪的放鬆場所。由於需求量大，建議客人提前預約以確保能享受優質的按摩體驗。",
+        "seats": "座位數：13",
+        "openingYear": "開業年份：2023",
+        "location": "位置：H Hotel，愛妮島"
+      },
+      "orientalSpa2": {
+        "name": "東方水療 2",
+        "description": "東方水療 2 是愛妮島最新的豪華健康水療中心，擁有 40 個按摩站，為旅客提供寬敞私密的舒適環境。這座獨立建築由知名設計師 Justin 精心設計，結合現代設計與傳統東方療法，為客人提供身心極致放鬆體驗。造訪愛妮島時，這家新開業的水療中心是不容錯過的健康享受。",
+        "seats": "座位數：40",
+        "openingYear": "開業年份：2025",
+        "location": "位置：J Boutique Hotel 旁，愛妮島"
+      }
+    },
+    "travel": {
+      "title": "旅遊與觀光",
+      "introduction": "H Hospitality Group 通過與頂級當地旅遊公司如 Discover El Nido 的合作，提供全面的旅遊和活動服務。我們的服務範圍從專業導覽、舒適交通、婚禮策劃到獨特的市集體驗，滿足不同旅客的需求。無論您是探索愛妮島的美景，還是在納克潘海灘策劃浪漫婚禮，H Hospitality Group 都致力於提供無與倫比的體驗。我們理解每次旅程都是獨一無二的，並努力為每位旅客創造美好回憶。",
+      "discoverElNido": {
+        "name": "Discover El Nido",
+        "description": "愛妮島評分最高的旅遊公司，獲得 TripAdvisor 認證，與 H Hospitality Group 密切合作。擁有 9 艘船和專業導遊服務，是探索愛妮島自然美景的首選。"
+      },
+      "elNidoGO": {
+        "name": "El Nido GO",
+        "description": "為中國遊客提供一站式服務的旅行社，處理從機票到行程的所有事宜。適合不太熟悉英語或行程規劃的遊客。"
+      },
+      "nacpanBeachShuttle": {
+        "name": "納克潘海灘接駁車",
+        "description": "前往納克潘海灘的經濟實惠接駁服務。空調車輛，往返 15 美元。"
+      },
+      "nacpanBeachWedding": {
+        "name": "納克潘海灘婚禮",
+        "description": "專門在納克潘海灘安排夢幻海灘婚禮。提供從場地佈置到活動策劃的全面服務，確保每個細節都完美無缺。"
+      },
+      "nacpanSunsetMarket": {
+        "name": "納克潘日落市集",
+        "description": "受台灣著名夜市啟發，這個海濱市集提供各種美食和手工藝品，讓遊客在欣賞日落美景的同時體驗當地文化。"
+      }
     }
   },
   "travel": {
