@@ -175,166 +175,166 @@
       "introduction": "H Hospitality Group 致力于通过其多元化的酒店组合提供独特而舒适的住宿体验。我们的酒店战略性地位于爱妮岛的黄金地段，满足各类旅客的需求，同时促进环境保护和可持续发展。我们提供豪华体验，同时强调与当地文化和自然环境的和谐，为每位客人创造难忘的回忆。",
       "pieceLio": {
         "name": "Piece Lio",
-        "description": "爱妮岛最舒适的酒店之一，与日本知名的 Piece Group 合作开发。提供 50 到 150 平方米的宽敞客房，相比当地酒店典型的 18 到 22 平方米客房提供更舒适的住宿。",
-        "shortDescription": "与日本 Piece Group 合作的舒适酒店，提供宽敞客房。",
+        "description": "Piece Lio 是爱妮岛上最舒适的酒店之一，与日本知名的 Piece 集团合作开发。Piece 集团在日本经营 10 家酒店，而 Piece Lio 提供 50 至 150 平方米的房间，相较于当地一般酒店 18 至 22 平方米的房型，为旅客带来更宽敞舒适的住宿体验。",
+        "shortDescription": "与日本 Piece Group 合作开发的高端酒店，提供 50-150 平方米宽敞客房，远超当地标准的舒适住宿体验。",
         "rooms": "客房数：36",
         "openingYear": "开业年份：2024",
-        "location": "位置：Lio 机场区域（Ayala Lio）"
+        "location": "位置：Lio 机场区 (Ayala Lio)"
       },
       "hHotelVeganHotel": {
         "name": "H Hotel - 素食友好酒店",
-        "description": "位于爱妮岛镇中心，地理位置优越。提供 Ver De 的素食早餐和屋顶 Piece of Sky 餐厅的海景晚餐。TripAdvisor 排名前三的两家餐厅都位于 H Hotel。",
-        "shortDescription": "位于镇中心的素食友好酒店，拥有顶级餐厅。",
+        "description": "H Hotel 是位于 El Nido 镇中心的酒店，拥有极佳的地理位置。酒店提供 Ver De 的纯素早餐，并在屋顶的 Piece of Sky 餐厅享受海景晚餐。目前，TripAdvisor 上排名前 3 的餐厅中有 2 家位于 H Hotel。",
+        "shortDescription": "位于镇中心的素食友好酒店，拥有两家 TripAdvisor 排名前三的餐厅，提供素食早餐和海景晚餐。",
         "rooms": "客房数：41",
         "openingYear": "开业年份：2023",
-        "location": "位置：爱妮岛镇中心"
+        "location": "位置：El Nido Town Center"
       },
       "nacpanBeachGlamping": {
         "name": "纳克潘海滩豪华露营",
-        "description": "位于纳克潘海滩，是继大小泻湖后必访之地。我们种植了 300 棵树和 4000 株灌木，专注于环境保护并建立了海龟保护项目。",
-        "shortDescription": "纳克潘海滩豪华露营，注重环境保护。",
+        "description": "Nacpan Beach 是旅客认为在 Big Lagoon 和 Small Lagoon 之外必访的景点之一。我们在这片沙滩上开设了 Nacpan Beach Glamping，并种植了 300 棵树和 4000 株灌木。我们致力于环境保育，不仅没有破坏自然环境，还建立了海龟保育项目。",
+        "shortDescription": "位于必访的纳克潘海滩，致力于环境保护，种植大量植物并设立海龟保护项目的豪华露营地。",
         "rooms": "客房数：18",
         "openingYear": "开业年份：2023",
-        "location": "位置：纳克潘海滩"
+        "location": "位置：Nacpan Beach"
       },
       "nacpanBeachResort": {
         "name": "纳克潘海滩度假村",
-        "description": "为不喜欢住帐篷的旅客提供更舒适的海滩住宿体验。客人可以享受私人浴室设施，避免帐篷中独立厕所的不便。",
-        "shortDescription": "纳克潘海滩舒适度假村，提供私人浴室。",
+        "description": "为了给不想住在帐篷旅馆的旅客更多选择，Nacpan Beach Resort 提供了更舒适的沙滩住宿体验，让客人享受私人卫浴设施，避免住在帐篷中厕所分离的不便。",
+        "shortDescription": "为追求舒适的旅客提供海滩度假体验，配备私人浴室设施，是帐篷住宿的完美替代选择。",
         "rooms": "客房数：26",
         "openingYear": "开业年份：2023",
-        "location": "位置：纳克潘海滩"
+        "location": "位置：Nacpan Beach"
       },
       "nacpanBeachVillas": {
         "name": "纳克潘海滩别墅",
-        "description": "我们在纳克潘海滩的最新酒店投资，采用独立别墅设计。虽然没有健身房或游泳池，但位于海滩正上方，提供天然的海洋游泳池。由知名设计师 Justin 设计的房间提供舒适豪华的体验。",
-        "shortDescription": "纳克潘海滩独立别墅，靠近海滩，设计豪华。",
+        "description": "这是 Nacpan Beach 上我们最新的酒店投资，采用单栋别墅设计，虽然没有健身房或游泳池，但其位于沙滩正上方，提供天然海洋游泳池。房间设计由知名设计师 Justin 操刀，提供旅客一个舒适、奢华的住宿体验。",
+        "shortDescription": "由知名设计师 Justin 打造的豪华海滨别墅，位于海滩正上方，拥有天然海洋游泳池的独特住宿体验。",
         "rooms": "客房数：14",
         "openingYear": "开业年份：2024",
-        "location": "位置：纳克潘海滩"
+        "location": "位置：Nacpan Beach"
       },
       "sResortElNido": {
         "name": "S Resort 爱妮岛",
-        "description": "位于爱妮岛镇，靠近 H Hotel，拥有 44 间客房。200 米范围内有超过 100 家餐厅和酒吧，非常适合团体旅行或情侣度假。屋顶设有 H&C 中餐厅，一楼设有 Grounded 咖啡厅，提供美味的早晨咖啡。",
-        "shortDescription": "位于镇中心的度假村，周边餐饮丰富，适合各类旅客。",
+        "description": "位于 El Nido 镇上，邻近 H Hotel，拥有 44 间房间，周围 200 公尺内有超过 100 家餐厅与酒吧，非常适合团体旅行或情侣度假。酒店的顶楼设有 H&C 中餐厅，而一楼的 Grounded 咖啡厅则为您提供美味的早晨咖啡。",
+        "shortDescription": "位于爱妮岛镇中心，周边餐饮丰富，设有屋顶中餐厅和一楼咖啡厅，适合团体和情侣入住的现代度假村。",
         "rooms": "客房数：44",
         "openingYear": "开业年份：2023",
-        "location": "位置：爱妮岛镇中心"
+        "location": "位置：El Nido Town Center"
       },
       "jBoutiqueHotel": {
         "name": "J 精品酒店",
-        "description": "位于爱妮岛镇边缘，步行 8 分钟即可到达海滩。适合背包客和小型团体，提供实惠的价格，同时保持舒适时尚的装饰。",
-        "shortDescription": "实惠的精品酒店，靠近海滩，适合背包客。",
+        "description": "J Boutique Hotel 位于 El Nido 镇的边缘，步行 8 分钟即可到达沙滩。这间酒店适合背包客和小团体入住，提供经济实惠的价格，同时保有舒适与时尚的装修风格。",
+        "shortDescription": "位于镇边缘的时尚精品酒店，步行可达海滩，为背包客和小团体提供实惠舒适的住宿选择。",
         "rooms": "客房数：14",
         "openingYear": "开业年份：2023",
-        "location": "位置：爱妮岛镇中心"
+        "location": "位置：El Nido Town Center"
       },
       "cHotel": {
         "name": "C Hotel（Casa Cecilia）",
-        "description": "以简单的当地风格装饰，为预算有限的旅客设计。提供优越的位置和简单舒适的住宿。距离海滩仅 2 分钟步行路程。",
-        "shortDescription": "简单舒适的经济型酒店，靠近海滩。",
+        "description": "C Hotel 以当地风格简约装修，专为预算有限的旅客设计，提供优越的地理位置和简单舒适的住宿环境。酒店距离沙滩仅 2 分钟步行路程。",
+        "shortDescription": "距离海滩仅 2 分钟步行路程的经济型酒店，以当地风格简约装修，为预算旅客提供舒适住宿。",
         "rooms": "客房数：20",
         "openingYear": "开业年份：2023",
-        "location": "位置：爱妮岛镇中心"
+        "location": "位置：El Nido Town Center"
       },
       "zGardenHotel": {
         "name": "Z Garden Hotel",
-        "description": "我们最新的酒店开发项目，计划于 2025 年开业，位于爱妮岛港口旁。酒店客房分为海景和花园景观，为旅客提供多样化的住宿选择。",
-        "shortDescription": "即将开业的新酒店，提供海景和花园景观客房。",
+        "description": "Z Garden Hotel 是我们最新开发的酒店，预计于 2025 年开幕，位于 El Nido 港口旁。酒店房间分为海景房和庭院景观房，为旅客提供多样的住宿选择。",
+        "shortDescription": "2025年开业的全新港口酒店项目，提供海景和花园景观房，为旅客带来多样化的住宿体验。",
         "rooms": "客房数：30",
         "openingYear": "开业年份：2025",
-        "location": "位置：爱妮岛镇中心"
+        "location": "位置：El Nido Town Center"
       }
     },
     "restaurantsCafeBars": {
       "introduction": "H Hospitality Group 的餐饮组合在爱妮岛提供多样化的美食体验。从素食美食到正宗的亚洲料理，我们的餐厅满足各种口味和偏好。我们以使用新鲜的当地食材为荣，并创造独特的用餐氛围，与爱妮岛的自然美景相得益彰。",
       "pieceOfSky": {
         "name": "Piece of Sky",
-        "description": "一家屋顶餐厅，提供令人惊叹的海景和亚洲与西方融合料理。非常适合浪漫晚餐或欣赏日落时品尝鸡尾酒。",
-        "shortDescription": "屋顶餐厅，海景融合料理，适合浪漫晚餐。",
-        "seats": "座位数：65",
-        "openingYear": "开业年份：2023",
-        "location": "位置：H Hotel 屋顶，爱妮岛镇中心"
+        "description": "Piece of Sky 曾荣获 TripAdvisor 最佳餐厅的评价，并长期位居前三名。不仅餐饮出色，这里的景色更是令人难忘。在晴朗的日子，来到 Piece of Sky 用餐会是一段无与伦比的享受。自 2024 年 11 月起，来自迪拜的知名主厨加入，将为客人带来无论是味觉还是视觉的双重震撼。",
+        "shortDescription": "位于屋顶的浪漫餐厅，提供亚西融合料理，伴随壮丽海景和日落，是享用晚餐和鸡尾酒的理想场所。",
+        "seats": "座位数：60",
+        "openingYear": "开业年份：2024",
+        "location": "位置：H Hotel, El Nido Town Center"
       },
       "hAndC": {
         "name": "H&C",
-        "description": "正宗的中国料理餐厅，专门提供粤菜和川菜。深受中国游客和当地人喜爱。",
-        "shortDescription": "正宗中国料理，粤菜川菜，受欢迎。",
-        "seats": "座位数：50",
-        "openingYear": "开业年份：2023",
-        "location": "位置：S Resort 屋顶，爱妮岛镇中心"
+        "description": "H&C 是 El Nido 镇上唯一的中餐馆，提供地道的中式料理，适合4至10人的桌菜，也提供2人单点餐食。特色菜包括活螃蟹、活龙虾和清蒸鱼。餐厅将于 2024 年底进行全新装修，为客人提供更佳的用餐体验。",
+        "shortDescription": "专注于正宗粤菜和川菜的中式餐厅，以地道风味赢得中国游客和当地人的喜爱。",
+        "seats": "座位数：100",
+        "openingYear": "开业年份：2024",
+        "location": "位置：H Hotel, El Nido Town Center"
       },
       "threeBrosFalafel": {
         "name": "3 Bros Falafel",
-        "description": "受中东启发的餐厅，以美味的沙威玛和炸豆丸闻名。快速美味餐点的热门地点。",
-        "shortDescription": "中东风味，沙威玛炸豆丸，快餐热门。",
-        "seats": "座位数：30",
-        "openingYear": "开业年份：2023",
-        "location": "位置：爱妮岛镇中心"
+        "description": "3 Bro Falafel 是与三兄弟合作经营的中东料理餐厅，以新鲜制作的鹰嘴豆泥饼皮为特色，每日现做，并营业至凌晨1点，为夜间宵夜爱好者提供美味的选择。",
+        "shortDescription": "深受欢迎的中东风味餐厅，以道地的沙威玛和炸豆丸闻名，是享用快速美味餐点的理想选择。",
+        "seats": "座位数：10",
+        "openingYear": "开业年份：2024",
+        "location": "位置：H Hotel, El Nido Town Center"
       },
       "groundedCoffee": {
         "name": "Grounded Coffee",
-        "description": "专业咖啡店，提供高品质、可持续采购的咖啡。咖啡爱好者和数字游牧族的完美去处。",
-        "shortDescription": "专业咖啡，高品质可持续，适合咖啡爱好者。",
+        "description": "Grounded 咖啡厅位于 S Resort 一楼，由知名建筑师 Justin 设计，无论是厕所设计还是共用桌面，都展现出独特的风格，让人耳目一新。推荐一杯 Oat Milk Latte，绝对不容错过。",
+        "shortDescription": "专业咖啡店，提供可持续采购的优质咖啡，是咖啡爱好者和数字游牧工作者的理想场所。",
         "seats": "座位数：18",
         "openingYear": "开业年份：2023",
-        "location": "位置：爱妮岛镇中心"
+        "location": "位置：El Nido Town Center"
       },
       "janeCoffee": {
         "name": "Jane Coffee",
-        "description": "H Hospitality Group 最新投资，专注于高端手冲咖啡体验。专业咖啡师为品味独特的咖啡爱好者提供 1-2 小时的精致咖啡体验。",
-        "shortDescription": "高端手冲咖啡，专业体验，1-2小时精致服务。",
+        "description": "Jane Coffee 是 H Hospitality Group 最新的投资，主打高档手冲咖啡体验。专业咖啡师将为客人提供 1 至 2 小时的精致咖啡体验，适合对咖啡有极高要求的客人。",
+        "shortDescription": "高端精品咖啡店，由专业咖啡师提供 1-2 小时的精致手冲咖啡体验，为追求品质的咖啡爱好者打造。",
         "seats": "座位数：15",
         "openingYear": "开业年份：2025",
-        "location": "位置：爱妮岛镇中心"
+        "location": "位置：El Nido Town Center"
       },
       "lechonCo": {
         "name": "Lechon Co by H Hospitality Group",
-        "description": "与宿雾的烹饪大师合作，提供著名的烤乳猪。必尝的传统菲律宾菜肴，位于 H Hotel 对面。",
-        "shortDescription": "宿雾烤乳猪，传统菲律宾美食。",
+        "description": "2024 年底，我们与来自宿务的烹饪大师合作，开设了知名的 Lechon 烤乳猪店。Lechon 是菲律宾经典的传统料理，来到菲律宾一定要品尝这道美食。餐厅位于 H Hotel 斜对面。",
+        "shortDescription": "与宿务烹饪大师合作的特色餐厅，提供正宗烤乳猪，为您带来传统菲律宾美食体验。",
         "seats": "座位数：8",
         "openingYear": "开业年份：2025",
-        "location": "位置：爱妮岛镇中心"
+        "location": "位置：El Nido Town Center"
       },
       "verDeElNido": {
         "name": "Ver De El Nido",
-        "description": "爱妮岛首家全素食餐厅，由美国和菲律宾知名厨师共同创立。特色包括 6 米高的玻璃窗、空调和 Beyond Meat 产品。在 TripAdvisor 排名前三。",
-        "shortDescription": "全素食餐厅，知名厨师创立，TripAdvisor前三。",
+        "description": "Ver De 是 H Hotel 一楼的全素餐厅，由来自美国与菲律宾的知名厨师联合创办。这是 El Nido 首家全素 Vegan 餐厅，并在 TripAdvisor 上获得前 3 名的殊荣。餐厅拥有 6 米挑高的玻璃窗和空调设施，并提供来自 Bill Gates 投资的人造肉 Beyond Meat，这是一间具有创新特色的餐厅。",
+        "shortDescription": "爱妮岛首家全素食餐厅，由知名厨师打造，拥有宽敞优雅的用餐环境，提供 Beyond Meat 等创新素食料理。",
         "seats": "座位数：65",
         "openingYear": "开业年份：2025",
-        "location": "位置：爱妮岛镇中心"
+        "location": "位置：El Nido Town Center"
       },
       "sunmaiNacpanBeach": {
         "name": "金色三麦",
-        "description": "一家台湾精酿啤酒吧，提供多种独特的啤酒。适合想要探索新口味的啤酒爱好者。",
-        "shortDescription": "台湾精酿啤酒吧，多种独特啤酒。",
-        "seats": "座位数：40",
-        "openingYear": "开业年份：2024",
-        "location": "位置：爱妮岛镇中心"
+        "description": "Sunmai Nacpan Beach 位于巴拉望最著名的 Nacpan Beach 正中心，是这片美丽沙滩上的主要餐厅之一。餐厅提供美味的披萨、韩式料理与菲式料理，不论是住在 Nacpan Beach 上的旅客，还是来进行当日来回游览的旅客，都强烈推荐前来品尝 Sunmai 的美食。",
+        "shortDescription": "正宗台湾精酿啤酒吧，为啤酒爱好者提供多种独特风味，是品尝精酿啤酒的绝佳去处。",
+        "seats": "座位数：120",
+        "openingYear": "开业年份：2017",
+        "location": "位置：Nacpan Beach"
       },
       "hAndCChinese": {
         "name": "H&C 中餐厅",
-        "description": "一家正宗的中国餐厅，专门提供来自中国各地的传统菜肴。深受当地人和游客欢迎。",
-        "shortDescription": "正宗中国餐厅，传统菜肴，受欢迎。",
-        "seats": "座位数：60",
+        "description": "H&C 是 El Nido 镇上唯一的中餐馆，提供地道的中式料理，适合4至10人的桌菜，也提供2人单点餐食。特色菜包括活螃蟹、活龙虾和清蒸鱼。餐厅将于 2024 年底进行全新装修，为客人提供更佳的用餐体验。",
+        "shortDescription": "提供来自中国各地传统美食的正宗中餐厅，以地道风味赢得当地人和游客的青睞。",
+        "seats": "座位数：100",
         "openingYear": "开业年份：2024",
-        "location": "位置：爱妮岛镇中心"
+        "location": "位置：H Hotel, El Nido Town Center"
       },
       "unocha": {
         "name": "Unocha",
-        "description": "一家受日本启发的茶馆，提供宁静的氛围和各种高品质茶饮和轻食。",
-        "shortDescription": "日式茶馆，宁静氛围，高品质茶饮。",
+        "description": "来自台湾高雄知名品牌 Unocha 的乌弄珍珠奶茶，我们成功取得菲律宾的代理权，并在 El Nido 的 H Hotel 开设分店。出海后来一杯珍珠奶茶，是岛屿旅游最幸福的享受之一。",
+        "shortDescription": "充满日式风情的精致茶馆，在宁静优雅的氛围中提供多种高品质茶饮和精致轻食。",
         "seats": "座位数：25",
         "openingYear": "开业年份：2024",
-        "location": "位置：爱妮岛镇中心"
+        "location": "位置：H Hotel, El Nido Town Center"
       },
       "3BrosFalafel": {
         "name": "3 Bros Falafel",
-        "description": "一家充满活力的餐厅，专门提供墨西哥风格的卷饼，在爱妮岛提供独特的风味融合。",
-        "shortDescription": "墨西哥风格卷饼，独特风味融合。",
-        "seats": "座位数：35",
-        "openingYear": "开业年份：2023",
-        "location": "位置：爱妮岛镇中心"
+        "description": "3 Bro Falafel 是与三兄弟合作经营的中东料理餐厅，以新鲜制作的鹰嘴豆泥饼皮为特色，每日现做，并营业至凌晨1点，为夜间宵夜爱好者提供美味的选择。",
+        "shortDescription": "充满活力的特色餐厅，将墨西哥风味与当地特色完美融合，为爱妮岛带来独特的美食体验。",
+        "seats": "座位数：10",
+        "openingYear": "开业年份：2024",
+        "location": "位置：H Hotel, El Nido Town Center"
       }
     },
     "spa": {
@@ -360,23 +360,23 @@
       "introduction": "H Hospitality Group 通过与顶级当地旅游公司如 Discover El Nido 的合作，提供全面的旅游和活动服务。我们的服务范围从专业导览、舒适交通、婚礼策划到独特的市集体验，满足不同旅客的需求。无论您是探索爱妮岛的美景，还是在纳克潘海滩策划浪漫婚礼，H Hospitality Group 都致力于提供无与伦比的体验。我们理解每次旅程都是独一无二的，并努力为每位旅客创造美好回忆。",
       "discoverElNido": {
         "name": "Discover El Nido",
-        "description": "爱妮岛评分最高的旅游公司，获得 TripAdvisor 认证，与 H Hospitality Group 密切合作。拥有 9 艘船和专业导游服务，是探索爱妮岛自然美景的首选。"
+        "description": "Discover El Nido 是 El Nido 评价最高的旅游公司，由 TripAdvisor 荣誉认证，并与 H Hospitality Group 紧密合作。其创办人与 H Hospitality Group 的创办人是多年好友。Discover El Nido 拥有 9 艘船，提供最专业的导游服务，带领游客探索 El Nido 的美丽自然景观，是来 El Nido 的旅客首选的旅游公司。"
       },
       "elNidoGO": {
         "name": "El Nido GO",
-        "description": "为中国游客提供一站式服务的旅行社，处理从机票到行程的所有事宜。适合不太熟悉英语或行程规划的游客。"
+        "description": "El Nido Go 是专为华人旅客提供一站式服务的旅行社。无论是机票、旅馆、餐饮还是行程规划，El Nido Go 都能为您打理一切。特别适合不熟悉英语或不擅长自行规划旅程的旅客，让您轻松享受无忧无虑的旅行。"
       },
       "nacpanBeachShuttle": {
         "name": "纳克潘海滩接驳车",
-        "description": "前往纳克潘海滩的经济实惠接驳服务。空调车辆，往返 15 美元。"
+        "description": "Nacpan Beach 是世界上最美的沙滩之一，但前往该地并不容易，单程包车费用约 $50 美元。Nacpan Beach Shuttle 为旅客提供了更实惠的选择，往返只需 $15 美元。这些接驳车配备空调，为旅客提供方便、舒适的旅程，是前往 Nacpan Beach 的理想交通方式。"
       },
       "nacpanBeachWedding": {
         "name": "纳克潘海滩婚礼",
-        "description": "专门在纳克潘海滩安排梦幻海滩婚礼。提供从场地布置到活动策划的全面服务，确保每个细节都完美无缺。"
+        "description": "对许多人来说，在沙滩上举办婚礼是一生中最梦幻的时刻。Nacpan Beach Wedding 专门为客户安排在这片美丽沙滩上的婚礼，无论是场地布置、活动策划还是其他婚礼需求，我们都能提供一条龙服务，确保每个细节都完美无缺。"
       },
       "nacpanSunsetMarket": {
         "name": "纳克潘日落市集",
-        "description": "受台湾著名夜市启发，这个海滨市集提供各种美食和手工艺品，让游客在欣赏日落美景的同时体验当地文化。"
+        "description": "在 Nacpan Beach 欣赏夕阳美景的同时，还能享受 Nacpan Sunset Market 的乐趣。这个市场灵感来自台湾著名的夜市，让游客在浪漫的沙滩氛围中体验丰富多样的美食与手工艺品"
       }
     }
   },
