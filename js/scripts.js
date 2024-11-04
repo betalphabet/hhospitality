@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function setLanguage(lang) {
-        localStorage.setItem('userLanguage', lang);
+        localStorage.setItem('userLanguage', lang.toLowerCase());
         i18next.changeLanguage(lang, (err, t) => {
             if (err) return console.log('something went wrong loading', err);
             updateContent();
