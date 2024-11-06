@@ -10,6 +10,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const langSelect = document.getElementById('langSelect');
     const langSelectDesktop = document.getElementById('langSelectDesktop');
+    const videoSection = document.getElementById('videoSection');
 
     function detectLanguage() {
         const browserLang = navigator.language || navigator.userLanguage;
@@ -25,6 +26,10 @@ document.addEventListener('DOMContentLoaded', function () {
             if (err) return console.log('something went wrong loading', err);
             updateContent();
             updateSelects(lang);
+            // Update video section visibility based on language
+            if (videoSection) {
+                videoSection.style.display = (lang === 'zh') ? 'block' : 'none';
+            }
         });
     }
 
