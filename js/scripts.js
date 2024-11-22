@@ -69,6 +69,12 @@ document.addEventListener('DOMContentLoaded', function () {
             const key = element.getAttribute('data-i18n');
             element.innerHTML = i18next.t(key);
         });
+
+        if (i18next.language === 'zh') {
+            videoSection.style.display = 'block';
+        } else {
+            videoSection.style.display = 'none';
+        }
     }
 });
 
