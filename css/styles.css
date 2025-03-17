@@ -13331,6 +13331,14 @@ body {
   object-fit: cover;
 }
 
+.timeline.year2025 img.cover{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+
+
 .hotel-description{
   display: inline-block;
   height: 60px;

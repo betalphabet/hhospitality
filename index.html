@@ -31,7 +31,6 @@
         #mainNav .langSelectDesktop {
             margin-top: 25px;
         }
-
     </style>
 
     <!-- i18next libraries -->
@@ -41,7 +40,7 @@
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
 
-    
+
 
 </head>
 
@@ -71,7 +70,8 @@
                     <li class="nav-item"><a class="nav-link" href="index.html#about" data-i18n="nav.about">About</a>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="hotel.html" data-i18n="nav.hotel">Our Hotels</a></li>
-                    <li class="nav-item"><a class="nav-link" href="investing.html" data-i18n="nav.investing">Investing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="investing.html"
+                            data-i18n="nav.investing">Investing</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#timeline"
                             data-i18n="nav.timeline">Timeline</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#contact"
@@ -173,7 +173,7 @@
         <div class="row gx-0  align-items-top mb-5">
             <div class="col-12 p-2 text-center">
                 <!-- <h2 class="mb-4" data-i18n="location.title"></h2> -->
-                
+
                 <div class="d-flex align-items-center justify-content-center mb-4">
                     <h2 class="mb-0 me-4" data-i18n="location.title"></h2>
                     <a href="hotel.html" class="text-decoration-none">
@@ -331,41 +331,275 @@
                 </div>
             </div>
             <div class="main-timeline">
-                <div class="timeline left">
-                    <div class="card">
-                        <div class="card-body p-4">
-                            <h3>2026</h3>
-                            <div class="row gx-0  align-items-top">
-                                <div class="col-6 p-1">
-                                    <p class="text">Private Island Resort</p>
-                                </div>
-                                <div class="col-6 p-1">
-                                    <p class="text">Grounded Nacpan Beach</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline right">
+                <div class="timeline right year2025">
                     <div class="card">
                         <div class="card-body p-4">
                             <h3>2025</h3>
                             <div class="row gx-0  align-items-top">
                                 <div class="col-6 p-1">
-                                    <p class="text">NEW Piece of Sky</p>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#pieceOfSkyModal">
+                                        <img class="img-fluid mb-lg-2 mb-2 cover" src="images/piece-of-sky/1.webp"
+                                            alt="Piece of Sky" />
+                                    </a>
+                                    <div class="modal fade" id="pieceOfSkyModal" tabindex="-1"
+                                        aria-labelledby="pieceOfSkyModalLabel" aria-hidden="true">
+                                        <div
+                                            class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/piece-of-sky/2.webp" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/piece-of-sky/3.webp" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/piece-of-sky/5.webp" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/piece-of-sky/6.webp" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/piece-of-sky/7.webp" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/piece-of-sky/8.webp" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/piece-of-sky/9.webp" class="img-fluid">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="card-text">Piece of sky</p>
+
                                 </div>
                                 <div class="col-6 p-1">
-                                    <p class="text">NEW Sunmai</p>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#sunmaiModal">
+                                        <img class="img-fluid mb-lg-2 mb-2 cover" src="images/sunmai/1.webp"
+                                            alt="NEW Sunmai" />
+                                    </a>
+                                    <div class="modal fade" id="sunmaiModal" tabindex="-1"
+                                        aria-labelledby="sunmaiModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="sunmaiModalLabel">Sunmai</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/sunmai/1.webp" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/sunmai/2.webp" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/sunmai/3.webp" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/sunmai/4.webp" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/sunmai/5.webp" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/sunmai/6.webp" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/sunmai/7.webp" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/sunmai/8.webp" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/sunmai/9.webp" class="img-fluid">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="card-text">New Sunmai</p>
+
                                 </div>
                                 <div class="col-6 p-1">
-                                    <p class="text">Oriental Spa 2</p>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#orientalSpa2Modal">
+                                        <img class="img-fluid mb-lg-2 mb-2 cover"
+                                            src="images/oriental-spa-2/481703338_3046170975538015_6643145342436413833_n.jpg"
+                                            alt="Oriental Spa 2" />
+                                    </a>
+                                    <div class="modal fade" id="orientalSpa2Modal" tabindex="-1"
+                                        aria-labelledby="orientalSpa2ModalLabel" aria-hidden="true">
+                                        <div
+                                            class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/oriental-spa-2/481703338_3046170975538015_6643145342436413833_n.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/oriental-spa-2/481720332_1395568655580850_5753696952801877104_n.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/oriental-spa-2/482994389_1282877039679674_2367369281714769740_n.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/oriental-spa-2/484411038_1849462289156823_6087008365711868682_n.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/oriental-spa-2/484830551_1304008694163436_8008152807927347229_n.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/oriental-spa-2/485083750_1027019402667686_6429589439857999011_n.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/oriental-spa-2/485084020_541941258921188_1460515622848944970_n.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/oriental-spa-2/485084079_1280093893054044_8794012181404860097_n.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/oriental-spa-2/485084166_1619076712063012_7500553310333833568_n.jpg" class="img-fluid">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="card-text">Oriental Spa 2</p>
+
                                 </div>
                                 <div class="col-6 p-1">
-                                    <p class="text">Lechon Co</p>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#lechonCoModal">
+                                        <img class="img-fluid mb-lg-2 mb-2 cover" src="images/lechon-co/1.webp"
+                                            alt="Lechon Co" />
+                                    </a>
+                                    <div class="modal fade" id="lechonCoModal" tabindex="-1"
+                                        aria-labelledby="lechonCoModalLabel" aria-hidden="true">
+                                        <div
+                                            class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/lechon-co/1.webp" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/lechon-co/2.webp" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/lechon-co/3.webp" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/lechon-co/4.webp" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/lechon-co/5.webp" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/lechon-co/6.webp" class="img-fluid">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="card-text">Lechon Co</p>
                                 </div>
                                 <div class="col-6 p-1">
-                                    <p class="text">Janu Coffee</p>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#januCoffeeModal">
+                                        <img class="img-fluid mb-lg-2 mb-2 cover"
+                                            src="images/janu-coffee-tea/482758971_657480310304071_8976356521822422057_n.jpg"
+                                            alt="Janu Coffee" />
+                                    </a>
+                                    <div class="modal fade" id="januCoffeeModal" tabindex="-1"
+                                        aria-labelledby="januCoffeeModalLabel" aria-hidden="true">
+                                        <div
+                                            class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/janu-coffee-tea/482758971_657480310304071_8976356521822422057_n.jpg"
+                                                                class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/janu-coffee-tea/483335419_1829006401198431_3591023388178687158_n.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/janu-coffee-tea/483341134_653988837020784_984670117257257462_n.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/janu-coffee-tea/483969550_625196403606108_8081421548637911204_n.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <img src="images/janu-coffee-tea/485083757_992171412392935_5016448261458581419_n.jpg" class="img-fluid">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="card-text">Janu Coffee</p>
                                 </div>
+                                <div class="col-6 p-1">
+                                    <!-- Image trigger modal -->
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#zGardenHotelModal">
+                                        <img class="img-fluid mb-lg-2 mb-2 cover" src="images/milan-grace/1.webp"
+                                            alt="Z Garden Hotel" />
+                                    </a>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="zGardenHotelModal" tabindex="-1"
+                                        aria-labelledby="zGardenHotelModalLabel" aria-hidden="true">
+                                        <div
+                                            class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl modal-xxl">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h6 class="modal-title" id="zGardenHotelModalLabel">Z Garden Hotel
+                                                    </h6>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="container-fluid">
+                                                        <!-- content -->
+                                                        <div class="row">
+                                                            <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-1">
+                                                                <img class="img-fluid mb-lg-2 mb-2"
+                                                                    src="images/milan-grace/1.webp"
+                                                                    alt="Z Garden Hotel 1" />
+                                                            </div>
+                                                            <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-1">
+                                                                <img class="img-fluid mb-lg-2 mb-2"
+                                                                    src="images/milan-grace/3.webp"
+                                                                    alt="Z Garden Hotel 3" />
+                                                            </div>
+                                                            <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-1">
+                                                                <img class="img-fluid mb-lg-2 mb-2"
+                                                                    src="images/milan-grace/4.webp"
+                                                                    alt="Milan Grace 4" />
+                                                            </div>
+                                                            <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-1">
+                                                                <img class="img-fluid mb-lg-2 mb-2"
+                                                                    src="images/milan-grace/5.webp"
+                                                                    alt="Z Garden Hotel 5" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="card-text">Z Garden Hotel</p>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -1571,7 +1805,7 @@
         </div>
     </section>
 
-    
+
     <!-- CSR -->
     <section class="projects-section bg-light" id="csr">
         <div class="container px-4 px-lg-5">
@@ -1671,49 +1905,81 @@
 
                     </div>
                 </div>
-            <div class="col-lg-6 p-2">
-                <h3 data-i18n="csr.gleeClub.title">HHG Glee Club: The Sound of Music Across El Nido</h3>
-                <p data-i18n="csr.gleeClub.description1">The HHG Glee Club is an employee group within H Hospitality Group Corporation (HHG) that brings everyone together through a shared love for music. As the first hospitality choir in El Nido, the Glee Club represents the spirit of HHG employees, with members from across all our locations – Town, Lio, and Nacpan – joining to create voices of harmony.</p>
-                <p data-i18n="csr.gleeClub.description2">Making its debut on August 18, 2024, at the Inter-Hotel Basketball Friendship Game, the Glee Club opened the event by singing the national anthem, bringing pride to HHG and joy to everyone present. With 13 employee-singers representing the different parts of HHG, the Glee Club introduces sound of music to El Nido.</p>
-                <p data-i18n="csr.gleeClub.description3">More than just a choir, the HHG Glee Club is a testament to HHG's commitment to work-life balance and employee engagement. Through clubs like this, our employees find new avenues to express themselves, connect with colleagues, and take their passions into the workplace. Supported by our Human Resources group, the Glee Club strengthens our belief that HHG is more than just a job – it's a vibrant community where everyone has a voice. As the Glee Club continues to grow, they are already preparing for upcoming performances, connecting to the broader El Nido community.</p>
-                <div class="row">
-                    <div class="col-4"><img class="img-fluid" src="images/csr/music1.jpg" alt="HHG Glee Club 1"></div>
-                    <div class="col-4"><img class="img-fluid" src="images/csr/music2.jpg" alt="HHG Glee Club 2"></div>
-                    <div class="col-4"><img class="img-fluid" src="images/csr/music3.jpg" alt="HHG Glee Club 3"></div>
+                <div class="col-lg-6 p-2">
+                    <h3 data-i18n="csr.gleeClub.title">HHG Glee Club: The Sound of Music Across El Nido</h3>
+                    <p data-i18n="csr.gleeClub.description1">The HHG Glee Club is an employee group within H Hospitality
+                        Group Corporation (HHG) that brings everyone together through a shared love for music. As the
+                        first hospitality choir in El Nido, the Glee Club represents the spirit of HHG employees, with
+                        members from across all our locations – Town, Lio, and Nacpan – joining to create voices of
+                        harmony.</p>
+                    <p data-i18n="csr.gleeClub.description2">Making its debut on August 18, 2024, at the Inter-Hotel
+                        Basketball Friendship Game, the Glee Club opened the event by singing the national anthem,
+                        bringing pride to HHG and joy to everyone present. With 13 employee-singers representing the
+                        different parts of HHG, the Glee Club introduces sound of music to El Nido.</p>
+                    <p data-i18n="csr.gleeClub.description3">More than just a choir, the HHG Glee Club is a testament to
+                        HHG's commitment to work-life balance and employee engagement. Through clubs like this, our
+                        employees find new avenues to express themselves, connect with colleagues, and take their
+                        passions into the workplace. Supported by our Human Resources group, the Glee Club strengthens
+                        our belief that HHG is more than just a job – it's a vibrant community where everyone has a
+                        voice. As the Glee Club continues to grow, they are already preparing for upcoming performances,
+                        connecting to the broader El Nido community.</p>
+                    <div class="row">
+                        <div class="col-4"><img class="img-fluid" src="images/csr/music1.jpg" alt="HHG Glee Club 1">
+                        </div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/music2.jpg" alt="HHG Glee Club 2">
+                        </div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/music3.jpg" alt="HHG Glee Club 3">
+                        </div>
+                    </div>
                 </div>
-            </div>
 
 
-            <div class="col-lg-6 p-2">
-                <h3 data-i18n="csr.spayingNeutering.title">Spaying and Neutering Stray Dogs and Cats</h3>
-                <p data-i18n="csr.spayingNeutering.description">In collaboration with Vet in Practice, a reputable veterinary group from Manila, we host weekly spaying and neutering clinics for stray dogs and cats in the local community. Over the course of a month, we welcome six groups of five veterinarians, providing them with accommodations in our hotels. These free clinics help control the population of stray animals, improving their welfare and the overall community environment.</p>
-                <div class="row">
-                    <div class="col-4"><img class="img-fluid" src="images/csr/spaying1.webp" alt="Spaying and Neutering 1"></div>
-                    <div class="col-4"><img class="img-fluid" src="images/csr/spaying2.webp" alt="Spaying and Neutering 2"></div>
-                    <div class="col-4"><img class="img-fluid" src="images/csr/spaying3.webp" alt="Spaying and Neutering 3"></div>
+                <div class="col-lg-6 p-2">
+                    <h3 data-i18n="csr.spayingNeutering.title">Spaying and Neutering Stray Dogs and Cats</h3>
+                    <p data-i18n="csr.spayingNeutering.description">In collaboration with Vet in Practice, a reputable
+                        veterinary group from Manila, we host weekly spaying and neutering clinics for stray dogs and
+                        cats in the local community. Over the course of a month, we welcome six groups of five
+                        veterinarians, providing them with accommodations in our hotels. These free clinics help control
+                        the population of stray animals, improving their welfare and the overall community environment.
+                    </p>
+                    <div class="row">
+                        <div class="col-4"><img class="img-fluid" src="images/csr/spaying1.webp"
+                                alt="Spaying and Neutering 1"></div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/spaying2.webp"
+                                alt="Spaying and Neutering 2"></div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/spaying3.webp"
+                                alt="Spaying and Neutering 3"></div>
+                    </div>
                 </div>
-            </div>
 
 
-            <div class="col-lg-6 p-2">
-                <h3 data-i18n="csr.nutritionalLunchProgram.title">Nutritional Lunch Program</h3>
-                <p data-i18n="csr.nutritionalLunchProgram.description">Understanding the challenges faced by undernourished elementary school students, we have launched a program to provide nutritious lunches. This initiative ensures that children in our community have access to the essential nutrients they need for growth, learning, and a brighter future.</p>
-                <div class="row">
-                    <div class="col-4"><img class="img-fluid" src="images/csr/lunchProgram1.webp" alt="Nutritional Lunch Program 1"></div>
+                <div class="col-lg-6 p-2">
+                    <h3 data-i18n="csr.nutritionalLunchProgram.title">Nutritional Lunch Program</h3>
+                    <p data-i18n="csr.nutritionalLunchProgram.description">Understanding the challenges faced by
+                        undernourished elementary school students, we have launched a program to provide nutritious
+                        lunches. This initiative ensures that children in our community have access to the essential
+                        nutrients they need for growth, learning, and a brighter future.</p>
+                    <div class="row">
+                        <div class="col-4"><img class="img-fluid" src="images/csr/lunchProgram1.webp"
+                                alt="Nutritional Lunch Program 1"></div>
+                    </div>
                 </div>
-            </div>
 
 
-            <div class="col-lg-6 p-2">
-                <h3 data-i18n="csr.christmasGiftGiving.title">Christmas Gift Giving</h3>
-                <p data-i18n="csr.christmasGiftGiving.description">Every Christmas, we spread joy by distributing gifts to local schoolchildren. This tradition strengthens our bond with the community and brings smiles to the faces of countless children during the holiday season.</p>
-                <div class="row">
-                    <div class="col-4"><img class="img-fluid" src="images/csr/christmasGiftGiving1.webp" alt="Christmas Gift Giving 1"></div>
-                    <div class="col-4"><img class="img-fluid" src="images/csr/christmasGiftGiving2.webp" alt="Christmas Gift Giving 2"></div>
+                <div class="col-lg-6 p-2">
+                    <h3 data-i18n="csr.christmasGiftGiving.title">Christmas Gift Giving</h3>
+                    <p data-i18n="csr.christmasGiftGiving.description">Every Christmas, we spread joy by distributing
+                        gifts to local schoolchildren. This tradition strengthens our bond with the community and brings
+                        smiles to the faces of countless children during the holiday season.</p>
+                    <div class="row">
+                        <div class="col-4"><img class="img-fluid" src="images/csr/christmasGiftGiving1.webp"
+                                alt="Christmas Gift Giving 1"></div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/christmasGiftGiving2.webp"
+                                alt="Christmas Gift Giving 2"></div>
+                    </div>
                 </div>
-            </div>
 
-            
+
             </div>
             <div class="row gx-0 align-items-top">
                 <div class="col-12 p-2 text-center">
