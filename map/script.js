@@ -105,11 +105,15 @@ class DraggableMap {
             
             markerElement.appendChild(img);
             
-            // 添加點擊事件
-            markerElement.addEventListener('click', (e) => {
+            // 添加點擊和觸控事件
+            const handleMarkerClick = (e) => {
                 e.stopPropagation();
+                e.preventDefault();
                 this.showTooltip(marker);
-            });
+            };
+            
+            markerElement.addEventListener('click', handleMarkerClick);
+            markerElement.addEventListener('touchend', handleMarkerClick);
             
             this.markersContainer.appendChild(markerElement);
         });
@@ -153,20 +157,27 @@ class DraggableMap {
         const closeTooltip = () => {
             tooltip.classList.remove('show');
         };
-        
-        tooltip.querySelector('.tooltip-close').onclick = closeTooltip;
+
+        const closeButton = tooltip.querySelector('.tooltip-close');
+        closeButton.onclick = closeTooltip;
+        closeButton.addEventListener('touchend', (e) => {
+            e.preventDefault();
+            closeTooltip();
+        });
         
         // 點擊地圖其他地方關閉tooltip
         const handleMapClick = (e) => {
             if (!tooltip.contains(e.target) && !e.target.closest('.marker')) {
                 closeTooltip();
                 this.mapContainer.removeEventListener('click', handleMapClick);
+                this.mapContainer.removeEventListener('touchend', handleMapClick);
             }
         };
-        
-        // 延遲綁定點擊事件，避免立即觸發
+
+        // 延遲綁定點擊和觸控事件，避免立即觸發
         setTimeout(() => {
             this.mapContainer.addEventListener('click', handleMapClick);
+            this.mapContainer.addEventListener('touchend', handleMapClick);
         }, 100);
         
         // ESC鍵關閉
@@ -175,6 +186,7 @@ class DraggableMap {
                 closeTooltip();
                 document.removeEventListener('keydown', handleEsc);
                 this.mapContainer.removeEventListener('click', handleMapClick);
+                this.mapContainer.removeEventListener('touchend', handleMapClick);
             }
         };
         document.addEventListener('keydown', handleEsc);

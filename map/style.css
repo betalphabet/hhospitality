@@ -109,6 +109,8 @@ html, body {
     cursor: pointer;
     transition: transform 0.2s ease;
     z-index: 10;
+    /* 確保觸控事件正常工作 */
+    touch-action: manipulation;
 }
 
 .marker:hover {
@@ -121,6 +123,12 @@ html, body {
     height: 100%;
     object-fit: contain;
     border-radius: 8px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    /* 確保觸控事件正常工作 */
+    touch-action: manipulation;
 }
 
 /* Tooltip樣式 */
@@ -138,6 +146,8 @@ html, body {
     visibility: hidden;
     transition: all 0.3s ease;
     pointer-events: none;
+    /* 確保觸控事件正常工作 */
+    touch-action: manipulation;
 }
 
 .tooltip.show {
@@ -220,6 +230,8 @@ html, body {
     justify-content: center;
     border-radius: 50%;
     transition: background-color 0.2s ease;
+    /* 確保觸控事件正常工作 */
+    touch-action: manipulation;
 }
 
 .tooltip-close:hover {
@@ -260,6 +272,8 @@ html, body {
     font-size: 12px;
     transition: background-color 0.2s ease;
     white-space: nowrap;
+    /* 確保觸控事件正常工作 */
+    touch-action: manipulation;
 }
 
 .tooltip-button:hover {
@@ -285,6 +299,58 @@ html, body {
     
     .logo {
         height: 32px;
+    }
+    
+    /* 手機版 Tooltip 調整 */
+    .tooltip {
+        max-width: calc(100vw - 20px);
+        min-width: 280px;
+        font-size: 14px;
+    }
+    
+    .tooltip-close {
+        width: 32px;
+        height: 32px;
+        font-size: 22px;
+        /* 增大觸控區域 */
+        min-width: 44px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .tooltip-button {
+        padding: 10px 16px;
+        font-size: 14px;
+        /* 增大觸控區域 */
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .tooltip-header {
+        padding: 16px;
+    }
+    
+    .tooltip-content {
+        padding: 20px;
+    }
+    
+    .tooltip-image {
+        height: 120px;
+        margin-bottom: 16px;
+    }
+    
+    .tooltip-address {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+    
+    .tooltip-buttons {
+        gap: 10px;
     }
     
     /* 手機版載入提示調整 */
