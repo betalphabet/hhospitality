@@ -93,8 +93,10 @@ class DraggableMap {
         this.markersData.forEach(marker => {
             const markerElement = document.createElement('div');
             markerElement.className = 'marker';
-            markerElement.style.left = `${marker.image_x_position}px`;
-            markerElement.style.top = `${marker.image_y_position}px`;
+            markerElement.style.left = `${marker.image_x_position * marker.image_scale}px`;
+            markerElement.style.top = `${marker.image_y_position * marker.image_scale}px`;
+            markerElement.style.width = `${marker.image.file_width * marker.image_scale}px`;
+            markerElement.style.height = `${marker.image.file_height * marker.image_scale}px`;
 
             
             const img = document.createElement('img');
@@ -224,8 +226,8 @@ class DraggableMap {
         const isMobile = window.innerWidth <= 768;
         
         // 計算標記在螢幕上的位置
-        const markerScreenX = this.currentX + marker.image_x_position + (marker.image.file_width * marker.image_scale) / 2;
-        const markerScreenY = this.currentY + marker.image_y_position;
+        const markerScreenX = (this.currentX + marker.image_x_position) + (marker.image.file_width * marker.image_scale) * marker.image_scale;
+        const markerScreenY = (this.currentY + marker.image_y_position) * marker.image_scale;
         
         // 計算tooltip位置（顯示在標記上方）
         let tooltipX = markerScreenX - tooltipRect.width / 2;
