@@ -1,0 +1,87 @@
+/* 重置樣式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 設定body和html為滿版 */
+html, body {
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* 地圖容器 - 滿版顯示 */
+.map-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    cursor: grab;
+    background-color: #f0f0f0;
+    transform: translateZ(0); /* 啟用硬體加速 */
+    backface-visibility: hidden;
+}
+
+/* 當拖曳時改變游標 */
+.map-container.dragging {
+    cursor: grabbing;
+}
+
+/* 地圖包裝器 */
+.map-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: none;
+    will-change: transform;
+    transform-origin: 0 0;
+}
+
+/* 地圖圖片 */
+.map-image {
+    display: block;
+    width: 5600px; /* 保持原始尺寸 */
+    height: 4200px; /* 保持原始尺寸 */
+    transform: scale(0.5); /* 使用scale縮放到50% */
+    transform-origin: 0 0; /* 從左上角開始縮放 */
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+/* 禁用圖片的預設拖曳行為 */
+.map-image {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+/* 響應式設計 - 手機版 */
+@media (max-width: 768px) {
+    .map-container {
+        touch-action: none;
+    }
+}
+
+/* 載入動畫 */
+.map-container::before {
+    content: '載入中...';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #666;
+    z-index: 1;
+}
+
+.map-image.loaded + .map-container::before {
+    display: none;
+}
