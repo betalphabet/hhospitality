@@ -307,44 +307,25 @@ html, body {
         font-size: 14px;
     }
     
-    .tooltip-close {
-        width: 32px;
-        height: 32px;
-        font-size: 22px;
-        /* 增大觸控區域 */
-        min-width: 44px;
-        min-height: 44px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .tooltip-button {
-        padding: 10px 16px;
-        font-size: 14px;
-        /* 增大觸控區域 */
-        min-height: 44px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
     
     .tooltip-header {
-        padding: 16px;
+        padding: 12px;
     }
     
     .tooltip-content {
-        padding: 20px;
+        padding: 12px;
+        text-align: center;
     }
 
     .tooltip-address {
         font-size: 14px;
-        margin-bottom: 16px;
+        margin-bottom: 12px;
+        text-align: center;
     }
     
     .tooltip-buttons {
-        gap: 10px;
+        gap: 8px;
+        justify-content: center;
     }
     
     /* 手機版載入提示調整 */
