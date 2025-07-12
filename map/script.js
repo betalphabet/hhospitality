@@ -128,8 +128,6 @@ class DraggableMap {
         
         // 填充tooltip內容
         tooltip.querySelector('.tooltip-title').textContent = marker.name;
-        tooltip.querySelector('.tooltip-image').src = `images/${marker.image.file_name}`;
-        tooltip.querySelector('.tooltip-image').alt = marker.name;
         tooltip.querySelector('.tooltip-address').textContent = marker.address || '地址未提供';
         
         // 創建按鈕
@@ -224,6 +222,7 @@ class DraggableMap {
     positionTooltip(tooltip, marker) {
         const containerRect = this.mapContainer.getBoundingClientRect();
         const tooltipRect = tooltip.getBoundingClientRect();
+        const isMobile = window.innerWidth <= 768;
         
         // 計算標記在螢幕上的位置
         const markerScreenX = this.currentX + marker.image_x_position + (marker.image.file_width * marker.image_scale) / 2;
@@ -244,14 +243,24 @@ class DraggableMap {
         }
         
         // 垂直邊界檢查
-        if (tooltipY < padding) {
-            // 如果上方空間不足，顯示在標記下方
-            tooltipY = markerScreenY + (marker.image.file_height * marker.image_scale) + 20;
-            
-            // 調整箭頭方向（顯示在下方時）
-            tooltip.classList.add('tooltip-bottom');
-        } else {
+        if (isMobile) {
+            // 手機版：強制顯示在標記上方
             tooltip.classList.remove('tooltip-bottom');
+            // 如果上方空間不足，調整到可見範圍內
+            if (tooltipY < padding) {
+                tooltipY = padding;
+            }
+        } else {
+            // 桌面版：原有邏輯
+            if (tooltipY < padding) {
+                // 如果上方空間不足，顯示在標記下方
+                tooltipY = markerScreenY + (marker.image.file_height * marker.image_scale) + 20;
+                
+                // 調整箭頭方向（顯示在下方時）
+                tooltip.classList.add('tooltip-bottom');
+            } else {
+                tooltip.classList.remove('tooltip-bottom');
+            }
         }
         
         // 設置位置
