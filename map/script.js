@@ -230,8 +230,8 @@ class DraggableMap {
         const markerScreenY = (this.currentY + marker.image_y_position) * marker.image_scale;
         
         // 計算tooltip位置（顯示在標記上方）
-        let tooltipX = markerScreenX - tooltipRect.width / 2;
-        let tooltipY = markerScreenY - tooltipRect.height - 20; // 20px間距
+        let tooltipX = (tooltipRect.width * marker.image_scale) + tooltipRect.width;
+        let tooltipY = ((markerScreenY - tooltipRect.height) * marker.image_scale) - 20; // 20px間距
         
         // 邊界檢查和調整
         const padding = 10;
