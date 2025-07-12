@@ -290,6 +290,11 @@ html, body {
         touch-action: none;
     }
     
+    /* 手機版地圖縮放調整 - 顯示更大範圍 */
+    .map-image {
+        transform: scale(0.25); /* 手機版縮放到25%，顯示更大範圍 */
+    }
+    
     /* 手機版 Logo 調整 */
     .logo-container {
         top: 15px;

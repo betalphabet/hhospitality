@@ -20,10 +20,20 @@ class DraggableMap {
         this.lastMoveY = 0;
         this.isInertiaScrolling = false;
         
-        // 地圖尺寸 (根據實際座標範圍計算，scale 0.5 後的實際佔用空間)
+        // 響應式縮放比例
+        this.getMapScale = () => {
+            return window.innerWidth <= 768 ? 0.25 : 0.5;
+        };
+        
+        // 地圖尺寸 (根據實際座標範圍計算，動態縮放後的實際佔用空間)
         // 最大x座標: 4089, 最大y座標: 3273
-        this.mapWidth = 2200;   // 4400 * 0.5 (留一些邊距)
-        this.mapHeight = 1800;  // 3600 * 0.5 (留一些邊距)
+        this.getMapDimensions = () => {
+            const scale = this.getMapScale();
+            return {
+                width: 4400 * scale,   // 留一些邊距
+                height: 3600 * scale   // 留一些邊距
+            };
+        };
         
         // 拖曳性能優化
         this.rafId = null;
@@ -91,13 +101,15 @@ class DraggableMap {
     createMarkers() {
         this.markersContainer.innerHTML = '';
         
+        const mapScale = this.getMapScale();
+        
         this.markersData.forEach(marker => {
             const markerElement = document.createElement('div');
             markerElement.className = 'marker';
-            markerElement.style.left = `${marker.image_x_position * marker.image_scale}px`;
-            markerElement.style.top = `${marker.image_y_position * marker.image_scale}px`;
-            markerElement.style.width = `${marker.image.file_width * marker.image_scale}px`;
-            markerElement.style.height = `${marker.image.file_height * marker.image_scale}px`;
+            markerElement.style.left = `${marker.image_x_position * mapScale}px`;
+            markerElement.style.top = `${marker.image_y_position * mapScale}px`;
+            markerElement.style.width = `${marker.image.file_width * mapScale}px`;
+            markerElement.style.height = `${marker.image.file_height * mapScale}px`;
 
             
             const img = document.createElement('img');
@@ -195,18 +207,19 @@ class DraggableMap {
     // 移動地圖到標記中心
     moveToMarker(marker) {
         const containerRect = this.mapContainer.getBoundingClientRect();
-        const containerCenterX = containerRect.width * marker.image_scale;
-        const containerCenterY = containerRect.height * marker.image_scale;
+        const mapScale = this.getMapScale();
+        const containerCenterX = containerRect.width / 2;
+        const containerCenterY = containerRect.height / 2;
         
-        // 根據marker的計算邏輯計算標記在地圖上的實際位置（考慮縮放）
-        const markerX = marker.image_x_position * marker.image_scale;
-        const markerY = marker.image_y_position * marker.image_scale;
-        const markerWidth = marker.image.file_width * marker.image_scale;
-        const markerHeight = marker.image.file_height * marker.image_scale;
+        // 根據動態縮放比例計算標記在地圖上的實際位置
+        const markerX = marker.image_x_position * mapScale;
+        const markerY = marker.image_y_position * mapScale;
+        const markerWidth = marker.image.file_width * mapScale;
+        const markerHeight = marker.image.file_height * mapScale;
         
         // 計算標記的中心點
-        const markerCenterX = markerX + (markerWidth * marker.image_scale);
-        const markerCenterY = markerY + (markerHeight * marker.image_scale);
+        const markerCenterX = markerX + (markerWidth / 2);
+        const markerCenterY = markerY + (markerHeight / 2);
         
         // 計算需要移動的距離，讓標記位於容器中心
         const targetX = containerCenterX - markerCenterX;
@@ -231,22 +244,22 @@ class DraggableMap {
         const containerRect = this.mapContainer.getBoundingClientRect();
         const tooltipRect = tooltip.getBoundingClientRect();
         const isMobile = window.innerWidth <= 768;
+        const mapScale = this.getMapScale();
         
-        // 根據marker的計算邏輯計算標記在螢幕上的實際位置
-        // marker的位置計算：marker.image_x_position * marker.image_scale
-        const markerScreenX = this.currentX + (marker.image_x_position * marker.image_scale);
-        const markerScreenY = this.currentY + (marker.image_y_position * marker.image_scale);
+        // 根據動態縮放比例計算標記在螢幕上的實際位置
+        const markerScreenX = this.currentX + (marker.image_x_position * mapScale);
+        const markerScreenY = this.currentY + (marker.image_y_position * mapScale);
         
         // 計算marker的寬度和高度（已縮放）
-        const markerWidth = marker.image.file_width * marker.image_scale;
-        const markerHeight = marker.image.file_height * marker.image_scale;
+        const markerWidth = marker.image.file_width * mapScale;
+        const markerHeight = marker.image.file_height * mapScale;
         
         // 計算marker的中心點
-        const markerCenterX = markerScreenX + (markerWidth * marker.image_scale);
-        const markerCenterY = markerScreenY + (markerHeight * marker.image_scale);
+        const markerCenterX = markerScreenX + (markerWidth / 2);
+        const markerCenterY = markerScreenY + (markerHeight / 2);
         
         // 計算tooltip位置
-        let tooltipX = markerCenterX - (tooltipRect.width * marker.image_scale); // 水平居中對齊marker
+        let tooltipX = markerCenterX - (tooltipRect.width / 2); // 水平居中對齊marker
         let tooltipY = markerScreenY - tooltipRect.height - 20; // 顯示在標記上方，20px間距
         
         // 邊界檢查和調整
@@ -287,8 +300,9 @@ class DraggableMap {
     
     centerMap() {
         const containerRect = this.mapContainer.getBoundingClientRect();
-        const centerX = (containerRect.width - this.mapWidth) / 2;
-        const centerY = (containerRect.height - this.mapHeight) / 2;
+        const mapDimensions = this.getMapDimensions();
+        const centerX = (containerRect.width - mapDimensions.width) / 2;
+        const centerY = (containerRect.height - mapDimensions.height) / 2;
         
         // 使用constrainX和constrainY來確保一致的邊界處理
         this.currentX = this.constrainX(centerX);
@@ -313,9 +327,17 @@ class DraggableMap {
             e.preventDefault();
         });
         
-        // 視窗大小改變時重新居中
+        // 視窗大小改變時重新居中並重新創建標記
+        let resizeTimeout;
         window.addEventListener('resize', () => {
-            this.centerMap();
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                this.centerMap();
+                // 如果標記已經載入，重新創建以適應新的縮放比例
+                if (this.markersData.length > 0) {
+                    this.createMarkers();
+                }
+            }, 100);
         });
     }
     
@@ -437,14 +459,16 @@ class DraggableMap {
     
     constrainX(x) {
         const containerWidth = this.mapContainer.clientWidth;
+        const mapDimensions = this.getMapDimensions();
         const padding = 100; // 減少padding，只在右邊留邊距讓邊緣物件可見
-        return Math.max(Math.min(x, 0), containerWidth - this.mapWidth - padding);
+        return Math.max(Math.min(x, 0), containerWidth - mapDimensions.width - padding);
     }
     
     constrainY(y) {
         const containerHeight = this.mapContainer.clientHeight;
+        const mapDimensions = this.getMapDimensions();
         const padding = 100; // 減少padding，只在底部留邊距讓邊緣物件可見
-        return Math.max(Math.min(y, 0), containerHeight - this.mapHeight - padding);
+        return Math.max(Math.min(y, 0), containerHeight - mapDimensions.height - padding);
     }
     
     updateMapPosition() {
