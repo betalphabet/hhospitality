@@ -52,7 +52,7 @@ class DraggableMap {
     // 載入標記資料
     async loadMarkersData() {
         try {
-            const response = await fetch('data.json');
+            const response = await fetch('https://hhospitality.group/map/data.json');
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
