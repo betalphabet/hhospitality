@@ -194,12 +194,18 @@ class DraggableMap {
     // 移動地圖到標記中心
     moveToMarker(marker) {
         const containerRect = this.mapContainer.getBoundingClientRect();
-        const containerCenterX = containerRect.width / 2;
-        const containerCenterY = containerRect.height / 2;
+        const containerCenterX = containerRect.width * marker.image_scale;
+        const containerCenterY = containerRect.height * marker.image_scale;
         
-        // 計算標記在地圖上的實際位置（考慮縮放）
-        const markerCenterX = marker.image_x_position + (marker.image.file_width * marker.image_scale);
-        const markerCenterY = marker.image_y_position + (marker.image.file_height * marker.image_scale);
+        // 根據marker的計算邏輯計算標記在地圖上的實際位置（考慮縮放）
+        const markerX = marker.image_x_position * marker.image_scale;
+        const markerY = marker.image_y_position * marker.image_scale;
+        const markerWidth = marker.image.file_width * marker.image_scale;
+        const markerHeight = marker.image.file_height * marker.image_scale;
+        
+        // 計算標記的中心點
+        const markerCenterX = markerX + (markerWidth * marker.image_scale);
+        const markerCenterY = markerY + (markerHeight * marker.image_scale);
         
         // 計算需要移動的距離，讓標記位於容器中心
         const targetX = containerCenterX - markerCenterX;
@@ -225,13 +231,22 @@ class DraggableMap {
         const tooltipRect = tooltip.getBoundingClientRect();
         const isMobile = window.innerWidth <= 768;
         
-        // 計算標記在螢幕上的位置
-        const markerScreenX = (this.currentX + marker.image_x_position) + (marker.image.file_width * marker.image_scale) * marker.image_scale;
-        const markerScreenY = (this.currentY + marker.image_y_position) * marker.image_scale;
+        // 根據marker的計算邏輯計算標記在螢幕上的實際位置
+        // marker的位置計算：marker.image_x_position * marker.image_scale
+        const markerScreenX = this.currentX + (marker.image_x_position * marker.image_scale);
+        const markerScreenY = this.currentY + (marker.image_y_position * marker.image_scale);
         
-        // 計算tooltip位置（顯示在標記上方）
-        let tooltipX = (tooltipRect.width * marker.image_scale) + tooltipRect.width;
-        let tooltipY = ((markerScreenY - tooltipRect.height) * marker.image_scale) - 20; // 20px間距
+        // 計算marker的寬度和高度（已縮放）
+        const markerWidth = marker.image.file_width * marker.image_scale;
+        const markerHeight = marker.image.file_height * marker.image_scale;
+        
+        // 計算marker的中心點
+        const markerCenterX = markerScreenX + (markerWidth * marker.image_scale);
+        const markerCenterY = markerScreenY + (markerHeight * marker.image_scale);
+        
+        // 計算tooltip位置
+        let tooltipX = markerCenterX - (tooltipRect.width * marker.image_scale); // 水平居中對齊marker
+        let tooltipY = markerScreenY - tooltipRect.height - 20; // 顯示在標記上方，20px間距
         
         // 邊界檢查和調整
         const padding = 10;
@@ -255,7 +270,7 @@ class DraggableMap {
             // 桌面版：原有邏輯
             if (tooltipY < padding) {
                 // 如果上方空間不足，顯示在標記下方
-                tooltipY = markerScreenY + (marker.image.file_height * marker.image_scale) + 20;
+                tooltipY = markerScreenY + markerHeight + 20;
                 
                 // 調整箭頭方向（顯示在下方時）
                 tooltip.classList.add('tooltip-bottom');
