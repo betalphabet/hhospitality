@@ -95,8 +95,7 @@ class DraggableMap {
             markerElement.className = 'marker';
             markerElement.style.left = `${marker.image_x_position}px`;
             markerElement.style.top = `${marker.image_y_position}px`;
-            markerElement.style.width = `${marker.image.file_width * marker.image_scale}px`;
-            markerElement.style.height = `${marker.image.file_height * marker.image_scale}px`;
+
             
             const img = document.createElement('img');
             img.src = `images/${marker.image.file_name}`;
@@ -197,8 +196,8 @@ class DraggableMap {
         const containerCenterY = containerRect.height / 2;
         
         // 計算標記在地圖上的實際位置（考慮縮放）
-        const markerCenterX = marker.image_x_position + (marker.image.file_width * marker.image_scale) / 2;
-        const markerCenterY = marker.image_y_position + (marker.image.file_height * marker.image_scale) / 2;
+        const markerCenterX = marker.image_x_position + (marker.image.file_width * marker.image_scale);
+        const markerCenterY = marker.image_y_position + (marker.image.file_height * marker.image_scale);
         
         // 計算需要移動的距離，讓標記位於容器中心
         const targetX = containerCenterX - markerCenterX;

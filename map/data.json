@@ -11,12 +11,11 @@
     "image": {
       "content_type": "image/webp",
       "file_name": "1.webp",
-      "file_size": 8944,
-      "file_width": 169,
-      "file_height": 184,
+      "file_width": 901,
+      "file_height": 627,
       "url": "images/1.webp"
     },
-    "image_scale": 1.0
+    "image_scale": 0.5
   },
   {
     "id": "location-002",
@@ -30,12 +29,11 @@
     "image": {
       "content_type": "image/webp",
       "file_name": "2.webp",
-      "file_size": 8944,
-      "file_width": 169,
-      "file_height": 184,
+      "file_width": 371,
+      "file_height": 284,
       "url": "images/2.webp"
     },
-    "image_scale": 1.0
+    "image_scale": 0.5
   },
   {
     "id": "location-003",
@@ -47,12 +45,11 @@
     "image": {
       "content_type": "image/webp",
       "file_name": "3.webp",
-      "file_size": 8944,
-      "file_width": 169,
-      "file_height": 184,
+      "file_width": 218,
+      "file_height": 370,
       "url": "images/3.webp"
     },
-    "image_scale": 1.0
+    "image_scale": 0.5
   },
   {
     "id": "location-004",
@@ -66,12 +63,11 @@
     "image": {
       "content_type": "image/webp",
       "file_name": "4.webp",
-      "file_size": 8944,
-      "file_width": 169,
-      "file_height": 184,
+      "file_width": 416,
+      "file_height": 366,
       "url": "images/4.webp"
     },
-    "image_scale": 1.0
+    "image_scale": 0.5
   },
   {
     "id": "location-005",
@@ -83,12 +79,11 @@
     "image": {
       "content_type": "image/webp",
       "file_name": "5.webp",
-      "file_size": 8944,
-      "file_width": 169,
-      "file_height": 184,
+      "file_width": 310,
+      "file_height": 342,
       "url": "images/5.webp"
     },
-    "image_scale": 1.0
+    "image_scale": 0.5
   },
   {
     "id": "location-006",
@@ -100,12 +95,11 @@
     "image": {
       "content_type": "image/webp",
       "file_name": "6.webp",
-      "file_size": 8944,
-      "file_width": 169,
-      "file_height": 184,
+      "file_width": 334,
+      "file_height": 362,
       "url": "images/6.webp"
     },
-    "image_scale": 1.0
+    "image_scale": 0.5
   },
   {
     "id": "location-007",
@@ -119,12 +113,11 @@
     "image": {
       "content_type": "image/webp",
       "file_name": "7.webp",
-      "file_size": 8944,
-      "file_width": 169,
-      "file_height": 184,
+      "file_width": 680,
+      "file_height": 363,
       "url": "images/7.webp"
     },
-    "image_scale": 1.0
+    "image_scale": 0.5
   },
   {
     "id": "location-008",
@@ -138,12 +131,11 @@
     "image": {
       "content_type": "image/webp",
       "file_name": "8.webp",
-      "file_size": 8944,
-      "file_width": 169,
-      "file_height": 184,
+      "file_width": 627,
+      "file_height": 391,
       "url": "images/8.webp"
     },
-    "image_scale": 1.0
+    "image_scale": 0.5
   },
   {
     "id": "location-009",
@@ -155,12 +147,11 @@
     "image": {
       "content_type": "image/webp",
       "file_name": "9.webp",
-      "file_size": 8944,
-      "file_width": 169,
-      "file_height": 184,
+      "file_width": 559,
+      "file_height": 435,
       "url": "images/9.webp"
     },
-    "image_scale": 1.0
+    "image_scale": 0.5
   },
   {
     "id": "location-010",
@@ -174,12 +165,11 @@
     "image": {
       "content_type": "image/webp",
       "file_name": "10.webp",
-      "file_size": 8944,
-      "file_width": 169,
-      "file_height": 184,
+      "file_width": 639,
+      "file_height": 383,
       "url": "images/10.webp"
     },
-    "image_scale": 1.0
+    "image_scale": 0.5
   },
   {
     "id": "location-011",
@@ -193,12 +183,11 @@
     "image": {
       "content_type": "image/webp",
       "file_name": "11.webp",
-      "file_size": 8944,
-      "file_width": 169,
-      "file_height": 184,
+      "file_width": 760,
+      "file_height": 477,
       "url": "images/11.webp"
     },
-    "image_scale": 1.0
+    "image_scale": 0.5
   },
   {
     "id": "location-012",
@@ -212,12 +201,11 @@
     "image": {
       "content_type": "image/webp",
       "file_name": "12.webp",
-      "file_size": 8944,
-      "file_width": 169,
-      "file_height": 184,
+      "file_width": 402,
+      "file_height": 338,
       "url": "images/12.webp"
     },
-    "image_scale": 1.0
+    "image_scale": 0.5
   },
   {
     "id": "location-013",
@@ -229,12 +217,11 @@
     "image": {
       "content_type": "image/webp",
       "file_name": "13.webp",
-      "file_size": 8944,
-      "file_width": 169,
-      "file_height": 184,
+      "file_width": 550,
+      "file_height": 424,
       "url": "images/13.webp"
     },
-    "image_scale": 1.0
+    "image_scale": 0.5
   },
   {
     "id": "location-014",
@@ -246,12 +233,11 @@
     "image": {
       "content_type": "image/webp",
       "file_name": "14.webp",
-      "file_size": 8944,
-      "file_width": 169,
-      "file_height": 184,
+      "file_width": 661,
+      "file_height": 463,
       "url": "images/14.webp"
     },
-    "image_scale": 1.0
+    "image_scale": 0.5
   },
   {
     "id": "location-015",
@@ -263,12 +249,11 @@
     "image": {
       "content_type": "image/webp",
       "file_name": "15.webp",
-      "file_size": 8944,
-      "file_width": 169,
-      "file_height": 184,
+      "file_width": 402,
+      "file_height": 369,
       "url": "images/15.webp"
     },
-    "image_scale": 1.0
+    "image_scale": 0.5
   },
   {
     "id": "location-016",
@@ -282,12 +267,11 @@
     "image": {
       "content_type": "image/webp",
       "file_name": "16.webp",
-      "file_size": 8944,
-      "file_width": 169,
-      "file_height": 184,
+      "file_width": 580,
+      "file_height": 289,
       "url": "images/16.webp"
     },
-    "image_scale": 1.0
+    "image_scale": 0.5
   },
   {
     "id": "location-017",
@@ -301,12 +285,11 @@
     "image": {
       "content_type": "image/webp",
       "file_name": "17.webp",
-      "file_size": 8944,
-      "file_width": 169,
-      "file_height": 184,
+      "file_width": 637,
+      "file_height": 359,
       "url": "images/17.webp"
     },
-    "image_scale": 1.0
+    "image_scale": 0.5
   },
   {
     "id": "location-018",
@@ -320,12 +303,11 @@
     "image": {
       "content_type": "image/webp",
       "file_name": "18.webp",
-      "file_size": 8944,
-      "file_width": 169,
-      "file_height": 184,
+      "file_width": 674,
+      "file_height": 551,
       "url": "images/18.webp"
     },
-    "image_scale": 1.0
+    "image_scale": 0.5
   },
   {
     "id": "location-019",
@@ -337,12 +319,11 @@
     "image": {
       "content_type": "image/webp",
       "file_name": "19.webp",
-      "file_size": 8944,
-      "file_width": 169,
-      "file_height": 184,
+      "file_width": 662,
+      "file_height": 532,
       "url": "images/19.webp"
     },
-    "image_scale": 1.0
+    "image_scale": 0.5
   },
   {
     "id": "location-020",
@@ -356,12 +337,11 @@
     "image": {
       "content_type": "image/webp",
       "file_name": "20.webp",
-      "file_size": 8944,
-      "file_width": 169,
-      "file_height": 184,
+      "file_width": 668,
+      "file_height": 435,
       "url": "images/20.webp"
     },
-    "image_scale": 1.0
+    "image_scale": 0.5
   },
   {
     "id": "location-021",
@@ -375,12 +355,11 @@
     "image": {
       "content_type": "image/webp",
       "file_name": "21.webp",
-      "file_size": 8944,
-      "file_width": 169,
-      "file_height": 184,
+      "file_width": 405,
+      "file_height": 312,
       "url": "images/21.webp"
     },
-    "image_scale": 1.0
+    "image_scale": 0.5
   },
   {
     "id": "location-022",
@@ -394,12 +373,11 @@
     "image": {
       "content_type": "image/webp",
       "file_name": "22.webp",
-      "file_size": 8944,
-      "file_width": 169,
-      "file_height": 184,
+      "file_width": 350,
+      "file_height": 350,
       "url": "images/22.webp"
     },
-    "image_scale": 1.0
+    "image_scale": 0.5
   },
   {
     "id": "location-023",
@@ -411,12 +389,11 @@
     "image": {
       "content_type": "image/webp",
       "file_name": "23.webp",
-      "file_size": 8944,
-      "file_width": 169,
-      "file_height": 184,
+      "file_width": 450,
+      "file_height": 450,
       "url": "images/23.webp"
     },
-    "image_scale": 1.0
+    "image_scale": 0.5
   },
   {
     "id": "location-024",
@@ -430,12 +407,11 @@
     "image": {
       "content_type": "image/webp",
       "file_name": "24.webp",
-      "file_size": 8944,
-      "file_width": 169,
-      "file_height": 184,
+      "file_width": 500,
+      "file_height": 400,
       "url": "images/24.webp"
     },
-    "image_scale": 1.0
+    "image_scale": 0.5
   },
   {
     "id": "location-025",
@@ -447,11 +423,10 @@
     "image": {
       "content_type": "image/webp",
       "file_name": "25.webp",
-      "file_size": 8944,
-      "file_width": 169,
-      "file_height": 184,
+      "file_width": 584,
+      "file_height": 427,
       "url": "images/25.webp"
     },
-    "image_scale": 1.0
+    "image_scale": 0.5
   }
 ]
