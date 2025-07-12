@@ -7,10 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Logo -->
+    <div class="logo-container">
+        <a href="../index.html" class="logo-link">
+            <img src="../images/hhospitality_logo.png" alt="H Hospitality Group" class="logo">
+        </a>
+    </div>
+    
     <div class="map-container">
         <div class="map-wrapper">
             <img src="images/map.webp" alt="地圖" class="map-image" draggable="false">
             <div class="markers-container"></div>
+        </div>
+        <!-- 載入提示 -->
+        <div class="loading-overlay" id="loadingOverlay">
+            <div class="loading-content">
+                <div class="loading-spinner"></div>
+                <p class="loading-text">載入地圖中...</p>
+            </div>
         </div>
     </div>
     

@@ -46,7 +46,30 @@ class DraggableMap {
         // 圖片載入完成後移除載入提示
         this.mapImage.addEventListener('load', () => {
             this.mapImage.classList.add('loaded');
+            this.hideLoadingOverlay();
         });
+        
+        // 如果圖片已經載入完成（從快取載入）
+        if (this.mapImage.complete) {
+            this.mapImage.classList.add('loaded');
+            this.hideLoadingOverlay();
+        }
+    }
+    
+    // 隱藏載入提示
+    hideLoadingOverlay() {
+        const loadingOverlay = document.getElementById('loadingOverlay');
+        if (loadingOverlay) {
+            setTimeout(() => {
+                loadingOverlay.classList.add('hidden');
+                // 完全移除元素以避免影響性能
+                setTimeout(() => {
+                    if (loadingOverlay.parentNode) {
+                        loadingOverlay.parentNode.removeChild(loadingOverlay);
+                    }
+                }, 500);
+            }, 500); // 延遲500ms讓使用者看到載入完成
+        }
     }
     
     // 載入標記資料
