@@ -3,6 +3,7 @@ class DraggableMap {
         this.mapContainer = document.querySelector('.map-container');
         this.mapWrapper = document.querySelector('.map-wrapper');
         this.mapImage = document.querySelector('.map-image');
+        this.markersContainer = document.querySelector('.markers-container');
         
         // 拖曳狀態
         this.isDragging = false;
@@ -21,10 +22,13 @@ class DraggableMap {
         
         // 地圖尺寸 (scale 0.5 後的實際佔用空間)
         this.mapWidth = 2800;  // 5600 * 0.5
-        this.mapHeight = 2100; // 2400 * 0.5
+        this.mapHeight = 1200; // 2400 * 0.5
         
         // 拖曳性能優化
         this.rafId = null;
+        
+        // 標記資料
+        this.markersData = [];
         
         this.init();
     }
@@ -36,19 +40,127 @@ class DraggableMap {
         // 綁定事件
         this.bindEvents();
         
+        // 載入標記資料
+        this.loadMarkersData();
+        
         // 圖片載入完成後移除載入提示
         this.mapImage.addEventListener('load', () => {
             this.mapImage.classList.add('loaded');
         });
     }
     
-    centerMap() {
-        const containerWidth = this.mapContainer.clientWidth;
-        const containerHeight = this.mapContainer.clientHeight;
+    // 載入標記資料
+    async loadMarkersData() {
+        try {
+            const response = await fetch('data.json');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            this.markersData = await response.json();
+            this.createMarkers();
+        } catch (error) {
+            console.error('載入標記資料失敗:', error);
+        }
+    }
+    
+    // 創建標記
+    createMarkers() {
+        this.markersContainer.innerHTML = '';
         
-        // 計算居中位置
-        this.currentX = (containerWidth - this.mapWidth) / 2;
-        this.currentY = (containerHeight - this.mapHeight) / 2;
+        this.markersData.forEach(marker => {
+            const markerElement = document.createElement('div');
+            markerElement.className = 'marker';
+            markerElement.style.left = `${marker.image_x_position}px`;
+            markerElement.style.top = `${marker.image_y_position}px`;
+            markerElement.style.width = `${marker.image.file_width * marker.image_scale}px`;
+            markerElement.style.height = `${marker.image.file_height * marker.image_scale}px`;
+            
+            const img = document.createElement('img');
+            img.src = `images/${marker.image.file_name}`;
+            img.alt = marker.name;
+            img.draggable = false;
+            
+            markerElement.appendChild(img);
+            
+            // 添加點擊事件
+            markerElement.addEventListener('click', (e) => {
+                e.stopPropagation();
+                this.showTooltip(marker);
+            });
+            
+            this.markersContainer.appendChild(markerElement);
+        });
+    }
+    
+    // 顯示tooltip
+    showTooltip(marker) {
+        const tooltip = document.getElementById('tooltip');
+        const overlay = this.createOverlay();
+        
+        // 填充tooltip內容
+        tooltip.querySelector('.tooltip-title').textContent = marker.name;
+        tooltip.querySelector('.tooltip-image').src = `images/${marker.image.file_name}`;
+        tooltip.querySelector('.tooltip-image').alt = marker.name;
+        tooltip.querySelector('.tooltip-address').textContent = marker.address || '地址未提供';
+        
+        // 創建按鈕
+        const buttonsContainer = tooltip.querySelector('.tooltip-buttons');
+        buttonsContainer.innerHTML = '';
+        
+        marker.custom_button_links.forEach(button => {
+            if (button.is_enabled) {
+                const buttonElement = document.createElement('a');
+                buttonElement.href = button.link.trim();
+                buttonElement.className = 'tooltip-button';
+                buttonElement.textContent = button.name;
+                buttonElement.target = '_blank';
+                buttonsContainer.appendChild(buttonElement);
+            }
+        });
+        
+        // 顯示tooltip和遮罩
+        document.body.appendChild(overlay);
+        overlay.classList.add('show');
+        tooltip.classList.add('show');
+        
+        // 綁定關閉事件
+        const closeTooltip = () => {
+            tooltip.classList.remove('show');
+            overlay.classList.remove('show');
+            setTimeout(() => {
+                if (document.body.contains(overlay)) {
+                    document.body.removeChild(overlay);
+                }
+            }, 300);
+        };
+        
+        tooltip.querySelector('.tooltip-close').onclick = closeTooltip;
+        overlay.onclick = closeTooltip;
+        
+        // ESC鍵關閉
+        const handleEsc = (e) => {
+            if (e.key === 'Escape') {
+                closeTooltip();
+                document.removeEventListener('keydown', handleEsc);
+            }
+        };
+        document.addEventListener('keydown', handleEsc);
+    }
+    
+    // 創建遮罩層
+    createOverlay() {
+        const overlay = document.createElement('div');
+        overlay.className = 'tooltip-overlay';
+        return overlay;
+    }
+    
+    centerMap() {
+        const containerRect = this.mapContainer.getBoundingClientRect();
+        const centerX = (containerRect.width - this.mapWidth) / 2;
+        const centerY = (containerRect.height - this.mapHeight) / 2;
+        
+        this.currentX = Math.max(Math.min(centerX, 0), containerRect.width - this.mapWidth);
+        this.currentY = Math.max(Math.min(centerY, 0), containerRect.height - this.mapHeight);
         
         this.updateMapPosition();
     }
@@ -76,9 +188,13 @@ class DraggableMap {
     }
     
     handleStart(e) {
+        // 停止慣性滾動
+        if (this.isInertiaScrolling) {
+            this.stopInertiaScroll();
+        }
+        
         this.isDragging = true;
-        this.isInertiaScrolling = false; // 停止慣性滾動
-        this.mapContainer.classList.add('dragging');
+        this.mapContainer.style.cursor = 'grabbing';
         
         const clientX = e.type === 'mousedown' ? e.clientX : e.touches[0].clientX;
         const clientY = e.type === 'mousedown' ? e.clientY : e.touches[0].clientY;
@@ -86,7 +202,7 @@ class DraggableMap {
         this.startX = clientX - this.currentX;
         this.startY = clientY - this.currentY;
         
-        // 重置速度追蹤
+        // 重置速度追蹤變數
         this.velocityX = 0;
         this.velocityY = 0;
         this.lastMoveTime = Date.now();
@@ -101,22 +217,26 @@ class DraggableMap {
         
         const clientX = e.type === 'mousemove' ? e.clientX : e.touches[0].clientX;
         const clientY = e.type === 'mousemove' ? e.clientY : e.touches[0].clientY;
-        const currentTime = Date.now();
         
-        // 計算速度
+        // 計算速度 (用於慣性滾動)
+        const currentTime = Date.now();
         const deltaTime = currentTime - this.lastMoveTime;
+        
         if (deltaTime > 0) {
             this.velocityX = (clientX - this.lastMoveX) / deltaTime;
             this.velocityY = (clientY - this.lastMoveY) / deltaTime;
         }
         
-        this.currentX = clientX - this.startX;
-        this.currentY = clientY - this.startY;
+        this.lastMoveTime = currentTime;
+        this.lastMoveX = clientX;
+        this.lastMoveY = clientY;
         
-        // 限制拖曳範圍
-        this.constrainPosition();
+        const newX = clientX - this.startX;
+        const newY = clientY - this.startY;
         
-        // 使用 requestAnimationFrame 優化性能
+        this.currentX = this.constrainX(newX);
+        this.currentY = this.constrainY(newY);
+        
         if (this.rafId) {
             cancelAnimationFrame(this.rafId);
         }
@@ -125,26 +245,22 @@ class DraggableMap {
             this.updateMapPosition();
         });
         
-        // 更新追蹤變數
-        this.lastMoveTime = currentTime;
-        this.lastMoveX = clientX;
-        this.lastMoveY = clientY;
-        
         e.preventDefault();
     }
     
     handleEnd(e) {
-        this.isDragging = false;
-        this.mapContainer.classList.remove('dragging');
+        if (!this.isDragging) return;
         
-        // 清理 requestAnimationFrame
+        this.isDragging = false;
+        this.mapContainer.style.cursor = 'grab';
+        
         if (this.rafId) {
             cancelAnimationFrame(this.rafId);
             this.rafId = null;
         }
         
-        // 啟動慣性滾動（如果速度足夠）
-        const minVelocity = 0.1; // 最小速度閾值
+        // 檢查是否需要開始慣性滾動
+        const minVelocity = 0.1;
         if (Math.abs(this.velocityX) > minVelocity || Math.abs(this.velocityY) > minVelocity) {
             this.startInertiaScroll();
         }
@@ -152,61 +268,59 @@ class DraggableMap {
         e.preventDefault();
     }
     
-    constrainPosition() {
+    // 開始慣性滾動
+    startInertiaScroll() {
+        this.isInertiaScrolling = true;
+        this.inertiaScroll();
+    }
+    
+    // 慣性滾動動畫
+    inertiaScroll() {
+        if (!this.isInertiaScrolling) return;
+        
+        // 應用摩擦力
+        this.velocityX *= 0.95;
+        this.velocityY *= 0.95;
+        
+        // 更新位置
+        this.currentX = this.constrainX(this.currentX + this.velocityX * 16);
+        this.currentY = this.constrainY(this.currentY + this.velocityY * 16);
+        
+        this.updateMapPosition();
+        
+        // 檢查是否繼續滾動
+        if (Math.abs(this.velocityX) > 0.01 || Math.abs(this.velocityY) > 0.01) {
+            requestAnimationFrame(() => this.inertiaScroll());
+        } else {
+            this.stopInertiaScroll();
+        }
+    }
+    
+    // 停止慣性滾動
+    stopInertiaScroll() {
+        this.isInertiaScrolling = false;
+        this.velocityX = 0;
+        this.velocityY = 0;
+    }
+    
+    constrainX(x) {
         const containerWidth = this.mapContainer.clientWidth;
+        return Math.max(Math.min(x, 0), containerWidth - this.mapWidth);
+    }
+    
+    constrainY(y) {
         const containerHeight = this.mapContainer.clientHeight;
-        
-        // 限制X軸移動範圍
-        const maxX = 0;
-        const minX = containerWidth - this.mapWidth;
-        this.currentX = Math.max(minX, Math.min(maxX, this.currentX));
-        
-        // 限制Y軸移動範圍
-        const maxY = 0;
-        const minY = containerHeight - this.mapHeight;
-        this.currentY = Math.max(minY, Math.min(maxY, this.currentY));
+        return Math.max(Math.min(y, 0), containerHeight - this.mapHeight);
     }
     
     updateMapPosition() {
         this.mapWrapper.style.transform = `translate(${this.currentX}px, ${this.currentY}px)`;
     }
     
-    startInertiaScroll() {
-        this.isInertiaScrolling = true;
-        this.inertiaScroll();
-    }
-    
-    inertiaScroll() {
-        if (!this.isInertiaScrolling) return;
-        
-        // 摩擦係數（越小滑動越久）
-        const friction = 0.95;
-        const minVelocity = 0.01;
-        
-        // 應用摩擦力
-        this.velocityX *= friction;
-        this.velocityY *= friction;
-        
-        // 更新位置
-        this.currentX += this.velocityX * 16; // 假設60fps，約16ms一幀
-        this.currentY += this.velocityY * 16;
-        
-        // 限制拖曳範圍
-        this.constrainPosition();
-        
-        // 更新顯示
-        this.updateMapPosition();
-        
-        // 檢查是否需要繼續滾動
-        if (Math.abs(this.velocityX) > minVelocity || Math.abs(this.velocityY) > minVelocity) {
-            requestAnimationFrame(() => this.inertiaScroll());
-        } else {
-            this.isInertiaScrolling = false;
-        }
-    }
+
 }
 
-// 當DOM載入完成後初始化地圖
+// 初始化地圖
 document.addEventListener('DOMContentLoaded', () => {
     new DraggableMap();
 });
