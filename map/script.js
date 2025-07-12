@@ -20,9 +20,10 @@ class DraggableMap {
         this.lastMoveY = 0;
         this.isInertiaScrolling = false;
         
-        // 地圖尺寸 (scale 0.5 後的實際佔用空間)
-        this.mapWidth = 2800;  // 5600 * 0.5
-        this.mapHeight = 1200; // 2400 * 0.5
+        // 地圖尺寸 (根據實際座標範圍計算，scale 0.5 後的實際佔用空間)
+        // 最大x座標: 4089, 最大y座標: 3273
+        this.mapWidth = 2200;   // 4400 * 0.5 (留一些邊距)
+        this.mapHeight = 1800;  // 3600 * 0.5 (留一些邊距)
         
         // 拖曳性能優化
         this.rafId = null;
@@ -436,13 +437,14 @@ class DraggableMap {
     
     constrainX(x) {
         const containerWidth = this.mapContainer.clientWidth;
-        return Math.max(Math.min(x, 0), containerWidth - this.mapWidth);
+        const padding = 100; // 減少padding，只在右邊留邊距讓邊緣物件可見
+        return Math.max(Math.min(x, 0), containerWidth - this.mapWidth - padding);
     }
     
     constrainY(y) {
         const containerHeight = this.mapContainer.clientHeight;
-        const padding = 200; // 添加200px的padding，讓邊緣物件可見
-        return Math.max(Math.min(y, padding), containerHeight - this.mapHeight - padding);
+        const padding = 100; // 減少padding，只在底部留邊距讓邊緣物件可見
+        return Math.max(Math.min(y, 0), containerHeight - this.mapHeight - padding);
     }
     
     updateMapPosition() {
