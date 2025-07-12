@@ -289,8 +289,9 @@ class DraggableMap {
         const centerX = (containerRect.width - this.mapWidth) / 2;
         const centerY = (containerRect.height - this.mapHeight) / 2;
         
-        this.currentX = Math.max(Math.min(centerX, 0), containerRect.width - this.mapWidth);
-        this.currentY = Math.max(Math.min(centerY, 0), containerRect.height - this.mapHeight);
+        // 使用constrainX和constrainY來確保一致的邊界處理
+        this.currentX = this.constrainX(centerX);
+        this.currentY = this.constrainY(centerY);
         
         this.updateMapPosition();
     }
@@ -440,7 +441,8 @@ class DraggableMap {
     
     constrainY(y) {
         const containerHeight = this.mapContainer.clientHeight;
-        return Math.max(Math.min(y, 0), containerHeight - this.mapHeight);
+        const padding = 200; // 添加200px的padding，讓邊緣物件可見
+        return Math.max(Math.min(y, padding), containerHeight - this.mapHeight - padding);
     }
     
     updateMapPosition() {
