@@ -96,40 +96,83 @@ html, body {
 
 /* Tooltip樣式 */
 .tooltip {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute;
     background: white;
     border-radius: 12px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    max-width: 400px;
-    width: 90%;
-    max-height: 80vh;
+    max-width: 350px;
+    width: auto;
+    min-width: 280px;
     overflow: hidden;
     z-index: 1000;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
+    pointer-events: none;
 }
 
 .tooltip.show {
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
+}
+
+/* Tooltip 箭頭 */
+.tooltip::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid white;
+    z-index: 1001;
+}
+
+.tooltip::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* 當 tooltip 顯示在下方時，箭頭指向上方 */
+.tooltip.tooltip-bottom::before {
+    top: auto;
+    bottom: -8px;
+    border-bottom: none;
+    border-top: 8px solid white;
+}
+
+.tooltip.tooltip-bottom::after {
+    top: auto;
+    bottom: -10px;
+    border-bottom: none;
+    border-top: 10px solid rgba(0, 0, 0, 0.1);
 }
 
 .tooltip-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 20px;
+    padding: 12px 16px;
     border-bottom: 1px solid #eee;
     background: #f8f9fa;
 }
 
 .tooltip-title {
     margin: 0;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     color: #333;
 }
@@ -137,12 +180,12 @@ html, body {
 .tooltip-close {
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
     color: #666;
     padding: 0;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,37 +198,39 @@ html, body {
 }
 
 .tooltip-content {
-    padding: 20px;
+    padding: 16px;
 }
 
 .tooltip-image {
     width: 100%;
-    height: 200px;
+    height: 150px;
     object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 16px;
+    border-radius: 6px;
+    margin-bottom: 12px;
 }
 
 .tooltip-address {
-    margin: 0 0 16px 0;
+    margin: 0 0 12px 0;
     color: #666;
-    font-size: 14px;
+    font-size: 13px;
+    line-height: 1.4;
 }
 
 .tooltip-buttons {
     display: flex;
-    gap: 8px;
+    gap: 6px;
     flex-wrap: wrap;
 }
 
 .tooltip-button {
-    padding: 8px 16px;
+    padding: 6px 12px;
     background: #007bff;
     color: white;
     text-decoration: none;
-    border-radius: 6px;
-    font-size: 14px;
+    border-radius: 4px;
+    font-size: 12px;
     transition: background-color 0.2s ease;
+    white-space: nowrap;
 }
 
 .tooltip-button:hover {
@@ -195,25 +240,6 @@ html, body {
 .tooltip-button:disabled {
     background: #ccc;
     cursor: not-allowed;
-}
-
-/* 遮罩層 */
-.tooltip-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-}
-
-.tooltip-overlay.show {
-    opacity: 1;
-    visibility: visible;
 }
 
 /* 響應式設計 - 手機版 */

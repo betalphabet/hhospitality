@@ -95,7 +95,9 @@ class DraggableMap {
     // 顯示tooltip
     showTooltip(marker) {
         const tooltip = document.getElementById('tooltip');
-        const overlay = this.createOverlay();
+        
+        // 先移動地圖到標記中心
+        this.moveToMarker(marker);
         
         // 填充tooltip內容
         tooltip.querySelector('.tooltip-title').textContent = marker.name;
@@ -118,40 +120,108 @@ class DraggableMap {
             }
         });
         
-        // 顯示tooltip和遮罩
-        document.body.appendChild(overlay);
-        overlay.classList.add('show');
-        tooltip.classList.add('show');
+        // 計算tooltip位置
+        setTimeout(() => {
+            this.positionTooltip(tooltip, marker);
+            tooltip.classList.add('show');
+        }, 300); // 等待地圖移動動畫完成
         
         // 綁定關閉事件
         const closeTooltip = () => {
             tooltip.classList.remove('show');
-            overlay.classList.remove('show');
-            setTimeout(() => {
-                if (document.body.contains(overlay)) {
-                    document.body.removeChild(overlay);
-                }
-            }, 300);
         };
         
         tooltip.querySelector('.tooltip-close').onclick = closeTooltip;
-        overlay.onclick = closeTooltip;
+        
+        // 點擊地圖其他地方關閉tooltip
+        const handleMapClick = (e) => {
+            if (!tooltip.contains(e.target) && !e.target.closest('.marker')) {
+                closeTooltip();
+                this.mapContainer.removeEventListener('click', handleMapClick);
+            }
+        };
+        
+        // 延遲綁定點擊事件，避免立即觸發
+        setTimeout(() => {
+            this.mapContainer.addEventListener('click', handleMapClick);
+        }, 100);
         
         // ESC鍵關閉
         const handleEsc = (e) => {
             if (e.key === 'Escape') {
                 closeTooltip();
                 document.removeEventListener('keydown', handleEsc);
+                this.mapContainer.removeEventListener('click', handleMapClick);
             }
         };
         document.addEventListener('keydown', handleEsc);
     }
     
-    // 創建遮罩層
-    createOverlay() {
-        const overlay = document.createElement('div');
-        overlay.className = 'tooltip-overlay';
-        return overlay;
+    // 移動地圖到標記中心
+    moveToMarker(marker) {
+        const containerRect = this.mapContainer.getBoundingClientRect();
+        const containerCenterX = containerRect.width / 2;
+        const containerCenterY = containerRect.height / 2;
+        
+        // 計算標記在地圖上的實際位置（考慮縮放）
+        const markerCenterX = marker.image_x_position + (marker.image.file_width * marker.image_scale) / 2;
+        const markerCenterY = marker.image_y_position + (marker.image.file_height * marker.image_scale) / 2;
+        
+        // 計算需要移動的距離，讓標記位於容器中心
+        const targetX = containerCenterX - markerCenterX;
+        const targetY = containerCenterY - markerCenterY;
+        
+        // 應用邊界限制
+        this.currentX = this.constrainX(targetX);
+        this.currentY = this.constrainY(targetY);
+        
+        // 添加平滑動畫
+        this.mapWrapper.style.transition = 'transform 0.3s ease-out';
+        this.updateMapPosition();
+        
+        // 動畫完成後移除transition
+        setTimeout(() => {
+            this.mapWrapper.style.transition = 'none';
+        }, 300);
+    }
+    
+    // 計算並設置tooltip位置
+    positionTooltip(tooltip, marker) {
+        const containerRect = this.mapContainer.getBoundingClientRect();
+        const tooltipRect = tooltip.getBoundingClientRect();
+        
+        // 計算標記在螢幕上的位置
+        const markerScreenX = this.currentX + marker.image_x_position + (marker.image.file_width * marker.image_scale) / 2;
+        const markerScreenY = this.currentY + marker.image_y_position;
+        
+        // 計算tooltip位置（顯示在標記上方）
+        let tooltipX = markerScreenX - tooltipRect.width / 2;
+        let tooltipY = markerScreenY - tooltipRect.height - 20; // 20px間距
+        
+        // 邊界檢查和調整
+        const padding = 10;
+        
+        // 水平邊界檢查
+        if (tooltipX < padding) {
+            tooltipX = padding;
+        } else if (tooltipX + tooltipRect.width > containerRect.width - padding) {
+            tooltipX = containerRect.width - tooltipRect.width - padding;
+        }
+        
+        // 垂直邊界檢查
+        if (tooltipY < padding) {
+            // 如果上方空間不足，顯示在標記下方
+            tooltipY = markerScreenY + (marker.image.file_height * marker.image_scale) + 20;
+            
+            // 調整箭頭方向（顯示在下方時）
+            tooltip.classList.add('tooltip-bottom');
+        } else {
+            tooltip.classList.remove('tooltip-bottom');
+        }
+        
+        // 設置位置
+        tooltip.style.left = `${tooltipX}px`;
+        tooltip.style.top = `${tooltipY}px`;
     }
     
     centerMap() {
