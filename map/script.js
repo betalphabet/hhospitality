@@ -38,6 +38,9 @@ class DraggableMap {
         // 拖曳性能優化
         this.rafId = null;
         
+        // 慣性滾動相關
+        this.hasMoved = false;
+        
         // 標記資料
         this.markersData = [];
         
@@ -123,6 +126,7 @@ class DraggableMap {
             const handleMarkerClick = (e) => {
                 e.stopPropagation();
                 e.preventDefault();
+                if (this.hasMoved) return;
                 this.showTooltip(marker);
             };
             
@@ -348,6 +352,7 @@ class DraggableMap {
         }
         
         this.isDragging = true;
+        this.hasMoved = false;
         this.mapContainer.style.cursor = 'grabbing';
         
         const clientX = e.type === 'mousedown' ? e.clientX : e.touches[0].clientX;
@@ -368,6 +373,8 @@ class DraggableMap {
     
     handleMove(e) {
         if (!this.isDragging) return;
+        
+        this.hasMoved = true;
         
         const clientX = e.type === 'mousemove' ? e.clientX : e.touches[0].clientX;
         const clientY = e.type === 'mousemove' ? e.clientY : e.touches[0].clientY;
