@@ -297,7 +297,9 @@
     "image_x_position": 251,
     "image_y_position": 1094,
     "address": "El Nido, Palawan",
-    "custom_button_links": [],
+    "custom_button_links": [
+      {"link": "https://sresortelnido.com/", "name": "網站", "is_enabled": true}
+    ],
     "image": {
       "content_type": "image/webp",
       "file_name": "18.webp",
