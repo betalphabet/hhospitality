@@ -71,11 +71,11 @@
   },
   {
     "id": "location-005",
-    "name": "Unknown 1",
+    "name": "3 Bros Falafal",
     "image_x_position": 2032,
     "image_y_position": 1914,
     "address": "El Nido, Palawan",
-    "custom_button_links": [],
+    "custom_button_links": [{"link": "https://hhotelelnido.com/3-bros-falafel/", "name": "網站", "is_enabled": true}],
     "image": {
       "content_type": "image/webp",
       "file_name": "5.webp",
@@ -87,11 +87,11 @@
   },
   {
     "id": "location-006",
-    "name": "Unknown2",
+    "name": "Ver De Vegan Restaurant",
     "image_x_position": 1927,
     "image_y_position": 2215,
     "address": "El Nido, Palawan",
-    "custom_button_links": [],
+    "custom_button_links": [{"link": "https://hhotelelnido.com/ver-de-el-nido/", "name": "網站", "is_enabled": true}],
     "image": {
       "content_type": "image/webp",
       "file_name": "6.webp",
@@ -209,7 +209,7 @@
   },
   {
     "id": "location-013",
-    "name": "Unknown3",
+    "name": "Nacpan Seaturtle Hatchery",
     "image_x_position": 2727,
     "image_y_position": 93,
     "address": "El Nido, Palawan",
@@ -225,7 +225,7 @@
   },
   {
     "id": "location-014",
-    "name": "Unknown4",
+    "name": "Casa Cecilia",
     "image_x_position": 2604,
     "image_y_position": 2794,
     "address": "El Nido, Palawan",
@@ -241,7 +241,7 @@
   },
   {
     "id": "location-015",
-    "name": "Unknown5",
+    "name": "Unknown5", //果汁
     "image_x_position": 2618,
     "image_y_position": 3234,
     "address": "El Nido, Palawan",
@@ -293,13 +293,11 @@
   },
   {
     "id": "location-018",
-    "name": "S Resort El Nido",
+    "name": "Unknown6",
     "image_x_position": 251,
     "image_y_position": 1094,
     "address": "El Nido, Palawan",
-    "custom_button_links": [
-      {"link": "https://sresortelnido.com/", "name": "網站", "is_enabled": true}
-    ],
+    "custom_button_links": [],
     "image": {
       "content_type": "image/webp",
       "file_name": "18.webp",
@@ -311,11 +309,13 @@
   },
   {
     "id": "location-019",
-    "name": "Unknown6",
+    "name": "S Resort El Nido",
     "image_x_position": 1716,
     "image_y_position": 2623,
     "address": "El Nido, Palawan",
-    "custom_button_links": [],
+    "custom_button_links": [
+      {"link": "https://sresortelnido.com/", "name": "網站", "is_enabled": true}
+    ],
     "image": {
       "content_type": "image/webp",
       "file_name": "19.webp",
@@ -381,11 +381,13 @@
   },
   {
     "id": "location-023",
-    "name": "Unknown7",
+    "name": "Discover El Nido",
     "image_x_position": 3897,
     "image_y_position": 2289,
     "address": "El Nido, Palawan",
-    "custom_button_links": [],
+    "custom_button_links": [
+      {"link": "https://discoverelnido.com/", "name": "網站", "is_enabled": true}
+    ],
     "image": {
       "content_type": "image/webp",
       "file_name": "23.webp",
