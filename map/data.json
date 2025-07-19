@@ -293,7 +293,7 @@
   },
   {
     "id": "location-018",
-    "name": "Unknown6",
+    "name": "S Resort",
     "image_x_position": 251,
     "image_y_position": 1094,
     "address": "El Nido, Palawan",
@@ -309,12 +309,11 @@
   },
   {
     "id": "location-019",
-    "name": "S Resort El Nido",
+    "name": "H Island Resort (coming soon)",
     "image_x_position": 1716,
     "image_y_position": 2623,
     "address": "El Nido, Palawan",
     "custom_button_links": [
-      {"link": "https://sresortelnido.com/", "name": "網站", "is_enabled": true}
     ],
     "image": {
       "content_type": "image/webp",
@@ -417,7 +416,7 @@
   },
   {
     "id": "location-025",
-    "name": "Unknown8",
+    "name": "Z Garden Hotel",
     "image_x_position": 511,
     "image_y_position": 3198,
     "address": "El Nido, Palawan",
