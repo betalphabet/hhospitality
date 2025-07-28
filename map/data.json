@@ -351,17 +351,11 @@
   },
   {
     "id": "location-018",
-    "name": "S Resort",
+    "name": "H Island Resort (coming soon)",
     "image_x_position": 251,
     "image_y_position": 1094,
     "address": "El Nido, Palawan",
-    "custom_button_links": [
-      {
-        "link": "https://sresortelnido.com/",
-        "name": "網站",
-        "is_enabled": true
-      }
-    ],
+    "custom_button_links": [],
     "image": {
       "content_type": "image/webp",
       "file_name": "18.webp",
@@ -373,11 +367,17 @@
   },
   {
     "id": "location-019",
-    "name": "H Island Resort (coming soon)",
+    "name": "S Resort",
     "image_x_position": 1716,
     "image_y_position": 2623,
     "address": "El Nido, Palawan",
-    "custom_button_links": [],
+    "custom_button_links": [
+      {
+        "link": "https://sresortelnido.com/",
+        "name": "網站",
+        "is_enabled": true
+      }
+    ],
     "image": {
       "content_type": "image/webp",
       "file_name": "19.webp",
