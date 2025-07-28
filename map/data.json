@@ -1,12 +1,16 @@
 [
   {
     "id": "location-001",
-    "name": "H Hotel Vegan Hotel",
+    "name": "H Hotel",
     "image_x_position": 2200,
     "image_y_position": 2160,
     "address": "El Nido, Palawan",
     "custom_button_links": [
-      {"link": "https://hhotelelnido.com/", "name": "網站", "is_enabled": true}
+      {
+        "link": "https://hhotelelnido.com/",
+        "name": "網站",
+        "is_enabled": true
+      }
     ],
     "image": {
       "content_type": "image/webp",
@@ -24,7 +28,11 @@
     "image_y_position": 2270,
     "address": "El Nido, Palawan",
     "custom_button_links": [
-      {"link": "https://hhotelelnido.com/pieceofsky/", "name": "網站", "is_enabled": true}
+      {
+        "link": "https://hhospitality.group/oriental-spa-1.html",
+        "name": "網站",
+        "is_enabled": true
+      }
     ],
     "image": {
       "content_type": "image/webp",
@@ -41,7 +49,13 @@
     "image_x_position": 2923,
     "image_y_position": 1966,
     "address": "El Nido, Palawan",
-    "custom_button_links": [],
+    "custom_button_links": [
+      {
+        "link": "https://hhospitality.group/unocha.html",
+        "name": "網站",
+        "is_enabled": true
+      }
+    ],
     "image": {
       "content_type": "image/webp",
       "file_name": "3.webp",
@@ -58,7 +72,11 @@
     "image_y_position": 1803,
     "address": "El Nido, Palawan",
     "custom_button_links": [
-      {"link": "https://hhotelelnido.com/pieceofsky/", "name": "網站", "is_enabled": true}
+      {
+        "link": "https://hhotelelnido.com/pieceofsky/",
+        "name": "網站",
+        "is_enabled": true
+      }
     ],
     "image": {
       "content_type": "image/webp",
@@ -75,7 +93,13 @@
     "image_x_position": 2032,
     "image_y_position": 1914,
     "address": "El Nido, Palawan",
-    "custom_button_links": [{"link": "https://hhotelelnido.com/3-bros-falafel/", "name": "網站", "is_enabled": true}],
+    "custom_button_links": [
+      {
+        "link": "https://hhotelelnido.com/3-bros-falafel/",
+        "name": "網站",
+        "is_enabled": true
+      }
+    ],
     "image": {
       "content_type": "image/webp",
       "file_name": "5.webp",
@@ -91,7 +115,13 @@
     "image_x_position": 1927,
     "image_y_position": 2215,
     "address": "El Nido, Palawan",
-    "custom_button_links": [{"link": "https://hhotelelnido.com/ver-de-el-nido/", "name": "網站", "is_enabled": true}],
+    "custom_button_links": [
+      {
+        "link": "https://hhotelelnido.com/ver-de-el-nido/",
+        "name": "網站",
+        "is_enabled": true
+      }
+    ],
     "image": {
       "content_type": "image/webp",
       "file_name": "6.webp",
@@ -108,7 +138,11 @@
     "image_y_position": 2589,
     "address": "El Nido, Palawan",
     "custom_button_links": [
-      {"link": "https://hhotelelnido.com/pieceofsky/", "name": "網站", "is_enabled": true}
+      {
+        "link": "https://hhospitality.group/oriental-spa-2.html",
+        "name": "網站",
+        "is_enabled": true
+      }
     ],
     "image": {
       "content_type": "image/webp",
@@ -126,7 +160,11 @@
     "image_y_position": 720,
     "address": "Nacpan Beach, El Nido, Palawan",
     "custom_button_links": [
-      {"link": "https://nacpanbeachresort.com/", "name": "網站", "is_enabled": true}
+      {
+        "link": "https://nacpanbeachresort.com/",
+        "name": "網站",
+        "is_enabled": true
+      }
     ],
     "image": {
       "content_type": "image/webp",
@@ -155,12 +193,16 @@
   },
   {
     "id": "location-010",
-    "name": "Nacpan Beach Villas",
+    "name": "Nacpan Beach Villa",
     "image_x_position": 3120,
     "image_y_position": 461,
     "address": "Nacpan Beach, El Nido, Palawan",
     "custom_button_links": [
-      {"link": "https://www.nacpanbeachvillas.com/", "name": "網站", "is_enabled": true}
+      {
+        "link": "https://www.nacpanbeachvillas.com/",
+        "name": "網站",
+        "is_enabled": true
+      }
     ],
     "image": {
       "content_type": "image/webp",
@@ -173,12 +215,16 @@
   },
   {
     "id": "location-011",
-    "name": "Mu Nacpan Beach",
+    "name": "Mu Hotel",
     "image_x_position": 3220,
     "image_y_position": 104,
     "address": "Nacpan Beach, El Nido, Palawan",
     "custom_button_links": [
-      {"link": "https://elnido888.com/projects/mu-hotel", "name": "網站", "is_enabled": true}
+      {
+        "link": "https://elnido888.com/projects/mu-hotel",
+        "name": "網站",
+        "is_enabled": true
+      }
     ],
     "image": {
       "content_type": "image/webp",
@@ -191,12 +237,16 @@
   },
   {
     "id": "location-012",
-    "name": "Sunmai",
+    "name": "Sunmai Beach Bar",
     "image_x_position": 2306,
     "image_y_position": 317,
     "address": "Nacpan Beach, El Nido, Palawan",
     "custom_button_links": [
-      {"link": "https://www.sunmainacpanbeach.com/", "name": "網站", "is_enabled": true}
+      {
+        "link": "https://www.sunmainacpanbeach.com/",
+        "name": "網站",
+        "is_enabled": true
+      }
     ],
     "image": {
       "content_type": "image/webp",
@@ -225,7 +275,7 @@
   },
   {
     "id": "location-014",
-    "name": "Casa Cecilia",
+    "name": "C Hotel",
     "image_x_position": 2604,
     "image_y_position": 2794,
     "address": "El Nido, Palawan",
@@ -241,7 +291,7 @@
   },
   {
     "id": "location-015",
-    "name": "Unknown5", //果汁
+    "name": "Unknown5",
     "image_x_position": 2618,
     "image_y_position": 3234,
     "address": "El Nido, Palawan",
@@ -262,7 +312,11 @@
     "image_y_position": 3273,
     "address": "El Nido, Palawan",
     "custom_button_links": [
-      {"link": "https://hhospitality.group/lechon-co.html", "name": "網站", "is_enabled": true}
+      {
+        "link": "https://hhospitality.group/lechon-co.html",
+        "name": "網站",
+        "is_enabled": true
+      }
     ],
     "image": {
       "content_type": "image/webp",
@@ -280,7 +334,11 @@
     "image_y_position": 1387,
     "address": "El Nido, Palawan",
     "custom_button_links": [
-      {"link": "https://www.piecelio.com/", "name": "網站", "is_enabled": true}
+      {
+        "link": "https://www.piecelio.com/",
+        "name": "網站",
+        "is_enabled": true
+      }
     ],
     "image": {
       "content_type": "image/webp",
@@ -298,7 +356,11 @@
     "image_y_position": 1094,
     "address": "El Nido, Palawan",
     "custom_button_links": [
-      {"link": "https://sresortelnido.com/", "name": "網站", "is_enabled": true}
+      {
+        "link": "https://sresortelnido.com/",
+        "name": "網站",
+        "is_enabled": true
+      }
     ],
     "image": {
       "content_type": "image/webp",
@@ -315,8 +377,7 @@
     "image_x_position": 1716,
     "image_y_position": 2623,
     "address": "El Nido, Palawan",
-    "custom_button_links": [
-    ],
+    "custom_button_links": [],
     "image": {
       "content_type": "image/webp",
       "file_name": "19.webp",
@@ -328,12 +389,16 @@
   },
   {
     "id": "location-020",
-    "name": "Grounded Coffee",
+    "name": "Grounded 100% Arabica Coffee",
     "image_x_position": 1268,
     "image_y_position": 3068,
     "address": "El Nido, Palawan",
     "custom_button_links": [
-      {"link": "https://grounded.ph/", "name": "網站", "is_enabled": true}
+      {
+        "link": "https://grounded.ph/",
+        "name": "網站",
+        "is_enabled": true
+      }
     ],
     "image": {
       "content_type": "image/webp",
@@ -346,12 +411,16 @@
   },
   {
     "id": "location-021",
-    "name": "Janu Coffee",
+    "name": "Janu Coffee and Tea",
     "image_x_position": 1241,
     "image_y_position": 2751,
     "address": "El Nido, Palawan",
     "custom_button_links": [
-      {"link": "https://hhospitality.group/jane-coffee.html", "name": "網站", "is_enabled": true}
+      {
+        "link": "https://hhospitality.group/jane-coffee.html",
+        "name": "網站",
+        "is_enabled": true
+      }
     ],
     "image": {
       "content_type": "image/webp",
@@ -369,7 +438,11 @@
     "image_y_position": 2404,
     "address": "El Nido, Palawan",
     "custom_button_links": [
-      {"link": "https://hhotelelnido.com/ver-de-el-nido/", "name": "網站", "is_enabled": true}
+      {
+        "link": "https://hhotelelnido.com/ver-de-el-nido/",
+        "name": "網站",
+        "is_enabled": true
+      }
     ],
     "image": {
       "content_type": "image/webp",
@@ -387,7 +460,11 @@
     "image_y_position": 2289,
     "address": "El Nido, Palawan",
     "custom_button_links": [
-      {"link": "https://discoverelnido.com/", "name": "網站", "is_enabled": true}
+      {
+        "link": "https://discoverelnido.com/",
+        "name": "網站",
+        "is_enabled": true
+      }
     ],
     "image": {
       "content_type": "image/webp",
@@ -405,7 +482,11 @@
     "image_y_position": 2778,
     "address": "El Nido, Palawan",
     "custom_button_links": [
-      {"link": "https://jboutiquehotelelnido.com/", "name": "網站", "is_enabled": true}
+      {
+        "link": "https://jboutiquehotelelnido.com/",
+        "name": "網站",
+        "is_enabled": true
+      }
     ],
     "image": {
       "content_type": "image/webp",
