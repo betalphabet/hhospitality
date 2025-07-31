@@ -291,7 +291,7 @@
   },
   {
     "id": "location-015",
-    "name": "Ocean View Chinese Restaurant",
+    "name": "Juice Bar(coming soon)",
     "image_x_position": 2618,
     "image_y_position": 3234,
     "address": "El Nido, Palawan",
@@ -433,14 +433,14 @@
   },
   {
     "id": "location-022",
-    "name": "Ver De El Nido",
+    "name": "Ocean View Chinese Restaurant",
     "image_x_position": 1458,
     "image_y_position": 2404,
     "address": "El Nido, Palawan",
     "custom_button_links": [
       {
-        "link": "https://hhotelelnido.com/ver-de-el-nido/",
-        "name": "網站",
+        "link": "https://www.instagram.com/oceanviewelnido/",
+        "name": "instagram",
         "is_enabled": true
       }
     ],
