@@ -402,3 +402,46 @@ html, body {
     color: #333;
     font-weight: 500;
 }
+
+
+/* 底部提示工具提示 */
+.bottom-tooltip {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 0.5s ease-out;
+    pointer-events: none;
+    user-select: none;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* 手機版底部提示調整 */
+@media (max-width: 768px) {
+    .bottom-tooltip {
+        bottom: 15px;
+        font-size: 13px;
+        padding: 10px 16px;
+        max-width: calc(100vw - 40px);
+        text-align: center;
+    }
+}

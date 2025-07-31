@@ -82,7 +82,24 @@ class DraggableMap {
                         loadingOverlay.parentNode.removeChild(loadingOverlay);
                     }
                 }, 500);
+
+                this.showBottomTooltip();
             }, 500); // 延遲500ms讓使用者看到載入完成
+        }
+    }
+
+    // 顯示底部提示
+    showBottomTooltip() {
+        const bottomTooltip = document.getElementById('bottomTooltip');
+        if (bottomTooltip) {
+            // 5秒後自動隱藏提示
+            setTimeout(() => {
+                bottomTooltip.style.opacity = '0';
+                bottomTooltip.style.transform = 'translateX(-50%) translateY(20px)';
+                setTimeout(() => {
+                    bottomTooltip.style.display = 'none';
+                }, 300);
+            }, 5000);
         }
     }
     
