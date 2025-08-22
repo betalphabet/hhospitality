@@ -106,7 +106,13 @@ class DraggableMap {
     // 載入標記資料
     async loadMarkersData() {
         try {
-            const response = await fetch('https://hhospitality.group/map/data.json');
+            // 根據當前網址判斷使用的API路徑
+            const currentUrl = window.location.href;
+            const response = await fetch(
+                currentUrl.includes('[::]:8000') 
+                    ? 'http://[::]:8000/map/data.json'
+                    : 'https://hhospitality.group/map/data.json'
+            );
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -172,10 +178,21 @@ class DraggableMap {
         marker.custom_button_links.forEach(button => {
             if (button.is_enabled) {
                 const buttonElement = document.createElement('a');
-                buttonElement.href = button.link.trim();
                 buttonElement.className = 'tooltip-button';
                 buttonElement.textContent = button.name;
-                buttonElement.target = '_blank';
+                
+                // 檢查是否為照片按鈕
+                if (button.link === '#photos' && button.photo_folder) {
+                    buttonElement.href = '#';
+                    buttonElement.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        this.showPhotoPanel(marker.name, button.photo_folder);
+                    });
+                } else {
+                    buttonElement.href = button.link.trim();
+                    buttonElement.target = '_blank';
+                }
+                
                 buttonsContainer.appendChild(buttonElement);
             }
         });
@@ -499,7 +516,119 @@ class DraggableMap {
         this.mapWrapper.style.transform = `translate(${this.currentX}px, ${this.currentY}px)`;
     }
     
-
+    // 顯示照片面板
+    showPhotoPanel(locationName, photoFolder) {
+        const photoPanel = document.getElementById('photoPanel');
+        const photoOverlay = document.getElementById('photoOverlay');
+        const photoPanelTitle = document.getElementById('photoPanelTitle');
+        const photoGallery = document.getElementById('photoGallery');
+        
+        // 設置標題
+        photoPanelTitle.textContent = `${locationName} - 照片集`;
+        
+        // 清空照片容器
+        photoGallery.innerHTML = '';
+        
+        // 載入照片
+        this.loadPhotos(photoFolder, photoGallery);
+        
+        // 顯示面板和遮罩
+        photoOverlay.classList.add('active');
+        photoPanel.classList.add('active');
+        
+        // 綁定關閉事件
+        this.bindPhotoPanelEvents();
+    }
+    
+    // 載入照片
+    async loadPhotos(photoFolder, container) {
+        try {
+            // 根據資料夾名稱載入對應的照片
+            const photoExtensions = ['.jpg', '.jpeg', '.png', '.webp'];
+            const maxPhotos = 20; // 最多載入20張照片
+            
+            for (let i = 1; i <= maxPhotos; i++) {
+                for (const ext of photoExtensions) {
+                    const imagePath = `../assets/img/${photoFolder}/${photoFolder}_${i}${ext}`;
+                    
+                    // 嘗試載入圖片
+                    const img = new Image();
+                    img.onload = () => {
+                        const photoItem = document.createElement('div');
+                        photoItem.className = 'photo-item';
+                        photoItem.innerHTML = `<img src="${imagePath}" alt="${photoFolder} 照片 ${i}" loading="lazy">`;
+                        container.appendChild(photoItem);
+                    };
+                    img.onerror = () => {
+                        // 如果圖片載入失敗，嘗試其他格式或跳過
+                    };
+                    img.src = imagePath;
+                }
+            }
+            
+            // 特殊處理某些資料夾的命名規則
+            if (photoFolder === 'jane') {
+                const specialImages = ['01.jpg', '02.jpg', '03.jpg', '06.jpg', '07.jpg', '09.jpg'];
+                specialImages.forEach((fileName, index) => {
+                    const imagePath = `../assets/img/${photoFolder}/${fileName}`;
+                    const img = new Image();
+                    img.onload = () => {
+                        const photoItem = document.createElement('div');
+                        photoItem.className = 'photo-item';
+                        photoItem.innerHTML = `<img src="${imagePath}" alt="${photoFolder} 照片 ${index + 1}" loading="lazy">`;
+                        container.appendChild(photoItem);
+                    };
+                    img.src = imagePath;
+                });
+            }
+            
+            if (photoFolder === 'lechon') {
+                for (let i = 1; i <= 6; i++) {
+                    const imagePath = `../assets/img/${photoFolder}/${i}.webp`;
+                    const img = new Image();
+                    img.onload = () => {
+                        const photoItem = document.createElement('div');
+                        photoItem.className = 'photo-item';
+                        photoItem.innerHTML = `<img src="${imagePath}" alt="${photoFolder} 照片 ${i}" loading="lazy">`;
+                        container.appendChild(photoItem);
+                    };
+                    img.src = imagePath;
+                }
+            }
+            
+        } catch (error) {
+            console.error('載入照片時發生錯誤:', error);
+            container.innerHTML = '<p style="text-align: center; color: #666; padding: 20px;">無法載入照片</p>';
+        }
+    }
+    
+    // 綁定照片面板事件
+    bindPhotoPanelEvents() {
+        const photoPanel = document.getElementById('photoPanel');
+        const photoOverlay = document.getElementById('photoOverlay');
+        const photoPanelClose = document.getElementById('photoPanelClose');
+        
+        // 關閉面板的函數
+        const closePhotoPanel = () => {
+            photoPanel.classList.remove('active');
+            photoOverlay.classList.remove('active');
+        };
+        
+        // 關閉按鈕事件
+        photoPanelClose.onclick = closePhotoPanel;
+        
+        // 點擊遮罩關閉
+        photoOverlay.onclick = closePhotoPanel;
+        
+        // ESC鍵關閉
+        const handleEsc = (e) => {
+            if (e.key === 'Escape') {
+                closePhotoPanel();
+                document.removeEventListener('keydown', handleEsc);
+            }
+        };
+        document.addEventListener('keydown', handleEsc);
+    }
 }
 
 // 初始化地圖

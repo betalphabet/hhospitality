@@ -10,6 +10,12 @@
         "link": "https://hhotelelnido.com/",
         "name": "網站",
         "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "照片",
+        "is_enabled": true,
+        "photo_folder": "hhvh"
       }
     ],
     "image": {
@@ -32,6 +38,12 @@
         "link": "https://hhospitality.group/oriental-spa-1.html",
         "name": "網站",
         "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "照片",
+        "is_enabled": true,
+        "photo_folder": "Oriental-Spa"
       }
     ],
     "image": {
@@ -54,6 +66,12 @@
         "link": "https://hhospitality.group/unocha.html",
         "name": "網站",
         "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "照片",
+        "is_enabled": true,
+        "photo_folder": "unocha"
       }
     ],
     "image": {
@@ -76,6 +94,12 @@
         "link": "https://hhotelelnido.com/pieceofsky/",
         "name": "網站",
         "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "照片",
+        "is_enabled": true,
+        "photo_folder": "piece_sky"
       }
     ],
     "image": {
@@ -98,6 +122,12 @@
         "link": "https://hhotelelnido.com/3-bros-falafel/",
         "name": "網站",
         "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "照片",
+        "is_enabled": true,
+        "photo_folder": "3-Bros-Falafel"
       }
     ],
     "image": {
@@ -120,6 +150,12 @@
         "link": "https://hhotelelnido.com/ver-de-el-nido/",
         "name": "網站",
         "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "照片",
+        "is_enabled": true,
+        "photo_folder": "Ver-De-El-Nido"
       }
     ],
     "image": {
@@ -164,6 +200,12 @@
         "link": "https://nacpanbeachresort.com/",
         "name": "網站",
         "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "照片",
+        "is_enabled": true,
+        "photo_folder": "nbr"
       }
     ],
     "image": {
@@ -181,7 +223,14 @@
     "image_x_position": 2793,
     "image_y_position": 589,
     "address": "Nacpan Beach, El Nido, Palawan",
-    "custom_button_links": [],
+    "custom_button_links": [
+      {
+        "link": "#photos",
+        "name": "照片",
+        "is_enabled": true,
+        "photo_folder": "nbg"
+      }
+    ],
     "image": {
       "content_type": "image/webp",
       "file_name": "9.webp",
@@ -202,6 +251,12 @@
         "link": "https://www.nacpanbeachvillas.com/",
         "name": "網站",
         "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "照片",
+        "is_enabled": true,
+        "photo_folder": "Airbnb-Villa"
       }
     ],
     "image": {
@@ -246,6 +301,12 @@
         "link": "https://www.sunmainacpanbeach.com/",
         "name": "網站",
         "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "照片",
+        "is_enabled": true,
+        "photo_folder": "sunmai"
       }
     ],
     "image": {
@@ -316,6 +377,12 @@
         "link": "https://hhospitality.group/lechon-co.html",
         "name": "網站",
         "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "照片",
+        "is_enabled": true,
+        "photo_folder": "lechon-co"
       }
     ],
     "image": {
@@ -338,6 +405,12 @@
         "link": "https://www.piecelio.com/",
         "name": "網站",
         "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "照片",
+        "is_enabled": true,
+        "photo_folder": "piecelio"
       }
     ],
     "image": {
@@ -376,6 +449,12 @@
         "link": "https://sresortelnido.com/",
         "name": "網站",
         "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "照片",
+        "is_enabled": true,
+        "photo_folder": "sresort"
       }
     ],
     "image": {
@@ -398,6 +477,12 @@
         "link": "https://grounded.ph/",
         "name": "網站",
         "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "照片",
+        "is_enabled": true,
+        "photo_folder": "g100a"
       }
     ],
     "image": {
@@ -420,6 +505,12 @@
         "link": "https://hhospitality.group/jane-coffee.html",
         "name": "網站",
         "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "照片",
+        "is_enabled": true,
+        "photo_folder": "jane"
       }
     ],
     "image": {
@@ -464,6 +555,12 @@
         "link": "https://discoverelnido.com/",
         "name": "網站",
         "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "照片",
+        "is_enabled": true,
+        "photo_folder": "discover"
       }
     ],
     "image": {
@@ -486,6 +583,12 @@
         "link": "https://jboutiquehotelelnido.com/",
         "name": "網站",
         "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "照片",
+        "is_enabled": true,
+        "photo_folder": "jboutiquehotel"
       }
     ],
     "image": {
