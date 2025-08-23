@@ -543,56 +543,142 @@ class DraggableMap {
     // 載入照片
     async loadPhotos(photoFolder, container) {
         try {
-            // 根據資料夾名稱載入對應的照片
-            const photoExtensions = ['.jpg', '.jpeg', '.png', '.webp'];
+            // 根據資料夾路徑載入對應的照片
+            const photoExtensions = ['.jpg', '.jpeg', '.png', '.webp', '.JPG'];
             const maxPhotos = 20; // 最多載入20張照片
             
-            for (let i = 1; i <= maxPhotos; i++) {
-                for (const ext of photoExtensions) {
-                    const imagePath = `../assets/img/${photoFolder}/${photoFolder}_${i}${ext}`;
-                    
-                    // 嘗試載入圖片
-                    const img = new Image();
-                    img.onload = () => {
-                        const photoItem = document.createElement('div');
-                        photoItem.className = 'photo-item';
-                        photoItem.innerHTML = `<img src="${imagePath}" alt="${photoFolder} 照片 ${i}" loading="lazy">`;
-                        container.appendChild(photoItem);
-                    };
-                    img.onerror = () => {
-                        // 如果圖片載入失敗，嘗試其他格式或跳過
-                    };
-                    img.src = imagePath;
+            // 取得資料夾名稱（去除路徑前綴）
+            const folderName = photoFolder.split('/').pop();
+            
+            // 處理 assets/img 路徑下的資料夾
+            if (photoFolder.startsWith('assets/img/')) {
+                for (let i = 1; i <= maxPhotos; i++) {
+                    for (const ext of photoExtensions) {
+                        const imagePath = `../${photoFolder}/${folderName}_${i}${ext}`;
+                        
+                        // 嘗試載入圖片
+                        const img = new Image();
+                        img.onload = () => {
+                            const photoItem = document.createElement('div');
+                            photoItem.className = 'photo-item';
+                            photoItem.innerHTML = `<img src="${imagePath}" alt="${folderName} 照片 ${i}" loading="lazy">`;
+                            container.appendChild(photoItem);
+                        };
+                        img.onerror = () => {
+                            // 如果圖片載入失敗，嘗試其他格式或跳過
+                        };
+                        img.src = imagePath;
+                    }
+                }
+                
+                // 特殊處理某些資料夾的命名規則
+                if (folderName === 'jane') {
+                    const specialImages = ['01.jpg', '02.jpg', '03.jpg', '06.jpg', '07.jpg', '09.jpg'];
+                    specialImages.forEach((fileName, index) => {
+                        const imagePath = `../${photoFolder}/${fileName}`;
+                        const img = new Image();
+                        img.onload = () => {
+                            const photoItem = document.createElement('div');
+                            photoItem.className = 'photo-item';
+                            photoItem.innerHTML = `<img src="${imagePath}" alt="${folderName} 照片 ${index + 1}" loading="lazy">`;
+                            container.appendChild(photoItem);
+                        };
+                        img.src = imagePath;
+                    });
+                }
+                
+                if (folderName === 'lechon') {
+                    for (let i = 1; i <= 6; i++) {
+                        const imagePath = `../${photoFolder}/${i}.webp`;
+                        const img = new Image();
+                        img.onload = () => {
+                            const photoItem = document.createElement('div');
+                            photoItem.className = 'photo-item';
+                            photoItem.innerHTML = `<img src="${imagePath}" alt="${folderName} 照片 ${i}" loading="lazy">`;
+                            container.appendChild(photoItem);
+                        };
+                        img.src = imagePath;
+                    }
                 }
             }
-            
-            // 特殊處理某些資料夾的命名規則
-            if (photoFolder === 'jane') {
-                const specialImages = ['01.jpg', '02.jpg', '03.jpg', '06.jpg', '07.jpg', '09.jpg'];
-                specialImages.forEach((fileName, index) => {
-                    const imagePath = `../assets/img/${photoFolder}/${fileName}`;
-                    const img = new Image();
-                    img.onload = () => {
-                        const photoItem = document.createElement('div');
-                        photoItem.className = 'photo-item';
-                        photoItem.innerHTML = `<img src="${imagePath}" alt="${photoFolder} 照片 ${index + 1}" loading="lazy">`;
-                        container.appendChild(photoItem);
-                    };
-                    img.src = imagePath;
-                });
-            }
-            
-            if (photoFolder === 'lechon') {
-                for (let i = 1; i <= 6; i++) {
-                    const imagePath = `../assets/img/${photoFolder}/${i}.webp`;
-                    const img = new Image();
-                    img.onload = () => {
-                        const photoItem = document.createElement('div');
-                        photoItem.className = 'photo-item';
-                        photoItem.innerHTML = `<img src="${imagePath}" alt="${photoFolder} 照片 ${i}" loading="lazy">`;
-                        container.appendChild(photoItem);
-                    };
-                    img.src = imagePath;
+            // 處理 images 路徑下的資料夾
+            else if (photoFolder.startsWith('images/')) {
+                // 針對不同的 images 子資料夾使用不同的命名規則
+                if (folderName === 'unocha') {
+                    // unocha 資料夾有兩種命名格式
+                    const formats = [
+                        { pattern: (i) => `${i}.JPG`, max: 8 },
+                        { pattern: (i) => `${String(i).padStart(2, '0')}.webp`, max: 8 }
+                    ];
+                    
+                    formats.forEach(format => {
+                        for (let i = 1; i <= format.max; i++) {
+                            const fileName = format.pattern(i);
+                            const imagePath = `../${photoFolder}/${fileName}`;
+                            const img = new Image();
+                            img.onload = () => {
+                                const photoItem = document.createElement('div');
+                                photoItem.className = 'photo-item';
+                                photoItem.innerHTML = `<img src="${imagePath}" alt="${folderName} 照片 ${i}" loading="lazy">`;
+                                container.appendChild(photoItem);
+                            };
+                            img.src = imagePath;
+                        }
+                    });
+                } else if (folderName === 'piece-of-sky') {
+                    // piece-of-sky 資料夾的命名規則
+                    for (let i = 1; i <= 15; i++) {
+                        const imagePath = `../${photoFolder}/${i}.webp`;
+                        const img = new Image();
+                        img.onload = () => {
+                            const photoItem = document.createElement('div');
+                            photoItem.className = 'photo-item';
+                            photoItem.innerHTML = `<img src="${imagePath}" alt="${folderName} 照片 ${i}" loading="lazy">`;
+                            container.appendChild(photoItem);
+                        };
+                        img.src = imagePath;
+                    }
+                } else if (folderName === 'sunmai') {
+                    // sunmai 資料夾的命名規則
+                    for (let i = 1; i <= 10; i++) {
+                        const imagePath = `../${photoFolder}/${i}.webp`;
+                        const img = new Image();
+                        img.onload = () => {
+                            const photoItem = document.createElement('div');
+                            photoItem.className = 'photo-item';
+                            photoItem.innerHTML = `<img src="${imagePath}" alt="${folderName} 照片 ${i}" loading="lazy">`;
+                            container.appendChild(photoItem);
+                        };
+                        img.src = imagePath;
+                    }
+                } else if (folderName === 'lechon-co') {
+                    // lechon-co 資料夾的命名規則
+                    for (let i = 1; i <= 7; i++) {
+                        const imagePath = `../${photoFolder}/${i}.webp`;
+                        const img = new Image();
+                        img.onload = () => {
+                            const photoItem = document.createElement('div');
+                            photoItem.className = 'photo-item';
+                            photoItem.innerHTML = `<img src="${imagePath}" alt="${folderName} 照片 ${i}" loading="lazy">`;
+                            container.appendChild(photoItem);
+                        };
+                        img.src = imagePath;
+                    }
+                } else if (folderName === 'piecelio') {
+                    // piecelio 資料夾的命名規則
+                    for (let i = 1; i <= 7; i++) {
+                        for (const ext of ['.jpg', '.webp']) {
+                            const imagePath = `../${photoFolder}/${i}${ext}`;
+                            const img = new Image();
+                            img.onload = () => {
+                                const photoItem = document.createElement('div');
+                                photoItem.className = 'photo-item';
+                                photoItem.innerHTML = `<img src="${imagePath}" alt="${folderName} 照片 ${i}" loading="lazy">`;
+                                container.appendChild(photoItem);
+                            };
+                            img.src = imagePath;
+                        }
+                    }
                 }
             }
             
