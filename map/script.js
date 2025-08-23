@@ -562,6 +562,7 @@ class DraggableMap {
                             const photoItem = document.createElement('div');
                             photoItem.className = 'photo-item';
                             photoItem.innerHTML = `<img src="${imagePath}" alt="${folderName} 照片 ${i}" loading="lazy">`;
+                            photoItem.addEventListener('click', () => this.openFullscreenModal(imagePath));
                             container.appendChild(photoItem);
                         };
                         img.onerror = () => {
@@ -581,6 +582,7 @@ class DraggableMap {
                             const photoItem = document.createElement('div');
                             photoItem.className = 'photo-item';
                             photoItem.innerHTML = `<img src="${imagePath}" alt="${folderName} 照片 ${index + 1}" loading="lazy">`;
+                            photoItem.addEventListener('click', () => this.openFullscreenModal(imagePath));
                             container.appendChild(photoItem);
                         };
                         img.src = imagePath;
@@ -595,6 +597,7 @@ class DraggableMap {
                             const photoItem = document.createElement('div');
                             photoItem.className = 'photo-item';
                             photoItem.innerHTML = `<img src="${imagePath}" alt="${folderName} 照片 ${i}" loading="lazy">`;
+                            photoItem.addEventListener('click', () => this.openFullscreenModal(imagePath));
                             container.appendChild(photoItem);
                         };
                         img.src = imagePath;
@@ -620,6 +623,7 @@ class DraggableMap {
                                 const photoItem = document.createElement('div');
                                 photoItem.className = 'photo-item';
                                 photoItem.innerHTML = `<img src="${imagePath}" alt="${folderName} 照片 ${i}" loading="lazy">`;
+                                photoItem.addEventListener('click', () => this.openFullscreenModal(imagePath));
                                 container.appendChild(photoItem);
                             };
                             img.src = imagePath;
@@ -634,6 +638,7 @@ class DraggableMap {
                             const photoItem = document.createElement('div');
                             photoItem.className = 'photo-item';
                             photoItem.innerHTML = `<img src="${imagePath}" alt="${folderName} 照片 ${i}" loading="lazy">`;
+                            photoItem.addEventListener('click', () => this.openFullscreenModal(imagePath));
                             container.appendChild(photoItem);
                         };
                         img.src = imagePath;
@@ -647,6 +652,7 @@ class DraggableMap {
                             const photoItem = document.createElement('div');
                             photoItem.className = 'photo-item';
                             photoItem.innerHTML = `<img src="${imagePath}" alt="${folderName} 照片 ${i}" loading="lazy">`;
+                            photoItem.addEventListener('click', () => this.openFullscreenModal(imagePath));
                             container.appendChild(photoItem);
                         };
                         img.src = imagePath;
@@ -660,6 +666,7 @@ class DraggableMap {
                             const photoItem = document.createElement('div');
                             photoItem.className = 'photo-item';
                             photoItem.innerHTML = `<img src="${imagePath}" alt="${folderName} 照片 ${i}" loading="lazy">`;
+                            photoItem.addEventListener('click', () => this.openFullscreenModal(imagePath));
                             container.appendChild(photoItem);
                         };
                         img.src = imagePath;
@@ -674,6 +681,7 @@ class DraggableMap {
                                 const photoItem = document.createElement('div');
                                 photoItem.className = 'photo-item';
                                 photoItem.innerHTML = `<img src="${imagePath}" alt="${folderName} 照片 ${i}" loading="lazy">`;
+                                photoItem.addEventListener('click', () => this.openFullscreenModal(imagePath));
                                 container.appendChild(photoItem);
                             };
                             img.src = imagePath;
@@ -714,6 +722,65 @@ class DraggableMap {
             }
         };
         document.addEventListener('keydown', handleEsc);
+    }
+
+    // 開啟全螢幕模態框
+    openFullscreenModal(imagePath) {
+        const modal = document.getElementById('fullscreenModal');
+        const modalImg = document.getElementById('fullscreenImage');
+        
+        if (modal && modalImg) {
+            modalImg.src = imagePath;
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            
+            // 綁定全螢幕模態框事件
+            this.bindFullscreenModalEvents();
+        }
+    }
+
+    // 關閉全螢幕模態框
+    closeFullscreenModal() {
+        const modal = document.getElementById('fullscreenModal');
+        if (modal) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    }
+
+    // 綁定全螢幕模態框事件
+    bindFullscreenModalEvents() {
+        const modal = document.getElementById('fullscreenModal');
+        const closeBtn = document.getElementById('fullscreenClose');
+        
+        if (!modal) return;
+
+        // 關閉按鈕事件
+        if (closeBtn) {
+            closeBtn.onclick = () => this.closeFullscreenModal();
+        }
+
+        // 點擊背景關閉
+        modal.onclick = (e) => {
+            if (e.target === modal) {
+                this.closeFullscreenModal();
+            }
+        };
+
+        // ESC鍵關閉
+        const handleEsc = (e) => {
+            if (e.key === 'Escape') {
+                this.closeFullscreenModal();
+                document.removeEventListener('keydown', handleEsc);
+            }
+        };
+        document.addEventListener('keydown', handleEsc);
+
+        // 圖片點擊關閉
+        const modalImg = document.getElementById('fullscreenImage');
+        if (modalImg) {
+            modalImg.onclick = () => this.closeFullscreenModal();
+        }
     }
 }
 
