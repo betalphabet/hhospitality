@@ -200,6 +200,26 @@
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-2 mb-5">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#zGardenHotelModal">
+                        <img class="img-fluid mb-3 mb-lg-0" src="images/zgarden/1.jpg"
+                            alt="Z Garden Hotel" />
+                    </a>
+                    <div class="featured-text text-lg-left pt-3">
+                        <h4><a href="#" data-bs-toggle="modal" data-bs-target="#zGardenHotelModal" data-i18n="hotel.zGardenHotel.name">Z Garden Hotel</a></h4>
+                        <p class="text-black-50 mb-0">
+                            <span data-i18n="hotel.zGardenHotel.shortDescription">A perfect destination for Generation Z travelers in El Nido with minimalist design.</span>
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="text-left">
+                                <span data-i18n="hotel.rating">Rating</span> <span class="text-warning">★★★★</span><br>
+                                <span data-i18n="hotel.pricing">Pricing</span> <span class="text-warning">★★★</span><br>
+                                <span data-i18n="hotel.location">Location</span> <span class="text-warning">★★★★★</span>
+                            </div>
+                            <a href="https://hotels.cloudbeds.com/reservation/zGarden" target="_blank" class="btn btn-primary" data-i18n="hotel.bookNow">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-2 mb-5">
                     <a href="#" data-bs-toggle="modal" data-bs-target="#sResortElNidoModal">
                         <img class="img-fluid mb-3 mb-lg-0" src="assets/img/time-S-Resort-El-Nido.jpg"
                             alt="S Resort El Nido" />
@@ -1026,6 +1046,66 @@
                                     <p class="card-text"><strong data-i18n="hotel.website">Website:</strong> <a
                                         href="https://www.nacpanbeachvillas.com/"
                                         target="_blank" data-i18n="hotel.casaCecilia.website">nacpanbeachvillas.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Z Garden Hotel Modal -->
+    <div class="modal fade" id="zGardenHotelModal" tabindex="-1" aria-labelledby="zGardenHotelModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="zGardenHotelModalLabel" data-i18n="hotel.zGardenHotel.name">Z Garden Hotel</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="zGardenHotelCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/zgarden/1.jpg" class="d-block w-100" alt="Z Garden Hotel" style="height: 500px; object-fit: contain; background-color: #f8f9fa;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/zgarden/2.jpg" class="d-block w-100" alt="Z Garden Hotel Interior" style="height: 500px; object-fit: contain; background-color: #f8f9fa;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/zgarden/3.jpg" class="d-block w-100" alt="Z Garden Hotel Room" style="height: 500px; object-fit: contain; background-color: #f8f9fa;">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#zGardenHotelCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden" data-i18n="common.previous">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#zGardenHotelCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden" data-i18n="common.next">Next</span>
+                        </button>
+                    </div>
+                    <div class="row mt-2 gx-1">
+                        <div class="col-4 px-1">
+                            <img src="images/zgarden/1.jpg" class="img-fluid thumbnail" data-bs-target="#zGardenHotelCarousel" data-bs-slide-to="0" style="height: 80px; object-fit: contain; width: 100%;">
+                        </div>
+                        <div class="col-4 px-1">
+                            <img src="images/zgarden/2.jpg" class="img-fluid thumbnail" data-bs-target="#zGardenHotelCarousel" data-bs-slide-to="1" style="height: 80px; object-fit: contain; width: 100%;">
+                        </div>
+                        <div class="col-4 px-1">
+                            <img src="images/zgarden/3.jpg" class="img-fluid thumbnail" data-bs-target="#zGardenHotelCarousel" data-bs-slide-to="2" style="height: 80px; object-fit: contain; width: 100%;">
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-8">
+                            <p class="lead" data-i18n="hotel.zGardenHotel.description">Z Garden Hotel — A perfect destination for Generation Z travelers. Located in the heart of El Nido, right in front of the port, just a 3-minute walk from H Hotel, with an unbeatable convenient location. All guest rooms will be newly renovated in 2026, designed with minimalist yet sophisticated aesthetics.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title" data-i18n="hotel.info">Hotel Info</h5>
+                                    <p class="card-text"><strong data-i18n="hotel.rating">Rating:</strong> <span class="text-warning">★★★★ 4.5</span></p>
+                                    <p class="card-text"><strong data-i18n="hotel.location">Location:</strong> <span data-i18n="hotel.zGardenHotel.location">El Nido Port, Palawan</span></p>
                                 </div>
                             </div>
                         </div>

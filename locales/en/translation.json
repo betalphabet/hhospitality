@@ -187,11 +187,25 @@
     },
     "zGardenHotel": {
       "name": "Z Garden Hotel",
-      "description": "Z Garden Hotel is our latest hotel development, scheduled to open in 2025, located next to El Nido port. The hotel rooms are divided into sea view rooms and courtyard view rooms, offering travelers a variety of accommodation options.",
-      "shortDescription": "New hotel development with sea view and courtyard view options.",
+      "description": "Z Garden Hotel — A travel destination created for Generation Z. Located in the heart of El Nido, right in front of the port, just a 3-minute walk from H Hotel, with an unbeatable convenient location. All guest rooms will be newly renovated in 2026, designed with minimalist yet sophisticated aesthetics. The highlight is the entire fair-faced concrete art wall, inspired by Japanese fair-faced concrete textures, presenting a low-key, clean, and modern visual atmosphere.",
+      "shortDescription": "A perfect destination for Generation Z travelers with modern design and prime location.",
+      "tagline": "A perfect destination for Generation Z travelers",
+      "introTitle": "Z Garden Hotel — A Travel Destination Created for Generation Z",
+      "introDescription1": "Located in the heart of El Nido, right in front of the port, just a 3-minute walk from H Hotel, with an unbeatable convenient location. Whether you want to go island hopping, dining, or exploring the town, you can set off anytime.",
+      "introDescription2": "All guest rooms will be newly renovated in 2026, designed with minimalist yet sophisticated aesthetics. The highlight of the rooms is the entire fair-faced concrete art wall, inspired by Japanese fair-faced concrete textures, presenting a low-key, clean, and modern visual atmosphere. Combined with soft lighting and comfortable furniture, guests can feel relaxation and taste coexist from the moment they enter the room.",
+      "introDescription3": "The core spirit of Z Garden Hotel is to provide young, comfortable, style and convenience-loving Generation Z travelers with a reasonably priced, refreshing environment, and perfectly located accommodation choice.",
+      "feature1Title": "Prime Location",
+      "feature1Desc": "Right in front of El Nido port, 3-minute walk from H Hotel",
+      "feature2Title": "Modern Design",
+      "feature2Desc": "Minimalist aesthetics with Japanese fair-faced concrete art walls",
+      "feature3Title": "Gen Z Focused",
+      "feature3Desc": "Designed for young travelers who value style and convenience",
       "rooms": "Rooms: 30",
-      "openingYear": "Opening Year: 2025",
-      "location": "Location: El Nido Town Center"
+      "openingYear": "Opening Year: 2026",
+      "location": "Location: El Nido Town Center, Palawan",
+      "style": "Style: Minimalist, Modern",
+      "phone": "+63 917 789 0123",
+      "website": "www.zgardenhotel.com"
     }
   },
   "common": {

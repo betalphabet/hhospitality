@@ -258,11 +258,25 @@
       },
       "zGardenHotel": {
         "name": "Z Garden Hotel",
-        "description": "Z Garden Hotel 是我们最新开发的酒店，预计于 2025 年开幕，位于 El Nido 港口旁。酒店房间分为海景房和庭院景观房，为旅客提供多样的住宿选择。",
-        "shortDescription": "2025年开业的全新港口酒店项目，提供海景和花园景观房，为旅客带来多样化的住宿体验。",
+        "tagline": "为 Z 世代而生的旅宿之地",
+        "description": "Z Garden Hotel 是我们最新开发的酒店，预计于 2026 年开幕，位于 El Nido 港口正前方。全馆客房以極簡又富質感的美學打造，最大亮點是整面清水模風藝術牆，呈現出低調、乾淨、極具現代感的視覺氛圍。",
+        "shortDescription": "2026年全新改裝的現代化酒店，位於港口正前方，以清水模藝術牆和極簡美學打造Z世代專屬旅宿空間。",
+        "introTitle": "為 Z 世代而生的旅宿之地",
+        "introDescription1": "位於 El Nido 市中心、港口正前方，距離 H Hotel 步行僅 3 分鐘，地點無敵便利，無論要出海、吃飯或探索市區，都能隨時出發。",
+        "introDescription2": "全館客房於 2026 年全新改裝，以極簡又富質感的美學打造。房間最大亮點是整面清水模風藝術牆，以日本清水模質地為靈感，呈現出低調、乾淨、極具現代感的視覺氛圍。搭配柔和燈光與舒適家具，讓旅客一進房就能感受到放鬆與品味並存。",
+        "introDescription3": "Z Garden Hotel 的核心精神，是提供年輕、自在、喜歡風格與便利的 Z 世代旅客，一個價格合理、環境清爽、位置完美的住宿選擇。",
+        "feature1Title": "無敵便利位置",
+        "feature1Desc": "港口正前方，步行3分鐘到H Hotel，出海用餐都方便",
+        "feature2Title": "清水模藝術牆",
+        "feature2Desc": "整面牆面以日本清水模質地為靈感，呈現極簡現代美學",
+        "feature3Title": "Z 世代專屬",
+        "feature3Desc": "價格合理、環境清爽、位置完美，專為年輕旅客打造",
+        "style": "現代極簡風格",
         "rooms": "客房数：30",
-        "openingYear": "开业年份：2025",
-        "location": "位置：El Nido Town Center"
+        "openingYear": "开业年份：2026",
+        "location": "位置：El Nido Town Center - 港口正前方",
+        "phone": "電話：+63 999 123 4567",
+        "website": "網站：www.zgardenhotel.com"
       }
     },
     "restaurantsCafeBars": {
