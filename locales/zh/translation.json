@@ -187,9 +187,9 @@
     "zGardenHotel": {
       "name": "Z Garden Hotel",
       "shortDescription": "為Z世代旅客打造的完美目的地，擁有現代化設計和優越位置。",
-      "description": "Z Garden Hotel — 為 Z 世代而生的旅旅之地。位於 El Nido 市中心、港口正前方，距離 H Hotel 步行僅 3 分鐘，地點無敵便利。全館客房於 2026 年全新改裝，以極簡又富質感的美學打造。房間最大亮點是整面清水模風藝術牆，以日本清水模質地為靈感，呈現出低調、乾淨、極具現代感的視覺氛圍。",
-      "tagline": "為 Z 世代而生的旅旅之地",
-      "introTitle": "Z Garden Hotel — 為 Z 世代而生的旅旅之地",
+      "description": "Z Garden Hotel — 為 Z 世代而生的旅遊之地。位於 El Nido 市中心、港口正前方，距離 H Hotel 步行僅 3 分鐘，地點無敵便利。全館客房於 2026 年全新改裝，以極簡又富質感的美學打造。房間最大亮點是整面清水模風藝術牆，以日本清水模質地為靈感，呈現出低調、乾淨、極具現代感的視覺氛圍。",
+      "tagline": "為 Z 世代而生的旅遊之地",
+      "introTitle": "Z Garden Hotel — 為 Z 世代而生的旅遊之地",
       "introDescription1": "位於 El Nido 市中心、港口正前方，距離 H Hotel 步行僅 3 分鐘，地點無敵便利，無論要出海、吃飯或探索市區，都能隨時出發。",
       "introDescription2": "全館客房於 2026 年全新改裝，以極簡又富質感的美學打造。房間最大亮點是整面清水模風藝術牆，以日本清水模質地為靈感，呈現出低調、乾淨、極具現代感的視覺氛圍。搭配柔和燈光與舒適家具，讓旅客一進房就能感受到放鬆與品味並存。",
       "introDescription3": "Z Garden Hotel 的核心精神，是提供年輕、自在、喜歡風格與便利的 Z 世代旅客，一個價格合理、環境清爽、位置完美的住宿選擇。",
@@ -214,7 +214,6 @@
   "investing": {
     "title": "我們的投資",
     "subtitle": "探索我們多元化的策略投資組合",
-
     "tabs": {
       "hotels": "酒店",
       "restaurantsCafeBars": "餐廳、咖啡廳和酒吧",
