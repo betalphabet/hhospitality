@@ -23,7 +23,7 @@
     <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.16/dist/umd/i18next.min.js"></script>
     <script
         src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.8/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@1.4.5/dist/umd/i18nextHttpBackend.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-xhr-backend@3.2.2/dist/umd/i18nextXHRBackend.min.js"></script>
     <style>
         #mainNav.navbar-shrink .langSelectDesktop {
             margin-top: 15px;
@@ -223,19 +223,23 @@
     <script src="js/scripts.js"></script>
 
     <script>
-        // Initialize i18next
+        // Initialize i18next with proper configuration
         i18next
-            .use(i18nextHttpBackend)
+            .use(i18nextXHRBackend)
             .use(i18nextBrowserLanguageDetector)
             .init({
                 fallbackLng: 'en',
                 debug: true,
                 backend: {
-                    loadPath: '/locales/{{lng}}/translation.json'
+                    loadPath: 'locales/{{lng}}/translation.json'
                 }
             }, function (err, t) {
                 // Initialize translation
                 updateContent();
+                // Set initial language in selectors
+                const currentLang = i18next.language || 'en';
+                document.getElementById('langSelect').value = currentLang;
+                document.getElementById('langSelectDesktop').value = currentLang;
             });
 
         // Function to update content
@@ -251,8 +255,31 @@
             i18next.changeLanguage(lang, (err, t) => {
                 if (err) return console.log('something went wrong loading', err);
                 updateContent();
+                // Update both language selectors
+                document.getElementById('langSelect').value = lang;
+                document.getElementById('langSelectDesktop').value = lang;
+                // Save to localStorage
+                localStorage.setItem('userLanguage', lang);
             });
         }
+
+        // Add event listeners for language selectors
+        document.addEventListener('DOMContentLoaded', function() {
+            const langSelect = document.getElementById('langSelect');
+            const langSelectDesktop = document.getElementById('langSelectDesktop');
+
+            if (langSelect) {
+                langSelect.addEventListener('change', function(e) {
+                    changeLanguage(e.target.value);
+                });
+            }
+
+            if (langSelectDesktop) {
+                langSelectDesktop.addEventListener('change', function(e) {
+                    changeLanguage(e.target.value);
+                });
+            }
+        });
 
         // Listen for language changes
         i18next.on('languageChanged', () => {
