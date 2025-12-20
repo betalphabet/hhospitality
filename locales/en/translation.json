@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "about": "About",
@@ -42,6 +41,30 @@
   "csr": {
     "title": "CORPORATE SOCIAL RESPONSIBILITY BREAKTHROUGHS",
     "description": "At H Hospitality Group, our commitment goes beyond providing exceptional hospitality; it extends to making a meaningful impact on both our community and the environment. Since our founding in El Nido, Palawan, we have been steadfast in our commitment to creating a positive change through a variety of initiatives that support people and protect the planet.",
+    "giftGiving2025": {
+      "title": "Sharing Smiles, Serving Communities through Gift-Giving and Feeding Activity",
+      "date": "(December 10, 2025)",
+      "description1": "Driven by compassion and strengthened by teamwork, H Hospitality Group successfully conducted a Gift-Giving and Feeding Activity for children in Barangay Mabini, one of the far communities of El Nido. Through the genuine engagement of HHG employees, nearly 700 children received gifts, warm meals, and moments of care that turned the day into something truly special.",
+      "description2": "This initiative reflects not only HHG’s commitment to corporate social responsibility, but also the heart of our people, coming together beyond their roles to serve, connect, and make a difference. Because at HHG, giving back is a shared mission, and every smile reminds us why we do what we do."
+    },
+    "elderlyCare": {
+      "title": "A Gesture of Care for Our Elderly",
+      "date": "(December 10, 2025)",
+      "description1": "Through unity, compassion, and shared purpose, H Hospitality Group extended joy and care to 50 elderly residents of Barangay Mabini, El Nido, through a special cash and gift-giving initiative. This activity was made possible by the collective effort of HHG employees, who generously donated pre-loved items and organized a “Bazaar for a Cause”, turning small personal contributions into genuine moments of happiness.",
+      "description2": "Held for the first time, this initiative stands as a testament to the heart of HHG’s people. More than an extension of the company’s annual Gift-Giving Program, it reflects how teamwork and generosity can create deeper impact, honoring our elderly with dignity, warmth, and appreciation. At HHG, giving back is not just a program, it is a shared commitment lived by every employee."
+    },
+    "brigadaEskwela2025": {
+      "title": "A Shared Commitment to Education",
+      "date": "(June 10, 2025)",
+      "description1": "As part of its Corporate Social Responsibility (CSR), H Hospitality Group proudly took part in Brigada Eskwela 2025. Our dedicated employees volunteered their time and energy to help prepare classrooms for the school year through cleaning, repairing chairs and tables, and repainting classrooms. This initiative reflects HHG’s commitment not only to hospitality but also to nurturing learning spaces for the next generation.",
+      "description2": "Beyond the volunteer services rendered in Bucana National High School, Manlag National High School, and Calitang Elementary School, HHG extended its support by donating construction materials worth PhP100,000 to further strengthening our commitment to building better learning environments for students."
+    },
+    "bloodDonation": {
+      "title": "Saving Lives, One Donation at a Time",
+      "date": "(August 13, 2025)",
+      "description1": "In partnership with the Philippine Red Cross – Palawan Chapter, H Hospitality Group successfully conducted its second Mass Blood Donation, collecting 48 bags of blood from our employees and partner donors. This life-saving initiative reflects our commitment to community care and will now be carried forward as an annual program.",
+      "description2": "In recognition of this effort, HHG was honored by the PRC as the only hospitality company in El Nido actively leading a mass blood donation initiative."
+    },
     "communitySupport": {
       "title": "Community Support Network",
       "description": "With around 300 employees, H Hospitality Group is proud to contribute to the livelihood of around 300 families. As the largest hospitality group in El Nido, we are delighted to make this impact. More than 70% of our workforce are locals from El Nido, showcasing our genuine passion for supporting the community by providing decent jobs with competitive pay and benefits. We believe that offering stable job opportunities and a nurturing work environment is essential to building a thriving community. Our employees are the backbone of our success, and their well-being is our top priority."
@@ -215,7 +238,6 @@
   "investing": {
     "title": "Our Investments",
     "subtitle": "Explore our diverse strategic portfolio",
-
     "tabs": {
       "hotels": "Hotels",
       "restaurantsCafeBars": "Restaurant, Cafe & Bars",
@@ -229,7 +251,7 @@
         "description": "Piece Lio is one of the most comfortable hotels in El Nido, developed in partnership with Japan's renowned Piece Group. While Piece Group operates 10 hotels in Japan, Piece Lio offers rooms from 50 to 150 square meters, providing a more spacious and comfortable stay compared to local hotels' typical 18-22 square meter rooms.",
         "shortDescription": "A high-end hotel developed in partnership with Japan's Piece Group, offering spacious 50-150 square meter rooms that far exceed local comfort standards.",
         "rooms": "Rooms: 36",
-        "openingYear": "Opening Year: 2024", 
+        "openingYear": "Opening Year: 2024",
         "location": "Location: Lio Airport Area (Ayala Lio)"
       },
       "hHotelVeganHotel": {
