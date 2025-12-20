@@ -183,7 +183,6 @@
   "investing": {
     "title": "我们的投资",
     "subtitle": "探索我们多元化的策略投资组合",
-
     "tabs": {
       "hotels": "酒店",
       "restaurantsCafeBars": "餐厅、咖啡厅和酒吧",
@@ -410,6 +409,10 @@
       "nacpanSunsetMarket": {
         "name": "纳克潘日落市集",
         "description": "在 Nacpan Beach 欣赏夕阳美景的同时，还能享受 Nacpan Sunset Market 的乐趣。这个市场灵感来自台湾著名的夜市，让游客在浪漫的沙滩氛围中体验丰富多样的美食与手工艺品"
+      },
+      "gentlemanCut": {
+        "name": "Gentleman Cut 理发厅",
+        "description": "Gentleman Cut 理发厅在轻松的氛围中提供顶级的男士修容服务，让您在任何场合都能展现最佳形象。"
       }
     }
   },

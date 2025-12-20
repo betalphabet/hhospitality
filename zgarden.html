@@ -159,6 +159,9 @@
                         </p>
                         <p><strong data-i18n="hotel.location">Location:</strong> <span
                                 data-i18n="hotel.zGardenHotel.location">El Nido Port, Palawan</span></p>
+                        <p><strong data-i18n="hotel.website">Website:</strong> <a href="https://www.zgardenhotel.com"
+                                target="_blank">zgardenhotel.com</a></p>
+
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -264,18 +267,18 @@
         }
 
         // Add event listeners for language selectors
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const langSelect = document.getElementById('langSelect');
             const langSelectDesktop = document.getElementById('langSelectDesktop');
 
             if (langSelect) {
-                langSelect.addEventListener('change', function(e) {
+                langSelect.addEventListener('change', function (e) {
                     changeLanguage(e.target.value);
                 });
             }
 
             if (langSelectDesktop) {
-                langSelectDesktop.addEventListener('change', function(e) {
+                langSelectDesktop.addEventListener('change', function (e) {
                     changeLanguage(e.target.value);
                 });
             }

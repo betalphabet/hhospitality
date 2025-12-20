@@ -428,6 +428,10 @@
       "nacpanSunsetMarket": {
         "name": "Nacpan Sunset Market",
         "description": "While enjoying the sunset views at Nacpan Beach, you can also experience the fun of Nacpan Sunset Market. This market, inspired by Taiwan's famous night markets, allows visitors to experience a rich variety of food and crafts in a romantic beach atmosphere."
+      },
+      "gentlemanCut": {
+        "name": "Gentleman Cut Barbershop",
+        "description": "Gentleman Cut Barbershop offers premium grooming services in a relaxing atmosphere, ensuring you look your best for any occasion."
       }
     }
   },

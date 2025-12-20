@@ -426,6 +426,10 @@
       "nacpanSunsetMarket": {
         "name": "納克潘日落市集",
         "description": "在 Nacpan Beach 欣賞夕陽美景的同時，還能享受 Nacpan Sunset Market 的樂趣。這個市場靈感來自台灣著名的夜市，讓遊客在浪漫的沙灘氛圍中體驗豐富多樣的美食與手工藝品"
+      },
+      "gentlemanCut": {
+        "name": "Gentleman Cut 理髮廳",
+        "description": "Gentleman Cut 理髮廳在輕鬆的氛圍中提供頂級的男士修容服務，讓您在任何場合都能展現最佳形象。"
       }
     }
   },
