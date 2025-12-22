@@ -41,34 +41,30 @@
   "csr": {
     "title": "CORPORATE SOCIAL RESPONSIBILITY BREAKTHROUGHS",
     "description": "At H Hospitality Group, our commitment goes beyond providing exceptional hospitality; it extends to making a meaningful impact on both our community and the environment. Since our founding in El Nido, Palawan, we have been steadfast in our commitment to creating a positive change through a variety of initiatives that support people and protect the planet.",
-    "giftGiving2025": {
-      "title": "Sharing Smiles, Serving Communities through Gift-Giving and Feeding Activity",
-      "date": "(December 10, 2025)",
-      "description1": "Driven by compassion and strengthened by teamwork, H Hospitality Group successfully conducted a Gift-Giving and Feeding Activity for children in Barangay Mabini, one of the far communities of El Nido. Through the genuine engagement of HHG employees, nearly 700 children received gifts, warm meals, and moments of care that turned the day into something truly special.",
-      "description2": "This initiative reflects not only HHG’s commitment to corporate social responsibility, but also the heart of our people, coming together beyond their roles to serve, connect, and make a difference. Because at HHG, giving back is a shared mission, and every smile reminds us why we do what we do."
-    },
-    "elderlyCare": {
-      "title": "A Gesture of Care for Our Elderly",
-      "date": "(December 10, 2025)",
-      "description1": "Through unity, compassion, and shared purpose, H Hospitality Group extended joy and care to 50 elderly residents of Barangay Mabini, El Nido, through a special cash and gift-giving initiative. This activity was made possible by the collective effort of HHG employees, who generously donated pre-loved items and organized a “Bazaar for a Cause”, turning small personal contributions into genuine moments of happiness.",
-      "description2": "Held for the first time, this initiative stands as a testament to the heart of HHG’s people. More than an extension of the company’s annual Gift-Giving Program, it reflects how teamwork and generosity can create deeper impact, honoring our elderly with dignity, warmth, and appreciation. At HHG, giving back is not just a program, it is a shared commitment lived by every employee."
-    },
-    "brigadaEskwela2025": {
-      "title": "A Shared Commitment to Education",
-      "date": "(June 10, 2025)",
-      "description1": "As part of its Corporate Social Responsibility (CSR), H Hospitality Group proudly took part in Brigada Eskwela 2025. Our dedicated employees volunteered their time and energy to help prepare classrooms for the school year through cleaning, repairing chairs and tables, and repainting classrooms. This initiative reflects HHG’s commitment not only to hospitality but also to nurturing learning spaces for the next generation.",
-      "description2": "Beyond the volunteer services rendered in Bucana National High School, Manlag National High School, and Calitang Elementary School, HHG extended its support by donating construction materials worth PhP100,000 to further strengthening our commitment to building better learning environments for students."
-    },
-    "bloodDonation": {
-      "title": "Saving Lives, One Donation at a Time",
-      "date": "(August 13, 2025)",
-      "description1": "In partnership with the Philippine Red Cross – Palawan Chapter, H Hospitality Group successfully conducted its second Mass Blood Donation, collecting 48 bags of blood from our employees and partner donors. This life-saving initiative reflects our commitment to community care and will now be carried forward as an annual program.",
-      "description2": "In recognition of this effort, HHG was honored by the PRC as the only hospitality company in El Nido actively leading a mass blood donation initiative."
-    },
     "pawRescue": {
       "title": "Paw Rescue Project",
       "description1": "A funded spay and neuter initiative, the Paw Rescue Project was conducted from September 30 to October 6 to support responsible pet care in El Nido, Palawan. The project focused on spaying and neutering stray animals, as well as pets of owners who could not afford the procedure.",
-      "description2": "With the support of two volunteer veterinarians flown in from Isabela Province, local volunteers from El Nido, and employees of H Hospitality Group, a total of 382 animals were successfully spayed and neutered. Cats: 139 female, 82 male. Dogs: 96 female, 65 male. This initiative reflects HHG's commitment to animal welfare and community care, helping create a healthier and safer environment for both animals and residents."
+      "description2": "With the support of two volunteer veterinarians flown in from Isabela Province, local volunteers from El Nido, and employees of H Hospitality Group, a total of 382 animals were successfully spayed and neutered. Cats: 139 female, 82 male. Dogs: 96 female, 65 male. This initiative reflects HHG’s commitment to animal welfare and community care, helping create a healthier and safer environment for both animals and residents."
+    },
+    "giftGivingChildren": {
+      "title": "Sharing Smiles Through Gift-Giving in El Nido",
+      "description1": "Driven by compassion and teamwork, H Hospitality Group (HHG) brought joy to nearly 700 children in Barangay Mabini, one of El Nido’s far communities, through a meaningful Gift-Giving and Feeding Activity.",
+      "description2": "With the genuine involvement of HHG employees, children received gifts, warm meals, and heartfelt care, turning an ordinary day into a memorable experience. This initiative reflects HHG’s commitment to corporate social responsibility and the belief that giving back is strongest when done together. At HHG, every smile reminds us why service lies at the heart of what we do."
+    },
+    "giftGivingElder": {
+      "title": "A Gesture of Care for Our El Nido Elderly",
+      "description1": "Guided by compassion and unity, HHG extended support to 50 elderly residents of Barangay Mabini, El Nido through a special cash and gift-giving initiative. This activity was made possible through the collective generosity of HHG employees who donated pre-loved items and organized a “Bazaar for a Cause,” transforming small personal contributions into meaningful acts of kindness.",
+      "description2": "Held for the first time, this initiative reflects the heart of HHG’s people. More than an extension of the company’s annual Gift-Giving Program, it honors our elderly with dignity, warmth, and appreciation, showing that at HHG, giving back is a shared commitment lived by every employee."
+    },
+    "schoolBrigade": {
+      "title": "Better Classrooms Through School Brigade",
+      "description1": "As part of its Corporate Social Responsibility (CSR) efforts, H Hospitality Group proudly participated in School Brigade 2025, supporting public schools in preparing for the new academic year. HHG employees volunteered their time and energy to clean classrooms, repair chairs and tables, and repaint learning spaces, helping create safe and welcoming environments for students.",
+      "description2": "Beyond volunteer services at Bucana National High School, Manlag National High School, and Calitang Elementary School, HHG further strengthened its support by donating PhP100,000 worth of construction materials, reinforcing our commitment to building better classrooms and nurturing learning spaces for future generations."
+    },
+    "bloodDonation": {
+      "title": "Saving Lives, One Blood Donation at a Time",
+      "description1": "In partnership with the Philippine Red Cross Palawan Chapter, H Hospitality Group successfully conducted its second Mass Blood Donation, collecting 48 bags of blood from employees and partner donors. This life-saving initiative reflects HHG’s continued commitment to community care and public health.",
+      "description2": "Recognized by the Philippine Red Cross as the only hospitality company in El Nido actively leading a mass blood donation initiative, HHG takes pride in turning compassion into action. With this program now set as an annual initiative, we remain dedicated to saving lives, one donation at a time."
     },
     "communitySupport": {
       "title": "Community Support Network",
