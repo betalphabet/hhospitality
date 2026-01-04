@@ -490,6 +490,47 @@
     "orientalSpa": {
       "name": "Oriental Spa",
       "description": "Oriental Spa offers a serene oasis of relaxation and rejuvenation in the heart of El Nido. Our expert therapists provide a range of traditional and modern treatments, from soothing massages to revitalizing facials, using natural, locally-sourced ingredients. Experience ultimate tranquility and emerge refreshed, ready to continue your tropical paradise adventure."
+    },
+    "services": {
+      "title": "Our Services",
+      "massage": {
+        "title": "Traditional Massage",
+        "desc": "Experience the healing power of traditional Filipino Hilot and Thai massage techniques."
+      },
+      "aromatherapy": {
+        "title": "Aromatherapy",
+        "desc": "Relax your senses with our selection of essential oils and soothing scents."
+      },
+      "scrub": {
+        "title": "Body Scrubs",
+        "desc": "Rejuvenate your skin with our organic body scrubs made from local ingredients."
+      }
+    },
+    "therapists": {
+      "title": "Our Therapists",
+      "description": "Our team of licensed and experienced therapists are dedicated to providing you with the highest quality of care. Trained in various modalities, they tailor each session to address your specific needs and preferences."
+    },
+    "venue": {
+      "title": "The Venue",
+      "description": "Oriental Spa 2 offers a serene sanctuary in the heart of El Nido. Our spacious treatment rooms are designed to ensure privacy and tranquility, featuring calming interiors inspired by nature.",
+      "privateRooms": "Private Treatment Rooms",
+      "lounge": "Relaxation Lounge",
+      "shower": "Shower Facilities"
+    },
+    "equipment": {
+      "title": "Equipment",
+      "description": "We use state-of-the-art equipment to enhance your spa experience, ensuring comfort and hygiene at all times.",
+      "beds": "Ergonomic Massage Beds",
+      "ac": "Climate Control",
+      "audio": "Soothing Audio Systems"
+    },
+    "pricing": {
+      "title": "Menu & Pricing",
+      "item1": "Signature Oriental Massage (60 mins)",
+      "item2": "Swedish Massage (60 mins)",
+      "item3": "Deep Tissue Massage (60 mins)",
+      "item4": "Foot Reflexology (30 mins)",
+      "item5": "Body Scrub & Massage Combo (90 mins)"
     }
   },
   "bar": {
