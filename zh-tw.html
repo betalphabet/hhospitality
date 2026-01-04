@@ -25,37 +25,34 @@
     <link href="css/styles.css?v=202411252100" rel="stylesheet" />
 
     <style>
-
-
-        #mainNav.navbar-shrink .langSelectDesktop{
+        #mainNav.navbar-shrink .langSelectDesktop {
             margin-top: 15px;
         }
 
-        #mainNav .langSelectDesktop{
+        #mainNav .langSelectDesktop {
             margin-top: 25px;
         }
-
     </style>
 
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const langSelect = document.getElementById('langSelect');
-    const langSelectDesktop = document.getElementById('langSelectDesktop');
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const langSelect = document.getElementById('langSelect');
+            const langSelectDesktop = document.getElementById('langSelectDesktop');
 
-    function handleLanguageChange(event) {
-        const selectedLang = event.target.value;
-        if (selectedLang === 'en') {
-            window.location.href = 'index.html';
-        } else if (selectedLang === 'zh') {
-            window.location.href = 'zh-tw.html';
-        }
-    }
+            function handleLanguageChange(event) {
+                const selectedLang = event.target.value;
+                if (selectedLang === 'en') {
+                    window.location.href = 'index.html';
+                } else if (selectedLang === 'zh') {
+                    window.location.href = 'zh-tw.html';
+                }
+            }
 
-    langSelect.addEventListener('change', handleLanguageChange);
-    langSelectDesktop.addEventListener('change', handleLanguageChange);
-});
-</script>
+            langSelect.addEventListener('change', handleLanguageChange);
+            langSelectDesktop.addEventListener('change', handleLanguageChange);
+        });
+    </script>
 
 </head>
 
@@ -67,8 +64,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     src="assets/img/h_hotel_group_logo.svg" width="120px" alt="h_hotel_group" /></a>
             <div class="d-flex align-items-center">
                 <div class="d-lg-none me-2">
-                    <select id="langSelect" class="form-select bg-dark text-white" style="width: auto; padding-right: 20px;"
-                        aria-label="語言選擇">
+                    <select id="langSelect" class="form-select bg-dark text-white"
+                        style="width: auto; padding-right: 20px;" aria-label="語言選擇">
                         <option value="en">🇺🇸 English</option>
                         <option value="zh" selected>🇹🇼 中文</option>
                     </select>
@@ -115,7 +112,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="col-12 p-2 text-center">
                     <img class="img-fluid mb-3 mb-lg-5" src="assets/img/hhospitality.group-logo.png" width="180px"
                         alt="hhospitality.group" />
-                    <p>H Hospitality Group是由有遠見的企業家亨利創立的新興管理公司，在愛妮島（El Nido）, 巴拉望（Palawan）樹立了標竿。在過去七年中，該地區的旅遊業增長了驚人的 700%，集團不僅影響了這一增長，還擁有接駁服務、旅行社和多家酒店，進一步鞏固了其在行業中的地位。除了核心的酒店服務外，H Hospitality Group還經營多家餐廳和咖啡館，提供展示該地區豐富風味的多樣化用餐體驗。該集團還在擴展其投資組合，正在開發一家尖端的公寓式酒店，旨在重新定義愛妮島的豪華生活。</p>
+                    <p>H Hospitality Group是由有遠見的企業家亨利創立的新興管理公司，在愛妮島（El Nido）, 巴拉望（Palawan）樹立了標竿。在過去七年中，該地區的旅遊業增長了驚人的
+                        700%，集團不僅影響了這一增長，還擁有接駁服務、旅行社和多家酒店，進一步鞏固了其在行業中的地位。除了核心的酒店服務外，H Hospitality
+                        Group還經營多家餐廳和咖啡館，提供展示該地區豐富風味的多樣化用餐體驗。該集團還在擴展其投資組合，正在開發一家尖端的公寓式酒店，旨在重新定義愛妮島的豪華生活。</p>
                 </div>
             </div>
             <div class="row gx-0 align-items-top">
@@ -124,8 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p class="p-title">海濱酒店</p>
                 </div>
                 <div class="col-xl-25 col-6 p-1">
-                    <img class="img-fluid mb-lg-0" src="assets/img/Beachfront-Restaurants.jpg"
-                        alt="海濱餐廳" />
+                    <img class="img-fluid mb-lg-0" src="assets/img/Beachfront-Restaurants.jpg" alt="海濱餐廳" />
                     <p class="p-title">海濱餐廳</p>
                 </div>
                 <div class="col-xl-25 col-6 p-1">
@@ -149,8 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p class="p-title">水療按摩</p>
                 </div>
                 <div class="col-xl-25 col-6 p-1">
-                    <img class="img-fluid mb-lg-0" src="assets/img/time-Nacpan-Beach-Shuttle.jpg"
-                        alt="接駁車（納克潘海灘接駁車）" />
+                    <img class="img-fluid mb-lg-0" src="assets/img/time-Nacpan-Beach-Shuttle.jpg" alt="接駁車（納克潘海灘接駁車）" />
                     <p class="p-title">海灘接駁車</p>
                 </div>
                 <div class="col-xl-25 col-6 p-1">
@@ -158,8 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p class="p-title">酒吧</p>
                 </div>
                 <div class="col-xl-25 col-6 p-1">
-                    <img class="img-fluid mb-lg-0" src="assets/img/Plant-Based-Restaurant.jpg"
-                        alt="素食餐廳" />
+                    <img class="img-fluid mb-lg-0" src="assets/img/Plant-Based-Restaurant.jpg" alt="素食餐廳" />
                     <p class="p-title">素食餐廳</p>
                 </div>
             </div>
@@ -1505,40 +1501,43 @@ document.addEventListener('DOMContentLoaded', function() {
                     <img class="img-fluid mb-3 mb-lg-5" src="assets/img/hhospitality.group-logo.png" width="180px"
                         alt="hhospitality.group" />
                     <h2 class="mb-4">企業社會責任</h2>
-                    <p>在H Hospitality Group，我們的承諾不僅僅是提供卓越的款待；它還延伸到對我們的社區和環境產生有意義的影響。自從我們在巴拉望島愛妮島成立以來，我們一直堅定不移地致力於通過各種支持人民和保護地球的倡議來創造積極的變化。</p>
+                    <p>在H Hospitality
+                        Group，我們的承諾不僅僅是提供卓越的款待；它還延伸到對我們的社區和環境產生有意義的影響。自從我們在巴拉望島愛妮島成立以來，我們一直堅定不移地致力於通過各種支持人民和保護地球的倡議來創造積極的變化。
+                    </p>
                 </div>
             </div>
             <div class="row gx-0 align-items-top mb-5">
                 <div class="col-lg-6 p-2">
                     <h3>社會支持</h3>
-                    <p>H Hospitality Group擁有約300名員工，我們很開心能為約300個家庭的生計做出貢獻。我們超過70%的員工是愛妮島的當地人，展示了我們通過提供體面的工作和具有競爭力的薪酬福利來真誠支持社區的熱情。我們相信，提供穩定的工作機會和培養性的工作環境對於建立一個繁榮的社區至關重要。我們的員工是我們成功的基石，他們的福祉是我們的首要任務。</p>
+                    <p>H Hospitality
+                        Group擁有約500名員工，我們很開心能為約300個家庭的生計做出貢獻。我們超過70%的員工是愛妮島的當地人，展示了我們通過提供體面的工作和具有競爭力的薪酬福利來真誠支持社區的熱情。我們相信，提供穩定的工作機會和培養性的工作環境對於建立一個繁榮的社區至關重要。我們的員工是我們成功的基石，他們的福祉是我們的首要任務。
+                    </p>
                     <div class="row">
-                        <div class="col-4"><img class="img-fluid" src="images/csr/community1.webp"
-                                alt="社區支持 1"></div>
-                        <div class="col-4"><img class="img-fluid" src="images/csr/community2.webp"
-                                alt="社區支持 2"></div>
-                        <div class="col-4"><img class="img-fluid" src="images/csr/community3.webp"
-                                alt="社區支持 3"></div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/community1.webp" alt="社區支持 1"></div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/community2.webp" alt="社區支持 2"></div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/community3.webp" alt="社區支持 3"></div>
                     </div>
                 </div>
                 <div class="col-lg-6 p-2">
                     <h3>海龜保育</h3>
-                    <p>自2016年以來，H Hospitality Group一直是Nacpan海龜孵化場的驕傲支持者。通過我們的貢獻，超過45,000隻海龜已成功康復並被釋放回海洋，保護了這些令人難以置信的生物的生命，並保護了脆弱的海洋生態系統。我們保護和保育野生動物的努力反映了我們對巴拉望島自然美景的深深敬意。</p>
+                    <p>自2016年以來，H Hospitality
+                        Group一直是Nacpan海龜孵化場的驕傲支持者。通過我們的貢獻，超過45,000隻海龜已成功康復並被釋放回海洋，保護了這些令人難以置信的生物的生命，並保護了脆弱的海洋生態系統。我們保護和保育野生動物的努力反映了我們對巴拉望島自然美景的深深敬意。
+                    </p>
                     <div class="row">
-                        <div class="col-4"><img class="img-fluid" src="images/csr/turtle1.webp"
-                                alt="海龜保育 1"></div>
-                        <div class="col-4"><img class="img-fluid" src="images/csr/turtle2.webp"
-                                alt="海龜保育 2"></div>
-                        <div class="col-4"><img class="img-fluid" src="images/csr/turtle3.webp"
-                                alt="海龜保育 3"></div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/turtle1.webp" alt="海龜保育 1"></div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/turtle2.webp" alt="海龜保育 2"></div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/turtle3.webp" alt="海龜保育 3"></div>
                     </div>
                 </div>
             </div>
             <div class="row gx-0 align-items-top mb-5">
                 <div class="col-lg-6 p-2">
                     <h3>"Brigada Eskwela"計劃</h3>
-                    <p>我們認識到教育在為我們的社區建設更光明未來方面的重要性。H Hospitality Group積極參與"Brigada Eskwela"計劃，捐贈水泥、空心磚和油漆等必需材料，並提供員工人力協助清潔、粉刷和修理學校建築。今年的受益者包括Bucana國立高中和Calitang小學。此外，我們計劃認養一所學校以確保可持續性和持續發展。</p>
-                    <p>H Hospitality Group還通過為學生提供在職培訓機會來支持各種學校。實習生被分配到HHG內的不同物業，包括食品和飲料、客房服務、前台，甚至總部部門如人力資源、會計和採購等角色。</p>
+                    <p>我們認識到教育在為我們的社區建設更光明未來方面的重要性。H Hospitality Group積極參與"Brigada
+                        Eskwela"計劃，捐贈水泥、空心磚和油漆等必需材料，並提供員工人力協助清潔、粉刷和修理學校建築。今年的受益者包括Bucana國立高中和Calitang小學。此外，我們計劃認養一所學校以確保可持續性和持續發展。
+                    </p>
+                    <p>H Hospitality Group還通過為學生提供在職培訓機會來支持各種學校。實習生被分配到HHG內的不同物業，包括食品和飲料、客房服務、前台，甚至總部部門如人力資源、會計和採購等角色。
+                    </p>
                     <div class="row">
                         <div class="col-4"><img class="img-fluid" src="images/csr/brigada1.webp"
                                 alt="Brigada Eskwela 1"></div>
@@ -1550,13 +1549,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
                 <div class="col-lg-6 p-2">
                     <h3>通過社區參與追求卓越</h3>
-                    <p>H Hospitality Group自豪地支持當地體育，以此來加強團隊合作、紀律和社區精神。我們的籃球隊是我們對這些價值觀承諾的象徵，在2023年取得了重大里程碑，贏得了冠軍。這一勝利不僅為我們的組織帶來了驕傲，還激勵了我們的社區在場內外都追求卓越。</p>
-                    <p>今年，HHG將成立自己的合唱團以展示歌唱才能，以及舞蹈俱樂部以突出通過舞蹈展現創意。這些倡議表明我們不僅在款待方面出色，還在培養多樣化才能方面表現卓越。它們通過為我們的團隊成員提供藝術表達和個人成長的機會，促進了社區內的工作生活平衡。此外，這些俱樂部旨在通過表演和活動與社區互動並回饋社區，將人們聚集在一起，慶祝當地才能。</p>
+                    <p>H Hospitality
+                        Group自豪地支持當地體育，以此來加強團隊合作、紀律和社區精神。我們的籃球隊是我們對這些價值觀承諾的象徵，在2023年取得了重大里程碑，贏得了冠軍。這一勝利不僅為我們的組織帶來了驕傲，還激勵了我們的社區在場內外都追求卓越。
+                    </p>
+                    <p>今年，HHG將成立自己的合唱團以展示歌唱才能，以及舞蹈俱樂部以突出通過舞蹈展現創意。這些倡議表明我們不僅在款待方面出色，還在培養多樣化才能方面表現卓越。它們通過為我們的團隊成員提供藝術表達和個人成長的機會，促進了社區內的工作生活平衡。此外，這些俱樂部旨在通過表演和活動與社區互動並回饋社區，將人們聚集在一起，慶祝當地才能。
+                    </p>
                     <div class="row">
-                        <div class="col-4"><img class="img-fluid" src="images/csr/engagement1.webp"
-                                alt="社區參與 1"></div>
-                        <div class="col-4"><img class="img-fluid" src="images/csr/engagement2.webp"
-                                alt="社區參與 2"></div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/engagement1.webp" alt="社區參與 1"></div>
+                        <div class="col-4"><img class="img-fluid" src="images/csr/engagement2.webp" alt="社區參與 2"></div>
 
                     </div>
                 </div>
