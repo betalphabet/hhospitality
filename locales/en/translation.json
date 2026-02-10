@@ -134,6 +134,26 @@
       "name": "Piece Lio",
       "description": "One of the most comfortable hotels on El Nido, developed in collaboration with Japan's renowned Piece Group. Offering spacious rooms of 50 to 150 square meters, providing a more comfortable stay compared to local hotels' typical 18 to 22 square meter rooms.",
       "shortDescription": "A luxurious beachfront resort offering stunning views of the ocean and world-class amenities.",
+      "fullDescription": "Tucked away in the northern tip of Palawan Island, southwest Philippines, PIECE LIO, El Nido – managed by H Hospitality Group – strikes a unique balance of modern Japanese design and breathtaking natural beauty.<br><br>Built with a commitment to sustainability, this is an authentic eco-friendly retreat in the exclusive Lio Estate, just a 10-minute shuttle ride from El Nido town and a short walk from the pristine Lio Beach where a variety of restaurants, boutiques, an art community, volleyball and surfing opportunities all collide. This prime, utterly peaceful setting promises easy access to a whole host of local attractions including island tours, a canopy walk, zip lining and hikes to some of El Nido’s spectacular waterfalls, whilst the onsite pool encourages tranquil moments beneath entwining branches.",
+      "accommodations": "Accommodations range from the opulent Presidential Loft to stylish Premier and Executive Studios; each one individually decorated in plush minimalist style. Standard premium touches include a Marshall speaker, vinyl record player, SMEG kettle, Dyson hairdryer, fully stocked kitchenette and a bathroom with Japanese high-tech toilet.",
+      "dining": "Days at PIECE LIO begin with a choice of breakfast: Japanese favourites combined with tropical, local flavours; traditional English; American; and Continental served in the intimate dining room or in your room, perhaps on your private balcony where the surrounding trees are filled with birdsong. Come lunch and dinner, take the short shuttle ride to PIECE OF SKY restaurant in El Nido or Napcan Beach Resort (both also managed by H Hospitality).",
+      "cats": "PS keep a look out for the three resident cats Ginger, Piece and Lio during your stay.",
+      "expertNote": {
+        "title": "A Note From The Local Expert…",
+        "content": "The modern Japanese interiors and architecture were designed by the young, talented, Philippine EUDO design studio. Their choice of sleek and polished woods, concrete walls and lofty ceilings result in a heavenly serene sanctum enhanced by floor-to-ceiling windows framing the canopy of trees outside where birds chirp in symphony."
+      },
+      "qa": {
+        "title": "Your Questions Answered…",
+        "bestTime": "<strong>Best Time To Visit & Why:</strong> The ideal time to visit El Nido is from December to May when the weather is at its best: sunny skies, calm seas, and cool island breezes. This dry season is perfect for island hopping, snorkelling, diving and enjoying all the stunning beaches without worrying about sudden rain or rough waves. It’s also the time when turtle hatching season begins, especially around Nacpan Beach, giving visitors a rare chance to witness baby sea turtles making their way to the ocean. With clear blue waters and vibrant sunsets almost daily, this is when El Nido truly shines and when you’ll experience it at its most magical.",
+        "checkIn": "<strong>Check In / Out Time:</strong> 2pm / 11am.",
+        "adultsOnly": "<strong>Adults Only?</strong> Guests of all ages are welcome.",
+        "dogFriendly": "<strong>Dog Friendly?</strong> Pets are not permitted.",
+        "restaurants": "<strong>On-site Restaurants?</strong> An exclusive kitchen is available to guests.",
+        "dressCode": "<strong>Dress Code?</strong> There is no dress code.",
+        "parking": "<strong>Car Park & Vehicle Charging?</strong> Complimentary car parking is available.",
+        "wifi": "<strong>WiFi Access?</strong> Complimentary WiFi is available.",
+        "accessibility": "<strong>Accessibility?</strong> There is elevator access."
+      },
       "rooms": "Rooms: 36",
       "openingYear": "Opening Year: 2024",
       "location": "Location: Lio Airport Area (Ayala Lio)",
@@ -241,7 +261,11 @@
   "home": {
     "awards": {
       "title": "Award-Winning Hospitality",
-      "description": "H Hospitality’s portfolio continues to set the benchmark across Asia. From Michelin recognition to multiple Tripadvisor Travelers’ Choice wins, our properties deliver exceptional guest experiences, operational excellence, and investor-grade performance.",
+      "description": "H Hospitality’s portfolio continues to set the benchmark in El Nido, Palawan. From Condé Nast Award 2026, Michelin recognition to multiple Tripadvisor Travelers’ Choice wins, our properties deliver exceptional guest experiences, operational excellence, and investor-grade performance.",
+      "condenast": {
+        "title": "Readers' Choice Awards 2026",
+        "description": "Recognized by Condé Nast Traveler for exceptional luxury and design."
+      },
       "michelin": {
         "title": "Michelin Guide 2025 Winner",
         "description": "A fusion of Japanese elegance and Filipino tropical charm, recognized by MICHELIN RECOGNITION 2025."
@@ -262,6 +286,10 @@
       "michelin": {
         "title": "Michelin Guide Recognition 2025",
         "description": "PIECE LIO is proudly recognized by the prestigious Michelin Guide 2025, joining the world’s finest hospitality establishments. This honor celebrates our commitment to exceptional service and the unique fusion of Japanese elegance with Filipino tropical charm—an approach that elevates guest satisfaction and asset value."
+      },
+      "condenast": {
+        "title": "Condé Nast Traveler Readers' Choice Awards 2026",
+        "description": "Tucked away in the northern tip of Palawan Island, southwest Philippines, PIECE LIO, El Nido – managed by H Hospitality Group – strikes a unique balance of modern Japanese design and breathtaking natural beauty."
       },
       "tripadvisor": {
         "title": "Tripadvisor Travelers’ Choice 2025",

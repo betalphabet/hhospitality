@@ -134,6 +134,28 @@
       "name": "Piece Lio",
       "description": "Piece Lio 是爱妮岛上最舒适的酒店之一，与日本知名的 Piece 集团合作开发。Piece 集团在日本经营 10 家酒店，而 Piece Lio 提供 50 至 150 平方米的房间，相较于当地一般酒店 18 至 22 平方米的房型，为旅客带来更宽敞舒适的住宿体验。",
       "shortDescription": "豪华的海滨度假村，提供令人惊叹的海景和世界级设施。",
+      "fullDescription": "PIECE LIO, El Nido 隐藏在菲律宾西南部巴拉望岛的北端，由 H Hospitality Group 管理，在现代日式设计与令人屏息的自然美景之间取得了独特的平衡。<br><br>这座度假村秉持可持续发展的承诺，是位于专属 Lio Estate 内的真实生态友善避世之所，距离爱妮岛镇仅 10 分钟接驳车程，步行即可到达原始的 Lio 海滩，那里汇聚了各式餐厅、精品店、艺术社区、排球和冲浪机会。这个黄金且绝对宁静的环境，让您能轻松前往众多当地景点，包括跳岛游、树冠步道、滑索和前往爱妮岛壮观瀑布的徒步旅行，而饭店内的游泳池则鼓励您在交织的树枝下享受宁静时刻。",
+      "accommodations": "住宿范围从豪华的总统阁楼到时尚的尊贵和行政一室公寓；每一间都以豪华极简风格单独装饰。标准的高级配备包括 Marshall 扬声器、黑胶唱片机、SMEG 水壶、Dyson 吹风机、设备齐全的小厨房和配有日式高科技马桶的浴室。",
+      "dining": "在 PIECE LIO 的一天从早餐选择开始：日式最爱结合热带、当地风味；传统英式；美式；以及欧陆式早餐，可在私密的餐厅或您的房间内享用，或许就在您的私人阳台上，周围的树木充满了鸟鸣。午餐和晚餐时，可乘坐短程接驳车前往爱妮岛的 PIECE OF SKY 餐厅或 Nacpan Beach Resort（均由 H Hospitality 管理）。",
+      "cats": "附注：住宿期间请留意三只常驻猫咪 Ginger、Piece 和 Lio。",
+      "expertNote": {
+        "title": "来自当地专家的笔记…",
+        "content": "现代日式室内设计和建筑由年轻、才华横溢的菲律宾 EUDO 设计工作室设计。他们选择光滑抛光的木材、混凝土墙和挑高天花板，营造出天堂般宁静的圣所，落地窗框住了外面的树冠，鸟儿在那里交响鸣唱。"
+      },
+      "qa": {
+        "title": "您的问题解答…",
+        "bestTime": "<strong>最佳造访时间及原因：</strong> 造访爱妮岛的理想时间是 12 月至 5 月，此时天气最佳：阳光普照、海面平静、岛屿微风凉爽。这个旱季非常适合跳岛、浮潜、潜水和享受所有迷人的海滩，而不必担心突如其来的雨水或大浪。这也是海龟孵化季节开始的时候，特别是在 Nacpan 海滩周围，游客有难得的机会目睹小海龟游向大海。随着几乎每天都有清澈的蓝色海水和充满活力的日落，这是爱妮岛真正闪耀的时刻，也是您体验它最神奇时刻的时候。",
+        "checkIn": "<strong>入住 / 退房时间：</strong> 下午 2 点 / 上午 11 点。",
+        "adultsOnly": "<strong>仅限成人？</strong> 欢迎各个年龄段的客人。",
+        "dogFriendly": "<strong>宠物友善？</strong> 不允许携带宠物。",
+        "restaurants": "<strong>饭店内餐厅？</strong> 客人可使用专属厨房。",
+        "dressCode": "<strong>着装要求？</strong> 没有着装要求。",
+        "parking": "<strong>停车场和车辆充电？</strong> 提供免费停车场。",
+        "wifi": "<strong>WiFi 接入？</strong> 提供免费 WiFi。",
+        "accessibility": "<strong>无障碍设施？</strong> 设有电梯通道。"
+      },
+      "rooms": "客房数：36",
+      "openingYear": "开业年份：2024",
       "location": "Lio Beach, El Nido, Palawan",
       "phone": "+63 917 123 4567",
       "website": "www.piecelio.com"
@@ -210,7 +232,11 @@
   "home": {
     "awards": {
       "title": "屡获殊荣的待客之道",
-      "description": "H Hospitality 集团持续在亚洲树立标竿。从米其林肯定到多项 Tripadvisor 旅行者之选奖项，我们的物业提供卓越的宾客体验、营运卓越性和投资级的绩效。",
+      "description": "H Hospitality 集团持续在巴拉望爱妮岛树立标竿。从 Condé Nast 奖项 2026、米其林肯定到多项 Tripadvisor 旅行者之选奖项，我们的物业提供卓越的宾客体验、营运卓越性和投资级的绩效。",
+      "condenast": {
+        "title": "2026 读者之选奖",
+        "description": "荣获 Condé Nast Traveler 认可的卓越奢华与设计。"
+      },
       "michelin": {
         "title": "2025 米其林指南入选",
         "description": "融合日式优雅与菲律宾热带魅力的独特风格，荣获 2025 米其林指南肯定。"
@@ -231,6 +257,10 @@
       "michelin": {
         "title": "2025 米其林指南肯定",
         "description": "PIECE LIO 很荣幸获得著名的 2025 米其林指南肯定，跻身世界顶级旅宿行列。这份荣誉彰显了我们对卓越服务的承诺，以及融合日式优雅与菲律宾热带魅力的独特风格——这种方式不仅提升了宾客满意度，也提升了资产价值。"
+      },
+      "condenast": {
+        "title": "2026 Condé Nast Traveler 读者之选奖",
+        "description": "隐藏在菲律宾西南部巴拉望岛北端的 PIECE LIO, El Nido —— 由 H Hospitality Group 管理 —— 完美平衡了现代日式设计与令人屏息的自然美景。"
       },
       "tripadvisor": {
         "title": "2025 Tripadvisor 旅行者之选",
