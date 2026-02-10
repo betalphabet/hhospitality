@@ -234,11 +234,89 @@
   },
   "common": {
     "previous": "上一頁",
-    "next": "下一頁"
+    "next": "下一頁",
+    "exploreProperties": "探索我們的物業",
+    "investWithUs": "投資 H Hospitality"
+  },
+  "home": {
+    "awards": {
+      "title": "屢獲殊榮的待客之道",
+      "description": "H Hospitality 集團持續在亞洲樹立標竿。從米其林肯定到多項 Tripadvisor 旅行者之選獎項，我們的物業提供卓越的賓客體驗、營運卓越性和投資級的績效。",
+      "michelin": {
+        "title": "2025 米其林指南入選",
+        "description": "融合日式優雅與菲律賓熱帶魅力的獨特風格，榮獲 2025 米其林指南肯定。"
+      },
+      "tripadvisor": {
+        "title": "2025 旅行者之選",
+        "restaurantsLabel": "餐廳：",
+        "hotelsLabel": "飯店："
+      }
+    }
   },
   "investing": {
     "title": "我們的投資",
     "subtitle": "探索我們多元化的策略投資組合",
+    "awards": {
+      "title": "卓越績效，備受肯定",
+      "description": "在 H Hospitality，獲獎不僅是特例，更是我們的標準。我們嚴謹的開發、品牌設計和以客為尊的營運模式，持續轉化為優質的平均房價 (ADR)、強勁的住房率和市場領先的評價。",
+      "michelin": {
+        "title": "2025 米其林指南肯定",
+        "description": "PIECE LIO 很榮幸獲得著名的 2025 米其林指南肯定，躋身世界頂級旅宿行列。這份榮譽彰顯了我們對卓越服務的承諾，以及融合日式優雅與菲律賓熱帶魅力的獨特風格——這種方式不僅提升了賓客滿意度，也提升了資產價值。"
+      },
+      "tripadvisor": {
+        "title": "2025 Tripadvisor 旅行者之選",
+        "restaurants": {
+          "title": "餐廳",
+          "pos": {
+            "description": "坐擁愛妮島巴奎特灣 (Bacuit Bay) 壯麗全景的頂樓酒吧；提供精選工藝雞尾酒。",
+            "openUntil": "營業至晚上 11:00",
+            "vegan": "提供純素選項",
+            "meals": "早餐、午餐、晚餐、早午餐、飲品",
+            "location": "H Hotel 6樓, Real St, Barangay Buena Suerte"
+          },
+          "verde": {
+            "description": "提供素食、純素、無麩質選項。",
+            "hours": "早上 7:00 – 晚上 10:00",
+            "service": "桌邊服務",
+            "meals": "早餐、午餐、晚餐、早午餐",
+            "location": "H Hotel 一樓"
+          }
+        },
+        "hotels": {
+          "title": "飯店",
+          "hhotel": {
+            "rating": "4.9 極佳",
+            "subtitle": "純素友善飯店 | Buena Suerte 區 5 家飯店中排名第 1",
+            "scores": "在位置 (4.9)、服務 (4.9)、清潔度 (4.8) 獲得高分。"
+          },
+          "nbr": {
+            "rating": "4.7 非常好",
+            "subtitle": "愛妮島 32 家旅館中排名第 3",
+            "amenities": "設施：海灘通道、游泳池、免費停車、機場接送。"
+          },
+          "nbg": {
+            "rating": "4.8 極佳",
+            "subtitle": "愛妮島 19 家度假村中排名第 2",
+            "description": "位於亞洲頂級 Nacpan 海灘旁的標誌性 6 米寬豪華露營帳篷。"
+          }
+        }
+      },
+      "investors": {
+        "title": "投資價值",
+        "brand": {
+          "title": "品牌優勢",
+          "description": "獨立的認可加速了需求、價格溢價和自然觸及率。"
+        },
+        "operational": {
+          "title": "營運紀律",
+          "description": "數據驅動的收益管理和賓客體驗設計，帶來持續優於市場的 RevPAR 表現。"
+        },
+        "scalable": {
+          "title": "可擴展的模式",
+          "description": "從頂樓調酒概念到生態奢華海灘資產，我們的架構能在不同市場複製卓越。"
+        }
+      }
+    },
     "tabs": {
       "hotels": "酒店",
       "restaurantsCafeBars": "餐廳、咖啡廳和酒吧",

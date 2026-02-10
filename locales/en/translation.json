@@ -234,11 +234,89 @@
   },
   "common": {
     "previous": "Previous",
-    "next": "Next"
+    "next": "Next",
+    "exploreProperties": "Explore Our Properties",
+    "investWithUs": "Invest with H Hospitality"
+  },
+  "home": {
+    "awards": {
+      "title": "Award-Winning Hospitality",
+      "description": "H Hospitality’s portfolio continues to set the benchmark across Asia. From Michelin recognition to multiple Tripadvisor Travelers’ Choice wins, our properties deliver exceptional guest experiences, operational excellence, and investor-grade performance.",
+      "michelin": {
+        "title": "Michelin Guide 2025 Winner",
+        "description": "A fusion of Japanese elegance and Filipino tropical charm, recognized by MICHELIN RECOGNITION 2025."
+      },
+      "tripadvisor": {
+        "title": "Travelers’ Choice 2025",
+        "restaurantsLabel": "Restaurants:",
+        "hotelsLabel": "Hotels:"
+      }
+    }
   },
   "investing": {
     "title": "Our Investments",
     "subtitle": "Explore our diverse strategic portfolio",
+    "awards": {
+      "title": "Proven Performance, Recognized Excellence",
+      "description": "At H Hospitality, award-winning operations are not the exception—they are our standard. Our disciplined development, brand design, and guest-centric operating model consistently translate into premium ADRs, strong occupancy, and market-leading reviews.",
+      "michelin": {
+        "title": "Michelin Guide Recognition 2025",
+        "description": "PIECE LIO is proudly recognized by the prestigious Michelin Guide 2025, joining the world’s finest hospitality establishments. This honor celebrates our commitment to exceptional service and the unique fusion of Japanese elegance with Filipino tropical charm—an approach that elevates guest satisfaction and asset value."
+      },
+      "tripadvisor": {
+        "title": "Tripadvisor Travelers’ Choice 2025",
+        "restaurants": {
+          "title": "Restaurants",
+          "pos": {
+            "description": "Rooftop bar with sweeping Bacuit Bay views; curated craft cocktails.",
+            "openUntil": "Open until 11:00 PM",
+            "vegan": "Vegan options",
+            "meals": "Breakfast, Lunch, Dinner, Brunch, Drinks",
+            "location": "6F, H Hotel, Real St, Barangay Buena Suerte"
+          },
+          "verde": {
+            "description": "Vegetarian, Vegan, Gluten-free options.",
+            "hours": "7:00 AM–10:00 PM",
+            "service": "Table service",
+            "meals": "Breakfast, Lunch, Dinner, Brunch",
+            "location": "Ground Floor of H Hotel"
+          }
+        },
+        "hotels": {
+          "title": "Hotels",
+          "hhotel": {
+            "rating": "4.9 Excellent",
+            "subtitle": "Vegan Friendly Hotel | #1 of 5 hotels in Barangay Buena Suerte",
+            "scores": "High scores in Location (4.9), Service (4.9), Cleanliness (4.8)."
+          },
+          "nbr": {
+            "rating": "4.7 Very Good",
+            "subtitle": "#3 of 32 inns in El Nido",
+            "amenities": "Amenities: Beach access, pool, free parking, airport transport."
+          },
+          "nbg": {
+            "rating": "4.8 Excellent",
+            "subtitle": "#2 of 19 resorts in El Nido",
+            "description": "Iconic 6m-wide glamping tents meters from Asia’s top-rated Nacpan Beach."
+          }
+        }
+      },
+      "investors": {
+        "title": "Why It Matters for Investors",
+        "brand": {
+          "title": "Brand Advantage",
+          "description": "Independent recognition accelerates demand, rate premiums, and organic reach."
+        },
+        "operational": {
+          "title": "Operational Discipline",
+          "description": "Data-driven revenue management and guest experience design deliver sustained RevPAR outperformance."
+        },
+        "scalable": {
+          "title": "Scalable Playbook",
+          "description": "From rooftop mixology concepts to eco-luxury beach assets, our frameworks replicate excellence across markets."
+        }
+      }
+    },
     "tabs": {
       "hotels": "Hotels",
       "restaurantsCafeBars": "Restaurant, Cafe & Bars",
