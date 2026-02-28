@@ -133,6 +133,12 @@
     "valueForMoney": "性价比：",
     "locationScore": "位置评分：",
     "nearestAirport": "最近的机场：",
+    "reserve": {
+      "title": "爱妮岛珍藏",
+      "subtitle": "一方净土",
+      "description": "探索我们精选的原始岛屿，欣赏令人屏息的自然美景，体验激发心灵连结的独特旅程。",
+      "explore": "探索爱妮岛珍藏"
+    },
     "pieceLio": {
       "name": "Piece Lio",
       "description": "Piece Lio 是爱妮岛上最舒适的酒店之一，与日本知名的 Piece 集团合作开发。Piece 集团在日本经营 10 家酒店，而 Piece Lio 提供 50 至 150 平方米的房间，相较于当地一般酒店 18 至 22 平方米的房型，为旅客带来更宽敞舒适的住宿体验。",

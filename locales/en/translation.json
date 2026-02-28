@@ -132,6 +132,12 @@
     "valueForMoney": "Value for money:",
     "locationScore": "Location score:",
     "nearestAirport": "Nearest airport:",
+    "reserve": {
+      "title": "El Nido Reserve",
+      "subtitle": "A PLACE APART",
+      "description": "Discover pristine islands handpicked for their lush, unspoiled landscapes and experiences that foster a sense of connection.",
+      "explore": "Explore El Nido Reserve"
+    },
     "pieceLio": {
       "name": "Piece Lio",
       "description": "One of the most comfortable hotels on El Nido, developed in collaboration with Japan's renowned Piece Group. Offering spacious rooms of 50 to 150 square meters, providing a more comfortable stay compared to local hotels' typical 18 to 22 square meter rooms.",

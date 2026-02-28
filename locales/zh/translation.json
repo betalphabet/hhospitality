@@ -132,6 +132,12 @@
     "valueForMoney": "性價比：",
     "locationScore": "位置評分：",
     "nearestAirport": "最近的機場：",
+    "reserve": {
+      "title": "愛妮島珍藏",
+      "subtitle": "一方淨土",
+      "description": "探索我們精選的原始島嶼，欣賞令人屏息的自然美景，體驗激發心靈連結的獨特旅程。",
+      "explore": "探索愛妮島珍藏"
+    },
     "pieceLio": {
       "name": "Piece Lio",
       "shortDescription": "與日本知名Piece集團合作開發的豪華酒店，提供50至150平方米的寬敞客房，遠超當地標準的住宿體驗。",

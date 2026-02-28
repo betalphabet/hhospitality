@@ -27,6 +27,235 @@
         #mainNav.navbar-shrink .langSelectDesktop {
             margin-top: 15px;
         }
+
+        /* Hotels Covered Section */
+        #hotels-covered {
+            position: relative;
+            width: 100%;
+            background-color: #000;
+        }
+
+        /* Intro Section */
+        .reserve-intro {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 2rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .reserve-intro h1 {
+            font-family: 'Times New Roman', serif;
+            font-style: italic;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        .reserve-intro h2 {
+            font-family: 'Times New Roman', serif;
+            font-size: 4rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin-bottom: 2rem;
+            font-weight: normal;
+        }
+
+        .reserve-intro p {
+            font-family: 'Varela Round', sans-serif;
+            font-size: 1.2rem;
+            max-width: 700px;
+            line-height: 1.6;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+        }
+
+        .reserve-intro .explore-btn {
+            border: 1px solid #fff;
+            padding: 1rem 3rem;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .reserve-intro .explore-btn:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        /* Hotel Section */
+        .hotel-section {
+            height: 100vh;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hotel-bg-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .hotel-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+        }
+
+        .hotel-bg.active {
+            opacity: 1;
+        }
+
+        .hotel-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 2;
+        }
+
+        .hotel-content {
+            position: relative;
+            z-index: 3;
+            text-align: center;
+            color: #fff;
+            max-width: 900px;
+            padding: 2rem;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        .hotel-section.active .hotel-content {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hotel-brand {
+            font-family: 'Times New Roman', serif;
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hotel-desc {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            font-family: 'Varela Round', sans-serif;
+        }
+
+        .hotel-ratings {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-bottom: 3rem;
+            font-size: 1rem;
+        }
+
+        .hotel-rating-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hotel-rating-item span:first-child {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+
+        .rating-score {
+            color: #ffc107;
+            font-size: 1.2rem;
+        }
+
+        .btn-booking {
+            background-color: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+            padding: 1rem 3rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+            display: inline-block;
+        }
+
+        .btn-booking:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        /* Bottom Navigation */
+        #hotel-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 1000;
+            padding: 1.5rem 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            transform: translateY(100%);
+            transition: transform 0.4s ease-in-out;
+        }
+
+        #hotel-nav.visible {
+            transform: translateY(0);
+        }
+
+        .nav-item-hotel {
+            color: #888;
+            text-decoration: none;
+            padding: 0 1.5rem;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+            white-space: nowrap;
+            cursor: pointer;
+            border-right: 1px solid #444;
+        }
+
+        .nav-item-hotel:last-child {
+            border-right: none;
+        }
+
+        .nav-item-hotel:hover,
+        .nav-item-hotel.active {
+            color: #fff;
+        }
     </style>
 
 
@@ -308,236 +537,26 @@
         </div>
     </section>
     <!-- Hotel List -->
-    <section class="projects-section bg-light" id="hotels">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-2 mb-5">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#pieceLioModal">
-                        <img class="img-fluid mb-3 mb-lg-0" src="images/piecelio/cover.webp" alt="Piece Lio" />
-                    </a>
-                    <div class="featured-text text-lg-left pt-3">
-                        <h4><a href="#" data-bs-toggle="modal" data-bs-target="#pieceLioModal"
-                                data-i18n="hotel.pieceLio.name">Piece Lio</a></h4>
-                        <p class="text-black-50 mb-0">
-                            <span data-i18n="hotel.pieceLio.shortDescription">A luxurious beachfront resort offering
-                                stunning views of the ocean and world-class amenities.</span>
-                        </p>
-                        <div class="row mt-2 align-items-center">
-                            <div class="col-6 text-left small">
-                                <div><strong>Booking.com:</strong> <span class="text-warning">9.4</span> (758)</div>
-                                <div><strong>Agoda:</strong> <span class="text-warning">9.4</span> (1061)</div>
-                                <div><strong>Trip.com:</strong> <span class="text-warning">9.5</span> (67)</div>
-                            </div>
-                            <div class="col-6">
-                                <a href="https://hotels.cloudbeds.com/reservation/lqMNR1" target="_blank"
-                                    class="btn btn-primary btn-reduced-padding w-100" data-i18n="hotel.bookDirect">Book
-                                    Direct for cheaper price</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-2 mb-5">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#nacpanBeachResortModal">
-                        <img class="img-fluid mb-3 mb-lg-0" src="assets/img/time-Nacpan-Beach-Resort.jpg"
-                            alt="Nacpan Beach Resort" />
-                    </a>
-                    <div class="featured-text text-lg-left pt-3">
-                        <h4><a href="#" data-bs-toggle="modal" data-bs-target="#nacpanBeachResortModal"
-                                data-i18n="hotel.nacpanBeachResort.name">Nacpan Beach Resort</a></h4>
-                        <p class="text-black-50 mb-0">
-                            <span data-i18n="hotel.nacpanBeachResort.shortDescription">Experience the beauty of Nacpan
-                                Beach at this eco-friendly resort, perfect for nature lovers.</span>
-                        </p>
-                        <div class="row mt-2 align-items-center">
-                            <div class="col-6 text-left small">
-                                <div><strong>Booking.com:</strong> <span class="text-warning">8.7</span> (585)</div>
-                                <div><strong>Agoda:</strong> <span class="text-warning">8.8</span> (1412)</div>
-                                <div><strong>Trip.com:</strong> <span class="text-warning">9.5</span> (68)</div>
-                            </div>
-                            <div class="col-6">
-                                <a href="https://hotels.cloudbeds.com/reservation/Rl4kvW" target="_blank"
-                                    class="btn btn-primary btn-reduced-padding w-100" data-i18n="hotel.bookDirect">Book
-                                    Direct for cheaper price</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-2 mb-5">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#nacpanBeachGlampingModal">
-                        <img class="img-fluid mb-3 mb-lg-0" src="assets/img/time-Nacpan-Beach-Glamping.jpg"
-                            alt="Nacpan Beach Glamping" />
-                    </a>
-                    <div class="featured-text text-lg-left pt-3">
-                        <h4><a href="#" data-bs-toggle="modal" data-bs-target="#nacpanBeachGlampingModal"
-                                data-i18n="hotel.nacpanBeachGlamping.name">Nacpan Beach Glamping</a></h4>
-                        <p class="text-black-50 mb-0">
-                            <span data-i18n="hotel.nacpanBeachGlamping.shortDescription">Enjoy a unique glamping
-                                experience with all the comforts of a hotel, right on the beach.</span>
-                        </p>
-                        <div class="row mt-2 align-items-center">
-                            <div class="col-6 text-left small">
-                                <div><strong>Booking.com:</strong> <span class="text-warning">8.8</span> (767)</div>
-                                <div><strong>Agoda:</strong> <span class="text-warning">8.9</span> (1402)</div>
-                                <div><strong>Trip.com:</strong> <span class="text-warning">9.7</span> (46)</div>
-                            </div>
-                            <div class="col-6">
-                                <a href="https://hotels.cloudbeds.com/en/reservation/FuKvEZ" target="_blank"
-                                    class="btn btn-primary btn-reduced-padding w-100" data-i18n="hotel.bookDirect">Book
-                                    Direct for cheaper price</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-2 mb-5">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#hHotelVeganHotelModal">
-                        <img class="img-fluid mb-3 mb-lg-0" src="assets/img/time-H-Hotel-Vegan-Hotel.jpg"
-                            alt="H Hotel Vegan Hotel" />
-                    </a>
-                    <div class="featured-text text-lg-left pt-3">
-                        <h4><a href="#" data-bs-toggle="modal" data-bs-target="#hHotelVeganHotelModal"
-                                data-i18n="hotel.hHotelVeganHotel.name">H Hotel Vegan Friendly Hotel</a></h4>
-                        <p class="text-black-50 mb-0">
-                            <span data-i18n="hotel.hHotelVeganHotel.shortDescription">A vegan-friendly hotel with
-                                plant-based cuisine and eco-conscious rooms.</span>
-                        </p>
-                        <div class="row mt-2 align-items-center">
-                            <div class="col-6 text-left small">
-                                <div><strong>Booking.com:</strong> <span class="text-warning">9.1</span> (1318)</div>
-                                <div><strong>Agoda:</strong> <span class="text-warning">9.2</span> (2499)</div>
-                                <div><strong>Trip.com:</strong> <span class="text-warning">9.7</span> (81)</div>
-                            </div>
-                            <div class="col-6">
-                                <a href="https://hotels.cloudbeds.com/reservation/E2QFKh" target="_blank"
-                                    class="btn btn-primary btn-reduced-padding w-100" data-i18n="hotel.bookDirect">Book
-                                    Direct for cheaper price</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-2 mb-5">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#jBoutiqueHotelModal">
-                        <img class="img-fluid mb-3 mb-lg-0" src="assets/img/time-J-Hostel.jpg" alt="J Boutique Hotel" />
-                    </a>
-                    <div class="featured-text text-lg-left pt-3">
-                        <h4><a href="#" data-bs-toggle="modal" data-bs-target="#jBoutiqueHotelModal"
-                                data-i18n="hotel.jBoutiqueHotel.name">J Boutique Hotel</a></h4>
-                        <p class="text-black-50 mb-0">
-                            <span data-i18n="hotel.jBoutiqueHotel.shortDescription">A stylish boutique hotel in the
-                                heart of El Nido, perfect for urban explorers.</span>
-                        </p>
-                        <div class="row mt-2 align-items-center">
-                            <div class="col-6 text-left small">
-                                <div><strong>Booking.com:</strong> <span class="text-warning">8.6</span> (813)</div>
-                                <div><strong>Agoda:</strong> <span class="text-warning">9.2</span> (22)</div>
-                                <div><strong>Trip.com:</strong> <span class="text-warning">8.9</span> (885)</div>
-                            </div>
-                            <div class="col-6">
-                                <a href="https://hotels.cloudbeds.com/reservation/sT18ih" target="_blank"
-                                    class="btn btn-primary btn-reduced-padding w-100" data-i18n="hotel.bookDirect">Book
-                                    Direct for cheaper price</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-2 mb-5">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#zGardenHotelModal">
-                        <img class="img-fluid mb-3 mb-lg-0" src="images/zgarden/1.jpg" alt="Z Garden Hotel" />
-                    </a>
-                    <div class="featured-text text-lg-left pt-3">
-                        <h4><a href="#" data-bs-toggle="modal" data-bs-target="#zGardenHotelModal"
-                                data-i18n="hotel.zGardenHotel.name">Z Garden Hotel</a></h4>
-                        <p class="text-black-50 mb-0">
-                            <span data-i18n="hotel.zGardenHotel.shortDescription">A perfect destination for Generation Z
-                                travelers in El Nido with minimalist design.</span>
-                        </p>
-                        <div class="row mt-2 align-items-center">
-                            <div class="col-6 text-left small">
-                                <div><strong>Booking.com:</strong> <span class="text-warning">9.5</span> (290)</div>
-                                <div><strong>Agoda:</strong> <span class="text-warning">9.5</span> (50)</div>
-                                <div><strong>Trip.com:</strong> <span class="text-warning">9.7</span> (24)</div>
-                            </div>
-                            <div class="col-6">
-                                <a href="https://hotels.cloudbeds.com/en/reservation/d6gBwC?currency=php"
-                                    target="_blank" class="btn btn-primary btn-reduced-padding w-100"
-                                    data-i18n="hotel.bookDirect">Book Direct for cheaper price</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-2 mb-5">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#sResortElNidoModal">
-                        <img class="img-fluid mb-3 mb-lg-0" src="images/new_sresort/3.webp" alt="S Resort El Nido" />
-                    </a>
-                    <div class="featured-text text-lg-left pt-3">
-                        <h4><a href="#" data-bs-toggle="modal" data-bs-target="#sResortElNidoModal"
-                                data-i18n="hotel.sResortElNido.name">S Resort</a></h4>
-                        <p class="text-black-50 mb-0">
-                            <span data-i18n="hotel.sResortElNido.shortDescription">A modern resort offering comfort and
-                                convenience for leisure and business travelers.</span>
-                        </p>
-                        <div class="row mt-2 align-items-center">
-                            <div class="col-6 text-left small">
-                                <div><strong>Booking.com:</strong> <span class="text-warning">9.2</span> (217)</div>
-                                <div><strong>Agoda:</strong> <span class="text-warning">8.9</span> (1424)</div>
-                                <div><strong>Trip.com:</strong> <span class="text-warning">9.4</span> (76)</div>
-                            </div>
-                            <div class="col-6">
-                                <a href="https://hotels.cloudbeds.com/reservation/sT18ih" target="_blank"
-                                    class="btn btn-primary btn-reduced-padding w-100" data-i18n="hotel.bookDirect">Book
-                                    Direct for cheaper price</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-2 mb-5">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#casaCeciliaModal">
-                        <img class="img-fluid mb-3 mb-lg-0" src="assets/img/casa/casa_1.jpg" alt="Casa Cecilia" />
-                    </a>
-                    <div class="featured-text text-lg-left pt-3">
-                        <h4><a href="#" data-bs-toggle="modal" data-bs-target="#casaCeciliaModal" data-i18n="hotel.casaCecilia.name">Casa Cecilia</a></h4>
-                        <p class="text-black-50 mb-0">
-                            <span data-i18n="hotel.casaCecilia.shortDescription">A 3-star accommodation located in the heart of El Nido, offering comfort and convenience.</span>
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center mt-2">
-                            <div class="text-left">
-                                <span data-i18n="hotel.rating">Rating</span> <span class="text-warning">★★★</span><br>
-                                <span data-i18n="hotel.pricing">Pricing</span> <span class="text-warning">★★★</span><br>
-                                <span data-i18n="hotel.location">Location</span> <span class="text-warning">★★★★</span>
-                            </div>
-                            <a href="https://www.facebook.com/CasaCeciliaHotel" target="_blank" class="btn btn-primary btn-reduced-padding" data-i18n="hotel.bookDirect">Book Direct for cheaper price</a>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-2 mb-5">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#nacpanBeachVillasModal">
-                        <img class="img-fluid mb-3 mb-lg-0" src="images/nacpan_beach_villa/1.webp"
-                            alt="Nacpan Beach Villas" />
-                    </a>
-                    <div class="featured-text text-lg-left pt-3">
-                        <h4><a href="#" data-bs-toggle="modal" data-bs-target="#nacpanBeachVillasModal"
-                                data-i18n="hotel.nacpanBeachVillas.name">Nacpan Beach Villas</a></h4>
-                        <p class="text-black-50 mb-0">
-                            <span data-i18n="hotel.nacpanBeachVillas.shortDescription">Luxurious villas with free WiFi,
-                                perfect for couples seeking a romantic getaway.</span>
-                        </p>
-                        <div class="row mt-2 align-items-center">
-                            <div class="col-6 text-left small">
-                                <div><strong>Booking.com:</strong> <span class="text-warning">9.0</span> (526)</div>
-                                <div><strong>Agoda:</strong> <span class="text-warning">9.1</span> (690)</div>
-                                <div><strong>Trip.com:</strong> <span class="text-warning">9.5</span> (68)</div>
-                            </div>
-                            <div class="col-6">
-                                <a href="https://hotels.cloudbeds.com/reservation/JVnObH" target="_blank"
-                                    class="btn btn-primary btn-reduced-padding w-100" data-i18n="hotel.bookDirect">Book
-                                    Direct for cheaper price</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
+    <section id="hotels-covered">
+        <!-- Intro Section -->
+        <div class="reserve-intro">
+            <h1 data-i18n="hotel.reserve.title">El Nido Reserve</h1>
+            <h2 data-i18n="hotel.reserve.subtitle">A PLACE APART</h2>
+            <p data-i18n="hotel.reserve.description">Discover pristine islands handpicked for their breathtaking
+                limestone cliffs and experiences that foster a sense of wonder.</p>
+            <a href="#hotels-list-container" class="explore-btn" data-i18n="hotel.reserve.explore">Explore El Nido
+                Reserve</a>
+        </div>
+
+        <!-- Container for dynamic hotels -->
+        <div id="hotels-list-container"></div>
+
+        <!-- Bottom Navigation -->
+        <nav id="hotel-nav">
+            <!-- Dynamic items -->
+        </nav>
+    </section>
     <!-- Hotel Modals -->
     <!-- Piece Lio Modal -->
     <div class="modal fade" id="pieceLioModal" tabindex="-1" aria-labelledby="pieceLioModalLabel" aria-hidden="true">
@@ -1565,6 +1584,209 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js?v=202411061003"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hotelsData = [
+                {
+                    id: 'pieceLio',
+                    nameKey: 'hotel.pieceLio.name',
+                    descKey: 'hotel.pieceLio.shortDescription',
+                    images: ['images/piecelio/cover.webp', 'images/piecelio/1.webp', 'images/piecelio/2.webp', 'images/piecelio/3.webp', 'images/piecelio/4.webp', 'images/piecelio/5.webp', 'images/piecelio/6.webp', 'images/piecelio/7.webp'],
+                    bookingUrl: 'https://hotels.cloudbeds.com/reservation/lqMNR1',
+                    ratings: { booking: 9.4, agoda: 9.4, trip: 9.5 }
+                },
+                {
+                    id: 'nacpanBeachResort',
+                    nameKey: 'hotel.nacpanBeachResort.name',
+                    descKey: 'hotel.nacpanBeachResort.shortDescription',
+                    images: ['assets/img/time-Nacpan-Beach-Resort.jpg', 'assets/img/nbr/nbr_1.jpg', 'assets/img/nbr/nbr_2.jpg', 'assets/img/nbr/nbr_3.jpg', 'assets/img/nbr/nbr_4.jpg', 'assets/img/nbr/nbr_5.jpg', 'assets/img/nbr/nbr_6.jpg'],
+                    bookingUrl: 'https://hotels.cloudbeds.com/reservation/Rl4kvW',
+                    ratings: { booking: 8.7, agoda: 8.8, trip: 9.5 }
+                },
+                {
+                    id: 'nacpanBeachGlamping',
+                    nameKey: 'hotel.nacpanBeachGlamping.name',
+                    descKey: 'hotel.nacpanBeachGlamping.shortDescription',
+                    images: ['assets/img/time-Nacpan-Beach-Glamping.jpg', 'assets/img/nbg/nbg_1.jpg', 'assets/img/nbg/nbg_2.jpg', 'assets/img/nbg/nbg_3.jpg', 'assets/img/nbg/nbg_4.jpg', 'assets/img/nbg/nbg_5.jpg', 'assets/img/nbg/nbg_6.jpg'],
+                    bookingUrl: 'https://hotels.cloudbeds.com/en/reservation/FuKvEZ',
+                    ratings: { booking: 8.8, agoda: 8.9, trip: 9.7 }
+                },
+                {
+                    id: 'hHotelVeganHotel',
+                    nameKey: 'hotel.hHotelVeganHotel.name',
+                    descKey: 'hotel.hHotelVeganHotel.shortDescription',
+                    images: ['assets/img/time-H-Hotel-Vegan-Hotel.jpg', 'assets/img/hhvh/hhvh_1.jpg', 'assets/img/hhvh/hhvh_2.jpg', 'assets/img/hhvh/hhvh_3.jpg', 'assets/img/hhvh/hhvh_4.jpg', 'assets/img/hhvh/hhvh_5.jpg', 'assets/img/hhvh/hhvh_6.jpg'],
+                    bookingUrl: 'https://hotels.cloudbeds.com/reservation/E2QFKh',
+                    ratings: { booking: 9.1, agoda: 9.2, trip: 9.7 }
+                },
+                {
+                    id: 'jBoutiqueHotel',
+                    nameKey: 'hotel.jBoutiqueHotel.name',
+                    descKey: 'hotel.jBoutiqueHotel.shortDescription',
+                    images: ['assets/img/time-J-Hostel.jpg', 'assets/img/jboutiquehotel/jboutiquehotel_1.jpg', 'assets/img/jboutiquehotel/jboutiquehotel_2.jpg', 'assets/img/jboutiquehotel/jboutiquehotel_3.jpg', 'assets/img/jboutiquehotel/jboutiquehotel_4.jpg', 'assets/img/jboutiquehotel/jboutiquehotel_5.jpg', 'assets/img/jboutiquehotel/jboutiquehotel_6.jpg'],
+                    bookingUrl: 'https://hotels.cloudbeds.com/reservation/sT18ih',
+                    ratings: { booking: 8.6, agoda: 9.2, trip: 8.9 }
+                },
+                {
+                    id: 'zGardenHotel',
+                    nameKey: 'hotel.zGardenHotel.name',
+                    descKey: 'hotel.zGardenHotel.shortDescription',
+                    images: ['images/zgarden/1.jpg', 'images/zgarden/2.jpg', 'images/zgarden/3.jpg'],
+                    bookingUrl: 'https://hotels.cloudbeds.com/en/reservation/d6gBwC?currency=php',
+                    ratings: { booking: 9.5, agoda: 9.5, trip: 9.7 }
+                },
+                {
+                    id: 'sResortElNido',
+                    nameKey: 'hotel.sResortElNido.name',
+                    descKey: 'hotel.sResortElNido.shortDescription',
+                    images: ['images/new_sresort/3.webp', 'images/new_sresort/6.webp', 'images/new_sresort/1.webp', 'images/new_sresort/2.webp', 'images/new_sresort/4.webp', 'images/new_sresort/5.webp'],
+                    bookingUrl: 'https://hotels.cloudbeds.com/reservation/sT18ih',
+                    ratings: { booking: 9.2, agoda: 8.9, trip: 9.4 }
+                },
+                {
+                    id: 'nacpanBeachVillas',
+                    nameKey: 'hotel.nacpanBeachVillas.name',
+                    descKey: 'hotel.nacpanBeachVillas.shortDescription',
+                    images: ['images/nacpan_beach_villa/1.webp', 'images/nacpan_beach_villa/2.webp', 'images/nacpan_beach_villa/3.webp', 'images/nacpan_beach_villa/4.webp', 'images/nacpan_beach_villa/5.webp', 'images/nacpan_beach_villa/6.webp'],
+                    bookingUrl: 'https://hotels.cloudbeds.com/reservation/JVnObH',
+                    ratings: { booking: 9.0, agoda: 9.1, trip: 9.5 }
+                }
+            ];
+
+            const hotelsContainer = document.getElementById('hotels-list-container');
+            const navContainer = document.getElementById('hotel-nav');
+
+            // Render Hotels
+            hotelsData.forEach((hotel, index) => {
+                // Hotel Section
+                const section = document.createElement('div');
+                section.id = hotel.id;
+                section.className = 'hotel-section';
+
+                // Background Images
+                let bgHtml = '<div class="hotel-bg-container">';
+                hotel.images.forEach((img, i) => {
+                    bgHtml += `<img src="${img}" class="hotel-bg ${i === 0 ? 'active' : ''}" alt="${hotel.id}">`;
+                });
+                bgHtml += '</div>';
+
+                // Content
+                const contentHtml = `
+            <div class="hotel-overlay"></div>
+            <div class="hotel-content">
+                <h2 class="hotel-brand" data-i18n="${hotel.nameKey}"></h2>
+                <p class="hotel-desc" data-i18n="${hotel.descKey}"></p>
+                <div class="hotel-ratings">
+                    <div class="hotel-rating-item">
+                        <span>Booking.com</span>
+                        <span class="rating-score">${hotel.ratings.booking} ★</span>
+                    </div>
+                    <div class="hotel-rating-item">
+                        <span>Agoda</span>
+                        <span class="rating-score">${hotel.ratings.agoda} ★</span>
+                    </div>
+                    <div class="hotel-rating-item">
+                        <span>Trip.com</span>
+                        <span class="rating-score">${hotel.ratings.trip} ★</span>
+                    </div>
+                </div>
+                <a href="${hotel.bookingUrl}" target="_blank" class="btn-booking" data-i18n="hotel.bookNow">Book Now</a>
+            </div>
+        `;
+
+                section.innerHTML = bgHtml + contentHtml;
+                hotelsContainer.appendChild(section);
+
+                // Navigation Item
+                const navItem = document.createElement('a');
+                navItem.className = 'nav-item-hotel';
+                navItem.dataset.target = hotel.id;
+                navItem.setAttribute('data-i18n', hotel.nameKey);
+                navItem.innerText = hotel.id;
+                navItem.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    document.getElementById(hotel.id).scrollIntoView({ behavior: 'smooth' });
+                });
+                navContainer.appendChild(navItem);
+            });
+
+            // Intersection Observer for Active State & Nav Visibility
+            const observerOptions = {
+                threshold: 0.5
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Activate Section
+                        entry.target.classList.add('active');
+
+                        // Update Nav
+                        document.querySelectorAll('.nav-item-hotel').forEach(nav => {
+                            nav.classList.remove('active');
+                            if (nav.dataset.target === entry.target.id) {
+                                nav.classList.add('active');
+                            }
+                        });
+                    } else {
+                        entry.target.classList.remove('active');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.hotel-section').forEach(section => {
+                observer.observe(section);
+            });
+
+            // Nav Visibility Observer (Show nav when in #hotels-covered)
+            const navObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        navContainer.classList.add('visible');
+                    } else {
+                        navContainer.classList.remove('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            navObserver.observe(document.getElementById('hotels-covered'));
+
+            // Carousel Logic
+            setInterval(() => {
+                document.querySelectorAll('.hotel-section.active .hotel-bg-container').forEach(container => {
+                    const images = container.querySelectorAll('.hotel-bg');
+                    if (images.length <= 1) return;
+                    let activeIndex = -1;
+                    images.forEach((img, i) => {
+                        if (img.classList.contains('active')) activeIndex = i;
+                        img.classList.remove('active');
+                    });
+
+                    let nextIndex = (activeIndex + 1) % images.length;
+                    images[nextIndex].classList.add('active');
+                });
+            }, 4000); // Change every 4 seconds
+
+            // Initial Translation Update
+            if (typeof i18next !== 'undefined') {
+                setTimeout(() => {
+                    document.querySelectorAll('#hotels-covered [data-i18n]').forEach(element => {
+                        const key = element.getAttribute('data-i18n');
+                        const t = i18next.t(key);
+                        if (t) element.innerHTML = t;
+                    });
+                }, 500);
+
+                i18next.on('languageChanged', function (lng) {
+                    document.querySelectorAll('#hotels-covered [data-i18n]').forEach(element => {
+                        const key = element.getAttribute('data-i18n');
+                        const t = i18next.t(key);
+                        if (t) element.innerHTML = t;
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
