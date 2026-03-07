@@ -20,17 +20,38 @@ document.addEventListener('DOMContentLoaded', function () {
         return 'en';
     }
 
-    function setLanguage(lang) {
-        localStorage.setItem('userLanguage', lang.toLowerCase());
-        i18next.changeLanguage(lang, (err, t) => {
-            if (err) return console.log('something went wrong loading', err);
-            updateContent();
-            updateSelects(lang);
-            // Update video section visibility based on language
-            if (videoSection) {
-                videoSection.style.display = (lang === 'zh') ? 'block' : 'none';
+    function updateSelects(lang) {
+        if (langSelect) langSelect.value = lang;
+        if (langSelectDesktop) langSelectDesktop.value = lang;
+    }
+
+    function updateContent() {
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            if (typeof i18next !== 'undefined') {
+                element.innerHTML = i18next.t(key);
             }
         });
+
+        if (videoSection) {
+            if (i18next.language === 'zh') {
+                videoSection.style.display = 'block';
+            } else {
+                videoSection.style.display = 'none';
+            }
+        }
+    }
+
+    function setLanguage(lang) {
+        localStorage.setItem('userLanguage', lang.toLowerCase());
+        updateSelects(lang);
+
+        if (typeof i18next !== 'undefined') {
+            i18next.changeLanguage(lang, (err, t) => {
+                if (err) return console.log('something went wrong loading', err);
+                updateContent();
+            });
+        }
     }
 
     function handleLanguageChange(event) {
@@ -38,48 +59,38 @@ document.addEventListener('DOMContentLoaded', function () {
         setLanguage(selectedLang);
     }
 
-    function updateSelects(lang) {
-        langSelect.value = lang;
-        langSelectDesktop.value = lang;
-    }
+    if (langSelect) langSelect.addEventListener('change', handleLanguageChange);
+    if (langSelectDesktop) langSelectDesktop.addEventListener('change', handleLanguageChange);
 
-    langSelect.addEventListener('change', handleLanguageChange);
-    langSelectDesktop.addEventListener('change', handleLanguageChange);
+    // Determine initial language
+    const userLang = localStorage.getItem('userLanguage') || detectLanguage();
 
-    const userLang = localStorage.getItem('userLanguage');
+    // Update selects immediately to reflect current language
+    updateSelects(userLang);
 
-    i18next
-        .use(i18nextXHRBackend)
-        .use(i18nextBrowserLanguageDetector)
-        .init({
-            fallbackLng: 'en',
-            lng: userLang || detectLanguage(), // 預設載入 userLang（如果有值）
-            debug: true,
-            backend: {
-                loadPath: 'locales/{{lng}}/translation.json'
-            }
-        }, function(err, t) {
-            if (err) return console.log('something went wrong loading', err);
-            const savedLang = userLang || detectLanguage();
-            setLanguage(savedLang);
-        });
-
-    function updateContent() {
-        document.querySelectorAll('[data-i18n]').forEach(element => {
-            const key = element.getAttribute('data-i18n');
-            element.innerHTML = i18next.t(key);
-        });
-
-        if (i18next.language === 'zh') {
-            videoSection.style.display = 'block';
-        } else {
-            videoSection.style.display = 'none';
-        }
+    if (typeof i18next !== 'undefined') {
+        i18next
+            .use(i18nextXHRBackend)
+            .use(i18nextBrowserLanguageDetector)
+            .init({
+                fallbackLng: 'en',
+                lng: userLang,
+                debug: true,
+                backend: {
+                    loadPath: 'locales/{{lng}}/translation.json'
+                }
+            }, function (err, t) {
+                if (err) return console.log('something went wrong loading', err);
+                // Ensure content is updated after init
+                updateContent();
+                // Also ensure selects are in sync (redundant but safe)
+                updateSelects(userLang);
+            });
     }
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     let lastScrollTop = 0;
     const navbar = document.getElementById('mainNav');
     const scrollThreshold = 100;
