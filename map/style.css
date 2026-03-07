@@ -41,6 +41,23 @@ html, body {
     transform: scale(1.05);
 }
 
+/* 背景模糊層 */
+.background-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/map.webp');
+    background-size: cover;
+    background-position: center;
+    filter: blur(20px) brightness(0.8);
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
 /* 地圖容器 - 滿版顯示 */
 .map-container {
     width: 100vw;
@@ -51,6 +68,28 @@ html, body {
     background-color: #f0f0f0;
     transform: translateZ(0); /* 啟用硬體加速 */
     backface-visibility: hidden;
+    z-index: 1;
+}
+
+/* 電腦版樣式調整 */
+@media (min-width: 992px) {
+    .background-blur {
+        opacity: 1;
+    }
+
+    .map-container {
+        background-color: transparent;
+        cursor: default; /* 取消拖曳手勢 */
+    }
+
+    .map-container.dragging {
+        cursor: default;
+    }
+    
+    /* 隱藏底部提示 */
+    #bottomTooltip {
+        display: none !important;
+    }
 }
 
 /* 當拖曳時改變游標 */
