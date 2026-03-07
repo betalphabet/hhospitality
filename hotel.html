@@ -1638,6 +1638,7 @@
                     descKey: 'hotel.pieceLio.shortDescription',
                     images: ['images/piecelio/cover.webp', 'images/piecelio/1.webp', 'images/piecelio/2.webp', 'images/piecelio/3.webp', 'images/piecelio/4.webp', 'images/piecelio/5.webp', 'images/piecelio/6.webp', 'images/piecelio/7.webp'],
                     bookingUrl: 'https://hotels.cloudbeds.com/reservation/lqMNR1',
+                    websiteUrl: 'https://www.piecelio.com/',
                     ratings: { booking: 9.4, agoda: 9.4, trip: 9.5 }
                 },
                 {
@@ -1646,6 +1647,7 @@
                     descKey: 'hotel.nacpanBeachResort.shortDescription',
                     images: ['assets/img/time-Nacpan-Beach-Resort.jpg', 'assets/img/nbr/nbr_1.jpg', 'assets/img/nbr/nbr_2.jpg', 'assets/img/nbr/nbr_3.jpg', 'assets/img/nbr/nbr_4.jpg', 'assets/img/nbr/nbr_5.jpg', 'assets/img/nbr/nbr_6.jpg'],
                     bookingUrl: 'https://hotels.cloudbeds.com/reservation/Rl4kvW',
+                    websiteUrl: 'https://www.nacpanbeachresort.com/',
                     ratings: { booking: 8.7, agoda: 8.8, trip: 9.5 }
                 },
                 {
@@ -1654,6 +1656,7 @@
                     descKey: 'hotel.nacpanBeachGlamping.shortDescription',
                     images: ['assets/img/time-Nacpan-Beach-Glamping.jpg', 'assets/img/nbg/nbg_1.jpg', 'assets/img/nbg/nbg_2.jpg', 'assets/img/nbg/nbg_3.jpg', 'assets/img/nbg/nbg_4.jpg', 'assets/img/nbg/nbg_5.jpg', 'assets/img/nbg/nbg_6.jpg'],
                     bookingUrl: 'https://hotels.cloudbeds.com/en/reservation/FuKvEZ',
+                    websiteUrl: 'https://www.nacpanbeachglamping.com/',
                     ratings: { booking: 8.8, agoda: 8.9, trip: 9.7 }
                 },
                 {
@@ -1662,6 +1665,7 @@
                     descKey: 'hotel.hHotelVeganHotel.shortDescription',
                     images: ['assets/img/time-H-Hotel-Vegan-Hotel.jpg', 'assets/img/hhvh/hhvh_1.jpg', 'assets/img/hhvh/hhvh_2.jpg', 'assets/img/hhvh/hhvh_3.jpg', 'assets/img/hhvh/hhvh_4.jpg', 'assets/img/hhvh/hhvh_5.jpg', 'assets/img/hhvh/hhvh_6.jpg'],
                     bookingUrl: 'https://hotels.cloudbeds.com/reservation/E2QFKh',
+                    websiteUrl: 'https://hhotelelnido.com/',
                     ratings: { booking: 9.1, agoda: 9.2, trip: 9.7 }
                 },
                 {
@@ -1670,6 +1674,7 @@
                     descKey: 'hotel.jBoutiqueHotel.shortDescription',
                     images: ['assets/img/time-J-Hostel.jpg', 'assets/img/jboutiquehotel/jboutiquehotel_1.jpg', 'assets/img/jboutiquehotel/jboutiquehotel_2.jpg', 'assets/img/jboutiquehotel/jboutiquehotel_3.jpg', 'assets/img/jboutiquehotel/jboutiquehotel_4.jpg', 'assets/img/jboutiquehotel/jboutiquehotel_5.jpg', 'assets/img/jboutiquehotel/jboutiquehotel_6.jpg'],
                     bookingUrl: 'https://hotels.cloudbeds.com/reservation/sT18ih',
+                    websiteUrl: 'https://jboutiquehotelelnido.com/',
                     ratings: { booking: 8.6, agoda: 9.2, trip: 8.9 }
                 },
                 {
@@ -1678,6 +1683,7 @@
                     descKey: 'hotel.zGardenHotel.shortDescription',
                     images: ['images/zgarden/1.jpg', 'images/zgarden/2.jpg', 'images/zgarden/3.jpg'],
                     bookingUrl: 'https://hotels.cloudbeds.com/en/reservation/d6gBwC?currency=php',
+                    websiteUrl: 'https://zgardenhotel.com/',
                     ratings: { booking: 9.5, agoda: 9.5, trip: 9.7 }
                 },
                 {
@@ -1686,6 +1692,7 @@
                     descKey: 'hotel.sResortElNido.shortDescription',
                     images: ['images/new_sresort/3.webp', 'images/new_sresort/6.webp', 'images/new_sresort/1.webp', 'images/new_sresort/2.webp', 'images/new_sresort/4.webp', 'images/new_sresort/5.webp'],
                     bookingUrl: 'https://hotels.cloudbeds.com/reservation/sT18ih',
+                    websiteUrl: 'https://www.sresortelnido.com/',
                     ratings: { booking: 9.2, agoda: 8.9, trip: 9.4 }
                 },
                 {
@@ -1694,6 +1701,7 @@
                     descKey: 'hotel.nacpanBeachVillas.shortDescription',
                     images: ['images/nacpan_beach_villa/1.webp', 'images/nacpan_beach_villa/2.webp', 'images/nacpan_beach_villa/3.webp', 'images/nacpan_beach_villa/4.webp', 'images/nacpan_beach_villa/5.webp', 'images/nacpan_beach_villa/6.webp'],
                     bookingUrl: 'https://hotels.cloudbeds.com/reservation/JVnObH',
+                    websiteUrl: 'https://www.nacpanbeachvillas.com/',
                     ratings: { booking: 9.0, agoda: 9.1, trip: 9.5 }
                 }
             ];
@@ -1736,6 +1744,7 @@
                     </div>
                 </div>
                 <a href="${hotel.bookingUrl}" target="_blank" class="btn-booking" data-i18n="hotel.bookNow">Book direct for lowest rates</a>
+                ${hotel.websiteUrl ? `<a href="${hotel.websiteUrl}" target="_blank" class="btn-booking" style="margin-left: 10px;" data-i18n="hotel.website">Official Website</a>` : ''}
             </div>
         `;
 
