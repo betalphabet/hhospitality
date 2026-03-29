@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>H Hospitality Business Map</title>
+    <title>H Hospitality 企業地圖</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,19 +16,19 @@
         </a>
     </div>
 
-    <!-- Background Blur Layer -->
+    <!-- 背景模糊層 -->
     <div class="background-blur"></div>
 
     <div class="map-container">
         <div class="map-wrapper">
-            <img src="images/map.webp" alt="Map" class="map-image" draggable="false">
+            <img src="images/map.webp" alt="地圖" class="map-image" draggable="false">
             <div class="markers-container"></div>
         </div>
-        <!-- Loading Overlay -->
+        <!-- 載入提示 -->
         <div class="loading-overlay" id="loadingOverlay">
             <div class="loading-content">
                 <div class="loading-spinner"></div>
-                <p class="loading-text">Loading map...</p>
+                <p class="loading-text">載入地圖中...</p>
             </div>
         </div>
     </div>
@@ -46,36 +46,36 @@
             </div>
         </div>
     </div>
-    <!-- Bottom Hint -->
+    <!-- 底部提示 -->
     <div class="bottom-tooltip" id="bottomTooltip">
-        🖱️ Drag the map to explore all investment projects
+        🖱️ 拖曳地圖來觀看所有投資項目
     </div>
 
-    <!-- Right-side Photo Panel -->
+    <!-- 右側照片展示區塊 -->
     <div class="photo-panel" id="photoPanel">
         <div class="photo-panel-header">
-            <h3 class="photo-panel-title" id="photoPanelTitle">Location Photos</h3>
+            <h3 class="photo-panel-title" id="photoPanelTitle">景點照片</h3>
             <button class="photo-panel-close" id="photoPanelClose">&times;</button>
         </div>
         <div class="photo-panel-content">
             <div class="photo-gallery" id="photoGallery">
-                <!-- Photos are dynamically injected here -->
+                <!-- 照片將動態載入到這裡 -->
             </div>
         </div>
     </div>
 
-    <!-- Photo Overlay -->
+    <!-- 照片遮罩層 -->
     <div class="photo-overlay" id="photoOverlay"></div>
 
-    <!-- Fullscreen Photo Modal -->
+    <!-- 全螢幕照片模態框 -->
     <div class="fullscreen-modal" id="fullscreenModal">
         <div class="fullscreen-modal-content">
             <button class="fullscreen-close" id="fullscreenClose">&times;</button>
-            <img id="fullscreenImage" class="fullscreen-image" alt="Fullscreen photo">
+            <img id="fullscreenImage" class="fullscreen-image" alt="全螢幕照片">
         </div>
     </div>
 
-    <script src="en_script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
