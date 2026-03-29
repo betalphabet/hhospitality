@@ -1,0 +1,625 @@
+[
+  {
+    "id": "location-001",
+    "name": "H Hotel",
+    "image_x_position": 2200,
+    "image_y_position": 2160,
+    "address": "El Nido, Palawan",
+    "custom_button_links": [
+      {
+        "link": "https://hhotelelnido.com/",
+        "name": "Website",
+        "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "Photos",
+        "is_enabled": true,
+        "photo_folder": "assets/img/hhvh"
+      }
+    ],
+    "image": {
+      "content_type": "image/webp",
+      "file_name": "1.webp",
+      "file_width": 901,
+      "file_height": 627,
+      "url": "images/1.webp"
+    },
+    "image_scale": 0.5
+  },
+  {
+    "id": "location-002",
+    "name": "Oriental Spa 1",
+    "image_x_position": 3070,
+    "image_y_position": 2270,
+    "address": "El Nido, Palawan",
+    "custom_button_links": [
+      {
+        "link": "https://hhospitality.group/oriental-spa-1.html",
+        "name": "Website",
+        "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "Photos",
+        "is_enabled": true,
+        "photo_folder": "assets/img/Oriental-Spa"
+      }
+    ],
+    "image": {
+      "content_type": "image/webp",
+      "file_name": "2.webp",
+      "file_width": 371,
+      "file_height": 284,
+      "url": "images/2.webp"
+    },
+    "image_scale": 0.5
+  },
+  {
+    "id": "location-003",
+    "name": "Unocha",
+    "image_x_position": 2923,
+    "image_y_position": 1966,
+    "address": "El Nido, Palawan",
+    "custom_button_links": [
+      {
+        "link": "https://hhospitality.group/unocha.html",
+        "name": "Website",
+        "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "Photos",
+        "is_enabled": true,
+        "photo_folder": "images/unocha"
+      }
+    ],
+    "image": {
+      "content_type": "image/webp",
+      "file_name": "3.webp",
+      "file_width": 218,
+      "file_height": 370,
+      "url": "images/3.webp"
+    },
+    "image_scale": 0.5
+  },
+  {
+    "id": "location-004",
+    "name": "Piece of sky",
+    "image_x_position": 2444,
+    "image_y_position": 1803,
+    "address": "El Nido, Palawan",
+    "custom_button_links": [
+      {
+        "link": "https://hhotelelnido.com/pieceofsky/",
+        "name": "Website",
+        "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "Photos",
+        "is_enabled": true,
+        "photo_folder": "images/piece-of-sky"
+      }
+    ],
+    "image": {
+      "content_type": "image/webp",
+      "file_name": "4.webp",
+      "file_width": 416,
+      "file_height": 366,
+      "url": "images/4.webp"
+    },
+    "image_scale": 0.5
+  },
+  {
+    "id": "location-005",
+    "name": "3 Bros Falafal",
+    "image_x_position": 2032,
+    "image_y_position": 1914,
+    "address": "El Nido, Palawan",
+    "custom_button_links": [
+      {
+        "link": "https://hhotelelnido.com/3-bros-falafel/",
+        "name": "Website",
+        "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "Photos",
+        "is_enabled": true,
+        "photo_folder": "assets/img/3-Bros-Falafel"
+      }
+    ],
+    "image": {
+      "content_type": "image/webp",
+      "file_name": "5.webp",
+      "file_width": 310,
+      "file_height": 342,
+      "url": "images/5.webp"
+    },
+    "image_scale": 0.5
+  },
+  {
+    "id": "location-006",
+    "name": "Ver De Vegan Restaurant",
+    "image_x_position": 1927,
+    "image_y_position": 2215,
+    "address": "El Nido, Palawan",
+    "custom_button_links": [
+      {
+        "link": "https://hhotelelnido.com/ver-de-el-nido/",
+        "name": "Website",
+        "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "Photos",
+        "is_enabled": true,
+        "photo_folder": "assets/img/Ver-De-El-Nido"
+      }
+    ],
+    "image": {
+      "content_type": "image/webp",
+      "file_name": "6.webp",
+      "file_width": 334,
+      "file_height": 362,
+      "url": "images/6.webp"
+    },
+    "image_scale": 0.5
+  },
+  {
+    "id": "location-007",
+    "name": "Oriental Spa 2",
+    "image_x_position": 3190,
+    "image_y_position": 2589,
+    "address": "El Nido, Palawan",
+    "custom_button_links": [
+      {
+        "link": "https://hhospitality.group/oriental-spa-2.html",
+        "name": "Website",
+        "is_enabled": true
+      }
+    ],
+    "image": {
+      "content_type": "image/webp",
+      "file_name": "7.webp",
+      "file_width": 680,
+      "file_height": 363,
+      "url": "images/7.webp"
+    },
+    "image_scale": 0.5
+  },
+  {
+    "id": "location-008",
+    "name": "Nacpan Beach Resort",
+    "image_x_position": 2200,
+    "image_y_position": 720,
+    "address": "Nacpan Beach, El Nido, Palawan",
+    "custom_button_links": [
+      {
+        "link": "https://nacpanbeachresort.com/",
+        "name": "Website",
+        "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "Photos",
+        "is_enabled": true,
+        "photo_folder": "assets/img/nbr"
+      }
+    ],
+    "image": {
+      "content_type": "image/webp",
+      "file_name": "8.webp",
+      "file_width": 627,
+      "file_height": 391,
+      "url": "images/8.webp"
+    },
+    "image_scale": 0.5
+  },
+  {
+    "id": "location-009",
+    "name": "Nacpan Beach Glamping",
+    "image_x_position": 2793,
+    "image_y_position": 589,
+    "address": "Nacpan Beach, El Nido, Palawan",
+    "custom_button_links": [
+      {
+        "link": "#photos",
+        "name": "Photos",
+        "is_enabled": true,
+        "photo_folder": "assets/img/nbg"
+      }
+    ],
+    "image": {
+      "content_type": "image/webp",
+      "file_name": "9.webp",
+      "file_width": 559,
+      "file_height": 435,
+      "url": "images/9.webp"
+    },
+    "image_scale": 0.5
+  },
+  {
+    "id": "location-010",
+    "name": "Nacpan Beach Villa",
+    "image_x_position": 3120,
+    "image_y_position": 461,
+    "address": "Nacpan Beach, El Nido, Palawan",
+    "custom_button_links": [
+      {
+        "link": "https://www.nacpanbeachvillas.com/",
+        "name": "Website",
+        "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "Photos",
+        "is_enabled": true,
+        "photo_folder": "assets/img/Airbnb-Villa"
+      }
+    ],
+    "image": {
+      "content_type": "image/webp",
+      "file_name": "10.webp",
+      "file_width": 639,
+      "file_height": 383,
+      "url": "images/10.webp"
+    },
+    "image_scale": 0.5
+  },
+  {
+    "id": "location-011",
+    "name": "Mu Hotel",
+    "image_x_position": 3220,
+    "image_y_position": 104,
+    "address": "Nacpan Beach, El Nido, Palawan",
+    "custom_button_links": [
+      {
+        "link": "https://elnido888.com/projects/mu-hotel",
+        "name": "Website",
+        "is_enabled": true
+      }
+    ],
+    "image": {
+      "content_type": "image/webp",
+      "file_name": "11.webp",
+      "file_width": 760,
+      "file_height": 477,
+      "url": "images/11.webp"
+    },
+    "image_scale": 0.5
+  },
+  {
+    "id": "location-012",
+    "name": "Sunmai Beach Bar",
+    "image_x_position": 2306,
+    "image_y_position": 317,
+    "address": "Nacpan Beach, El Nido, Palawan",
+    "custom_button_links": [
+      {
+        "link": "https://www.sunmainacpanbeach.com/",
+        "name": "Website",
+        "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "Photos",
+        "is_enabled": true,
+        "photo_folder": "images/sunmai"
+      }
+    ],
+    "image": {
+      "content_type": "image/webp",
+      "file_name": "12.webp",
+      "file_width": 402,
+      "file_height": 338,
+      "url": "images/12.webp"
+    },
+    "image_scale": 0.5
+  },
+  {
+    "id": "location-013",
+    "name": "Nacpan Seaturtle Hatchery",
+    "image_x_position": 2727,
+    "image_y_position": 93,
+    "address": "El Nido, Palawan",
+    "custom_button_links": [],
+    "image": {
+      "content_type": "image/webp",
+      "file_name": "13.webp",
+      "file_width": 550,
+      "file_height": 424,
+      "url": "images/13.webp"
+    },
+    "image_scale": 0.5
+  },
+  {
+    "id": "location-014",
+    "name": "C Hotel",
+    "image_x_position": 2604,
+    "image_y_position": 2794,
+    "address": "El Nido, Palawan",
+    "custom_button_links": [],
+    "image": {
+      "content_type": "image/webp",
+      "file_name": "14.webp",
+      "file_width": 661,
+      "file_height": 463,
+      "url": "images/14.webp"
+    },
+    "image_scale": 0.5
+  },
+  {
+    "id": "location-015",
+    "name": "Juice Bar(coming soon)",
+    "image_x_position": 2618,
+    "image_y_position": 3234,
+    "address": "El Nido, Palawan",
+    "custom_button_links": [],
+    "image": {
+      "content_type": "image/webp",
+      "file_name": "15.webp",
+      "file_width": 402,
+      "file_height": 369,
+      "url": "images/15.webp"
+    },
+    "image_scale": 0.5
+  },
+  {
+    "id": "location-016",
+    "name": "Lechon Co",
+    "image_x_position": 1977,
+    "image_y_position": 3273,
+    "address": "El Nido, Palawan",
+    "custom_button_links": [
+      {
+        "link": "https://hhospitality.group/lechon-co.html",
+        "name": "Website",
+        "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "Photos",
+        "is_enabled": true,
+        "photo_folder": "images/lechon-co"
+      }
+    ],
+    "image": {
+      "content_type": "image/webp",
+      "file_name": "16.webp",
+      "file_width": 580,
+      "file_height": 289,
+      "url": "images/16.webp"
+    },
+    "image_scale": 0.5
+  },
+  {
+    "id": "location-017",
+    "name": "Piece Lio",
+    "image_x_position": 2020,
+    "image_y_position": 1387,
+    "address": "El Nido, Palawan",
+    "custom_button_links": [
+      {
+        "link": "https://www.piecelio.com/",
+        "name": "Website",
+        "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "Photos",
+        "is_enabled": true,
+        "photo_folder": "images/piecelio"
+      }
+    ],
+    "image": {
+      "content_type": "image/webp",
+      "file_name": "17.webp",
+      "file_width": 637,
+      "file_height": 359,
+      "url": "images/17.webp"
+    },
+    "image_scale": 0.5
+  },
+  {
+    "id": "location-018",
+    "name": "H Island Resort (coming soon)",
+    "image_x_position": 251,
+    "image_y_position": 1094,
+    "address": "El Nido, Palawan",
+    "custom_button_links": [],
+    "image": {
+      "content_type": "image/webp",
+      "file_name": "18.webp",
+      "file_width": 674,
+      "file_height": 551,
+      "url": "images/18.webp"
+    },
+    "image_scale": 0.5
+  },
+  {
+    "id": "location-019",
+    "name": "S Resort",
+    "image_x_position": 1716,
+    "image_y_position": 2623,
+    "address": "El Nido, Palawan",
+    "custom_button_links": [
+      {
+        "link": "https://sresortelnido.com/",
+        "name": "Website",
+        "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "Photos",
+        "is_enabled": true,
+        "photo_folder": "assets/img/sresort"
+      }
+    ],
+    "image": {
+      "content_type": "image/webp",
+      "file_name": "19.webp",
+      "file_width": 662,
+      "file_height": 532,
+      "url": "images/19.webp"
+    },
+    "image_scale": 0.5
+  },
+  {
+    "id": "location-020",
+    "name": "Grounded 100% Arabica Coffee",
+    "image_x_position": 1268,
+    "image_y_position": 3068,
+    "address": "El Nido, Palawan",
+    "custom_button_links": [
+      {
+        "link": "https://grounded.ph/",
+        "name": "Website",
+        "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "Photos",
+        "is_enabled": true,
+        "photo_folder": "assets/img/g100a"
+      }
+    ],
+    "image": {
+      "content_type": "image/webp",
+      "file_name": "20.webp",
+      "file_width": 668,
+      "file_height": 435,
+      "url": "images/20.webp"
+    },
+    "image_scale": 0.5
+  },
+  {
+    "id": "location-021",
+    "name": "Janu Coffee and Tea",
+    "image_x_position": 1241,
+    "image_y_position": 2751,
+    "address": "El Nido, Palawan",
+    "custom_button_links": [
+      {
+        "link": "https://hhospitality.group/jane-coffee.html",
+        "name": "Website",
+        "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "Photos",
+        "is_enabled": true,
+        "photo_folder": "assets/img/jane"
+      }
+    ],
+    "image": {
+      "content_type": "image/webp",
+      "file_name": "21.webp",
+      "file_width": 405,
+      "file_height": 312,
+      "url": "images/21.webp"
+    },
+    "image_scale": 0.5
+  },
+  {
+    "id": "location-022",
+    "name": "Ocean View Chinese Restaurant",
+    "image_x_position": 1458,
+    "image_y_position": 2404,
+    "address": "El Nido, Palawan",
+    "custom_button_links": [
+      {
+        "link": "https://www.instagram.com/oceanviewelnido/",
+        "name": "instagram",
+        "is_enabled": true
+      }
+    ],
+    "image": {
+      "content_type": "image/webp",
+      "file_name": "22.webp",
+      "file_width": 350,
+      "file_height": 350,
+      "url": "images/22.webp"
+    },
+    "image_scale": 0.5
+  },
+  {
+    "id": "location-023",
+    "name": "Discover El Nido",
+    "image_x_position": 3897,
+    "image_y_position": 2289,
+    "address": "El Nido, Palawan",
+    "custom_button_links": [
+      {
+        "link": "https://discoverelnido.com/",
+        "name": "Website",
+        "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "Photos",
+        "is_enabled": true,
+        "photo_folder": "assets/img/discover"
+      }
+    ],
+    "image": {
+      "content_type": "image/webp",
+      "file_name": "23.webp",
+      "file_width": 450,
+      "file_height": 450,
+      "url": "images/23.webp"
+    },
+    "image_scale": 0.5
+  },
+  {
+    "id": "location-024",
+    "name": "J Boutique Hotel",
+    "image_x_position": 4089,
+    "image_y_position": 2778,
+    "address": "El Nido, Palawan",
+    "custom_button_links": [
+      {
+        "link": "https://jboutiquehotelelnido.com/",
+        "name": "Website",
+        "is_enabled": true
+      },
+      {
+        "link": "#photos",
+        "name": "Photos",
+        "is_enabled": true,
+        "photo_folder": "assets/img/jboutiquehotel"
+      }
+    ],
+    "image": {
+      "content_type": "image/webp",
+      "file_name": "24.webp",
+      "file_width": 500,
+      "file_height": 400,
+      "url": "images/24.webp"
+    },
+    "image_scale": 0.5
+  },
+  {
+    "id": "location-025",
+    "name": "Z Garden Hotel",
+    "image_x_position": 511,
+    "image_y_position": 3198,
+    "address": "El Nido, Palawan",
+    "custom_button_links": [
+      {
+        "link": "https://zgardenhotel.com/",
+        "name": "Website",
+        "is_enabled": true
+      }
+    ],
+    "image": {
+      "content_type": "image/webp",
+      "file_name": "25.webp",
+      "file_width": 584,
+      "file_height": 427,
+      "url": "images/25.webp"
+    },
+    "image_scale": 0.5
+  }
+]

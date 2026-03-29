@@ -516,6 +516,21 @@
         "openingYear": "開業年份：2024",
         "location": "位置：H Hotel, El Nido Town Center"
       },
+      "yoNido": {
+        "name": "Yo Nido",
+        "description": "YoNido! Island Froyo 位於愛妮島鎮中心 Real St，以流線建築與暖色燈光打造清新現代的甜點空間。主打輕盈絲滑的優格冰淇淋，能自由搭配熱帶鮮果、酥脆配料與特調淋醬，無論是跳島後或散步途中，都能帶來最剛好的沁涼療癒。",
+        "shortDescription": "你在島上的每日快樂來源。位於愛妮島鎮中心的現代優格吧，提供滑順優格與熱帶配料。",
+        "location": "位置：El Nido Town, Real St 與 Rizal St 路口",
+        "openingHours": "營業時間：每日 09:00 - 22:30",
+        "instagram": "@yonidofroyo",
+        "sloganMain": "Your Daily Dose of Island Happiness!",
+        "sloganSub": "在巴拉望的陽光下，遇見最溫柔的沁涼滋味。",
+        "classicLabel": "經典選擇：",
+        "classicOption": "1 Topping or 1 Sauce (195 PHP)",
+        "premiumLabel": "豐富享受：",
+        "premiumOption": "1 Crunch + 1 Topping + 1 Sauce (295 PHP)",
+        "callToAction": "Join the Swirl! 跟著 YoNido! 一起捲起愛妮島的優格浪潮。"
+      },
       "3BrosFalafel": {
         "name": "3 Bros Falafel",
         "description": "3 Bro Falafel 是與三兄弟合作經營的中東料理餐廳，以新鮮製作的鷹嘴豆泥餅皮為特色，每日現做，並營業至凌晨1點，為夜間宵夜愛好者提供美味的選擇。",
@@ -553,6 +568,10 @@
       "elNidoGO": {
         "name": "El Nido GO",
         "description": "El Nido Go 是專為華人旅客提供一站式服務的旅行社。無論是機票、旅館、餐飲還是行程規劃，El Nido Go 都能為您打理一切。特別適合不熟悉英語或不擅長自行規劃旅程的旅客，讓您輕鬆享受無憂無慮的旅行。"
+      },
+      "httTour": {
+        "name": "HTT Tour",
+        "description": "HTT Tour 提供穩定可靠的愛妮島跳島船務服務，由熟悉海域的在地船員執行，支援彈性包船與團體安排，從碼頭到島嶼的接駁流程更順暢。"
       },
       "nacpanBeachShuttle": {
         "name": "納克潘海灘接駁車",

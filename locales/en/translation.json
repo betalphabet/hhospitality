@@ -516,6 +516,21 @@
         "openingYear": "Opening Year: 2024",
         "location": "Location: H Hotel, El Nido Town Center"
       },
+      "yoNido": {
+        "name": "Yo Nido",
+        "description": "YoNido! Island Froyo is located on Real St in El Nido Town, combining fluid modern design and warm lighting into a refreshing dessert stop. The frozen yogurt is light and silky, and guests can customize each cup with tropical fruits, crunchy toppings, and signature sauces. It is the perfect cool-down after island hopping or a relaxed walk in town.",
+        "shortDescription": "Your Daily Dose of Island Happiness. A modern island froyo bar in El Nido Town Center serving smooth frozen yogurt with tropical toppings and sauces.",
+        "location": "Location: El Nido Town, Real St corner Rizal St",
+        "openingHours": "Opening Hours: Daily 09:00 - 22:30",
+        "instagram": "@yonidofroyo",
+        "sloganMain": "Your Daily Dose of Island Happiness!",
+        "sloganSub": "Meet the softest tropical chill in the Palawan sun.",
+        "classicLabel": "Classic:",
+        "classicOption": "1 Topping or 1 Sauce (195 PHP)",
+        "premiumLabel": "Premium:",
+        "premiumOption": "1 Crunch + 1 Topping + 1 Sauce (295 PHP)",
+        "callToAction": "Join the Swirl! Roll into El Nido's froyo wave with YoNido!"
+      },
       "3BrosFalafel": {
         "name": "3 Bros Falafel",
         "description": "3 Bros Falafel is a Middle Eastern restaurant operated in partnership with three brothers, featuring freshly made falafel wraps daily. Open until 1 AM, it's a perfect choice for late-night food lovers.",
@@ -553,6 +568,10 @@
       "elNidoGO": {
         "name": "El Nido GO",
         "description": "El Nido Go is a one-stop service travel agency specifically for Chinese travelers. Whether it's flights, hotels, dining, or itinerary planning, El Nido Go can handle everything. It's especially suitable for travelers unfamiliar with English or those who prefer not to plan their own trips, allowing you to enjoy a worry-free vacation."
+      },
+      "httTour": {
+        "name": "HTT Tour",
+        "description": "HTT Tour provides reliable island-hopping boat services in El Nido with experienced local crews, flexible charter options, and smooth pier-to-island coordination for travelers and groups."
       },
       "nacpanBeachShuttle": {
         "name": "Nacpan Beach Shuttle",
