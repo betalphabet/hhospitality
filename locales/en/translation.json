@@ -42,6 +42,12 @@
   "csr": {
     "title": "CORPORATE SOCIAL RESPONSIBILITY BREAKTHROUGHS",
     "description": "At H Hospitality Group, our commitment goes beyond providing exceptional hospitality; it extends to making a meaningful impact on both our community and the environment. Since our founding in El Nido, Palawan, we have been steadfast in our commitment to creating a positive change through a variety of initiatives that support people and protect the planet.",
+    "turtleRescue": {
+      "title": "Sea Turtle Rescue & Rehabilitation Program",
+      "description1": "We began protecting sea turtle nests in 2016, and over the past decade, H Hospitality Group has helped release more than 60,000 sea turtles back into the ocean, reinforcing our long-term commitment to marine conservation in El Nido.",
+      "description2": "Starting in 2026, we received official government authorization to rescue and rehabilitate injured sea turtles. Our first successful rescue release was Mula, a sea turtle that had previously been unable to dive and is now back in the wild.",
+      "description3": "The photos feature our second rescue, a large sea turtle currently under our care. As this work becomes an even more meaningful part of our mission, the company is committed to increasing its investment in this vital field."
+    },
     "pawRescue": {
       "title": "Paw Rescue Project",
       "description1": "A funded spay and neuter initiative, the Paw Rescue Project was conducted from September 30 to October 6 to support responsible pet care in El Nido, Palawan. The project focused on spaying and neutering stray animals, as well as pets of owners who could not afford the procedure.",
