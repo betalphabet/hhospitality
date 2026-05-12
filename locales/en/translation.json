@@ -544,6 +544,14 @@
         "seats": "Seats: 10",
         "openingYear": "Opening Year: 2024",
         "location": "Location: H Hotel, El Nido Town Center"
+      },
+      "groundedNacpan": {
+        "name": "Grounded Nacpan",
+        "description": "There is nothing quite like the smell of fresh espresso mixed with the salt air. Grounded Nacpan Beach is officially serving the best coffee on the beach. Whether you need an Iced Latte to beat the heat or a smooth Cold Brew for your morning stroll, we’ve got you covered right on the sand.",
+        "shortDescription": "There is nothing quite like the smell of fresh espresso mixed with the salt air. Grounded Nacpan Beach is officially serving the best coffee on the beach. Whether you need an Iced Latte to beat the heat or a smooth Cold Brew for your morning stroll, we’ve got you covered right on the sand.",
+        "seats": "Seats: 9",
+        "openingYear": "Opening Year: 2026",
+        "location": "Location: On the beach of El Nido"
       }
     },
     "spa": {

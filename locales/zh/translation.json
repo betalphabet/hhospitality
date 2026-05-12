@@ -544,6 +544,14 @@
         "seats": "座位數：10",
         "openingYear": "開業年份：2024",
         "location": "位置：H Hotel, El Nido Town Center"
+      },
+      "groundedNacpan": {
+        "name": "Grounded Nacpan",
+        "description": "沒有什麼比新鮮濃縮咖啡混合海鹽空氣的味道更棒了。Grounded Nacpan Beach 正式在海灘上供應最優質的咖啡。無論您需要一杯冰拿鐵來消暑，還是需要一杯順滑的冷萃咖啡來進行晨間漫步，我們都能在沙灘上為您提供服務。",
+        "shortDescription": "沒有什麼比新鮮濃縮咖啡混合海鹽空氣的味道更棒了。Grounded Nacpan Beach 正式在海灘上供應最優質的咖啡。無論您需要一杯冰拿鐵來消暑，還是需要一杯順滑的冷萃咖啡來進行晨間漫步，我們都能在沙灘上為您提供服務。",
+        "seats": "座位數：9",
+        "openingYear": "開業年份：2026",
+        "location": "位置：海尼島的海灘上"
       }
     },
     "spa": {
