@@ -556,19 +556,19 @@
     },
     "spa": {
       "title": "Spa",
-      "introduction": "H Hospitality Group's Oriental Spa series offers ultimate relaxation and rejuvenation experiences for travelers. Our spa facilities are beautifully designed, combining modern aesthetics with Oriental therapies. Whether you visit Oriental Spa 1 at H Hotel or the newly opened Oriental Spa 2, you'll find comfortable environments and professional treatment services. Our spa facilities are your ideal healing destination after exploring El Nido's beautiful scenery or seeking moments of tranquility.",
+      "introduction": "H Hospitality Group's H Signature Spa series offers ultimate relaxation and rejuvenation experiences for travelers. Our spa facilities are beautifully designed, combining modern aesthetics with Oriental therapies. Whether you visit H Signature Spa H Hotel Branch at H Hotel or the newly opened H Signature Spa Main Branch, you'll find comfortable environments and professional treatment services. Our spa facilities are your ideal healing destination after exploring El Nido's beautiful scenery or seeking moments of tranquility.",
       "orientalSpa1": {
-        "name": "Oriental Spa 1",
+        "name": "H Signature Spa H Hotel Branch",
         "description": "Located on the first floor of H Hotel, Oriental Spa 1 is El Nido's most popular massage establishment with the most positive reviews on Google Maps. This spa is renowned for its high-quality service and comfortable environment, making it a must-visit relaxation spot for El Nido travelers. Due to high demand, guests are advised to book in advance to ensure they can enjoy a quality massage experience.",
         "seats": "Seats: 13",
-        "openingYear": "Opening Year: 2023",
+        "openingYear": "Opening Year: 2026",
         "location": "Location: H Hotel, El Nido"
       },
       "orientalSpa2": {
-        "name": "Oriental Spa 2",
+        "name": "H Signature Spa Main Branch",
         "description": "Oriental Spa 2 is El Nido's newest luxury wellness spa center, featuring 40 massage stations offering spacious and private comfortable environments. This standalone building, thoughtfully designed by renowned designer Justin, combines modern design with traditional Oriental therapies to provide guests with ultimate mind and body relaxation experiences. When visiting El Nido, this newly opened spa center is a wellness experience not to be missed.",
         "seats": "Seats: 40",
-        "openingYear": "Opening Year: 2025",
+        "openingYear": "Opening Year: 2026",
         "location": "Location: Next to J Boutique Hotel, El Nido"
       }
     },
@@ -635,8 +635,8 @@
   },
   "spa": {
     "orientalSpa": {
-      "name": "Oriental Spa",
-      "description": "Oriental Spa offers a serene oasis of relaxation and rejuvenation in the heart of El Nido. Our expert therapists provide a range of traditional and modern treatments, from soothing massages to revitalizing facials, using natural, locally-sourced ingredients. Experience ultimate tranquility and emerge refreshed, ready to continue your tropical paradise adventure."
+      "name": "H Signature Spa",
+      "description": "H Signature Spa offers a serene oasis of relaxation and rejuvenation in the heart of El Nido. Our expert therapists provide a range of traditional and modern treatments, from soothing massages to revitalizing facials, using natural, locally-sourced ingredients. Experience ultimate tranquility and emerge refreshed, ready to continue your tropical paradise adventure."
     },
     "services": {
       "title": "Our Services",

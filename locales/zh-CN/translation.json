@@ -542,19 +542,19 @@
     },
     "spa": {
       "title": "水疗",
-      "introduction": "H Hospitality Group 的东方水疗系列为旅客提供极致的放松和恢复体验。我们的水疗场所设计精美，结合现代美学与东方疗法。无论您是造访 H Hotel 的东方水疗 1 还是新开业的东方水疗 2，您都会发现舒适的环境和专业的治疗服务。在探索爱妮岛美丽风景后或寻求宁静放松时刻，我们的水疗设施是您理想的疗愈目的地。",
+      "introduction": "H Hospitality Group 的 H Signature Spa 系列为旅客提供极致的放松和恢复体验。我们的水疗场所设计精美，结合现代美学与东方疗法。无论您是造访 H Hotel 的 H Signature Spa H Hotel Branch 还是新开业的 H Signature Spa Main Branch，您都会发现舒适的环境和专业的治疗服务。在探索爱妮岛美丽风景后或寻求宁静放松时刻，我们的水疗设施是您理想的疗愈目的地。",
       "orientalSpa1": {
-        "name": "东方水疗 1",
+        "name": "H Signature Spa H Hotel Branch",
         "description": "位于 H Hotel 一楼的东方水疗 1 是爱妮岛最受欢迎的按摩店，在 Google Maps 上拥有最多正面评价。这家水疗以高品质服务和舒适环境闻名，是爱妮岛旅客必访的放松场所。由于需求量大，建议客人提前预约以确保能享受优质的按摩体验。",
         "seats": "座位数：13",
-        "openingYear": "开业年份：2023",
+        "openingYear": "开业年份：2026",
         "location": "位置：H Hotel，爱妮岛"
       },
       "orientalSpa2": {
-        "name": "东方水疗 2",
+        "name": "H Signature Spa Main Branch",
         "description": "东方水疗 2 是爱妮岛最新的豪华健康水疗中心，拥有 40 个按摩站，为旅客提供宽敞私密的舒适环境。这座独立建筑由知名设计师 Justin 精心设计，结合现代设计与传统东方疗法，为客人提供身心极致放松体验。造访爱妮岛时，这家新开业的水疗中心是不容错过的健康享受。",
         "seats": "座位数：40",
-        "openingYear": "开业年份：2025",
+        "openingYear": "开业年份：2026",
         "location": "位置：J Boutique Hotel 旁，爱妮岛"
       }
     },
@@ -621,8 +621,8 @@
   },
   "spa": {
     "orientalSpa": {
-      "name": "东方水疗",
-      "description": "东方水疗为您提供一个宁静的放松和恢复活力的绿洲，位于爱妮岛的中心。我们的专业治疗师提供一系列传统和现代的疗程，从舒缓按摩到焕肤面部护理，使用天然的当地原料。体验极致的宁静，焕然一新，准备继续您的热带天堂冒险。"
+      "name": "H Signature Spa",
+      "description": "H Signature Spa 为您提供一个宁静的放松和恢复活力的绿洲，位于爱妮岛的中心。我们的专业治疗师提供一系列传统和现代的疗程，从舒缓按摩到焕肤面部护理，使用天然的当地原料。体验极致的宁静，焕然一新，准备继续您的热带天堂冒险。"
     }
   },
   "bar": {
