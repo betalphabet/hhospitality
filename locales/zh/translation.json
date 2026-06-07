@@ -30,6 +30,10 @@
   },
   "timeline": {
     "title": "H Hospitality Group Timeline",
+    "founderMessage": {
+      "quote": "「身為唯一 100% 專注並立足於愛妮島的飯店管理公司，HHG 擁有與眾不同的優勢。我們的每一項事業皆為支援核心的飯店管理而生，確保飯店營運更迅速，並為賓客提供卓越的服務。邁向 2026 年，我們將透過全新的健康養生飯店品牌重新定義奢華，致力於打造令人難忘的極致賓客體驗。」",
+      "author": "— 創辦人 Henry Hsu"
+    },
     "2024": {
       "pieceLio": {
         "name": "Piece Lio"

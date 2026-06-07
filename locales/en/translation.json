@@ -30,6 +30,10 @@
   },
   "timeline": {
     "title": "H Hospitality Group Timeline",
+    "founderMessage": {
+      "quote": "As the only hotel management company 100% focused on and based in El Nido, HHG is built differently. Every venture we launch is designed to support our core hospitality mission, ensuring faster services for our hotels and exceptional care for our guests. Looking ahead to 2026, we aim to redefine luxury with a new wellness hotel brand, designed to provide an unforgettable, ultimate guest experience.",
+      "author": "— Henry Hsu, Founder and CEO"
+    },
     "2024": {
       "pieceLio": {
         "name": "Piece Lio"
