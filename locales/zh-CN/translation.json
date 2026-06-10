@@ -133,7 +133,6 @@
     "location": "位置：",
     "pricing": "价格：",
     "bookNow": "立即预订",
-    "bookNow": "立即预订",
     "bookDirect": "官网预订更优惠",
     "phone": "电话：",
     "website": "网站：",
@@ -143,6 +142,19 @@
     "valueForMoney": "性价比：",
     "locationScore": "位置评分：",
     "nearestAirport": "最近的机场：",
+    "featured": {
+      "eyebrow": "精选系列",
+      "title": "旗下经典饭店",
+      "subtitle": "四间风格独具的爱妮岛饭店，每一间皆精心打造，为您献上一段难忘的海岛时光——从沙滩别墅到设计感十足的城区旅宿。",
+      "discover": "探索",
+      "viewAll": "浏览全部饭店",
+      "tag": {
+        "townCenter": "镇中心",
+        "design": "设计风格",
+        "urban": "都会逸趣",
+        "beachfront": "海滨首排"
+      }
+    },
     "reserve": {
       "title": "爱妮岛珍藏",
       "subtitle": "一方净土",

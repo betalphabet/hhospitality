@@ -142,6 +142,19 @@
     "valueForMoney": "Value for money:",
     "locationScore": "Location score:",
     "nearestAirport": "Nearest airport:",
+    "featured": {
+      "eyebrow": "Curated Collection",
+      "title": "Our Signature Hotels",
+      "subtitle": "Four distinctive properties in El Nido, each crafted to offer an unforgettable island retreat — from beachfront villas to design-led urban stays.",
+      "discover": "Discover",
+      "viewAll": "View All Properties",
+      "tag": {
+        "townCenter": "Town Center",
+        "design": "Design-led",
+        "urban": "Urban Escape",
+        "beachfront": "Beachfront"
+      }
+    },
     "reserve": {
       "title": "El Nido Reserve",
       "subtitle": "A PLACE APART",

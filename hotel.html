@@ -22,10 +22,245 @@
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css?v=202606010751" rel="stylesheet" />
+    <link href="css/styles.css?v=202606031721" rel="stylesheet" />
     <style>
         #mainNav.navbar-shrink .langSelectDesktop {
             margin-top: 15px;
+        }
+
+        /* Featured Hotels Section */
+        #featured-hotels {
+            position: relative;
+            width: 100%;
+            padding: 7rem 0 6rem;
+            background:
+                radial-gradient(ellipse at top, rgba(176, 141, 87, 0.08) 0%, transparent 55%),
+                linear-gradient(180deg, #0c0c0e 0%, #141418 100%);
+            color: #f5f1ea;
+            overflow: hidden;
+        }
+
+        #featured-hotels::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1px;
+            height: 64px;
+            background: linear-gradient(180deg, transparent 0%, rgba(212, 175, 113, 0.6) 100%);
+        }
+
+        .featured-eyebrow {
+            font-family: 'Varela Round', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            font-size: 0.75rem;
+            color: #d4af71;
+            margin-bottom: 1rem;
+        }
+
+        .featured-title {
+            font-family: 'Times New Roman', serif;
+            font-size: 2.75rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            margin-bottom: 0.75rem;
+            color: #fff;
+        }
+
+        .featured-subtitle {
+            font-family: 'Varela Round', sans-serif;
+            color: rgba(245, 241, 234, 0.65);
+            font-size: 1rem;
+            max-width: 620px;
+            margin: 0 auto 4rem;
+            line-height: 1.7;
+        }
+
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.75rem;
+        }
+
+        .featured-card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            background: #1a1a1d;
+            border: 1px solid rgba(212, 175, 113, 0.12);
+            border-radius: 4px;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.4s ease,
+                box-shadow 0.6s ease;
+            height: 100%;
+        }
+
+        .featured-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(212, 175, 113, 0.45);
+            box-shadow: 0 30px 60px -25px rgba(0, 0, 0, 0.6);
+        }
+
+        .featured-card-media {
+            position: relative;
+            aspect-ratio: 4 / 5;
+            overflow: hidden;
+            background: #0c0c0e;
+        }
+
+        .featured-card-media img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1),
+                filter 0.6s ease;
+            filter: saturate(0.92) brightness(0.95);
+        }
+
+        .featured-card:hover .featured-card-media img {
+            transform: scale(1.06);
+            filter: saturate(1) brightness(1);
+        }
+
+        .featured-card-media::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg,
+                    rgba(0, 0, 0, 0) 35%,
+                    rgba(0, 0, 0, 0.55) 100%);
+            pointer-events: none;
+        }
+
+        .featured-card-tag {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            z-index: 2;
+            font-family: 'Varela Round', sans-serif;
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #d4af71;
+            background: rgba(12, 12, 14, 0.65);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            padding: 0.35rem 0.75rem;
+            border: 1px solid rgba(212, 175, 113, 0.25);
+            border-radius: 2px;
+        }
+
+        .featured-card-body {
+            padding: 1.75rem 1.5rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            text-align: left;
+        }
+
+        .featured-card-name {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: #fff;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .featured-card-divider {
+            width: 32px;
+            height: 1px;
+            background: linear-gradient(90deg, #d4af71 0%, transparent 100%);
+            margin-bottom: 0.85rem;
+        }
+
+        .featured-card-desc {
+            font-family: 'Varela Round', sans-serif;
+            font-size: 0.875rem;
+            line-height: 1.65;
+            color: rgba(245, 241, 234, 0.65);
+            margin-bottom: 1.5rem;
+            flex: 1;
+        }
+
+        .featured-card-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: 'Varela Round', sans-serif;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #d4af71;
+            transition: gap 0.3s ease, color 0.3s ease;
+        }
+
+        .featured-card:hover .featured-card-cta {
+            gap: 0.85rem;
+            color: #f0d49a;
+        }
+
+        .featured-card-cta i {
+            font-size: 0.7rem;
+        }
+
+        .featured-cta {
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .featured-cta-btn {
+            display: inline-block;
+            border: 1px solid rgba(212, 175, 113, 0.45);
+            color: #f5f1ea;
+            padding: 1rem 3rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 0.8rem;
+            text-decoration: none;
+            font-family: 'Varela Round', sans-serif;
+            transition: all 0.4s ease;
+        }
+
+        .featured-cta-btn:hover {
+            background: #d4af71;
+            border-color: #d4af71;
+            color: #0c0c0e;
+        }
+
+        @media (max-width: 991.98px) {
+            .featured-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.25rem;
+            }
+
+            .featured-title {
+                font-size: 2.25rem;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            #featured-hotels {
+                padding: 5rem 0 4rem;
+            }
+
+            .featured-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .featured-title {
+                font-size: 1.85rem;
+            }
+
+            .featured-card-media {
+                aspect-ratio: 16 / 11;
+            }
         }
 
         /* Hotels Covered Section */
@@ -577,8 +812,103 @@
 
         </div>
     </section>
-    <!-- Hotel List -->
+    <!-- Featured Hotels Section -->
+    <section id="featured-hotels" class="container-fluid">
+        <div class="container px-4 px-lg-5 text-center">
+            <p class="featured-eyebrow" data-i18n="hotel.featured.eyebrow">Curated Collection</p>
+            <h2 class="featured-title" data-i18n="hotel.featured.title">Our Signature Hotels</h2>
+            <p class="featured-subtitle" data-i18n="hotel.featured.subtitle">Four distinctive properties in El Nido,
+                each
+                crafted to offer an unforgettable island retreat — from beachfront villas to design-led urban stays.
+            </p>
 
+            <div class="featured-grid">
+                <!-- H Hotel -->
+                <a href="https://www.hhotelveganhotel.com/" target="_blank" rel="noopener" class="featured-card">
+                    <div class="featured-card-media">
+                        <span class="featured-card-tag" data-i18n="hotel.featured.tag.townCenter">Town Center</span>
+                        <img src="images/piece-of-sky/1.webp" alt="H Hotel El Nido" loading="lazy">
+                    </div>
+                    <div class="featured-card-body">
+                        <h3 class="featured-card-name" data-i18n="hotel.hHotelVeganHotel.name">H Hotel</h3>
+                        <div class="featured-card-divider"></div>
+                        <p class="featured-card-desc" data-i18n="hotel.hHotelVeganHotel.shortDescription">A
+                            vegan-friendly
+                            hotel in the heart of El Nido, home to two of the top three TripAdvisor-ranked restaurants.
+                        </p>
+                        <span class="featured-card-cta">
+                            <span data-i18n="hotel.featured.discover">Discover</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Piece Lio -->
+                <a href="https://www.piecelio.com/" target="_blank" rel="noopener" class="featured-card">
+                    <div class="featured-card-media">
+                        <span class="featured-card-tag" data-i18n="hotel.featured.tag.design">Design-led</span>
+                        <img src="images/piecelio/1.webp" alt="Piece Lio" loading="lazy">
+                    </div>
+                    <div class="featured-card-body">
+                        <h3 class="featured-card-name" data-i18n="hotel.pieceLio.name">Piece Lio</h3>
+                        <div class="featured-card-divider"></div>
+                        <p class="featured-card-desc" data-i18n="hotel.pieceLio.shortDescription">A luxurious beachfront
+                            resort offering stunning views of the ocean and world-class amenities.</p>
+                        <span class="featured-card-cta">
+                            <span data-i18n="hotel.featured.discover">Discover</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- S Resort -->
+                <a href="https://www.sresortelnido.com/" target="_blank" rel="noopener" class="featured-card">
+                    <div class="featured-card-media">
+                        <span class="featured-card-tag" data-i18n="hotel.featured.tag.urban">Urban Escape</span>
+                        <img src="images/new_sresort/1.webp" alt="S Resort El Nido" loading="lazy">
+                    </div>
+                    <div class="featured-card-body">
+                        <h3 class="featured-card-name" data-i18n="hotel.sResortElNido.name">S Hotel</h3>
+                        <div class="featured-card-divider"></div>
+                        <p class="featured-card-desc" data-i18n="hotel.sResortElNido.shortDescription">A modern resort
+                            in
+                            El Nido town center with rich dining options nearby, featuring a rooftop Chinese restaurant
+                            and ground floor café.</p>
+                        <span class="featured-card-cta">
+                            <span data-i18n="hotel.featured.discover">Discover</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Nacpan Beach Villa -->
+                <a href="https://www.nacpanbeachvillas.com/" target="_blank" rel="noopener" class="featured-card">
+                    <div class="featured-card-media">
+                        <span class="featured-card-tag" data-i18n="hotel.featured.tag.beachfront">Beachfront</span>
+                        <img src="images/nacpan_beach_villa/1.webp" alt="Nacpan Beach Villas" loading="lazy">
+                    </div>
+                    <div class="featured-card-body">
+                        <h3 class="featured-card-name" data-i18n="hotel.nacpanBeachVillas.name">Nacpan Beach Villa</h3>
+                        <div class="featured-card-divider"></div>
+                        <p class="featured-card-desc" data-i18n="hotel.nacpanBeachVillas.shortDescription">Luxury
+                            beachfront villas designed by renowned designer Justin, situated right above the beach with
+                            access to a natural ocean swimming pool.</p>
+                        <span class="featured-card-cta">
+                            <span data-i18n="hotel.featured.discover">Discover</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="featured-cta">
+                <a href="#hotels-covered" class="featured-cta-btn" data-i18n="hotel.featured.viewAll">View All
+                    Properties</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotel List -->
     <section id="hotels-covered">
         <!-- Intro Section -->
         <div class="reserve-intro">

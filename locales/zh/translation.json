@@ -142,6 +142,19 @@
     "valueForMoney": "性價比：",
     "locationScore": "位置評分：",
     "nearestAirport": "最近的機場：",
+    "featured": {
+      "eyebrow": "精選系列",
+      "title": "旗下經典飯店",
+      "subtitle": "四間風格獨具的愛妮島飯店，每一間皆精心打造，為您獻上一段難忘的海島時光——從沙灘別墅到設計感十足的城區旅宿。",
+      "discover": "探索",
+      "viewAll": "瀏覽全部飯店",
+      "tag": {
+        "townCenter": "鎮中心",
+        "design": "設計風格",
+        "urban": "都會逸趣",
+        "beachfront": "海濱首排"
+      }
+    },
     "reserve": {
       "title": "愛妮島珍藏",
       "subtitle": "一方淨土",
