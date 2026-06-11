@@ -1,3 +1,76 @@
+const SOCIAL_LINKS = {
+    "H Hotel": {
+        ig: "https://www.instagram.com/hhotel.elnido/",
+        fb: "https://www.facebook.com/HHotel.ElNido"
+    },
+    "H Signature Spa H Hotel Branch": {
+        ig: "https://www.instagram.com/hsignaturespa/",
+        fb: "https://www.facebook.com/hsignaturespa/"
+    },
+    "H Signature Spa Main Branch": {
+        ig: "https://www.instagram.com/hsignaturespa/",
+        fb: "https://www.facebook.com/hsignaturespa/"
+    },
+    "Piece of sky": {
+        ig: "https://www.instagram.com/pieceofsky.elnido/",
+        fb: "https://www.facebook.com/pieceofskyelnido"
+    },
+    "3 Bros Falafal": {
+        ig: "https://www.instagram.com/3brosfalafel/",
+        fb: "https://www.facebook.com/3brosfalafel"
+    },
+    "Ver De Vegan Restaurant": {
+        ig: "https://www.instagram.com/verde.elnido/"
+    },
+    "Nacpan Beach Resort": {
+        ig: "https://www.instagram.com/nacpanbeachglamping/",
+        fb: "https://www.facebook.com/NacpanBeachGlamping"
+    },
+    "Nacpan Beach Glamping": {
+        ig: "https://www.instagram.com/nacpanbeachglamping/",
+        fb: "https://www.facebook.com/NacpanBeachGlamping"
+    },
+    "Nacpan Beach Villa": {
+        ig: "https://www.instagram.com/nacpanbeachglamping/",
+        fb: "https://www.facebook.com/NacpanBeachGlamping"
+    },
+    "Sunmai Beach Bar": {
+        ig: "https://www.instagram.com/sunmainacpanbeach/",
+        fb: "https://www.facebook.com/sunmainacpanbeach"
+    },
+    "Lechon Co": {
+        ig: "https://www.instagram.com/Lechonco/",
+        fb: "https://www.facebook.com/lechonco.elnido"
+    },
+    "Piece Lio": {
+        ig: "https://www.instagram.com/piecelio/",
+        fb: "https://www.facebook.com/PieceLio"
+    },
+    "S Resort": {
+        ig: "https://www.instagram.com/sresort.elnido/",
+        fb: "https://www.facebook.com/sresortelnido"
+    },
+    "Grounded 100% Arabica Coffee": {
+        ig: "https://www.instagram.com/grounded.elnido/",
+        fb: "https://www.facebook.com/GroundedElNido"
+    },
+    "Janu Coffee and Tea": {
+        ig: "https://www.instagram.com/janu.elnido/"
+    },
+    "Ocean View Chinese Restaurant": {
+        ig: "https://www.instagram.com/oceanview.elnido/",
+        fb: "https://www.facebook.com/oceanviewelnido"
+    },
+    "J Boutique Hotel": {
+        ig: "https://www.instagram.com/jboutiquehotel/",
+        fb: "https://www.facebook.com/jboutiquehotel"
+    },
+    "Z Garden Hotel": {
+        ig: "https://www.instagram.com/zgarden.elnido/",
+        fb: "https://www.facebook.com/zgardenelnido"
+    }
+};
+
 class DraggableMap {
     constructor() {
         this.mapContainer = document.querySelector('.map-container');
@@ -190,6 +263,31 @@ class DraggableMap {
         // 填充tooltip內容
         tooltip.querySelector('.tooltip-title').textContent = marker.name;
         tooltip.querySelector('.tooltip-address').textContent = marker.address || '地址未提供';
+
+        // 填充社交連結
+        const socialsContainer = tooltip.querySelector('.tooltip-socials');
+        if (socialsContainer) {
+            socialsContainer.innerHTML = '';
+            const socials = SOCIAL_LINKS[marker.name];
+            if (socials) {
+                if (socials.fb) {
+                    const fbLink = document.createElement('a');
+                    fbLink.href = socials.fb;
+                    fbLink.target = '_blank';
+                    fbLink.className = 'tooltip-social-link';
+                    fbLink.innerHTML = '<img src="images/fb.webp" alt="Facebook" class="tooltip-social-icon">';
+                    socialsContainer.appendChild(fbLink);
+                }
+                if (socials.ig) {
+                    const igLink = document.createElement('a');
+                    igLink.href = socials.ig;
+                    igLink.target = '_blank';
+                    igLink.className = 'tooltip-social-link';
+                    igLink.innerHTML = '<img src="images/ig.webp" alt="Instagram" class="tooltip-social-icon">';
+                    socialsContainer.appendChild(igLink);
+                }
+            }
+        }
 
         // 創建按鈕
         const buttonsContainer = tooltip.querySelector('.tooltip-buttons');

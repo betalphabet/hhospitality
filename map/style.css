@@ -295,6 +295,30 @@ html, body {
     line-height: 1.4;
 }
 
+.tooltip-socials {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.tooltip-social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.tooltip-social-link:hover {
+    transform: scale(1.15);
+}
+
+.tooltip-social-icon {
+    height: 20px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
 .tooltip-buttons {
     display: flex;
     gap: 6px;
@@ -365,6 +389,10 @@ html, body {
         font-size: 14px;
         margin-bottom: 12px;
         text-align: center;
+    }
+    
+    .tooltip-socials {
+        justify-content: center;
     }
     
     .tooltip-buttons {
