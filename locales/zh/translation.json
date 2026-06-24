@@ -576,14 +576,14 @@
       "introduction": "H Hospitality Group 的 H Signature Spa 系列為旅客提供極致的放鬆和恢復體驗。我們的水療場所設計精美，結合現代美學與東方療法。無論您是造訪 H Hotel 的 H Signature Spa H Hotel Branch 還是新開業的 H Signature Spa Main Branch，您都會發現舒適的環境和專業的治療服務。在探索愛妮島美麗風景後或尋求寧靜放鬆時刻，我們的水療設施是您理想的療癒目的地。",
       "orientalSpa1": {
         "name": "H Signature Spa H Hotel Branch",
-        "description": "位於 H Hotel 一樓的東方水療 1 是愛妮島最受歡迎的按摩店，在 Google Maps 上擁有最多正面評價。這家水療以高品質服務和舒適環境聞名，是愛妮島旅客必訪的放鬆場所。由於需求量大，建議客人提前預約以確保能享受優質的按摩體驗。",
+        "description": "位於 H Hotel 一樓的 H Signature Spa H Hotel Branch 是愛妮島最受歡迎的按摩店，在 Google Maps 上擁有最多正面評價。這家水療以高品質服務和舒適環境聞名，是愛妮島旅客必訪的放鬆場所。由於需求量大，建議客人提前預約以確保能享受優質的按摩體驗。",
         "seats": "座位數：13",
         "openingYear": "開業年份：2026",
         "location": "位置：H Hotel，愛妮島"
       },
       "orientalSpa2": {
         "name": "H Signature Spa Main Branch",
-        "description": "東方水療 2 是愛妮島最新的豪華健康水療中心，擁有 40 個按摩站，為旅客提供寬敞私密的舒適環境。這座獨立建築由知名設計師 Justin 精心設計，結合現代設計與傳統東方療法，為客人提供身心極致放鬆體驗。造訪愛妮島時，這家新開業的水療中心是不容錯過的健康享受。",
+        "description": "H Signature Spa Main Branch 是愛妮島最新的豪華健康水療中心，擁有 40 個按摩站，為旅客提供寬敞私密的舒適環境。這座獨立建築由知名設計師 Justin 精心設計，結合現代設計與傳統東方療法，為客人提供身心極致放鬆體驗。造訪愛妮島時，這家新開業的水療中心是不容錯過的健康享受。",
         "seats": "座位數：40",
         "openingYear": "開業年份：2026",
         "location": "位置：J Boutique Hotel 旁，愛妮島"
@@ -676,7 +676,7 @@
     },
     "venue": {
       "title": "場地",
-      "description": "東方水療 2 在愛妮島中心提供一個寧靜的避難所。我們寬敞的理療室設計旨在確保隱私和寧靜，擁有受自然啟發的平靜內飾。",
+      "description": "H Signature Spa Main Branch 在愛妮島中心提供一個寧靜的避難所。我們寬敞的理療室設計旨在確保隱私和寧靜，擁有受自然啟發的平靜內飾。",
       "privateRooms": "私人理療室",
       "lounge": "放鬆休息室",
       "shower": "淋浴設施"
