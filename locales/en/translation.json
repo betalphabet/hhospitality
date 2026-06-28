@@ -569,6 +569,14 @@
         "seats": "Seats: 9",
         "openingYear": "Opening Year: 2026",
         "location": "Location: On the beach of El Nido"
+      },
+      "calima": {
+        "name": "CALIMA",
+        "description": "CALIMA offers a refined dining experience rooted in Mediterranean tradition, where Spanish intensity meets Italian simplicity and the natural freshness of Palawan's waters. Every dish is crafted with intention, letting quality ingredients speak for themselves in a setting that is unhurried, sensory, and quietly extraordinary.",
+        "shortDescription": "A warm Mediterranean soul nestled within Piece of Lio, offering a refined dining experience that elevates the El Nido dining experience.",
+        "seats": "Seats: 50",
+        "openingYear": "Opening Year: 2026",
+        "location": "Lio Tourism Estate, El Nido, Palawan, Philippines"
       }
     },
     "spa": {
