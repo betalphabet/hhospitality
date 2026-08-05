@@ -6,7 +6,15 @@
     "contact": "Contact",
     "map": "Map",
     "investing": "Investments",
+    "news": "News",
     "booking": "Booking"
+  },
+  "news": {
+    "title": "Latest News & Publications",
+    "subtitle": "Explore our updates, press releases, and publications over the years",
+    "allYears": "All Years",
+    "loadMore": "Load More",
+    "noMore": "No more news to load"
   },
   "masthead": {
     "title": "H Hospitality Group",

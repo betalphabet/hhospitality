@@ -6,7 +6,15 @@
     "contact": "聯繫我們",
     "map": "地圖",
     "investing": "投資項目",
+    "news": "最新消息",
     "booking": "立即預訂"
+  },
+  "news": {
+    "title": "最新消息與報導",
+    "subtitle": "探索我們歷年來的最新動態、新聞與出版刊物",
+    "allYears": "所有年份",
+    "loadMore": "載入更多",
+    "noMore": "已無更多新聞"
   },
   "masthead": {
     "title": "H Hospitality Group",

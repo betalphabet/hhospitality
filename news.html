@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta property="og:title" content="News - H Hospitality Group" />
+    <meta property="og:description"
+        content="Stay updated with the latest news, awards, and publications from H Hospitality Group in El Nido, Palawan." />
+    <meta property="og:url" content="https://hhospitality.group/news.html" />
+    <meta property="og:site_name" content="H Hospitality Group" />
+    <meta property="og:image" content="https://hhospitality.group/assets/img/H-Hospitality-Group-og-image.jpg" />
+    <meta name="format-detection" content="telephone=no">
+    <title>News & Publications - H Hospitality Group</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon_io/favicon.ico" />
+    <link rel="apple-touch-icon" href="assets/favicon_io/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" href="assets/favicon_io/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="assets/favicon_io/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="mask-icon" href="assets/favicon_io/android-chrome-512x512.png" color="#ffffff">
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css?v=202606112130" rel="stylesheet" />
+    <style>
+        #mainNav.navbar-shrink .langSelectDesktop {
+            margin-top: 15px;
+        }
+
+        /* News Section Styling */
+        #news-section {
+            position: relative;
+            width: 100%;
+            padding: 5rem 0 6rem;
+            background:
+                radial-gradient(ellipse at top, rgba(176, 141, 87, 0.08) 0%, transparent 55%),
+                linear-gradient(180deg, #0c0c0e 0%, #141418 100%);
+            color: #f5f1ea;
+            min-height: 80vh;
+        }
+
+        .news-header-banner {
+            padding-top: 9rem;
+            padding-bottom: 3rem;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(12, 12, 14, 1) 100%);
+            text-align: center;
+            border-bottom: 1px solid rgba(212, 175, 113, 0.15);
+        }
+
+        .news-eyebrow {
+            font-family: 'Varela Round', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 0.8rem;
+            color: #d4af71;
+            margin-bottom: 0.75rem;
+        }
+
+        .news-title {
+            font-family: 'Times New Roman', serif;
+            font-size: 2.75rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            margin-bottom: 0.75rem;
+            color: #fff;
+        }
+
+        .news-subtitle {
+            font-family: 'Varela Round', sans-serif;
+            color: rgba(245, 241, 234, 0.65);
+            font-size: 1rem;
+            max-width: 650px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* Year Filter Tabs */
+        .year-filter-container {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .year-btn {
+            background: rgba(26, 26, 29, 0.8);
+            border: 1px solid rgba(212, 175, 113, 0.25);
+            color: rgba(245, 241, 234, 0.8);
+            padding: 0.5rem 1.75rem;
+            border-radius: 30px;
+            font-family: 'Varela Round', sans-serif;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .year-btn:hover,
+        .year-btn.active {
+            background: #d4af71;
+            color: #0c0c0e;
+            border-color: #d4af71;
+            box-shadow: 0 4px 15px rgba(212, 175, 113, 0.3);
+            font-weight: 600;
+        }
+
+        /* Gallery Grid & Cards */
+        .news-card {
+            background: #1a1a1d;
+            border: 1px solid rgba(212, 175, 113, 0.15);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.4s ease,
+                box-shadow 0.4s ease;
+            height: 100%;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .news-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(212, 175, 113, 0.5);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        }
+
+        .news-card-img-wrapper {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+            background: #111;
+        }
+
+        .news-card-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease, filter 0.4s ease;
+            filter: brightness(0.95);
+        }
+
+        .news-card:hover .news-card-img {
+            transform: scale(1.05);
+            filter: brightness(1.05);
+        }
+
+        .news-card-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(12, 12, 14, 0.4);
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.3s ease;
+            color: #d4af71;
+            font-size: 1.75rem;
+        }
+
+        .news-card:hover .news-card-overlay {
+            opacity: 1;
+        }
+
+        .news-card-body {
+            padding: 1.25rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(212, 175, 113, 0.1);
+            background: #151518;
+        }
+
+        .news-year-badge {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #d4af71;
+            background: rgba(212, 175, 113, 0.12);
+            padding: 0.25rem 0.65rem;
+            border-radius: 4px;
+            border: 1px solid rgba(212, 175, 113, 0.25);
+        }
+
+        .news-issue-label {
+            font-size: 0.9rem;
+            color: rgba(245, 241, 234, 0.9);
+            font-weight: 500;
+        }
+
+        /* Load More Button */
+        .load-more-container {
+            text-align: center;
+            margin-top: 3.5rem;
+        }
+
+        .btn-load-more {
+            background: transparent;
+            border: 1px solid #d4af71;
+            color: #d4af71;
+            padding: 0.75rem 2.5rem;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .btn-load-more:hover {
+            background: #d4af71;
+            color: #0c0c0e;
+            box-shadow: 0 5px 20px rgba(212, 175, 113, 0.4);
+        }
+
+        /* Modal Lightbox Styling */
+        .news-modal .modal-content {
+            background: rgba(12, 12, 14, 0.95);
+            border: 1px solid rgba(212, 175, 113, 0.3);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            color: #fff;
+        }
+
+        .news-modal .modal-header {
+            border-bottom: 1px solid rgba(212, 175, 113, 0.15);
+            padding: 1rem 1.5rem;
+        }
+
+        .news-modal .modal-body {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background: #000;
+            min-height: 350px;
+        }
+
+        .news-modal-img {
+            max-width: 100%;
+            max-height: 80vh;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .news-modal-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(212, 175, 113, 0.3);
+            color: #d4af71;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .news-modal-nav:hover {
+            background: #d4af71;
+            color: #0c0c0e;
+        }
+
+        .news-modal-nav.prev {
+            left: 15px;
+        }
+
+        .news-modal-nav.next {
+            right: 15px;
+        }
+
+        .news-modal-footer {
+            border-top: 1px solid rgba(212, 175, 113, 0.15);
+            padding: 0.85rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #141418;
+        }
+    </style>
+
+    <!-- i18next libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.6.10/i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/2.1.0/jquery-i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-xhr-backend/3.2.2/i18nextXHRBackend.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html">
+                <img class="img-fluid mb-lg-0" src="assets/img/h_hotel_group_logo.svg" width="120px"
+                    alt="h_hotel_group" />
+            </a>
+            <div class="d-flex align-items-center">
+                <div class="d-lg-none me-2">
+                    <select id="langSelect" class="form-select bg-dark text-white"
+                        style="width: auto; padding-right: 20px;" aria-label="Language selection">
+                        <option value="en">🇺🇸 English</option>
+                        <option value="zh">🇹🇼 繁中</option>
+                        <option value="zh-cn">🇨🇳 簡中</option>
+                    </select>
+                </div>
+                <button class="navbar-toggler navbar-toggler-right ms-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#about" data-i18n="nav.about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="map/index.html" target="_blank" data-i18n="nav.map">Map</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hotel.html" data-i18n="nav.hotel">Our Hotels</a></li>
+                    <li class="nav-item"><a class="nav-link" href="investing.html" data-i18n="nav.investing">Investments</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="news.html" data-i18n="nav.news">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#timeline" data-i18n="nav.timeline">Timeline</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link booking-btn-breathing" href="hotel.html#hotels" data-i18n="nav.booking">Booking</a></li>
+                    <li class="nav-item d-none d-lg-block">
+                        <select id="langSelectDesktop" class="langSelectDesktop form-select bg-dark text-white"
+                            aria-label="Language selection">
+                            <option value="en">🇺🇸 English</option>
+                            <option value="zh">🇹🇼 繁中</option>
+                            <option value="zh-cn">🇨🇳 簡中</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header class="news-header-banner">
+        <div class="container px-4 px-lg-5">
+            <div class="news-eyebrow">H Hospitality Group</div>
+            <h1 class="news-title" data-i18n="news.title">Latest News & Publications</h1>
+            <p class="news-subtitle" data-i18n="news.subtitle">Explore our updates, press releases, and publications over the years</p>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <section id="news-section">
+        <div class="container px-4 px-lg-5">
+            <!-- Year Filter Tabs -->
+            <div class="year-filter-container">
+                <button class="year-btn active" data-year="all" data-i18n="news.allYears">All Years</button>
+                <button class="year-btn" data-year="2026">2026</button>
+                <button class="year-btn" data-year="2025">2025</button>
+            </div>
+
+            <!-- News Gallery Grid -->
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="news-gallery-grid">
+                <!-- Dynamic cards rendered via JS -->
+            </div>
+
+            <!-- Load More Container -->
+            <div class="load-more-container" id="load-more-wrapper">
+                <button class="btn btn-load-more" id="btn-load-more" data-i18n="news.loadMore">Load More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="modal fade news-modal" id="newsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title id-title" id="newsModalTitle">News Detail</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <button class="news-modal-nav prev" id="modal-prev-btn" aria-label="Previous image">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <img src="" alt="News Image" class="news-modal-img" id="newsModalImg" />
+                    <button class="news-modal-nav next" id="modal-next-btn" aria-label="Next image">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="modal-footer news-modal-footer">
+                    <span class="text-muted small" id="newsModalCounter">1 / 1</span>
+                    <button type="button" class="btn btn-sm btn-outline-secondary text-white" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-black small text-center text-white-50 py-4">
+        <div class="container px-4 px-lg-5">Copyright &copy; H Hospitality Group 2026</div>
+    </footer>
+
+    <!-- Bootstrap core JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS -->
+    <script src="js/scripts.js"></script>
+
+    <!-- News Gallery Engine JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Raw datasets for news items per year
+            // Each entry represents an issue with zh and en file mappings
+            const newsItems = [
+                // 2026
+                { year: '2026', issue: '2026 Vol.7-2', zh: '2026_7_2_zh.webp', en: '2026_7_2_en.webp' },
+                { year: '2026', issue: '2026 Vol.7-1', zh: '2026_7_zh.webp', en: '2026_7_en.webp' },
+                { year: '2026', issue: '2026 Vol.6-2', zh: '2026_6_2_zh.webp', en: '2026_6_2_en.webp' },
+                { year: '2026', issue: '2026 Vol.6-1', zh: '2026_6_zh.webp', en: '2026_6_en.webp' },
+                { year: '2026', issue: '2026 Vol.5-2', zh: '2026_5_2_zh.webp', en: '2026_5_2_en.webp' },
+                { year: '2026', issue: '2026 Vol.5-1', zh: '2026_5_zh.webp', en: '2026_5_en.webp' },
+                { year: '2026', issue: '2026 Vol.4-2', zh: '2026_4_2_zh.webp', en: '2026_4_2_en.webp' },
+                { year: '2026', issue: '2026 Vol.4-1', zh: '2026_4_zh.webp', en: '2026_4_en.webp' },
+                { year: '2026', issue: '2026 Vol.3-2', zh: '2026_3_2_zh.webp', en: '2026_3_2_en.webp' },
+                { year: '2026', issue: '2026 Vol.3-1', zh: '2026_3_zh.webp', en: '2026_3_en.webp' },
+                { year: '2026', issue: '2026 Vol.2-2', zh: '2026_2_2_zh.webp', en: '2026_2_2_en.webp' },
+                { year: '2026', issue: '2026 Vol.2-1', zh: '2026_2_zh.webp', en: '2026_2_en.webp' },
+                { year: '2026', issue: '2026 Vol.1-2', zh: '2026_1_2_zh.webp', en: '2026_1_2_en.webp' },
+                { year: '2026', issue: '2026 Vol.1-1', zh: '2026_1_zh.webp', en: '2026_1_en.webp' },
+
+                // 2025
+                { year: '2025', issue: '2025 Vol.12-2', zh: '2025_12_2_zh.webp', en: '2025_12_2_en.webp' },
+                { year: '2025', issue: '2025 Vol.12-1', zh: '2025_12_zh.webp', en: '2025_12_en.webp' },
+                { year: '2025', issue: '2025 Vol.11-3', zh: '2025_11_3_zh.webp', en: null },
+                { year: '2025', issue: '2025 Vol.11-2', zh: '2025_11_2_zh.webp', en: '2025_11_2_en.webp' },
+                { year: '2025', issue: '2025 Vol.11-1', zh: '2025_11_zh.webp', en: '2025_11_en.webp' },
+                { year: '2025', issue: '2025 Vol.10-2', zh: '2025_10_2_zh.webp', en: '2025_10_2_en.webp' },
+                { year: '2025', issue: '2025 Vol.10-1', zh: '2025_10_zh.webp', en: '2025_10_en.webp' },
+                { year: '2025', issue: '2025 Vol.9-2', zh: '2025_9_2_zh.webp', en: '2025_9_2_en.webp' },
+                { year: '2025', issue: '2025 Vol.9-1', zh: '2025_9_zh.webp', en: '2025_9_en.webp' },
+                { year: '2025', issue: '2025 Vol.8-2', zh: '2025_8_2_zh.webp', en: null },
+                { year: '2025', issue: '2025 Vol.8-1', zh: '2025_8_zh.webp', en: '2025_8_en.webp' },
+                { year: '2025', issue: '2025 Vol.7', zh: '2025_7_zh.webp', en: '2025_7_en.webp' },
+                { year: '2025', issue: '2025 Vol.6', zh: '2025_6_zh.webp', en: '2025_6_en.webp' },
+                { year: '2025', issue: '2025 Vol.5', zh: '2025_5_zh.webp', en: '2025_5_en.webp' },
+                { year: '2025', issue: '2025 Vol.4', zh: '2025_4_zh.webp', en: '2025_4_en.webp' },
+                { year: '2025', issue: '2025 Vol.3', zh: '2025_3_zh.webp', en: null },
+                { year: '2025', issue: '2025 Vol.2', zh: '2025_2_zh.webp', en: null },
+                { year: '2025', issue: '2025 Vol.1', zh: '2025_1_zh.webp', en: null }
+            ];
+
+            const BATCH_SIZE = 6;
+            let activeYear = 'all';
+            let visibleCount = BATCH_SIZE;
+            let activeGalleryItems = [];
+            let currentModalIndex = 0;
+
+            const gridContainer = document.getElementById('news-gallery-grid');
+            const loadMoreWrapper = document.getElementById('load-more-wrapper');
+            const btnLoadMore = document.getElementById('btn-load-more');
+
+            // Lightbox Modal Elements
+            const newsModal = new bootstrap.Modal(document.getElementById('newsModal'));
+            const modalImg = document.getElementById('newsModalImg');
+            const modalTitle = document.getElementById('newsModalTitle');
+            const modalCounter = document.getElementById('newsModalCounter');
+            const prevBtn = document.getElementById('modal-prev-btn');
+            const nextBtn = document.getElementById('modal-next-btn');
+
+            function getLangDir() {
+                const currentLang = localStorage.getItem('userLanguage') || (typeof i18next !== 'undefined' ? i18next.language : 'en');
+                if (currentLang && currentLang.startsWith('zh')) {
+                    return 'zh';
+                }
+                return 'en';
+            }
+
+            function getImagePath(item) {
+                const langDir = getLangDir();
+                if (langDir === 'zh') {
+                    const filename = item.zh || item.en;
+                    return `images/news/${item.year}/zh/${filename}`;
+                } else {
+                    const filename = item.en || item.zh;
+                    return `images/news/${item.year}/${item.en ? 'en' : 'zh'}/${filename}`;
+                }
+            }
+
+            function filterItems() {
+                if (activeYear === 'all') {
+                    return newsItems;
+                }
+                return newsItems.filter(item => item.year === activeYear);
+            }
+
+            function renderGallery() {
+                activeGalleryItems = filterItems();
+                const itemsToDisplay = activeGalleryItems.slice(0, visibleCount);
+
+                gridContainer.innerHTML = '';
+
+                itemsToDisplay.forEach((item, index) => {
+                    const imgPath = getImagePath(item);
+                    const col = document.createElement('div');
+                    col.className = 'col';
+
+                    col.innerHTML = `
+                        <div class="news-card" data-index="${index}">
+                            <div class="news-card-img-wrapper">
+                                <img src="${imgPath}" alt="${item.issue}" class="news-card-img" loading="lazy" />
+                                <div class="news-card-overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                            <div class="news-card-body">
+                                <span class="news-issue-label">${item.issue}</span>
+                                <span class="news-year-badge">${item.year}</span>
+                            </div>
+                        </div>
+                    `;
+
+                    col.querySelector('.news-card').addEventListener('click', function () {
+                        openModal(index);
+                    });
+
+                    gridContainer.appendChild(col);
+                });
+
+                // Toggle Load More button visibility
+                if (visibleCount >= activeGalleryItems.length) {
+                    loadMoreWrapper.style.display = 'none';
+                } else {
+                    loadMoreWrapper.style.display = 'block';
+                }
+            }
+
+            function openModal(index) {
+                if (index < 0 || index >= activeGalleryItems.length) return;
+                currentModalIndex = index;
+                const item = activeGalleryItems[currentModalIndex];
+                const imgPath = getImagePath(item);
+
+                modalImg.src = imgPath;
+                modalTitle.textContent = `${item.issue} (${item.year})`;
+                modalCounter.textContent = `${currentModalIndex + 1} / ${activeGalleryItems.length}`;
+
+                newsModal.show();
+            }
+
+            function nextModal() {
+                if (currentModalIndex < activeGalleryItems.length - 1) {
+                    openModal(currentModalIndex + 1);
+                } else {
+                    openModal(0); // loop back
+                }
+            }
+
+            function prevModal() {
+                if (currentModalIndex > 0) {
+                    openModal(currentModalIndex - 1);
+                } else {
+                    openModal(activeGalleryItems.length - 1); // loop to end
+                }
+            }
+
+            prevBtn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                prevModal();
+            });
+
+            nextBtn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                nextModal();
+            });
+
+            document.addEventListener('keydown', function (e) {
+                const modalEl = document.getElementById('newsModal');
+                if (modalEl && modalEl.classList.contains('show')) {
+                    if (e.key === 'ArrowLeft') prevModal();
+                    if (e.key === 'ArrowRight') nextModal();
+                }
+            });
+
+            // Year filter click handlers
+            document.querySelectorAll('.year-btn').forEach(btn => {
+                btn.addEventListener('click', function () {
+                    document.querySelectorAll('.year-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    activeYear = this.getAttribute('data-year');
+                    visibleCount = BATCH_SIZE;
+                    renderGallery();
+                });
+            });
+
+            // Load More click handler
+            btnLoadMore.addEventListener('click', function () {
+                visibleCount += BATCH_SIZE;
+                renderGallery();
+            });
+
+            // Listen to language selection changes to update gallery images
+            const langSelect = document.getElementById('langSelect');
+            const langSelectDesktop = document.getElementById('langSelectDesktop');
+
+            function handleLangChange() {
+                setTimeout(renderGallery, 50);
+            }
+
+            if (langSelect) langSelect.addEventListener('change', handleLangChange);
+            if (langSelectDesktop) langSelectDesktop.addEventListener('change', handleLangChange);
+
+            if (typeof i18next !== 'undefined') {
+                i18next.on('languageChanged', function () {
+                    renderGallery();
+                });
+            }
+
+            // Initial render
+            renderGallery();
+        });
+    </script>
+</body>
+
+</html>
