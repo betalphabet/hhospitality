@@ -546,13 +546,13 @@
   },
   {
     "id": "location-023",
-    "name": "Discover El Nido",
+    "name": "H Hospitality Group Tour",
     "image_x_position": 3897,
     "image_y_position": 2289,
     "address": "El Nido, Palawan",
     "custom_button_links": [
       {
-        "link": "https://discoverelnido.com/",
+        "link": "https://hhospitality.tours/",
         "name": "Website",
         "is_enabled": true
       },

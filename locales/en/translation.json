@@ -607,18 +607,14 @@
     },
     "travel": {
       "title": "Travel & Tourism",
-      "introduction": "H Hospitality Group provides comprehensive travel and activity services through partnerships with top local tour companies like Discover El Nido. Our services range from professional guided tours and comfortable transportation to wedding planning and unique market experiences, meeting the needs of different travelers. Whether you're exploring El Nido's beautiful scenery or planning a romantic wedding on Nacpan Beach, H Hospitality Group is committed to providing unparalleled experiences. We understand that each journey is unique and strive to create beautiful memories for every traveler.",
-      "discoverElNido": {
-        "name": "Discover El Nido",
-        "description": "Discover El Nido is El Nido's highest-rated tour company, certified by TripAdvisor, and works closely with H Hospitality Group. Its founder and H Hospitality Group's founder are longtime friends. Discover El Nido owns 9 boats and provides the most professional guide services, leading tourists to explore El Nido's beautiful natural landscapes, making it the first choice for travelers visiting El Nido."
+      "introduction": "H Hospitality Group provides comprehensive travel and activity services through our flagship tour brand, H Hospitality Travel & Tours, and dedicated local travel services. Our services range from professional guided tours and island hopping to comfortable transportation, wedding planning, and unique market experiences, meeting the needs of different travelers. Whether you're exploring El Nido's beautiful scenery or planning a romantic wedding on Nacpan Beach, H Hospitality Group is committed to providing unparalleled experiences. We understand that each journey is unique and strive to create beautiful memories for every traveler.",
+      "httTour": {
+        "name": "H Hospitality Travel & Tours",
+        "description": "H Hospitality Travel & Tours (HTT) provides reliable island-hopping boat services in El Nido with experienced local crews, flexible charter options, and smooth pier-to-island coordination for travelers and groups."
       },
       "elNidoGO": {
         "name": "El Nido GO",
         "description": "El Nido Go is a one-stop service travel agency specifically for Chinese travelers. Whether it's flights, hotels, dining, or itinerary planning, El Nido Go can handle everything. It's especially suitable for travelers unfamiliar with English or those who prefer not to plan their own trips, allowing you to enjoy a worry-free vacation."
-      },
-      "httTour": {
-        "name": "HTT Tour",
-        "description": "HTT Tour provides reliable island-hopping boat services in El Nido with experienced local crews, flexible charter options, and smooth pier-to-island coordination for travelers and groups."
       },
       "nacpanBeachShuttle": {
         "name": "Nacpan Beach Shuttle",

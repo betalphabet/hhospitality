@@ -592,18 +592,14 @@
     },
     "travel": {
       "title": "旅游与观光",
-      "introduction": "H Hospitality Group 通过与顶级当地旅游公司如 Discover El Nido 的合作，提供全面的旅游和活动服务。我们的服务范围从专业导览、舒适交通、婚礼策划到独特的市集体验，满足不同旅客的需求。无论您是探索爱妮岛的美景，还是在纳克潘海滩策划浪漫婚礼，H Hospitality Group 都致力于提供无与伦比的体验。我们理解每次旅程都是独一无二的，并努力为每位旅客创造美好回忆。",
-      "discoverElNido": {
-        "name": "Discover El Nido",
-        "description": "Discover El Nido 是 El Nido 评价最高的旅游公司，由 TripAdvisor 荣誉认证，并与 H Hospitality Group 紧密合作。其创办人与 H Hospitality Group 的创办人是多年好友。Discover El Nido 拥有 9 艘船，提供最专业的导游服务，带领游客探索 El Nido 的美丽自然景观，是来 El Nido 的旅客首选的旅游公司。"
+      "introduction": "H Hospitality Group 旗下拥有自有旗舰旅行社 H Hospitality Travel & Tours 及完善的本地旅游服务，提供全面的旅游与活动体验。我们的服务范围涵盖专业跳岛导览、舒适交通接驳、海滩婚礼策划到独特的市集体验，满足不同旅客的需求。无论您是探索爱妮岛的壮丽海岛美景，还是在纳克潘海滩策划浪漫婚礼，H Hospitality Group 都致力于提供无与伦比的体验。我们理解每次旅程都是独一无二的，并努力为每位旅客创造美好回忆。",
+      "httTour": {
+        "name": "H Hospitality Travel & Tours",
+        "description": "H Hospitality Travel & Tours (HTT) 提供稳定可靠的爱妮岛跳岛船务服务，由熟悉海域的本地船员执行，支持弹性包船与团体安排，让码头到岛屿的接驳流程更加顺畅。"
       },
       "elNidoGO": {
         "name": "El Nido GO",
         "description": "El Nido Go 是专为华人旅客提供一站式服务的旅行社。无论是机票、旅馆、餐饮还是行程规划，El Nido Go 都能为您打理一切。特别适合不熟悉英语或不擅长自行规划旅程的旅客，让您轻松享受无忧无虑的旅行。"
-      },
-      "httTour": {
-        "name": "HTT Tour",
-        "description": "HTT Tour 提供稳定可靠的爱妮岛跳岛船务服务，由熟悉海域的本地船员执行，支持弹性包船与团体安排，让码头到岛屿的接驳流程更加顺畅。"
       },
       "nacpanBeachShuttle": {
         "name": "纳克潘海滩接驳车",
