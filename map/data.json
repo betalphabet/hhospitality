@@ -546,7 +546,7 @@
   },
   {
     "id": "location-023",
-    "name": "H Hospitality Group Tour",
+    "name": "H Hospitality Travel & Tours",
     "image_x_position": 3897,
     "image_y_position": 2289,
     "address": "El Nido, Palawan",
@@ -560,7 +560,7 @@
         "link": "#photos",
         "name": "照片",
         "is_enabled": true,
-        "photo_folder": "assets/img/discover"
+        "photo_folder": "assets/img/htt"
       }
     ],
     "image": {
